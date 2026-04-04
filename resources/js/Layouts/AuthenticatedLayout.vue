@@ -46,10 +46,16 @@ const showingNavigationDropdown = ref(false);
                                     Trips
                                 </NavLink>
                                 <NavLink
-                                    :href="`${route('trips.page')}#trip-builder`"
-                                    :active="route().current('trips.page')"
+                                    :href="route('trip-builder.page')"
+                                    :active="route().current('trip-builder.page')"
                                 >
                                     Trip Builder
+                                </NavLink>
+                                <NavLink
+                                    :href="route('flights.page')"
+                                    :active="route().current('flights.page')"
+                                >
+                                    Flight Explorer
                                 </NavLink>
                                 <NavLink
                                     :href="route('settings.index')"
@@ -180,10 +186,16 @@ const showingNavigationDropdown = ref(false);
                             Trips
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="`${route('trips.page')}#trip-builder`"
-                            :active="route().current('trips.page')"
+                            :href="route('trip-builder.page')"
+                            :active="route().current('trip-builder.page')"
                         >
                             Trip Builder
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('flights.page')"
+                            :active="route().current('flights.page')"
+                        >
+                            Flight Explorer
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             :href="route('settings.index')"
@@ -228,10 +240,11 @@ const showingNavigationDropdown = ref(false);
                             <ResponsiveNavLink :href="route('trips.page')">
                                 Trips
                             </ResponsiveNavLink>
-                            <ResponsiveNavLink
-                                :href="`${route('trips.page')}#trip-builder`"
-                            >
+                            <ResponsiveNavLink :href="route('trip-builder.page')">
                                 Trip Builder
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('flights.page')">
+                                Flight Explorer
                             </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('settings.index')">
                                 Settings

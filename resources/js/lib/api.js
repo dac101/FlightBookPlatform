@@ -8,6 +8,15 @@ function buildQuery(params = {}) {
     const searchParams = new URLSearchParams();
 
     Object.entries(params).forEach(([key, value]) => {
+        if (Array.isArray(value)) {
+            value.forEach((entry) => {
+                if (entry !== null && entry !== undefined && entry !== '') {
+                    searchParams.append(`${key}[]`, entry);
+                }
+            });
+            return;
+        }
+
         if (value !== null && value !== undefined && value !== '') {
             searchParams.set(key, value);
         }

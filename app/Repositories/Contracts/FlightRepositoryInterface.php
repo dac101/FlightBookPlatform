@@ -8,7 +8,14 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 interface FlightRepositoryInterface
 {
     /**
-     * @param  array{search?: string, departure?: string, arrival?: string, airline?: string, sort?: string}  $filters
+     * @param  array{
+     *   search?: string,
+     *   departure?: string,
+     *   arrival?: string,
+     *   airline?: string,
+     *   preferred_airline_ids?: array<int>,
+     *   sort?: string
+     * }  $filters
      */
     public function filter(array $filters, int $perPage = 15): LengthAwarePaginator;
 

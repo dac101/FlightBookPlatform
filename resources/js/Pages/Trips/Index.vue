@@ -1,6 +1,6 @@
 <script setup>
-import TripBuilder from '@/Components/Trips/TripBuilder.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { Link } from '@inertiajs/vue3';
 import { api } from '@/lib/api';
 import { Head } from '@inertiajs/vue3';
 import { computed, onMounted, reactive, ref } from 'vue';
@@ -88,8 +88,6 @@ onMounted(() => {
 
         <div class="min-h-screen bg-[linear-gradient(180deg,_#f8fbff_0%,_#f3f7ff_100%)] py-10">
             <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
-                <TripBuilder @booked="loadTrips(1)" />
-
                 <section class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
                     <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
                         <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Overview</p>
@@ -112,18 +110,24 @@ onMounted(() => {
 
                     <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
                         <p class="text-sm font-medium uppercase tracking-[0.22em] text-amber-700">Actions</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">Stay current</h3>
+                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">Manage your travel</h3>
                         <p class="mt-4 text-sm leading-7 text-slate-600">
-                            Refresh your bookings to see the latest trip records connected to your account.
+                            Check the latest trip records here, or open the trip builder when you want to create a new booking.
                         </p>
 
-                        <div class="mt-6">
+                        <div class="mt-6 flex flex-wrap gap-3">
                             <button
                                 class="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
                                 @click="loadTrips"
                             >
                                 Refresh trips
                             </button>
+                            <Link
+                                :href="route('trip-builder.page')"
+                                class="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
+                            >
+                                Open trip builder
+                            </Link>
                         </div>
 
                         <p v-if="errorMessage" class="mt-6 rounded-2xl bg-red-50 px-4 py-3 text-sm text-red-700">

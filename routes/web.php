@@ -32,10 +32,13 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/trips', fn () => Inertia::render('Trips/Index'))->name('trips.page');
+    Route::get('/trip-builder', fn () => Inertia::render('Trips/Builder'))->name('trip-builder.page');
+    Route::get('/flights', fn () => Inertia::render('Flights/Index'))->name('flights.page');
     Route::get('/settings', fn () => Inertia::render('Settings/Index'))->name('settings.index');
 
     Route::prefix('client-api')->name('client-api.')->group(function (): void {
         Route::get('/trips', [UserTripController::class, 'index'])->name('trips.index');
+        Route::get('/flights', [ClientTripBuilderController::class, 'exploreFlights'])->name('flights.index');
         Route::get('/airports/search', [ClientTripBuilderController::class, 'airportSuggestions'])->name('airports.search');
         Route::get('/airlines/options', [ClientTripBuilderController::class, 'airlineOptions'])->name('airlines.options');
         Route::post('/trip-builder/flights/search', [ClientTripBuilderController::class, 'searchFlights'])->name('trip-builder.search');

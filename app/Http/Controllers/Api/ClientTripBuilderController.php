@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Services\AirlineService;
+use App\Services\FlightService;
 use App\Services\TripBuilderService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -14,6 +15,7 @@ class ClientTripBuilderController extends Controller
     public function __construct(
         private readonly TripBuilderService $tripBuilderService,
         private readonly AirlineService $airlineService,
+        private readonly FlightService $flightService,
     ) {}
 
     public function airportSuggestions(Request $request): JsonResponse
@@ -48,6 +50,24 @@ class ClientTripBuilderController extends Controller
 
         return response()->json(
             $this->tripBuilderService->searchFlights($validated)
+        );
+    }
+
+    public function exploreFlights(Request $request): JsonResponse
+    {
+        $validated = $request->validate([
+            'search' => ['nullable', 'string', 'max:255'],
+            'departure' => ['nullable', 'string', 'max:255'],
+            'arrival' => ['nullable', 'string', 'max:255'],
+            'airline' => ['nullable', 'string', 'max:255'],
+            'preferred_airline_ids' => ['nullable', 'array'],
+            'preferred_airline_ids.*' => ['integer', 'exists:airlines,id'],
+            'sort' => ['nullable', Rule::in(['recent', 'price', 'departure_time', 'arrival_time'])],
+            'per_page' => ['nullable', 'integer', 'min:1', 'max:50'],
+        ]);
+
+        return response()->json(
+            $this->flightService->search($validated, (int) ($validated['per_page'] ?? 12))
         );
     }
 

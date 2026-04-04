@@ -18,6 +18,12 @@ const quickLinks = [
         tone: 'text-emerald-700',
     },
     {
+        title: 'Flights',
+        description: 'Search the latest available flights and filter routes.',
+        href: 'flights.page',
+        tone: 'text-indigo-700',
+    },
+    {
         title: 'Settings',
         description: 'Manage preferences and account options.',
         href: 'settings.index',
