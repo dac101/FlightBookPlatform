@@ -1,6 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminAirlineController;
+use App\Http\Controllers\Admin\AdminAirportController;
+use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\Admin\AdminFlightController;
+use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\EnsureUserIsAdmin;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -23,5 +29,44 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::middleware(['auth', 'verified', EnsureUserIsAdmin::class])
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function (): void {
+        Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
+
+        Route::prefix('api')
+            ->name('api.')
+            ->group(function (): void {
+                Route::get('/dashboard/stats', [AdminDashboardController::class, 'stats'])->name('dashboard.stats');
+
+                Route::get('/users', [AdminUserController::class, 'index'])->name('users.index');
+                Route::get('/users/{user}', [AdminUserController::class, 'show'])->name('users.show');
+                Route::post('/users', [AdminUserController::class, 'store'])->name('users.store');
+                Route::patch('/users/{user}', [AdminUserController::class, 'update'])->name('users.update');
+                Route::delete('/users/{user}', [AdminUserController::class, 'destroy'])->name('users.destroy');
+
+                Route::get('/airlines/options', [AdminAirlineController::class, 'options'])->name('airlines.options');
+                Route::get('/airlines', [AdminAirlineController::class, 'index'])->name('airlines.index');
+                Route::get('/airlines/{airline}', [AdminAirlineController::class, 'show'])->name('airlines.show');
+                Route::post('/airlines', [AdminAirlineController::class, 'store'])->name('airlines.store');
+                Route::patch('/airlines/{airline}', [AdminAirlineController::class, 'update'])->name('airlines.update');
+                Route::delete('/airlines/{airline}', [AdminAirlineController::class, 'destroy'])->name('airlines.destroy');
+
+                Route::get('/airports/options', [AdminAirportController::class, 'options'])->name('airports.options');
+                Route::get('/airports', [AdminAirportController::class, 'index'])->name('airports.index');
+                Route::get('/airports/{airport}', [AdminAirportController::class, 'show'])->name('airports.show');
+                Route::post('/airports', [AdminAirportController::class, 'store'])->name('airports.store');
+                Route::patch('/airports/{airport}', [AdminAirportController::class, 'update'])->name('airports.update');
+                Route::delete('/airports/{airport}', [AdminAirportController::class, 'destroy'])->name('airports.destroy');
+
+                Route::get('/flights', [AdminFlightController::class, 'index'])->name('flights.index');
+                Route::get('/flights/{flight}', [AdminFlightController::class, 'show'])->name('flights.show');
+                Route::post('/flights', [AdminFlightController::class, 'store'])->name('flights.store');
+                Route::patch('/flights/{flight}', [AdminFlightController::class, 'update'])->name('flights.update');
+                Route::delete('/flights/{flight}', [AdminFlightController::class, 'destroy'])->name('flights.destroy');
+            });
+    });
 
 require __DIR__.'/auth.php';

@@ -1,6 +1,8 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import { Head, Link, usePage } from '@inertiajs/vue3';
+
+const page = usePage();
 </script>
 
 <template>
@@ -20,8 +22,15 @@ import { Head } from '@inertiajs/vue3';
                 <div
                     class="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800"
                 >
-                    <div class="p-6 text-gray-900 dark:text-gray-100">
-                        You're logged in!
+                    <div class="space-y-4 p-6 text-gray-900 dark:text-gray-100">
+                        <p>You're logged in.</p>
+                        <Link
+                            v-if="page.props.auth.user?.role === 'admin'"
+                            :href="route('admin.dashboard')"
+                            class="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white"
+                        >
+                            Open admin dashboard
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -13,9 +13,32 @@ class AirlineService
         private readonly AirlineRepositoryInterface $airlineRepository
     ) {}
 
-    public function list(): LengthAwarePaginator
+    /**
+     * @param  array{search?: string, sort?: string}  $filters
+     */
+    public function list(int $perPage = 15, array $filters = []): LengthAwarePaginator
     {
-        return $this->airlineRepository->paginate();
+        return $this->airlineRepository->paginate($perPage, $filters);
+    }
+
+    public function find(int $id): Airline
+    {
+        return $this->airlineRepository->find($id);
+    }
+
+    public function create(array $data): Airline
+    {
+        return $this->airlineRepository->create($data);
+    }
+
+    public function update(int $id, array $data): Airline
+    {
+        return $this->airlineRepository->update($id, $data);
+    }
+
+    public function delete(int $id): void
+    {
+        $this->airlineRepository->delete($id);
     }
 
     public function getWithFlights(Airline $airline): Airline

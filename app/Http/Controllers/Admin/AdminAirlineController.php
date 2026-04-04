@@ -5,11 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\StoreAirlineRequest;
 use App\Http\Requests\Admin\UpdateAirlineRequest;
-use App\Models\Airline;
 use App\Services\AirlineService;
-use Illuminate\Http\RedirectResponse;
-use Inertia\Inertia;
-use Inertia\Response;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class AdminAirlineController extends Controller
 {
@@ -17,43 +15,52 @@ class AdminAirlineController extends Controller
         private readonly AirlineService $airlineService
     ) {}
 
-    public function index(): Response
+    public function index(Request $request): JsonResponse
     {
-        return Inertia::render('Admin/Airlines/Index', [
-            'airlines' => $this->airlineService->list(),
+        return response()->json(
+            $this->airlineService->list(
+                (int) $request->integer('per_page', 10),
+                $request->only(['search', 'sort'])
+            )
+        );
+    }
+
+    public function options(): JsonResponse
+    {
+        return response()->json($this->airlineService->all());
+    }
+
+    public function show(int $airline): JsonResponse
+    {
+        return response()->json($this->airlineService->find($airline));
+    }
+
+    public function store(StoreAirlineRequest $request): JsonResponse
+    {
+        $airline = $this->airlineService->create($request->validated());
+
+        return response()->json([
+            'message' => 'Airline created successfully.',
+            'data' => $airline,
+        ], 201);
+    }
+
+    public function update(UpdateAirlineRequest $request, int $airline): JsonResponse
+    {
+        $updatedAirline = $this->airlineService->update($airline, $request->validated());
+
+        return response()->json([
+            'message' => 'Airline updated successfully.',
+            'data' => $updatedAirline,
         ]);
     }
 
-    public function create(): Response
+    public function destroy(int $airline): JsonResponse
     {
-        return Inertia::render('Admin/Airlines/Create');
-    }
+        $this->airlineService->delete($airline);
 
-    public function store(StoreAirlineRequest $request): RedirectResponse
-    {
-        Airline::create($request->validated());
-
-        return redirect()->route('admin.airlines.index')->with('success', 'Airline created successfully.');
-    }
-
-    public function edit(Airline $airline): Response
-    {
-        return Inertia::render('Admin/Airlines/Edit', [
-            'airline' => $airline,
+        return response()->json([
+            'message' => 'Airline deleted successfully.',
         ]);
-    }
-
-    public function update(UpdateAirlineRequest $request, Airline $airline): RedirectResponse
-    {
-        $airline->update($request->validated());
-
-        return redirect()->route('admin.airlines.index')->with('success', 'Airline updated successfully.');
-    }
-
-    public function destroy(Airline $airline): RedirectResponse
-    {
-        $airline->delete();
-
-        return redirect()->route('admin.airlines.index')->with('success', 'Airline deleted successfully.');
     }
 }

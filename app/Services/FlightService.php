@@ -13,11 +13,31 @@ class FlightService
     ) {}
 
     /**
-     * @param  array{departure?: string, arrival?: string, airline?: string}  $filters
+     * @param  array{search?: string, departure?: string, arrival?: string, airline?: string, sort?: string}  $filters
      */
-    public function search(array $filters): LengthAwarePaginator
+    public function search(array $filters, int $perPage = 15): LengthAwarePaginator
     {
-        return $this->flightRepository->filter($filters);
+        return $this->flightRepository->filter($filters, $perPage);
+    }
+
+    public function find(int $id): Flight
+    {
+        return $this->flightRepository->find($id);
+    }
+
+    public function create(array $data): Flight
+    {
+        return $this->flightRepository->create($data);
+    }
+
+    public function update(int $id, array $data): Flight
+    {
+        return $this->flightRepository->update($id, $data);
+    }
+
+    public function delete(int $id): void
+    {
+        $this->flightRepository->delete($id);
     }
 
     public function getWithRelations(Flight $flight): Flight

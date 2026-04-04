@@ -13,9 +13,32 @@ class AirportService
         private readonly AirportRepositoryInterface $airportRepository
     ) {}
 
-    public function list(): LengthAwarePaginator
+    /**
+     * @param  array{search?: string, sort?: string}  $filters
+     */
+    public function list(int $perPage = 15, array $filters = []): LengthAwarePaginator
     {
-        return $this->airportRepository->paginate();
+        return $this->airportRepository->paginate($perPage, $filters);
+    }
+
+    public function find(int $id): Airport
+    {
+        return $this->airportRepository->find($id);
+    }
+
+    public function create(array $data): Airport
+    {
+        return $this->airportRepository->create($data);
+    }
+
+    public function update(int $id, array $data): Airport
+    {
+        return $this->airportRepository->update($id, $data);
+    }
+
+    public function delete(int $id): void
+    {
+        $this->airportRepository->delete($id);
     }
 
     public function getWithFlights(Airport $airport): Airport

@@ -5,11 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\StoreAirportRequest;
 use App\Http\Requests\Admin\UpdateAirportRequest;
-use App\Models\Airport;
 use App\Services\AirportService;
-use Illuminate\Http\RedirectResponse;
-use Inertia\Inertia;
-use Inertia\Response;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class AdminAirportController extends Controller
 {
@@ -17,43 +15,52 @@ class AdminAirportController extends Controller
         private readonly AirportService $airportService
     ) {}
 
-    public function index(): Response
+    public function index(Request $request): JsonResponse
     {
-        return Inertia::render('Admin/Airports/Index', [
-            'airports' => $this->airportService->list(),
+        return response()->json(
+            $this->airportService->list(
+                (int) $request->integer('per_page', 10),
+                $request->only(['search', 'sort'])
+            )
+        );
+    }
+
+    public function options(): JsonResponse
+    {
+        return response()->json($this->airportService->all());
+    }
+
+    public function show(int $airport): JsonResponse
+    {
+        return response()->json($this->airportService->find($airport));
+    }
+
+    public function store(StoreAirportRequest $request): JsonResponse
+    {
+        $airport = $this->airportService->create($request->validated());
+
+        return response()->json([
+            'message' => 'Airport created successfully.',
+            'data' => $airport,
+        ], 201);
+    }
+
+    public function update(UpdateAirportRequest $request, int $airport): JsonResponse
+    {
+        $updatedAirport = $this->airportService->update($airport, $request->validated());
+
+        return response()->json([
+            'message' => 'Airport updated successfully.',
+            'data' => $updatedAirport,
         ]);
     }
 
-    public function create(): Response
+    public function destroy(int $airport): JsonResponse
     {
-        return Inertia::render('Admin/Airports/Create');
-    }
+        $this->airportService->delete($airport);
 
-    public function store(StoreAirportRequest $request): RedirectResponse
-    {
-        Airport::create($request->validated());
-
-        return redirect()->route('admin.airports.index')->with('success', 'Airport created successfully.');
-    }
-
-    public function edit(Airport $airport): Response
-    {
-        return Inertia::render('Admin/Airports/Edit', [
-            'airport' => $airport,
+        return response()->json([
+            'message' => 'Airport deleted successfully.',
         ]);
-    }
-
-    public function update(UpdateAirportRequest $request, Airport $airport): RedirectResponse
-    {
-        $airport->update($request->validated());
-
-        return redirect()->route('admin.airports.index')->with('success', 'Airport updated successfully.');
-    }
-
-    public function destroy(Airport $airport): RedirectResponse
-    {
-        $airport->delete();
-
-        return redirect()->route('admin.airports.index')->with('success', 'Airport deleted successfully.');
     }
 }

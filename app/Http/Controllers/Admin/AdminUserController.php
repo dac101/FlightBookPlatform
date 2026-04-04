@@ -6,10 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\StoreUserRequest;
 use App\Http\Requests\Admin\UpdateUserRequest;
 use App\Services\UserService;
-use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
-use Inertia\Response;
 
 class AdminUserController extends Controller
 {
@@ -17,50 +15,53 @@ class AdminUserController extends Controller
         private readonly UserService $userService,
     ) {}
 
-    public function index(Request $request): Response
+    public function index(Request $request): JsonResponse
     {
-        $filters = $request->only(['search', 'role', 'sort']);
+        return response()->json(
+            $this->userService->list(
+                (int) $request->integer('per_page', 10),
+                $request->only(['search', 'role', 'sort'])
+            )
+        );
+    }
 
-        return Inertia::render('Admin/Users/Index', [
-            'users' => $this->userService->list(15, $filters),
-            'filters' => $filters,
+    public function show(int $user): JsonResponse
+    {
+        return response()->json($this->userService->find($user));
+    }
+
+    public function store(StoreUserRequest $request): JsonResponse
+    {
+        $user = $this->userService->create($request->validated());
+
+        return response()->json([
+            'message' => 'User created successfully.',
+            'data' => $user,
+        ], 201);
+    }
+
+    public function update(UpdateUserRequest $request, int $user): JsonResponse
+    {
+        $updatedUser = $this->userService->update($user, $request->validated());
+
+        return response()->json([
+            'message' => 'User updated successfully.',
+            'data' => $updatedUser,
         ]);
     }
 
-    public function create(): Response
-    {
-        return Inertia::render('Admin/Users/Create');
-    }
-
-    public function store(StoreUserRequest $request): RedirectResponse
-    {
-        $this->userService->create($request->validated());
-
-        return redirect()->route('admin.users.index')->with('success', 'User created successfully.');
-    }
-
-    public function edit(int $user): Response
-    {
-        return Inertia::render('Admin/Users/Edit', [
-            'user' => $this->userService->find($user),
-        ]);
-    }
-
-    public function update(UpdateUserRequest $request, int $user): RedirectResponse
-    {
-        $this->userService->update($user, $request->validated());
-
-        return redirect()->route('admin.users.index')->with('success', 'User updated successfully.');
-    }
-
-    public function destroy(Request $request, int $user): RedirectResponse
+    public function destroy(Request $request, int $user): JsonResponse
     {
         if ($request->user()->id === $user) {
-            return redirect()->route('admin.users.index')->with('error', 'You cannot delete your own account.');
+            return response()->json([
+                'message' => 'You cannot delete your own account.',
+            ], 422);
         }
 
         $this->userService->delete($user);
 
-        return redirect()->route('admin.users.index')->with('success', 'User deleted successfully.');
+        return response()->json([
+            'message' => 'User deleted successfully.',
+        ]);
     }
 }

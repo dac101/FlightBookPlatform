@@ -8,7 +8,18 @@ use Illuminate\Database\Eloquent\Collection;
 
 interface AirlineRepositoryInterface
 {
-    public function paginate(int $perPage = 50): LengthAwarePaginator;
+    /**
+     * @param  array{search?: string, sort?: string}  $filters
+     */
+    public function paginate(int $perPage = 15, array $filters = []): LengthAwarePaginator;
+
+    public function find(int $id): Airline;
+
+    public function create(array $data): Airline;
+
+    public function update(int $id, array $data): Airline;
+
+    public function delete(int $id): void;
 
     public function findWithFlights(Airline $airline): Airline;
 
