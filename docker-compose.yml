@@ -1,0 +1,148 @@
+services:
+
+  # ─── PHP Application ────────────────────────────────────────────────────────
+  php:
+    build: ./docker-compose/services/php-84/build
+    image: flightbookplatform-php
+    container_name: flightbookplatform-php
+    restart: unless-stopped
+    working_dir: /var/www
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: ${DB_DATABASE:-flightbookplatform}
+      DB_USERNAME: ${DB_USERNAME:-flightbookplatform}
+      DB_PASSWORD: ${DB_PASSWORD:-secret}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      CACHE_STORE: redis
+      QUEUE_CONNECTION: redis
+      SESSION_DRIVER: redis
+      MAIL_MAILER: smtp
+      MAIL_HOST: mailpit
+      MAIL_PORT: 1025
+      APP_URL: http://localhost
+    volumes:
+      - ./:/var/www
+      - node_modules:/var/www/node_modules       # Linux-native node_modules (shadows host)
+      - ./docker-compose/storage/logs/php:/var/log/php
+    depends_on:
+      - postgres
+      - redis
+      - mailpit
+    networks:
+      - flightbookplatform
+
+  # ─── Queue Worker (Laravel Horizon) ─────────────────────────────────────────
+  horizon:
+    build: ./docker-compose/services/php-84/build
+    image: flightbookplatform-php
+    container_name: flightbookplatform-horizon
+    restart: unless-stopped
+    working_dir: /var/www
+    command: ["php", "artisan", "horizon"]
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: ${DB_DATABASE:-flightbookplatform}
+      DB_USERNAME: ${DB_USERNAME:-flightbookplatform}
+      DB_PASSWORD: ${DB_PASSWORD:-secret}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      QUEUE_CONNECTION: redis
+    volumes:
+      - ./:/var/www
+      - node_modules:/var/www/node_modules
+    depends_on:
+      - php
+      - redis
+    networks:
+      - flightbookplatform
+
+  # ─── Task Scheduler ──────────────────────────────────────────────────────────
+  scheduler:
+    build: ./docker-compose/services/php-84/build
+    image: flightbookplatform-php
+    container_name: flightbookplatform-scheduler
+    restart: unless-stopped
+    working_dir: /var/www
+    command: ["php", "artisan", "schedule:work"]
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: ${DB_DATABASE:-flightbookplatform}
+      DB_USERNAME: ${DB_USERNAME:-flightbookplatform}
+      DB_PASSWORD: ${DB_PASSWORD:-secret}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    volumes:
+      - ./:/var/www
+      - node_modules:/var/www/node_modules
+    depends_on:
+      - php
+    networks:
+      - flightbookplatform
+
+  # ─── Nginx Web Server ────────────────────────────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    container_name: flightbookplatform-nginx
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-80}:80"
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/services/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php
+    networks:
+      - flightbookplatform
+
+  # ─── PostgreSQL Database ─────────────────────────────────────────────────────
+  postgres:
+    image: postgres:17-alpine
+    container_name: flightbookplatform-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${DB_DATABASE:-flightbookplatform}
+      POSTGRES_USER: ${DB_USERNAME:-flightbookplatform}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secret}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "${DB_PORT_FORWARD:-5432}:5432"
+    networks:
+      - flightbookplatform
+
+  # ─── Redis Cache / Queue ─────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: flightbookplatform-redis
+    restart: unless-stopped
+    volumes:
+      - ./docker-compose/storage/redis:/data
+    ports:
+      - "${REDIS_PORT_FORWARD:-6379}:6379"
+    networks:
+      - flightbookplatform
+
+  # ─── Mailpit (test mail server) ──────────────────────────────────────────────
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: flightbookplatform-mailpit
+    restart: unless-stopped
+    ports:
+      - "${MAIL_PORT_FORWARD:-1025}:1025"   # SMTP
+      - "${MAILPIT_UI_PORT:-8025}:8025"     # Web UI → http://localhost:8025
+    networks:
+      - flightbookplatform
+
+networks:
+  flightbookplatform:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
+  node_modules:
+    driver: local

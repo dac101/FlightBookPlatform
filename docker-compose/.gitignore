@@ -1,0 +1,8 @@
+# Ignore persisted storage data but keep directory structure
+storage/redis/*
+storage/logs/php/*
+
+# Re-include placeholder files
+!storage/postgres/.gitkeep
+!storage/redis/.gitkeep
+!storage/logs/php/.gitkeep

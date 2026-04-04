@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xattr:*)",
+      "Bash(composer require:*)",
+      "Bash(php artisan:*)",
+      "Bash(git:*)"
+    ]
+  }
+}
