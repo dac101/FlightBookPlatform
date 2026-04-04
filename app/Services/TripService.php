@@ -21,14 +21,30 @@ class TripService
         return $this->tripRepository->paginateAll($perPage, $filters);
     }
 
-    public function listForUser(User $user): LengthAwarePaginator
+    public function listForUser(User $user, int $perPage = 20): LengthAwarePaginator
     {
-        return $this->tripRepository->paginateForUser($user);
+        return $this->tripRepository->paginateForUser($user, $perPage);
     }
 
     public function create(User $user, array $data): Trip
     {
         return $this->tripRepository->create($user, $data);
+    }
+
+    /**
+     * @param  array<int, array{
+     *   flight_id: int,
+     *   segment_order: int,
+     *   departure_date: string,
+     *   segment_type: string
+     * }>  $segments
+     */
+    public function book(User $user, array $tripData, array $segments): Trip
+    {
+        $trip = $this->tripRepository->createWithSegments($user, $tripData, $segments);
+        $trip->recalculateTotal();
+
+        return $this->tripRepository->findWithSegments($trip->fresh());
     }
 
     public function getWithSegments(Trip $trip): Trip

@@ -26,4 +26,8 @@ interface AirportRepositoryInterface
     public function count(): int;
 
     public function all(): Collection;
+
+    public function searchSuggestions(string $query, int $limit = 8): Collection;
+
+    public function findNearby(float $latitude, float $longitude, float $radiusKm, int $limit = 8): Collection;
 }

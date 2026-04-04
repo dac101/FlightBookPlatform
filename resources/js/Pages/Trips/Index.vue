@@ -1,12 +1,19 @@
 <script setup>
+import TripBuilder from '@/Components/Trips/TripBuilder.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { api } from '@/lib/api';
 import { Head } from '@inertiajs/vue3';
-import { computed, onMounted, ref } from 'vue';
+import { computed, onMounted, reactive, ref } from 'vue';
 
 const trips = ref([]);
 const loading = ref(false);
 const errorMessage = ref('');
+const pagination = reactive({
+    currentPage: 1,
+    lastPage: 1,
+    total: 0,
+    perPage: 6,
+});
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -22,13 +29,20 @@ const bookingHistory = computed(() =>
     ),
 );
 
-async function loadTrips() {
+async function loadTrips(page = 1) {
     loading.value = true;
     errorMessage.value = '';
 
     try {
-        const response = await api.get('/client-api/trips');
+        const response = await api.get('/client-api/trips', {
+            page,
+            per_page: pagination.perPage,
+        });
         trips.value = response.data ?? [];
+        pagination.currentPage = response.current_page;
+        pagination.lastPage = response.last_page;
+        pagination.total = response.total;
+        pagination.perPage = response.per_page;
     } catch (error) {
         errorMessage.value =
             error.message || 'Unable to load your trips right now.';
@@ -74,6 +88,8 @@ onMounted(() => {
 
         <div class="min-h-screen bg-[linear-gradient(180deg,_#f8fbff_0%,_#f3f7ff_100%)] py-10">
             <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
+                <TripBuilder @booked="loadTrips(1)" />
+
                 <section class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
                     <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
                         <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Overview</p>
@@ -207,6 +223,26 @@ onMounted(() => {
                         </div>
                     </div>
                 </section>
+
+                <div class="flex items-center justify-between text-sm text-slate-500">
+                    <span>{{ pagination.total }} total trips</span>
+                    <div class="flex gap-2">
+                        <button
+                            class="rounded-full border border-slate-300 px-4 py-2"
+                            :disabled="pagination.currentPage <= 1"
+                            @click="loadTrips(pagination.currentPage - 1)"
+                        >
+                            Previous
+                        </button>
+                        <button
+                            class="rounded-full border border-slate-300 px-4 py-2"
+                            :disabled="pagination.currentPage >= pagination.lastPage"
+                            @click="loadTrips(pagination.currentPage + 1)"
+                        >
+                            Next
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </AuthenticatedLayout>

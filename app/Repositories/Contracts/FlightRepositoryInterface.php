@@ -12,6 +12,18 @@ interface FlightRepositoryInterface
      */
     public function filter(array $filters, int $perPage = 15): LengthAwarePaginator;
 
+    /**
+     * @param  array{
+     *   departure_airport_ids: array<int>,
+     *   arrival_airport_ids: array<int>,
+     *   preferred_airline_ids?: array<int>,
+     *   sort?: string,
+     *   search?: string,
+     *   page?: int
+     * }  $criteria
+     */
+    public function searchForTripBuilder(array $criteria, int $perPage = 10): LengthAwarePaginator;
+
     public function find(int $id): Flight;
 
     public function create(array $data): Flight;

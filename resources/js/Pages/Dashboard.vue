@@ -14,7 +14,7 @@ const quickLinks = [
     {
         title: 'Trips',
         description: 'See upcoming bookings and past travel history.',
-        href: 'trips.index',
+        href: 'trips.page',
         tone: 'text-emerald-700',
     },
     {

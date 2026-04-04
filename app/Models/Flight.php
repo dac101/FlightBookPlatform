@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\CarbonImmutable;
 use Database\Factories\FlightFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -40,5 +41,26 @@ class Flight extends Model
     public function tripSegments(): HasMany
     {
         return $this->hasMany(TripSegment::class);
+    }
+
+    public function durationMinutes(): int
+    {
+        $departure = CarbonImmutable::createFromFormat('H:i:s', $this->departure_time);
+        $arrival = CarbonImmutable::createFromFormat('H:i:s', $this->arrival_time);
+
+        if ($arrival->lessThanOrEqualTo($departure)) {
+            $arrival = $arrival->addDay();
+        }
+
+        return $departure->diffInMinutes($arrival);
+    }
+
+    public function durationLabel(): string
+    {
+        $minutes = $this->durationMinutes();
+        $hours = intdiv($minutes, 60);
+        $remainingMinutes = $minutes % 60;
+
+        return sprintf('%dh %02dm', $hours, $remainingMinutes);
     }
 }

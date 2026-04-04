@@ -55,4 +55,14 @@ class AirportService
     {
         return $this->airportRepository->all();
     }
+
+    public function searchSuggestions(string $query, int $limit = 8): Collection
+    {
+        return $this->airportRepository->searchSuggestions($query, $limit);
+    }
+
+    public function findNearby(float $latitude, float $longitude, float $radiusKm, int $limit = 8): Collection
+    {
+        return $this->airportRepository->findNearby($latitude, $longitude, $radiusKm, $limit);
+    }
 }

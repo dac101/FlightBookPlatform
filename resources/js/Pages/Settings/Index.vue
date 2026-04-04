@@ -83,7 +83,7 @@ function roleLabel(value) {
                             </Link>
 
                             <Link
-                                :href="route('trips.index')"
+                                :href="route('trips.page')"
                                 class="rounded-2xl border border-slate-200 p-5 transition hover:border-slate-900"
                             >
                                 <p class="text-lg font-semibold text-slate-900">Trips page</p>

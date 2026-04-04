@@ -40,10 +40,16 @@ const showingNavigationDropdown = ref(false);
                                     Profile
                                 </NavLink>
                                 <NavLink
-                                    :href="route('trips.index')"
-                                    :active="route().current('trips.index')"
+                                    :href="route('trips.page')"
+                                    :active="route().current('trips.page')"
                                 >
                                     Trips
+                                </NavLink>
+                                <NavLink
+                                    :href="`${route('trips.page')}#trip-builder`"
+                                    :active="route().current('trips.page')"
+                                >
+                                    Trip Builder
                                 </NavLink>
                                 <NavLink
                                     :href="route('settings.index')"
@@ -168,10 +174,16 @@ const showingNavigationDropdown = ref(false);
                             Profile
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('trips.index')"
-                            :active="route().current('trips.index')"
+                            :href="route('trips.page')"
+                            :active="route().current('trips.page')"
                         >
                             Trips
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="`${route('trips.page')}#trip-builder`"
+                            :active="route().current('trips.page')"
+                        >
+                            Trip Builder
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             :href="route('settings.index')"
@@ -213,8 +225,13 @@ const showingNavigationDropdown = ref(false);
                             <ResponsiveNavLink :href="route('profile.edit')">
                                 Profile
                             </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('trips.index')">
+                            <ResponsiveNavLink :href="route('trips.page')">
                                 Trips
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink
+                                :href="`${route('trips.page')}#trip-builder`"
+                            >
+                                Trip Builder
                             </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('settings.index')">
                                 Settings

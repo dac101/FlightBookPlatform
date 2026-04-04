@@ -17,7 +17,12 @@ class TripController extends Controller
 
     public function index(Request $request): JsonResponse
     {
-        return response()->json($this->tripService->listForUser($request->user()));
+        return response()->json(
+            $this->tripService->listForUser(
+                $request->user(),
+                (int) $request->integer('per_page', 10)
+            )
+        );
     }
 
     public function store(Request $request): JsonResponse

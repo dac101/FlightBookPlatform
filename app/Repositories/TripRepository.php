@@ -3,9 +3,11 @@
 namespace App\Repositories;
 
 use App\Models\Trip;
+use App\Models\TripSegment;
 use App\Models\User;
 use App\Repositories\Contracts\TripRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Throwable;
 
@@ -65,6 +67,24 @@ class TripRepository implements TripRepositoryInterface
     public function create(User $user, array $data): Trip
     {
         return $user->trips()->create($data);
+    }
+
+    public function createWithSegments(User $user, array $tripData, array $segments): Trip
+    {
+        return DB::transaction(function () use ($user, $tripData, $segments): Trip {
+            $trip = $user->trips()->create($tripData);
+
+            foreach ($segments as $segment) {
+                $trip->segments()->create([
+                    'flight_id' => $segment['flight_id'],
+                    'segment_order' => $segment['segment_order'],
+                    'departure_date' => $segment['departure_date'],
+                    'segment_type' => $segment['segment_type'],
+                ]);
+            }
+
+            return $trip->fresh();
+        });
     }
 
     public function find(int $id): Trip

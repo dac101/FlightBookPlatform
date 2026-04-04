@@ -17,6 +17,16 @@ interface TripRepositoryInterface
 
     public function create(User $user, array $data): Trip;
 
+    /**
+     * @param  array<int, array{
+     *   flight_id: int,
+     *   segment_order: int,
+     *   departure_date: string,
+     *   segment_type: string
+     * }>  $segments
+     */
+    public function createWithSegments(User $user, array $tripData, array $segments): Trip;
+
     public function find(int $id): Trip;
 
     public function findWithSegments(Trip $trip): Trip;

@@ -48,7 +48,7 @@ defineProps({
                             <div class="rounded-2xl bg-slate-50 p-4">
                                 <p class="font-medium text-slate-900">Related pages</p>
                                 <div class="mt-3 flex flex-wrap gap-3">
-                                    <Link :href="route('trips.index')" class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900">
+                                    <Link :href="route('trips.page')" class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900">
                                         Trips
                                     </Link>
                                     <Link :href="route('settings.index')" class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900">
