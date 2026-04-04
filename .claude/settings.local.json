@@ -15,7 +15,12 @@
       "Read(//Users/dacoriesmith/Developer/BitBucket/flightbookplatform/**)",
       "Bash(done)",
       "Bash(docker compose:*)",
-      "Bash(ls /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/public/*.csv)"
+      "Bash(ls /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/public/*.csv)",
+      "Bash(starter)",
+      "Bash(breeze)",
+      "Bash(jetstream)",
+      "Bash(boost \")",
+      "Bash(grep -q '\"\"axios\"\"' /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/package.json)"
     ]
   }
 }
