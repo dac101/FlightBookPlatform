@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminFlightController;
 use App\Http\Controllers\Admin\AdminTripController;
 use App\Http\Controllers\Admin\AdminUserController;
+use App\Http\Controllers\Api\TripController as UserTripController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Middleware\EnsureUserIsAdmin;
 use Illuminate\Foundation\Application;
@@ -29,6 +30,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/trips', fn () => Inertia::render('Trips/Index'))->name('trips.index');
+    Route::get('/settings', fn () => Inertia::render('Settings/Index'))->name('settings.index');
+
+    Route::prefix('client-api')->name('client-api.')->group(function (): void {
+        Route::get('/trips', [UserTripController::class, 'index'])->name('trips.index');
+    });
 });
 
 Route::middleware(['auth', 'verified', EnsureUserIsAdmin::class])

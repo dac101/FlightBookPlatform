@@ -34,16 +34,30 @@ const showingNavigationDropdown = ref(false);
                                 class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"
                             >
                                 <NavLink
+                                    :href="route('profile.edit')"
+                                    :active="route().current('profile.*')"
+                                >
+                                    Profile
+                                </NavLink>
+                                <NavLink
+                                    :href="route('trips.index')"
+                                    :active="route().current('trips.index')"
+                                >
+                                    Trips
+                                </NavLink>
+                                <NavLink
+                                    :href="route('settings.index')"
+                                    :active="route().current('settings.index')"
+                                >
+                                    Settings
+                                </NavLink>
+                                <NavLink
                                     :href="route('dashboard')"
                                     :active="route().current('dashboard')"
                                 >
                                     Dashboard
                                 </NavLink>
-                                <NavLink
-                                    v-if="$page.props.auth.user?.role === 'admin'"
-                                    :href="route('admin.dashboard')"
-                                    :active="route().current('admin.*')"
-                                >
+                                <NavLink v-if="$page.props.auth.user?.role === 'admin'" :href="route('admin.dashboard')" :active="route().current('admin.*')">
                                     Admin
                                 </NavLink>
                             </div>
@@ -148,6 +162,24 @@ const showingNavigationDropdown = ref(false);
                 >
                     <div class="space-y-1 pb-3 pt-2">
                         <ResponsiveNavLink
+                            :href="route('profile.edit')"
+                            :active="route().current('profile.*')"
+                        >
+                            Profile
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('trips.index')"
+                            :active="route().current('trips.index')"
+                        >
+                            Trips
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('settings.index')"
+                            :active="route().current('settings.index')"
+                        >
+                            Settings
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
                             :href="route('dashboard')"
                             :active="route().current('dashboard')"
                         >
@@ -180,6 +212,12 @@ const showingNavigationDropdown = ref(false);
                         <div class="mt-3 space-y-1">
                             <ResponsiveNavLink :href="route('profile.edit')">
                                 Profile
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('trips.index')">
+                                Trips
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('settings.index')">
+                                Settings
                             </ResponsiveNavLink>
                             <ResponsiveNavLink
                                 :href="route('logout')"
