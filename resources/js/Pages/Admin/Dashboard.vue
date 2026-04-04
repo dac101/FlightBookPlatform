@@ -3,6 +3,7 @@ import AdminAirlinesManager from '@/Components/Admin/AdminAirlinesManager.vue';
 import AdminAirportsManager from '@/Components/Admin/AdminAirportsManager.vue';
 import AdminFlightsManager from '@/Components/Admin/AdminFlightsManager.vue';
 import AdminStatsGrid from '@/Components/Admin/AdminStatsGrid.vue';
+import AdminTripsManager from '@/Components/Admin/AdminTripsManager.vue';
 import AdminUsersManager from '@/Components/Admin/AdminUsersManager.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { api } from '@/lib/api';
@@ -18,6 +19,7 @@ const tabs = [
     { id: 'airlines', label: 'Airlines' },
     { id: 'airports', label: 'Airports' },
     { id: 'flights', label: 'Flights' },
+    { id: 'trips', label: 'Trips' },
 ];
 
 async function loadStats() {
@@ -78,6 +80,7 @@ onMounted(() => {
                 <AdminAirlinesManager v-if="activeTab === 'airlines'" />
                 <AdminAirportsManager v-if="activeTab === 'airports'" />
                 <AdminFlightsManager v-if="activeTab === 'flights'" />
+                <AdminTripsManager v-if="activeTab === 'trips'" />
             </div>
         </div>
     </AuthenticatedLayout>

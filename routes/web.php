@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminAirlineController;
 use App\Http\Controllers\Admin\AdminAirportController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminFlightController;
+use App\Http\Controllers\Admin\AdminTripController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Middleware\EnsureUserIsAdmin;
@@ -66,6 +67,11 @@ Route::middleware(['auth', 'verified', EnsureUserIsAdmin::class])
                 Route::post('/flights', [AdminFlightController::class, 'store'])->name('flights.store');
                 Route::patch('/flights/{flight}', [AdminFlightController::class, 'update'])->name('flights.update');
                 Route::delete('/flights/{flight}', [AdminFlightController::class, 'destroy'])->name('flights.destroy');
+
+                Route::get('/trips', [AdminTripController::class, 'index'])->name('trips.index');
+                Route::get('/trips/{trip}', [AdminTripController::class, 'show'])->name('trips.show');
+                Route::patch('/trips/{trip}', [AdminTripController::class, 'update'])->name('trips.update');
+                Route::delete('/trips/{trip}', [AdminTripController::class, 'destroy'])->name('trips.destroy');
             });
     });
 

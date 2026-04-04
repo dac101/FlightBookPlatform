@@ -13,6 +13,14 @@ class TripService
         private readonly TripRepositoryInterface $tripRepository
     ) {}
 
+    /**
+     * @param  array{search?: string, status?: string, trip_type?: string, sort?: string}  $filters
+     */
+    public function listAll(int $perPage = 15, array $filters = []): LengthAwarePaginator
+    {
+        return $this->tripRepository->paginateAll($perPage, $filters);
+    }
+
     public function listForUser(User $user): LengthAwarePaginator
     {
         return $this->tripRepository->paginateForUser($user);
@@ -28,6 +36,11 @@ class TripService
         return $this->tripRepository->findWithSegments($trip);
     }
 
+    public function find(int $id): Trip
+    {
+        return $this->tripRepository->find($id);
+    }
+
     public function update(Trip $trip, array $data): Trip
     {
         $trip = $this->tripRepository->update($trip, $data);
@@ -39,5 +52,10 @@ class TripService
     public function delete(Trip $trip): void
     {
         $this->tripRepository->delete($trip);
+    }
+
+    public function count(): int
+    {
+        return $this->tripRepository->count();
     }
 }

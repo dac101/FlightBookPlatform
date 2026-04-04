@@ -6,9 +6,54 @@ use App\Models\Trip;
 use App\Models\User;
 use App\Repositories\Contracts\TripRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Log;
+use Throwable;
 
 class TripRepository implements TripRepositoryInterface
 {
+    public function paginateAll(int $perPage = 15, array $filters = []): LengthAwarePaginator
+    {
+        try {
+            $query = Trip::query()
+                ->with([
+                    'user',
+                    'segments.flight.airline',
+                    'segments.flight.departureAirport',
+                    'segments.flight.arrivalAirport',
+                ]);
+
+            if (! empty($filters['search'])) {
+                $search = $filters['search'];
+
+                $query->where(function ($builder) use ($search): void {
+                    $builder->whereHas('user', function ($userQuery) use ($search): void {
+                        $userQuery->where('name', 'like', '%'.$search.'%')
+                            ->orWhere('email', 'like', '%'.$search.'%');
+                    })->orWhere('id', $search);
+                });
+            }
+
+            if (! empty($filters['status'])) {
+                $query->where('status', $filters['status']);
+            }
+
+            if (! empty($filters['trip_type'])) {
+                $query->where('trip_type', $filters['trip_type']);
+            }
+
+            if (($filters['sort'] ?? null) === 'oldest') {
+                $query->orderBy('created_at');
+            } else {
+                $query->orderByDesc('created_at');
+            }
+
+            return $query->paginate($perPage)->withQueryString();
+        } catch (Throwable $e) {
+            Log::error('TripRepository: error paginating all trips', ['message' => $e->getMessage()]);
+            throw $e;
+        }
+    }
+
     public function paginateForUser(User $user, int $perPage = 20): LengthAwarePaginator
     {
         return $user->trips()
@@ -22,9 +67,19 @@ class TripRepository implements TripRepositoryInterface
         return $user->trips()->create($data);
     }
 
+    public function find(int $id): Trip
+    {
+        try {
+            return Trip::findOrFail($id);
+        } catch (Throwable $e) {
+            Log::error('TripRepository: error finding trip', ['id' => $id, 'message' => $e->getMessage()]);
+            throw $e;
+        }
+    }
+
     public function findWithSegments(Trip $trip): Trip
     {
-        return $trip->load(['segments.flight.airline', 'segments.flight.departureAirport', 'segments.flight.arrivalAirport']);
+        return $trip->load(['user', 'segments.flight.airline', 'segments.flight.departureAirport', 'segments.flight.arrivalAirport']);
     }
 
     public function update(Trip $trip, array $data): Trip
@@ -37,5 +92,16 @@ class TripRepository implements TripRepositoryInterface
     public function delete(Trip $trip): void
     {
         $trip->delete();
+    }
+
+    public function count(): int
+    {
+        try {
+            return Trip::count();
+        } catch (Throwable $e) {
+            Log::error('TripRepository: error counting trips', ['message' => $e->getMessage()]);
+
+            return 0;
+        }
     }
 }

@@ -15,6 +15,7 @@ const cards = [
     { key: 'airlines', label: 'Airlines', tone: 'from-amber-500 to-orange-500' },
     { key: 'airports', label: 'Airports', tone: 'from-emerald-500 to-green-500' },
     { key: 'flights', label: 'Flights', tone: 'from-rose-500 to-red-500' },
+    { key: 'trips', label: 'Trips', tone: 'from-violet-500 to-indigo-500' },
 ];
 </script>
 
