@@ -5,9 +5,11 @@ import { Head, Link } from '@inertiajs/vue3';
 import { computed, onMounted, reactive, ref } from 'vue';
 
 const loading = ref(false);
+const plansLoading = ref(false);
 const errorMessage = ref('');
 const flights = ref([]);
 const airlineOptions = ref([]);
+const tripPlans = ref([]);
 const filters = reactive({
     search: '',
     departure: '',
@@ -22,6 +24,7 @@ const pagination = reactive({
     total: 0,
     perPage: 12,
 });
+const flightActions = reactive({});
 
 const activeFiltersCount = computed(() => {
     let count = 0;
@@ -36,6 +39,36 @@ const activeFiltersCount = computed(() => {
 
 async function loadAirlineOptions() {
     airlineOptions.value = await api.get('/client-api/airlines/options');
+}
+
+function getFlightAction(flightId) {
+    if (!flightActions[flightId]) {
+        flightActions[flightId] = {
+            departureDate: '',
+            selectedTripId: '',
+            submitting: false,
+            error: '',
+            success: '',
+        };
+    }
+
+    return flightActions[flightId];
+}
+
+async function loadTripPlans() {
+    plansLoading.value = true;
+
+    try {
+        const response = await api.get('/client-api/trips', {
+            per_page: 50,
+        });
+
+        tripPlans.value = (response.data ?? []).filter(
+            (trip) => trip.status !== 'cancelled',
+        );
+    } finally {
+        plansLoading.value = false;
+    }
 }
 
 async function loadFlights(page = 1) {
@@ -75,8 +108,108 @@ function resetFilters() {
     loadFlights(1);
 }
 
+function tripTypeLabel(value) {
+    return {
+        one_way: 'One Way',
+        round_trip: 'Round Trip',
+        open_jaw: 'Open Jaw',
+        multi_city: 'Multi City',
+    }[value] || value;
+}
+
+function tripStatusLabel(value) {
+    return {
+        pending: 'Pending',
+        confirmed: 'Confirmed',
+        cancelled: 'Cancelled',
+    }[value] || value;
+}
+
+function tripPlanLabel(trip) {
+    const lastSegment = trip.segments?.at?.(-1);
+    const route = lastSegment?.flight?.arrival_airport?.iata_code
+        ? `Ends at ${lastSegment.flight.arrival_airport.iata_code}`
+        : `Starts ${trip.departure_date}`;
+
+    return `Trip #${trip.id} | ${tripTypeLabel(trip.trip_type)} | ${tripStatusLabel(trip.status)} | ${route}`;
+}
+
+function extractErrorMessage(error) {
+    const firstKey = Object.keys(error?.errors || {})[0];
+
+    if (firstKey && error.errors[firstKey]?.[0]) {
+        return error.errors[firstKey][0];
+    }
+
+    return error.message || 'Request failed.';
+}
+
+async function createTripFromFlight(flightId) {
+    const action = getFlightAction(flightId);
+
+    if (!action.departureDate) {
+        action.error = 'Choose a departure date first.';
+        action.success = '';
+        return;
+    }
+
+    action.submitting = true;
+    action.error = '';
+    action.success = '';
+
+    try {
+        await api.post('/client-api/trips/from-flight', {
+            flight_id: flightId,
+            departure_date: action.departureDate,
+        });
+
+        action.success = 'Trip created. You can now extend it with more flights.';
+        action.selectedTripId = '';
+        await loadTripPlans();
+    } catch (error) {
+        action.error = extractErrorMessage(error);
+    } finally {
+        action.submitting = false;
+    }
+}
+
+async function addFlightToTrip(flightId) {
+    const action = getFlightAction(flightId);
+
+    if (!action.departureDate) {
+        action.error = 'Choose a departure date first.';
+        action.success = '';
+        return;
+    }
+
+    if (!action.selectedTripId) {
+        action.error = 'Choose a trip plan first.';
+        action.success = '';
+        return;
+    }
+
+    action.submitting = true;
+    action.error = '';
+    action.success = '';
+
+    try {
+        await api.post(`/client-api/trips/${action.selectedTripId}/segments/from-flight`, {
+            flight_id: flightId,
+            departure_date: action.departureDate,
+        });
+
+        action.success = 'Flight added to the selected plan.';
+        await loadTripPlans();
+    } catch (error) {
+        action.error = extractErrorMessage(error);
+    } finally {
+        action.submitting = false;
+    }
+}
+
 onMounted(async () => {
     await loadAirlineOptions();
+    await loadTripPlans();
     await loadFlights();
 });
 </script>
@@ -120,7 +253,7 @@ onMounted(async () => {
                         <p class="text-sm font-medium uppercase tracking-[0.22em] text-amber-700">Actions</p>
                         <h3 class="mt-2 text-2xl font-semibold text-slate-900">Keep planning</h3>
                         <p class="mt-4 text-sm leading-7 text-slate-600">
-                            When you find a route you like, continue into the trip builder to assemble and confirm your itinerary.
+                            Create a trip directly from a flight result, or add another flight to an existing plan without leaving this page.
                         </p>
 
                         <div class="mt-6 flex flex-wrap gap-3">
@@ -137,6 +270,10 @@ onMounted(async () => {
                                 Open trip builder
                             </Link>
                         </div>
+
+                        <p class="mt-4 text-sm text-slate-500">
+                            {{ plansLoading ? 'Loading available plans...' : `${tripPlans.length} active plan(s) available for quick add.` }}
+                        </p>
                     </div>
                 </section>
 
@@ -290,6 +427,69 @@ onMounted(async () => {
                                     <p class="mt-2 text-sm font-medium text-slate-900">{{ flight.created_at?.slice(0, 10) }}</p>
                                     <p class="mt-1 text-sm text-slate-600">Latest-first listing</p>
                                 </div>
+                            </div>
+
+                            <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                                <div class="grid gap-4 lg:grid-cols-[0.7fr_1.1fr_1fr]">
+                                    <div>
+                                        <label class="mb-2 block text-sm font-medium text-slate-700">Departure date</label>
+                                        <input
+                                            v-model="getFlightAction(flight.id).departureDate"
+                                            type="date"
+                                            class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label class="mb-2 block text-sm font-medium text-slate-700">Add to existing plan</label>
+                                        <select
+                                            v-model="getFlightAction(flight.id).selectedTripId"
+                                            class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
+                                        >
+                                            <option value="">Choose a plan</option>
+                                            <option
+                                                v-for="trip in tripPlans"
+                                                :key="trip.id"
+                                                :value="trip.id"
+                                            >
+                                                {{ tripPlanLabel(trip) }}
+                                            </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="flex flex-col justify-end gap-3">
+                                        <button
+                                            class="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700 disabled:opacity-50"
+                                            :disabled="getFlightAction(flight.id).submitting"
+                                            @click="createTripFromFlight(flight.id)"
+                                        >
+                                            {{ getFlightAction(flight.id).submitting ? 'Working...' : 'Create trip from flight' }}
+                                        </button>
+                                        <button
+                                            class="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900 disabled:opacity-50"
+                                            :disabled="getFlightAction(flight.id).submitting || !tripPlans.length"
+                                            @click="addFlightToTrip(flight.id)"
+                                        >
+                                            Add flight to plan
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <p class="mt-3 text-xs text-slate-500">
+                                    Add-to-plan works when this flight continues from the last airport in the selected trip and the chosen date is on or after the last segment.
+                                </p>
+                                <p
+                                    v-if="getFlightAction(flight.id).error"
+                                    class="mt-3 rounded-2xl bg-red-50 px-4 py-3 text-sm text-red-700"
+                                >
+                                    {{ getFlightAction(flight.id).error }}
+                                </p>
+                                <p
+                                    v-if="getFlightAction(flight.id).success"
+                                    class="mt-3 rounded-2xl bg-emerald-50 px-4 py-3 text-sm text-emerald-700"
+                                >
+                                    {{ getFlightAction(flight.id).success }}
+                                </p>
                             </div>
                         </article>
                     </div>

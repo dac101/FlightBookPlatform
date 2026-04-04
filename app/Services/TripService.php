@@ -65,6 +65,14 @@ class TripService
         return $trip->fresh();
     }
 
+    public function appendSegment(Trip $trip, array $segmentData, array $tripData = []): Trip
+    {
+        $trip = $this->tripRepository->appendSegment($trip, $segmentData, $tripData);
+        $trip->recalculateTotal();
+
+        return $this->tripRepository->findWithSegments($trip->fresh());
+    }
+
     public function delete(Trip $trip): void
     {
         $this->tripRepository->delete($trip);

@@ -3,6 +3,7 @@
 namespace App\Repositories\Contracts;
 
 use App\Models\Trip;
+use App\Models\TripSegment;
 use App\Models\User;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
@@ -32,6 +33,8 @@ interface TripRepositoryInterface
     public function findWithSegments(Trip $trip): Trip;
 
     public function update(Trip $trip, array $data): Trip;
+
+    public function appendSegment(Trip $trip, array $segmentData, array $tripData = []): Trip;
 
     public function delete(Trip $trip): void;
 

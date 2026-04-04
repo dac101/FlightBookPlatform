@@ -6,6 +6,7 @@ use App\Enums\SegmentType;
 use App\Enums\TripStatus;
 use App\Enums\TripType;
 use App\Models\Airport;
+use App\Models\Flight;
 use App\Models\Trip;
 use App\Models\User;
 use Carbon\Carbon;
@@ -135,6 +136,86 @@ class TripBuilderService
     }
 
     /**
+     * @param  array{
+     *   flight_id: int,
+     *   departure_date: string
+     * }  $payload
+     */
+    public function createTripFromFlight(User $user, array $payload): Trip
+    {
+        $flight = $this->flightService->find((int) $payload['flight_id']);
+        $departureDate = $this->validatedSingleFlightDepartureDate($payload['departure_date']);
+
+        return $this->tripService->book($user, [
+            'trip_type' => TripType::OneWay->value,
+            'status' => TripStatus::Pending->value,
+            'departure_date' => $departureDate,
+            'total_price_cache' => (float) $flight->price,
+        ], [[
+            'flight_id' => $flight->id,
+            'segment_order' => 1,
+            'departure_date' => $departureDate,
+            'segment_type' => SegmentType::Outbound->value,
+        ]]);
+    }
+
+    /**
+     * @param  array{
+     *   flight_id: int,
+     *   departure_date: string
+     * }  $payload
+     */
+    public function appendFlightToTrip(User $user, Trip $trip, array $payload): Trip
+    {
+        if ($trip->user_id !== $user->id) {
+            throw ValidationException::withMessages([
+                'trip_id' => 'You can only update your own trips.',
+            ]);
+        }
+
+        if ($trip->status === TripStatus::Cancelled) {
+            throw ValidationException::withMessages([
+                'trip_id' => 'Cancelled trips cannot be updated.',
+            ]);
+        }
+
+        $trip = $this->tripService->getWithSegments($trip);
+        $flight = $this->flightService->find((int) $payload['flight_id']);
+        $departureDate = $this->validatedSingleFlightDepartureDate($payload['departure_date']);
+        $lastSegment = $trip->segments->sortBy('segment_order')->last();
+
+        if (! $lastSegment?->flight) {
+            throw ValidationException::withMessages([
+                'trip_id' => 'This trip does not have a valid last segment to extend.',
+            ]);
+        }
+
+        $lastSegmentDate = Carbon::parse($lastSegment->departure_date)->startOfDay();
+        $newSegmentDate = Carbon::parse($departureDate)->startOfDay();
+
+        if ($newSegmentDate->lt($lastSegmentDate)) {
+            throw ValidationException::withMessages([
+                'departure_date' => 'The added flight date must be on or after the last planned segment.',
+            ]);
+        }
+
+        if ((int) $lastSegment->flight->airport_arrival_id !== (int) $flight->airport_departure_id) {
+            throw ValidationException::withMessages([
+                'flight_id' => 'The added flight must depart from the previous segment arrival airport.',
+            ]);
+        }
+
+        return $this->tripService->appendSegment($trip, [
+            'flight_id' => $flight->id,
+            'departure_date' => $departureDate,
+            'segment_type' => SegmentType::Connection->value,
+        ], [
+            'trip_type' => TripType::MultiCity->value,
+            'status' => TripStatus::Pending->value,
+        ]);
+    }
+
+    /**
      * @param  array<int, array{
      *   departure_airport_id: int,
      *   arrival_airport_id: int,
@@ -226,6 +307,21 @@ class TripBuilderService
             TripType::RoundTrip, TripType::OpenJaw => $index === 0 ? SegmentType::Outbound : SegmentType::Return,
             TripType::MultiCity => $index === 0 ? SegmentType::Outbound : SegmentType::Connection,
         };
+    }
+
+    private function validatedSingleFlightDepartureDate(string $value): string
+    {
+        $date = Carbon::parse($value)->startOfDay();
+        $today = now()->startOfDay();
+        $maxDate = now()->addDays(365)->startOfDay();
+
+        if ($date->lt($today) || $date->gt($maxDate)) {
+            throw ValidationException::withMessages([
+                'departure_date' => 'The departure date must be between today and 365 days from today.',
+            ]);
+        }
+
+        return $date->toDateString();
     }
 
     private function nearbyAirportsFor(Airport $airport, float $radiusKm): Collection

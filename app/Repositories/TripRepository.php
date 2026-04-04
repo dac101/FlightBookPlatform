@@ -3,7 +3,6 @@
 namespace App\Repositories;
 
 use App\Models\Trip;
-use App\Models\TripSegment;
 use App\Models\User;
 use App\Repositories\Contracts\TripRepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
@@ -107,6 +106,26 @@ class TripRepository implements TripRepositoryInterface
         $trip->update($data);
 
         return $trip->fresh();
+    }
+
+    public function appendSegment(Trip $trip, array $segmentData, array $tripData = []): Trip
+    {
+        return DB::transaction(function () use ($trip, $segmentData, $tripData): Trip {
+            if ($tripData !== []) {
+                $trip->update($tripData);
+            }
+
+            $nextOrder = (int) $trip->segments()->max('segment_order') + 1;
+
+            $trip->segments()->create([
+                'flight_id' => $segmentData['flight_id'],
+                'segment_order' => $nextOrder,
+                'departure_date' => $segmentData['departure_date'],
+                'segment_type' => $segmentData['segment_type'],
+            ]);
+
+            return $trip->fresh();
+        });
     }
 
     public function delete(Trip $trip): void
