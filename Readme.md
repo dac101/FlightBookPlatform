@@ -1,87 +1,232 @@
-Project descriptions 
+# Flight Book Platform — Trip Builder
 
-Coding Assignment
-Trip Builder
-Outline
-An airline has a name and is identified by an IATA Airline Code.
-Ex: Air Canada (AC)
-An airport is a location identified by an IATA Airport Code. It also has a name, a city, latitude and longitude coordinates, a timezone and a city code, the IATA Airport Code for a city, which may differ from an airport code in larger areas.
-Ex: Pierre Elliott Trudeau International (YUL) belongs to the Montreal (YMQ) city code.
-A flight is uniquely numbered for a referenced airline. For the sake of simplicity, a flight is priced for a single passenger (any gender, any type) in a neutral currency and is available every day of the week. It references a pair of airports for departure and arrival. It has departure and arrival times in the corresponding airport timezones.
-Ex: AC301 from YUL to YVR departs at 7:35 AM (Montreal) and arrives at 10:05 AM (Vancouver).
-Your Mission
-Create a fully functional web application and web services to build and navigate trips for a single passenger using criteria such as departure locations, departure dates and arrival locations. Be mindful of timezones!
-A trip references one or many flights with dates of departure. The price amounts to the total of the price of the referenced flights.
-The following trip types MUST be supported:
-● A one-way is a flight getting from A to B
-● A round-trip is a pair of one-ways getting from A to B then from B to A.
-A trip MUST depart after creation time at the earliest or 365 days after creation time at the latest.
-Technical Requirements
-● Server-side application(s) MUST be written in PHP ● The UI should preferably work as a no-refresh, Single Page Application. Use of a JS Framework is highly recommended. (React, Vue, Angular…)
-● The resulting project MUST be version-controlled and hosted online
-● Easy to follow instructions MUST be provided to provision an environment, install and run the application locally on a PC (Windows or Linux) and/or Mac FlightHub PHP Coding Assignment
-How to Earn Extra Considerations
-● Deploy the application online to ease the review process
-● Scale beyond sample data (see below)
-● Use data storage(s) provisioned within the environment
-● Implement automated software tests
-● Document Web Services
-● Allow flights to be restricted to a preferred airline
-● Sort trip listings
-● Paginate trip listings
-● Allow flights departing and/or arriving in the vicinity of requested locations
-● Support open-jaw trips, a pair of one-ways getting from A to B then from C to A
-● Support multi-city trips, one-ways (up to 5) from A to B, B to C, C to D, etc.
-Sample Data
-{
-"airlines": [
-{
-"code": "AC",
-"name": "Air Canada"
-}
-],
-"airports": [
-{
-"code": "YUL",
-"city_code": "YMQ",
-"name": "Pierre Elliott Trudeau International",
-"city": "Montreal",
-"country_code": "CA",
-"region_code": "QC",
-"latitude": 45.457714,
-"longitude": -73.749908,
-"timezone": "America/Montreal"
-},
-{
-"code": "YVR",
-"city_code": "YVR",
-"name": "Vancouver International",
-"city": "Vancouver",
-"country_code": "CA",
-"region_code": "BC",
-"latitude": 49.194698,
-"longitude": -123.179192,
-"timezone": "America/Vancouver"
-}
-],
-"flights": [
-{
-"airline": "AC",
-"number": "301",
-"departure_airport": "YUL",
-"departure_time": "07:35",
-"arrival_airport": "YVR",
-"arrival_time": "10:05",
-"price": "273.23"
-},
-{
-"airline": "AC",
-"number": "302",
-"departure_airport": "YVR",
-"departure_time": "11:30",
-"arrival_airport": "YUL",
-"arrival_time": "19:11",
-"price": "220.63"
-}
-]
-}
+A fully functional Laravel flight booking web application and API for building and navigating trips for a single passenger.
+
+---
+
+## Project Overview
+
+This application allows users to search and book flights across airports, build multi-segment trips, and manage their bookings through a modern single-page application interface.
+
+### Supported Trip Types
+
+| Type | Description |
+|---|---|
+| **One-Way** | A flight getting from A to B |
+| **Round-Trip** | A pair of one-ways: A → B then B → A |
+| **Open-Jaw** | A pair of one-ways: A → B then C → A |
+| **Multi-City** | Up to 5 one-ways: A → B → C → D → E |
+
+### Business Rules
+
+- A trip **must** depart no earlier than the time of creation
+- A trip **must** depart no later than 365 days after creation
+- Trip price = sum of all referenced flight prices
+- Flights are priced per single passenger in a neutral currency
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | PHP 8.4, Laravel 13 |
+| Frontend | Vue 3, Inertia.js v3, Vite |
+| Auth | Laravel Breeze + Fortify |
+| Queue | Laravel Horizon (Redis) |
+| Database | PostgreSQL 17 |
+| Cache/Sessions | Redis 7 |
+| Web Server | Nginx |
+| Mail (dev) | Mailpit |
+| Containerisation | Docker Compose |
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (Mac / Windows / Linux)
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://bitbucket.org/zentrianalytics/flightbookplatform.git
+cd flightbookplatform
+```
+
+### 2. Configure environment
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and set your AviationStack API key (free at [aviationstack.com](https://aviationstack.com)):
+
+```
+AVIATIONSTACK_API_KEY=your_key_here
+```
+
+### 3. Build and start containers
+
+```bash
+docker compose up --build
+```
+
+> First build takes a few minutes. Subsequent starts are fast.
+
+The entrypoint script automatically:
+- Installs Composer dependencies
+- Installs npm dependencies and builds frontend assets
+- Waits for PostgreSQL to be ready
+- Runs database migrations
+- Seeds sample data
+
+### 4. Open the application
+
+| Service | URL |
+|---|---|
+| Application | http://localhost |
+| Mailpit (test mail) | http://localhost:8025 |
+| Horizon dashboard | http://localhost/horizon |
+
+---
+
+## Default Credentials
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | admin@flightbookplatform.com | password |
+| User | user@flightbookplatform.com | password |
+
+---
+
+## API Endpoints
+
+All API endpoints are prefixed with `/api/v1`.
+
+### Public
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/v1/airlines` | List all airlines (paginated) |
+| GET | `/api/v1/airlines/{airline}` | Show airline with flights |
+| GET | `/api/v1/airports` | List all airports (paginated) |
+| GET | `/api/v1/airports/{airport}` | Show airport with flights |
+| GET | `/api/v1/flights` | List flights (filterable) |
+| GET | `/api/v1/flights/{flight}` | Show flight details |
+
+#### Flight filters (query string)
+
+| Parameter | Example | Description |
+|---|---|---|
+| `departure` | `?departure=YUL` | Filter by departure airport IATA code |
+| `arrival` | `?arrival=YVR` | Filter by arrival airport IATA code |
+| `airline` | `?airline=AC` | Filter by airline IATA code |
+
+### Authenticated (Sanctum)
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/v1/trips` | List authenticated user's trips |
+| POST | `/api/v1/trips` | Create a new trip |
+| GET | `/api/v1/trips/{trip}` | Show trip with segments |
+| PUT/PATCH | `/api/v1/trips/{trip}` | Update trip |
+| DELETE | `/api/v1/trips/{trip}` | Delete trip |
+
+---
+
+## Artisan Commands
+
+```bash
+# Fetch live flight data from AviationStack (runs automatically every 12 hours)
+docker compose exec php php artisan flights:fetch
+
+# Run database migrations
+docker compose exec php php artisan migrate
+
+# Seed sample data
+docker compose exec php php artisan db:seed
+
+# Monitor queues
+docker compose exec php php artisan horizon
+```
+
+---
+
+## Scheduled Jobs
+
+| Schedule | Command | Description |
+|---|---|---|
+| Every 12 hours (06:00 & 18:00) | `flights:fetch` | Fetches live arrivals for 8 airports from AviationStack API, saves raw JSON to storage, and dispatches processing jobs to the `flight-imports` Horizon queue |
+
+---
+
+## Sample Data
+
+The database seeder includes the following sample data from the assignment specification:
+
+**Airlines:** Air Canada (AC), WestJet (WJ), Porter Airlines (PD)
+
+**Airports:** YUL (Montreal), YVR (Vancouver), YYZ (Toronto), YYC (Calgary)
+
+**Flights:**
+
+| Flight | Route | Departure | Arrival | Price |
+|---|---|---|---|---|
+| AC301 | YUL → YVR | 07:35 | 10:05 | $273.23 |
+| AC302 | YVR → YUL | 11:30 | 19:11 | $220.63 |
+| AC101 | YUL → YYZ | 06:00 | 07:30 | $149.00 |
+| AC201 | YYZ → YVR | 09:00 | 11:45 | $310.00 |
+| WJ500 | YYC → YYZ | 08:15 | 12:30 | $195.00 |
+| PD100 | YYZ → YUL | 14:00 | 15:45 | $120.00 |
+
+---
+
+## Project Structure
+
+```
+flightbookplatform/
+├── app/
+│   ├── Console/Commands/        # FetchFlightDataCommand
+│   ├── Enums/                   # UserRole, TripType, TripStatus, SegmentType
+│   ├── Http/Controllers/Api/    # REST API controllers
+│   ├── Jobs/                    # ProcessAviationStackFlightsJob
+│   ├── Models/                  # Airline, Airport, Flight, Trip, TripSegment, User
+│   ├── Policies/                # TripPolicy (ownership authorization)
+│   └── Services/                # AviationStackService
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── docker-compose/
+│   └── services/
+│       ├── nginx/               # Nginx config
+│       └── php-84/build/        # Dockerfile + entrypoint.sh
+├── routes/
+│   ├── api.php                  # Versioned API routes
+│   └── web.php
+├── docker-compose.yml
+└── Documentation.md             # Docker troubleshooting guide
+```
+
+---
+
+## How to add a job to be queue
+```bash
+docker compose exec php php artisan tinker --execute '                                                                                                                                                   
+App\Jobs\ProcessAviationStackFlightsJob::dispatch(                                                                                                                                                       
+"aviation_stack/YUL/2026-04-04_18-42-03.json",                                                                                                                                                       
+"YUL"                                                                                                                                                                                                
+)->onQueue("flight-imports");                                                                                                                                                                            
+'
+```
+
+## Troubleshooting
+
+See [Documentation.md](Documentation.md) for a detailed guide covering:
+
+- PostgreSQL startup issues on macOS
+- Docker named volume setup
+- Redis and queue configuration
+- Common error messages and fixes

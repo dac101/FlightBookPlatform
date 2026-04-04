@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'aviationstack' => [
+        'key' => env('AVIATIONSTACK_API_KEY'),
+        'base_url' => 'https://api.aviationstack.com/v1',
+    ],
+
 ];

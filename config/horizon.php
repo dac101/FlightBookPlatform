@@ -210,6 +210,19 @@ return [
             'timeout' => 60,
             'nice' => 0,
         ],
+        'supervisor-flight-imports' => [
+            'connection' => 'redis',
+            'queue' => ['flight-imports'],
+            'balance' => 'simple',
+            'minProcesses' => 1,
+            'maxProcesses' => 2,
+            'maxTime' => 0,
+            'maxJobs' => 0,
+            'memory' => 256,
+            'tries' => 3,
+            'timeout' => 120,
+            'nice' => 0,
+        ],
     ],
 
     'environments' => [
@@ -219,11 +232,17 @@ return [
                 'balanceMaxShift' => 1,
                 'balanceCooldown' => 3,
             ],
+            'supervisor-flight-imports' => [
+                'maxProcesses' => 4,
+            ],
         ],
 
         'local' => [
             'supervisor-1' => [
                 'maxProcesses' => 3,
+            ],
+            'supervisor-flight-imports' => [
+                'maxProcesses' => 2,
             ],
         ],
     ],

@@ -20,7 +20,10 @@ if [ ! -f /var/www/vendor/autoload.php ]; then
 fi
 
 # ─── Fix storage permissions ──────────────────────────────────────────────────
-chmod -R 775 /var/www/storage /var/www/bootstrap/cache
+# chown is intentionally skipped: macOS bind mounts do not permit ownership
+# changes from inside Docker containers. chmod 777 ensures all container
+# processes (php-fpm, horizon, scheduler) can read and write freely in dev.
+chmod -R 777 /var/www/storage /var/www/bootstrap/cache 2>/dev/null || true
 
 # ─── Wait for PostgreSQL ──────────────────────────────────────────────────────
 DB_HOST="${DB_HOST:-postgres}"

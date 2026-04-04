@@ -4,7 +4,18 @@
       "Bash(xattr:*)",
       "Bash(composer require:*)",
       "Bash(php artisan:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(docker exec:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker stop:*)",
+      "Bash(docker rm:*)",
+      "Bash(docker volume:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/dacoriesmith/Developer/BitBucket/flightbookplatform/**)",
+      "Bash(done)",
+      "Bash(docker compose:*)",
+      "Bash(ls /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/public/*.csv)"
     ]
   }
 }
