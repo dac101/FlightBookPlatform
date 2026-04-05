@@ -18,11 +18,12 @@ class AirportRepository implements AirportRepositoryInterface
 
             if (! empty($filters['search'])) {
                 $search = $filters['search'];
+                $searchLower = strtolower($search);
                 $searchCode = strtoupper($search);
 
-                $query->where(function ($builder) use ($search, $searchCode): void {
-                    $builder->where('name', 'like', '%'.$search.'%')
-                        ->orWhere('city', 'like', '%'.$search.'%')
+                $query->where(function ($builder) use ($searchLower, $searchCode): void {
+                    $builder->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
+                        ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$searchLower.'%'])
                         ->orWhere('iata_code', 'like', '%'.$searchCode.'%')
                         ->orWhere('city_code', 'like', '%'.$searchCode.'%')
                         ->orWhere('country_code', 'like', '%'.$searchCode.'%');
@@ -115,12 +116,13 @@ class AirportRepository implements AirportRepositoryInterface
     {
         try {
             $search = trim($query);
+            $searchLower = strtolower($search);
             $searchCode = strtoupper($search);
 
             return Airport::query()
-                ->where(function ($builder) use ($search, $searchCode): void {
-                    $builder->where('name', 'like', '%'.$search.'%')
-                        ->orWhere('city', 'like', '%'.$search.'%')
+                ->where(function ($builder) use ($searchLower, $searchCode): void {
+                    $builder->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
+                        ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$searchLower.'%'])
                         ->orWhere('iata_code', 'like', '%'.$searchCode.'%')
                         ->orWhere('city_code', 'like', '%'.$searchCode.'%')
                         ->orWhere('country_code', 'like', '%'.$searchCode.'%');

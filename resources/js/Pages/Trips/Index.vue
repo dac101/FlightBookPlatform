@@ -1,10 +1,10 @@
 <script setup>
-import Modal from '@/Components/Modal.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Link } from '@inertiajs/vue3';
 import { api } from '@/lib/api';
 import { Head } from '@inertiajs/vue3';
 import { computed, onMounted, reactive, ref } from 'vue';
+import { usePage } from '@inertiajs/vue3';
 
 const trips = ref([]);
 const loading = ref(false);
@@ -12,6 +12,8 @@ const saving = ref(false);
 const errorMessage = ref('');
 const feedbackMessage = ref('');
 const modalOpen = ref(false);
+const sharingTripId = ref(null);
+const sharedUrls = reactive({});
 const selectedTrip = ref(null);
 const expandedTripIds = ref([]);
 const formErrors = ref({});
@@ -22,12 +24,14 @@ const pagination = reactive({
     perPage: 6,
 });
 const editForm = reactive({
+    trip_type: '',
     trip_name: '',
     departure_date: '',
     status: '',
 });
 
 const today = new Date().toISOString().slice(0, 10);
+const showingPast = ref(false);
 
 const upcomingTrips = computed(() =>
     trips.value.filter(
@@ -40,6 +44,24 @@ const bookingHistory = computed(() =>
         (trip) => trip.departure_date < today || trip.status === 'cancelled',
     ),
 );
+
+function flashError(msg) {
+    errorMessage.value = msg;
+    setTimeout(() => {
+        if (errorMessage.value === msg) {
+            errorMessage.value = '';
+        }
+    }, 6000);
+}
+
+function flashFeedback(msg) {
+    feedbackMessage.value = msg;
+    setTimeout(() => {
+        if (feedbackMessage.value === msg) {
+            feedbackMessage.value = '';
+        }
+    }, 6000);
+}
 
 async function loadTrips(page = 1) {
     loading.value = true;
@@ -61,6 +83,21 @@ async function loadTrips(page = 1) {
     } finally {
         loading.value = false;
     }
+}
+
+function formatDate(value) {
+    if (!value) {
+        return '';
+    }
+
+    const s = String(value).slice(0, 10);
+    const [y, m, d] = s.split('-').map(Number);
+
+    return new Date(y, m - 1, d).toLocaleDateString('en-US', {
+        month: 'short',
+        day: '2-digit',
+        year: 'numeric',
+    });
 }
 
 function statusLabel(value) {
@@ -93,11 +130,18 @@ function toggleTripDetails(tripId) {
 async function openEdit(tripId) {
     formErrors.value = {};
     feedbackMessage.value = '';
-    selectedTrip.value = await api.get(`/client-api/trips/${tripId}`);
-    editForm.trip_name = selectedTrip.value.trip_name ?? '';
-    editForm.departure_date = selectedTrip.value.departure_date;
-    editForm.status = selectedTrip.value.status;
-    modalOpen.value = true;
+    errorMessage.value = '';
+
+    try {
+        selectedTrip.value = await api.get(`/client-api/trips/${tripId}`);
+        editForm.trip_type = selectedTrip.value.trip_type ?? '';
+        editForm.trip_name = selectedTrip.value.trip_name ?? '';
+        editForm.departure_date = (selectedTrip.value.departure_date ?? '').slice(0, 10);
+        editForm.status = selectedTrip.value.status;
+        modalOpen.value = true;
+    } catch (error) {
+        errorMessage.value = error.message || 'Could not load trip details.';
+    }
 }
 
 async function saveTrip() {
@@ -110,15 +154,53 @@ async function saveTrip() {
     feedbackMessage.value = '';
 
     try {
-        const response = await api.patch(`/client-api/trips/${selectedTrip.value.id}`, editForm);
+        await api.patch(`/client-api/trips/${selectedTrip.value.id}`, editForm);
         modalOpen.value = false;
-        feedbackMessage.value = 'Trip updated successfully.';
-        selectedTrip.value = response;
+        feedbackMessage.value = '';
+        errorMessage.value = '';
         await loadTrips(pagination.currentPage);
     } catch (error) {
         formErrors.value = error.errors || {};
+        if (!Object.keys(formErrors.value).length) {
+            flashFeedback(error.message || 'Could not save trip.');
+        }
     } finally {
         saving.value = false;
+    }
+}
+
+async function deleteTrip(tripId) {
+    if (!confirm('Delete this trip? This cannot be undone.')) {
+        return;
+    }
+
+    try {
+        await api.delete(`/client-api/trips/${tripId}`);
+        await loadTrips(pagination.currentPage);
+    } catch (error) {
+        flashError(error.message || 'Could not delete trip.');
+    }
+}
+
+async function shareTrip(tripId) {
+    sharingTripId.value = tripId;
+
+    try {
+        const response = await api.post(`/client-api/trips/${tripId}/make-public`, {});
+        sharedUrls[tripId] = response.public_url;
+    } catch (error) {
+        flashError(error.message || 'Could not generate share link.');
+    } finally {
+        sharingTripId.value = null;
+    }
+}
+
+async function copyShareUrl(url) {
+    try {
+        await navigator.clipboard.writeText(url);
+        flashFeedback('Link copied to clipboard!');
+    } catch {
+        flashError('Could not copy — please copy the link manually.');
     }
 }
 
@@ -133,194 +215,222 @@ onMounted(() => {
     <AuthenticatedLayout>
         <template #header>
             <div class="flex flex-col gap-2">
-                <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Trips Page</p>
-                <h2 class="text-3xl font-semibold tracking-tight text-slate-900 dark:text-white">
-                    Booking history and upcoming trips
+                <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-400">My Trips</p>
+                <h2 class="text-3xl font-semibold tracking-tight text-white">
+                    Upcoming trips and booking history
                 </h2>
             </div>
         </template>
 
         <div class="min-h-screen bg-[linear-gradient(180deg,_#f8fbff_0%,_#f3f7ff_100%)] py-10">
             <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
-                <section class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+                <section class="grid gap-8">
                     <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                        <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Overview</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">My trips</h3>
-                        <p class="mt-4 text-sm leading-7 text-slate-600">
-                            Review upcoming travel plans and keep a clear history of previous bookings from one page.
-                        </p>
-
-                        <div class="mt-6 grid gap-4 sm:grid-cols-2">
-                            <div class="rounded-2xl bg-slate-50 p-4">
-                                <p class="text-sm font-medium text-slate-500">Upcoming</p>
-                                <p class="mt-2 text-3xl font-semibold text-slate-900">{{ upcomingTrips.length }}</p>
-                            </div>
-                            <div class="rounded-2xl bg-slate-50 p-4">
-                                <p class="text-sm font-medium text-slate-500">History</p>
-                                <p class="mt-2 text-3xl font-semibold text-slate-900">{{ bookingHistory.length }}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                        <p class="text-sm font-medium uppercase tracking-[0.22em] text-amber-700">Actions</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">Manage your travel</h3>
-                        <p class="mt-4 text-sm leading-7 text-slate-600">
-                            Check the latest trip records here, or open the trip builder when you want to create a new booking.
-                        </p>
-
-                        <div class="mt-6 flex flex-wrap gap-3">
-                            <button
-                                class="rounded-full border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
-                                @click="loadTrips"
-                            >
-                                Refresh trips
-                            </button>
-                            <Link
-                                :href="route('trip-builder.page')"
-                                class="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
-                            >
-                                Open trip builder
-                            </Link>
-                        </div>
-
-                        <p v-if="errorMessage" class="mt-6 rounded-2xl bg-red-50 px-4 py-3 text-sm text-red-700">
-                            {{ errorMessage }}
-                        </p>
-                        <p v-if="feedbackMessage" class="mt-6 rounded-2xl bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
-                            {{ feedbackMessage }}
-                        </p>
-                    </div>
-                </section>
-
-                <section class="grid gap-8 lg:grid-cols-2">
-                    <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                        <div class="mb-6 flex items-center justify-between">
-                            <div>
-                                <p class="text-sm font-medium uppercase tracking-[0.22em] text-emerald-700">Upcoming</p>
-                                <h3 class="mt-2 text-2xl font-semibold text-slate-900">Upcoming trips</h3>
-                            </div>
-                            <span class="rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
-                                {{ upcomingTrips.length }}
-                            </span>
-                        </div>
-
-                        <div v-if="loading" class="text-sm text-slate-500">Loading trips...</div>
-                        <div v-else-if="!upcomingTrips.length" class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-500">
-                            No upcoming trips yet.
-                        </div>
-                        <div v-else class="space-y-4">
-                            <article
-                                v-for="trip in upcomingTrips"
-                                :key="trip.id"
-                                class="rounded-2xl border border-slate-200 p-5"
-                            >
-                                <div class="flex items-start justify-between gap-4">
-                                    <div>
-                                        <p class="text-lg font-semibold text-slate-900">{{ trip.trip_name || `Trip #${trip.id}` }}</p>
-                                        <p v-if="trip.trip_name" class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">Trip #{{ trip.id }}</p>
-                                        <p class="mt-1 text-sm text-slate-500">
-                                            {{ typeLabel(trip.trip_type) }} | Departure {{ trip.departure_date }}
-                                        </p>
-                                    </div>
-                                    <span class="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase text-sky-700">
-                                        {{ statusLabel(trip.status) }}
-                                    </span>
+                        <div class="mb-6 flex flex-col gap-4">
+                            <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                                <div>
+                                    <p :class="['text-sm font-medium uppercase tracking-[0.22em]', showingPast ? 'text-slate-500' : 'text-emerald-700']">
+                                        {{ showingPast ? 'History' : 'Upcoming' }}
+                                    </p>
+                                    <h3 class="mt-1 text-2xl font-semibold text-slate-900">
+                                        {{ showingPast ? 'Past trips' : 'Upcoming trips' }}
+                                    </h3>
                                 </div>
-
-                                <div class="mt-4 flex flex-wrap gap-3">
+                                <div class="flex flex-wrap items-center gap-2">
                                     <button
-                                        class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
-                                        @click="toggleTripDetails(trip.id)"
+                                        :class="[
+                                            'rounded-full px-4 py-2 text-sm font-semibold transition',
+                                            !showingPast ? 'bg-slate-900 text-white' : 'border border-slate-300 text-slate-700 hover:border-slate-900',
+                                        ]"
+                                        @click="showingPast = false"
                                     >
-                                        {{ isExpanded(trip.id) ? 'Hide segments' : 'View segments' }}
+                                        Upcoming
                                     </button>
                                     <button
-                                        class="rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-700"
-                                        @click="openEdit(trip.id)"
+                                        :class="[
+                                            'rounded-full px-4 py-2 text-sm font-semibold transition',
+                                            showingPast ? 'bg-slate-900 text-white' : 'border border-slate-300 text-slate-700 hover:border-slate-900',
+                                        ]"
+                                        @click="showingPast = true"
                                     >
-                                        Edit trip
+                                        Past trips
                                     </button>
-                                </div>
-
-                                <div v-if="isExpanded(trip.id)" class="mt-4 space-y-3">
-                                    <div
-                                        v-for="segment in trip.segments"
-                                        :key="segment.id"
-                                        class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-600"
-                                    >
-                                        <p class="font-medium text-slate-900">
-                                            {{ segment.flight?.flight_number }} | {{ segment.flight?.departure_airport?.iata_code }} to {{ segment.flight?.arrival_airport?.iata_code }}
-                                        </p>
-                                        <p class="mt-1">
-                                            {{ segment.flight?.airline?.name }} | {{ segment.departure_date }}
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                        <div class="mb-6 flex items-center justify-between">
-                            <div>
-                                <p class="text-sm font-medium uppercase tracking-[0.22em] text-amber-700">History</p>
-                                <h3 class="mt-2 text-2xl font-semibold text-slate-900">Booking history</h3>
-                            </div>
-                            <span class="rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
-                                {{ bookingHistory.length }}
-                            </span>
-                        </div>
-
-                        <div v-if="loading" class="text-sm text-slate-500">Loading history...</div>
-                        <div v-else-if="!bookingHistory.length" class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-500">
-                            Your booking history will appear here.
-                        </div>
-                        <div v-else class="space-y-4">
-                            <article
-                                v-for="trip in bookingHistory"
-                                :key="trip.id"
-                                class="rounded-2xl border border-slate-200 p-5"
-                            >
-                                <div class="flex items-start justify-between gap-4">
-                                    <div>
-                                        <p class="text-lg font-semibold text-slate-900">{{ trip.trip_name || `Trip #${trip.id}` }}</p>
-                                        <p v-if="trip.trip_name" class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">Trip #{{ trip.id }}</p>
-                                        <p class="mt-1 text-sm text-slate-500">
-                                            {{ typeLabel(trip.trip_type) }} | Departure {{ trip.departure_date }}
-                                        </p>
-                                    </div>
-                                    <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase text-slate-700">
-                                        {{ statusLabel(trip.status) }}
-                                    </span>
-                                </div>
-                                <div class="mt-4 flex flex-wrap gap-3">
+                                    <div class="h-5 w-px bg-slate-200"></div>
                                     <button
-                                        class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
-                                        @click="toggleTripDetails(trip.id)"
+                                        class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+                                        @click="loadTrips"
                                     >
-                                        {{ isExpanded(trip.id) ? 'Hide segments' : 'View segments' }}
+                                        Refresh
                                     </button>
-                                </div>
-                                <div v-if="isExpanded(trip.id)" class="mt-4 space-y-3">
-                                    <div
-                                        v-for="segment in trip.segments"
-                                        :key="segment.id"
-                                        class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-600"
+                                    <Link
+                                        :href="route('trip-builder.page')"
+                                        class="rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-700"
                                     >
-                                        <p class="font-medium text-slate-900">
-                                            {{ segment.flight?.flight_number }} | {{ segment.flight?.departure_airport?.iata_code }} to {{ segment.flight?.arrival_airport?.iata_code }}
-                                        </p>
-                                        <p class="mt-1">
-                                            {{ segment.flight?.airline?.name }} | {{ segment.departure_date }}
-                                        </p>
-                                    </div>
+                                        Open trip builder
+                                    </Link>
                                 </div>
-                                <p class="mt-4 text-sm text-slate-600">
-                                    Total: ${{ trip.total_price_cache ?? '0.00' }}
-                                </p>
-                            </article>
+                            </div>
+                            <p v-if="errorMessage" class="rounded-2xl bg-red-50 px-4 py-3 text-sm text-red-700">
+                                {{ errorMessage }}
+                            </p>
+                            <p v-if="feedbackMessage" class="rounded-2xl bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
+                                {{ feedbackMessage }}
+                            </p>
                         </div>
+
+                        <div v-if="loading" class="text-sm text-slate-300">Loading trips...</div>
+
+                        <!-- Upcoming trips -->
+                        <template v-else-if="!showingPast">
+                            <div v-if="!upcomingTrips.length" class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-500">
+                                No upcoming trips yet.
+                            </div>
+                            <div v-else class="space-y-4">
+                                <article
+                                    v-for="trip in upcomingTrips"
+                                    :key="trip.id"
+                                    class="rounded-2xl border border-slate-200 p-5"
+                                >
+                                    <div class="flex items-start justify-between gap-4">
+                                        <div>
+                                            <p class="text-lg font-semibold text-slate-900">{{ trip.trip_name || `Trip #${trip.id}` }}</p>
+                                            <p v-if="trip.trip_name" class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">Trip #{{ trip.id }}</p>
+                                            <p class="mt-1 text-sm text-slate-500">
+                                                {{ typeLabel(trip.trip_type) }} · Departing {{ formatDate(trip.departure_date) }}
+                                            </p>
+                                        </div>
+                                        <span class="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase text-sky-700">
+                                            {{ statusLabel(trip.status) }}
+                                        </span>
+                                    </div>
+                                    <p class="mt-2 text-sm font-medium text-slate-700">Total: ${{ trip.total_price_cache ?? '0.00' }}</p>
+
+                                    <div class="mt-4 flex flex-wrap gap-3">
+                                        <button
+                                            class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+                                            @click="toggleTripDetails(trip.id)"
+                                        >
+                                            {{ isExpanded(trip.id) ? 'Hide flights' : 'View flights' }}
+                                        </button>
+                                        <Link
+                                            :href="route('trip-builder.page')"
+                                            class="rounded-full border border-sky-300 px-4 py-2 text-xs font-semibold text-sky-700 transition hover:bg-sky-700 hover:text-white"
+                                        >
+                                            Continue in builder
+                                        </Link>
+                                        <button
+                                            class="rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-700"
+                                            @click="openEdit(trip.id)"
+                                        >
+                                            Edit trip
+                                        </button>
+                                        <Link
+                                            :href="route('trips.map', trip.id)"
+                                            class="rounded-full border border-indigo-300 px-4 py-2 text-xs font-semibold text-indigo-700 transition hover:bg-indigo-700 hover:text-white"
+                                        >
+                                            View on map
+                                        </Link>
+                                        <button
+                                            class="rounded-full border border-emerald-300 px-4 py-2 text-xs font-semibold text-emerald-700 transition hover:bg-emerald-700 hover:text-white disabled:opacity-50"
+                                            :disabled="sharingTripId === trip.id"
+                                            @click="shareTrip(trip.id)"
+                                        >
+                                            {{ sharingTripId === trip.id ? 'Generating...' : (sharedUrls[trip.id] ? 'Regenerate link' : 'Share') }}
+                                        </button>
+                                        <button
+                                            class="rounded-full border border-red-300 px-4 py-2 text-xs font-semibold text-red-600 transition hover:bg-red-600 hover:text-white"
+                                            @click="deleteTrip(trip.id)"
+                                        >
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                    <!-- Share URL -->
+                                    <div v-if="sharedUrls[trip.id]" class="mt-3 flex items-center gap-2 rounded-2xl bg-emerald-50 px-4 py-3">
+                                        <p class="flex-1 truncate text-xs text-emerald-800">{{ sharedUrls[trip.id] }}</p>
+                                        <button
+                                            class="shrink-0 rounded-full bg-emerald-700 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-emerald-900"
+                                            @click="copyShareUrl(sharedUrls[trip.id])"
+                                        >
+                                            Copy
+                                        </button>
+                                    </div>
+
+                                    <div v-if="isExpanded(trip.id)" class="mt-4 space-y-3">
+                                        <div
+                                            v-for="segment in trip.segments"
+                                            :key="segment.id"
+                                            class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-600"
+                                        >
+                                            <p class="font-medium text-slate-900">
+                                                {{ segment.flight?.flight_number }} | {{ segment.flight?.departure_airport?.iata_code }} to {{ segment.flight?.arrival_airport?.iata_code }}
+                                            </p>
+                                            <p class="mt-1">
+                                                {{ segment.flight?.airline?.name }} · {{ formatDate(segment.departure_date) }}
+                                            </p>
+                                        </div>
+                                        <div class="mt-3 border-t border-slate-200 pt-3">
+                                            <Link :href="route('flights.page')" class="text-sm font-medium text-sky-700 hover:text-sky-900">Browse Flight Explorer to add more flights →</Link>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </template>
+
+                        <!-- Past trips -->
+                        <template v-else>
+                            <div v-if="!bookingHistory.length" class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-500">
+                                No past trips on record.
+                            </div>
+                            <div v-else class="space-y-4">
+                                <article
+                                    v-for="trip in bookingHistory"
+                                    :key="trip.id"
+                                    class="rounded-2xl border border-slate-200 p-5 opacity-80"
+                                >
+                                    <div class="flex items-start justify-between gap-4">
+                                        <div>
+                                            <p class="text-lg font-semibold text-slate-900">{{ trip.trip_name || `Trip #${trip.id}` }}</p>
+                                            <p v-if="trip.trip_name" class="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Trip #{{ trip.id }}</p>
+                                            <p class="mt-1 text-sm text-slate-500">
+                                                {{ typeLabel(trip.trip_type) }} · Departed {{ formatDate(trip.departure_date) }}
+                                            </p>
+                                        </div>
+                                        <span :class="[
+                                            'rounded-full px-3 py-1 text-xs font-semibold uppercase',
+                                            trip.status === 'cancelled' ? 'bg-red-100 text-red-700' : 'bg-slate-100 text-slate-600',
+                                        ]">
+                                            {{ statusLabel(trip.status) }}
+                                        </span>
+                                    </div>
+                                    <p class="mt-2 text-sm font-medium text-slate-700">Total: ${{ trip.total_price_cache ?? '0.00' }}</p>
+
+                                    <div class="mt-4 flex flex-wrap gap-3">
+                                        <button
+                                            class="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+                                            @click="toggleTripDetails(trip.id)"
+                                        >
+                                            {{ isExpanded(trip.id) ? 'Hide flights' : 'View flights' }}
+                                        </button>
+                                    </div>
+
+                                    <div v-if="isExpanded(trip.id)" class="mt-4 space-y-3">
+                                        <div
+                                            v-for="segment in trip.segments"
+                                            :key="segment.id"
+                                            class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-600"
+                                        >
+                                            <p class="font-medium text-slate-900">
+                                                {{ segment.flight?.flight_number }} | {{ segment.flight?.departure_airport?.iata_code }} to {{ segment.flight?.arrival_airport?.iata_code }}
+                                            </p>
+                                            <p class="mt-1">
+                                                {{ segment.flight?.airline?.name }} · {{ formatDate(segment.departure_date) }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </template>
                     </div>
                 </section>
 
@@ -345,62 +455,87 @@ onMounted(() => {
                 </div>
             </div>
 
-            <Modal :show="modalOpen" max-width="2xl" @close="modalOpen = false">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-slate-900">Edit upcoming trip</h3>
+            <!-- Edit modal -->
+            <Teleport to="body">
+                <div
+                    v-if="modalOpen"
+                    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4"
+                    @click.self="modalOpen = false"
+                >
+                    <div class="w-full max-w-lg rounded-2xl bg-white p-6 shadow-xl">
+                        <h3 class="text-xl font-semibold text-slate-900">Edit upcoming trip</h3>
 
-                    <div v-if="selectedTrip" class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm text-slate-600">
-                        <p><span class="font-medium text-slate-900">Trip:</span> {{ selectedTrip.trip_name || `Trip #${selectedTrip.id}` }}</p>
-                        <p><span class="font-medium text-slate-900">Type:</span> {{ typeLabel(selectedTrip.trip_type) }}</p>
-                    </div>
+                        <div v-if="selectedTrip" class="mt-4 rounded-2xl bg-slate-50 p-4 text-sm text-slate-600">
+                            <p><span class="font-medium text-slate-900">Trip:</span> {{ selectedTrip.trip_name || `Trip #${selectedTrip.id}` }}</p>
+                            <p><span class="font-medium text-slate-900">Type:</span> {{ typeLabel(selectedTrip.trip_type) }}</p>
+                        </div>
 
-                    <div class="mt-6 grid gap-4">
-                        <div>
-                            <label class="mb-2 block text-sm font-medium text-slate-700">Trip name</label>
-                            <input
-                                v-model="editForm.trip_name"
-                                class="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                                placeholder="Optional trip name"
-                            />
-                            <p v-if="formErrors.trip_name" class="mt-1 text-sm text-red-600">{{ formErrors.trip_name[0] }}</p>
+                        <div class="mt-6 grid gap-4">
+                            <div>
+                                <label class="mb-2 block text-sm font-medium text-slate-700">Trip type</label>
+                                <select v-model="editForm.trip_type" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-slate-500 focus:outline-none">
+                                    <option value="one_way">One Way</option>
+                                    <option value="round_trip">Round Trip</option>
+                                    <option value="open_jaw">Open Jaw</option>
+                                    <option value="multi_city">Multi City</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="mb-2 block text-sm font-medium text-slate-700">Trip name</label>
+                                <input
+                                    v-model="editForm.trip_name"
+                                    class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-slate-500 focus:outline-none"
+                                    placeholder="Optional trip name"
+                                />
+                                <p v-if="formErrors.trip_name" class="mt-1 text-sm text-red-600">{{ formErrors.trip_name[0] }}</p>
+                            </div>
+                            <div>
+                                <label class="mb-2 block text-sm font-medium text-slate-700">Departure date</label>
+                                <input
+                                    v-model="editForm.departure_date"
+                                    type="date"
+                                    class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-slate-500 focus:outline-none"
+                                />
+                                <p v-if="formErrors.departure_date" class="mt-1 text-sm text-red-600">{{ formErrors.departure_date[0] }}</p>
+                            </div>
+                            <div>
+                                <label class="mb-2 block text-sm font-medium text-slate-700">Status</label>
+                                <select
+                                    v-model="editForm.status"
+                                    class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 focus:border-slate-500 focus:outline-none"
+                                >
+                                    <option value="pending">Pending</option>
+                                    <option value="confirmed">Confirmed</option>
+                                    <option value="cancelled">Cancelled</option>
+                                </select>
+                                <p v-if="formErrors.status" class="mt-1 text-sm text-red-600">{{ formErrors.status[0] }}</p>
+                            </div>
                         </div>
-                        <div>
-                            <label class="mb-2 block text-sm font-medium text-slate-700">Departure date</label>
-                            <input
-                                v-model="editForm.departure_date"
-                                type="date"
-                                class="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                            />
-                            <p v-if="formErrors.departure_date" class="mt-1 text-sm text-red-600">{{ formErrors.departure_date[0] }}</p>
-                        </div>
-                        <div>
-                            <label class="mb-2 block text-sm font-medium text-slate-700">Status</label>
-                            <select v-model="editForm.status" class="w-full rounded-2xl border border-slate-300 px-4 py-3">
-                                <option value="pending">Pending</option>
-                                <option value="confirmed">Confirmed</option>
-                                <option value="cancelled">Cancelled</option>
-                            </select>
-                            <p v-if="formErrors.status" class="mt-1 text-sm text-red-600">{{ formErrors.status[0] }}</p>
-                        </div>
-                    </div>
 
-                    <div class="mt-6 flex justify-end gap-3">
-                        <button
-                            class="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700"
-                            @click="modalOpen = false"
-                        >
-                            Cancel
-                        </button>
-                        <button
-                            class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white"
-                            :disabled="saving"
-                            @click="saveTrip"
-                        >
-                            {{ saving ? 'Saving...' : 'Save trip' }}
-                        </button>
+                        <div v-if="feedbackMessage" class="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700">
+                            {{ feedbackMessage }}
+                        </div>
+
+                        <div class="mt-6 flex justify-end gap-3">
+                            <button
+                                type="button"
+                                class="rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 hover:border-slate-900"
+                                @click="modalOpen = false"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                type="button"
+                                class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white hover:bg-slate-700 disabled:opacity-50"
+                                :disabled="saving"
+                                @click="saveTrip"
+                            >
+                                {{ saving ? 'Saving...' : 'Save trip' }}
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </Modal>
+            </Teleport>
         </div>
     </AuthenticatedLayout>
 </template>

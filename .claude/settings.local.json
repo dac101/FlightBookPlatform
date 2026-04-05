@@ -20,7 +20,10 @@
       "Bash(breeze)",
       "Bash(jetstream)",
       "Bash(boost \")",
-      "Bash(grep -q '\"\"axios\"\"' /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/package.json)"
+      "Bash(grep -q '\"\"axios\"\"' /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/package.json)",
+      "Bash(vendor/bin/pint --dirty --format agent 2>&1)",
+      "Bash(npm install:*)",
+      "Bash(vendor/bin/pint --dirty --format agent)"
     ]
   }
 }

@@ -73,6 +73,30 @@ class TripService
         return $this->tripRepository->findWithSegments($trip->fresh());
     }
 
+    public function replaceSegment(Trip $trip, array $segmentData, array $tripData = []): Trip
+    {
+        $trip = $this->tripRepository->replaceSegments($trip, $segmentData, $tripData);
+        $trip->recalculateTotal();
+
+        return $this->tripRepository->findWithSegments($trip->fresh());
+    }
+
+    /**
+     * @param  array<int, array{
+     *   flight_id: int,
+     *   segment_order: int,
+     *   departure_date: string,
+     *   segment_type: string
+     * }>  $segments
+     */
+    public function rebuildWithSegments(Trip $trip, array $tripData, array $segments): Trip
+    {
+        $trip = $this->tripRepository->rebuildWithSegments($trip, $tripData, $segments);
+        $trip->recalculateTotal();
+
+        return $this->tripRepository->findWithSegments($trip->fresh());
+    }
+
     public function delete(Trip $trip): void
     {
         $this->tripRepository->delete($trip);

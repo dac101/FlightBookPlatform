@@ -118,7 +118,7 @@ class FlightImportRepository implements FlightImportRepositoryInterface
     }
 
     /**
-     * @param  array{airline_id: int, flight_number: string, airport_departure_id: int, airport_arrival_id: int, departure_time: string, arrival_time: string, price: float}  $data
+     * @param  array{airline_id: int, flight_number: string, airport_departure_id: int, airport_arrival_id: int, departure_time: string, arrival_time: string, price: float, scheduled_date: string}  $data
      */
     public function createFlight(array $data): Flight
     {

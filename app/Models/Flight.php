@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-#[Fillable(['flight_number', 'airline_id', 'airport_departure_id', 'airport_arrival_id', 'departure_time', 'arrival_time', 'price'])]
+#[Fillable(['flight_number', 'airline_id', 'airport_departure_id', 'airport_arrival_id', 'departure_time', 'arrival_time', 'price', 'scheduled_date'])]
 class Flight extends Model
 {
     /** @use HasFactory<FlightFactory> */
@@ -20,6 +20,7 @@ class Flight extends Model
     {
         return [
             'price' => 'decimal:2',
+            'scheduled_date' => 'date:Y-m-d',
         ];
     }
 

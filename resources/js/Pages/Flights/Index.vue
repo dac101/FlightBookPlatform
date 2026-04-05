@@ -45,7 +45,7 @@ function getFlightAction(flightId) {
     if (!flightActions[flightId]) {
         flightActions[flightId] = {
             tripName: '',
-            departureDate: '',
+            tripType: 'one_way',
             selectedTripId: '',
             submitting: false,
             error: '',
@@ -145,14 +145,18 @@ function extractErrorMessage(error) {
     return error.message || 'Request failed.';
 }
 
+function setActionMessage(flightId, type, text) {
+    const action = getFlightAction(flightId);
+    action[type] = text;
+    setTimeout(() => {
+        if (action[type] === text) {
+            action[type] = '';
+        }
+    }, 6000);
+}
+
 async function createTripFromFlight(flightId) {
     const action = getFlightAction(flightId);
-
-    if (!action.departureDate) {
-        action.error = 'Choose a departure date first.';
-        action.success = '';
-        return;
-    }
 
     action.submitting = true;
     action.error = '';
@@ -161,15 +165,15 @@ async function createTripFromFlight(flightId) {
     try {
         await api.post('/client-api/trips/from-flight', {
             trip_name: action.tripName,
+            trip_type: action.tripType,
             flight_id: flightId,
-            departure_date: action.departureDate,
         });
 
-        action.success = 'Trip created. You can now extend it with more flights.';
+        setActionMessage(flightId, 'success', 'Trip created. You can now extend it with more flights.');
         action.selectedTripId = '';
         await loadTripPlans();
     } catch (error) {
-        action.error = extractErrorMessage(error);
+        setActionMessage(flightId, 'error', extractErrorMessage(error));
     } finally {
         action.submitting = false;
     }
@@ -178,15 +182,59 @@ async function createTripFromFlight(flightId) {
 async function addFlightToTrip(flightId) {
     const action = getFlightAction(flightId);
 
-    if (!action.departureDate) {
-        action.error = 'Choose a departure date first.';
-        action.success = '';
+    if (!action.selectedTripId) {
+        setActionMessage(flightId, 'error', 'Choose a trip plan first.');
         return;
     }
 
-    if (!action.selectedTripId) {
-        action.error = 'Choose a trip plan first.';
+    const selectedTrip = tripPlans.value.find((t) => t.id === action.selectedTripId);
+
+    if (selectedTrip?.trip_type === 'one_way') {
+        const existing = selectedTrip.segments?.at?.(-1);
+        const existingRoute = existing
+            ? `${existing.flight?.departure_airport?.iata_code ?? '?'} → ${existing.flight?.arrival_airport?.iata_code ?? '?'}`
+            : 'the existing flight';
+
+        const confirmed = confirm(
+            `"${selectedTrip.trip_name || `Trip #${selectedTrip.id}`}" is a one-way trip (${existingRoute}).\n\nOne-way trips can only have one flight. Do you want to replace ${existingRoute} with this flight instead?`,
+        );
+
+        if (!confirmed) {
+            return;
+        }
+
+        action.submitting = true;
+        action.error = '';
         action.success = '';
+
+        try {
+            await api.put(`/client-api/trips/${action.selectedTripId}/segments/replace-flight`, {
+                flight_id: flightId,
+            });
+
+            setActionMessage(flightId, 'success', 'Flight replaced in the one-way trip.');
+            await loadTripPlans();
+        } catch (error) {
+            setActionMessage(flightId, 'error', extractErrorMessage(error));
+        } finally {
+            action.submitting = false;
+        }
+
+        return;
+    }
+
+    // Date-order guard: this flight must not be before the trip's last segment
+    const flight = flights.value.find((f) => f.id === flightId);
+    const lastSegment = selectedTrip?.segments?.at?.(-1);
+    const lastSegmentDate = lastSegment?.departure_date?.slice(0, 10) ?? null;
+    const thisFlightDate = flight?.scheduled_date ?? null;
+
+    if (lastSegmentDate && thisFlightDate && thisFlightDate < lastSegmentDate) {
+        setActionMessage(
+            flightId,
+            'error',
+            `This flight is scheduled for ${thisFlightDate}, but the trip's last segment departs on ${lastSegmentDate}. You can only add flights on or after ${lastSegmentDate}.`,
+        );
         return;
     }
 
@@ -197,19 +245,23 @@ async function addFlightToTrip(flightId) {
     try {
         await api.post(`/client-api/trips/${action.selectedTripId}/segments/from-flight`, {
             flight_id: flightId,
-            departure_date: action.departureDate,
         });
 
-        action.success = 'Flight added to the selected plan.';
+        setActionMessage(flightId, 'success', 'Flight added to the selected plan.');
         await loadTripPlans();
     } catch (error) {
-        action.error = extractErrorMessage(error);
+        setActionMessage(flightId, 'error', extractErrorMessage(error));
     } finally {
         action.submitting = false;
     }
 }
 
 onMounted(async () => {
+    // Pre-fill filters from query params (e.g. from Airport Map links)
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('departure')) filters.departure = params.get('departure');
+    if (params.get('arrival')) filters.arrival = params.get('arrival');
+
     await loadAirlineOptions();
     await loadTripPlans();
     await loadFlights();
@@ -222,8 +274,8 @@ onMounted(async () => {
     <AuthenticatedLayout>
         <template #header>
             <div class="flex flex-col gap-2">
-                <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Flight Explorer</p>
-                <h2 class="text-3xl font-semibold tracking-tight text-slate-900">
+                <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-400">Flight Explorer</p>
+                <h2 class="text-3xl font-semibold tracking-tight text-white">
                     Search the latest flights
                 </h2>
             </div>
@@ -233,7 +285,7 @@ onMounted(async () => {
             <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
                 <section class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
                     <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                        <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Browse</p>
+                        <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-400">Browse</p>
                         <h3 class="mt-2 text-2xl font-semibold text-slate-900">Explore all flights</h3>
                         <p class="mt-4 text-sm leading-7 text-slate-600">
                             Browse flights from newest onward, then narrow the list by departure, arrival, airport code, city code, or preferred airlines.
@@ -382,7 +434,7 @@ onMounted(async () => {
                         </span>
                     </div>
 
-                    <div v-if="loading" class="text-sm text-slate-500">Loading flights...</div>
+                    <div v-if="loading" class="text-sm text-slate-300">Loading flights...</div>
                     <div v-else-if="!flights.length" class="rounded-2xl bg-slate-50 p-4 text-sm text-slate-500">
                         No flights matched your current search.
                     </div>
@@ -425,8 +477,8 @@ onMounted(async () => {
                                     <p class="mt-1 text-sm text-slate-600">{{ flight.airline?.iata_code }}</p>
                                 </div>
                                 <div class="rounded-2xl bg-slate-50 p-4">
-                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Added</p>
-                                    <p class="mt-2 text-sm font-medium text-slate-900">{{ flight.created_at?.slice(0, 10) }}</p>
+                                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Scheduled</p>
+                                    <p class="mt-2 text-sm font-medium text-slate-900">{{ flight.scheduled_date ?? 'TBD' }}</p>
                                     <p class="mt-1 text-sm text-slate-600">Latest-first listing</p>
                                 </div>
                             </div>
@@ -443,12 +495,13 @@ onMounted(async () => {
                                     </div>
 
                                     <div>
-                                        <label class="mb-2 block text-sm font-medium text-slate-700">Departure date</label>
-                                        <input
-                                            v-model="getFlightAction(flight.id).departureDate"
-                                            type="date"
-                                            class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
-                                        />
+                                        <label class="mb-2 block text-sm font-medium text-slate-700">Trip type</label>
+                                        <select v-model="getFlightAction(flight.id).tripType" class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm">
+                                            <option value="one_way">One Way</option>
+                                            <option value="round_trip">Round Trip</option>
+                                            <option value="open_jaw">Open Jaw</option>
+                                            <option value="multi_city">Multi City</option>
+                                        </select>
                                     </div>
 
                                     <div>

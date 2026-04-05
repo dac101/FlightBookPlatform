@@ -129,6 +129,40 @@ class TripRepository implements TripRepositoryInterface
         });
     }
 
+    public function replaceSegments(Trip $trip, array $segmentData, array $tripData = []): Trip
+    {
+        return DB::transaction(function () use ($trip, $segmentData, $tripData): Trip {
+            if ($tripData !== []) {
+                $trip->update($tripData);
+            }
+
+            $trip->segments()->delete();
+
+            $trip->segments()->create([
+                'flight_id' => $segmentData['flight_id'],
+                'segment_order' => 1,
+                'departure_date' => $segmentData['departure_date'],
+                'segment_type' => $segmentData['segment_type'],
+            ]);
+
+            return $trip->fresh();
+        });
+    }
+
+    public function rebuildWithSegments(Trip $trip, array $tripData, array $segments): Trip
+    {
+        return DB::transaction(function () use ($trip, $tripData, $segments): Trip {
+            $trip->update($tripData);
+            $trip->segments()->delete();
+
+            foreach ($segments as $segment) {
+                $trip->segments()->create($segment);
+            }
+
+            return $trip->fresh();
+        });
+    }
+
     public function delete(Trip $trip): void
     {
         $trip->delete();

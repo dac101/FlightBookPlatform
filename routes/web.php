@@ -9,10 +9,13 @@ use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\Api\ClientTripBuilderController;
 use App\Http\Controllers\Api\TripController as UserTripController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\EnsureUserHasSeenTutorial;
 use App\Http\Middleware\EnsureUserIsAdmin;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
+Route::get('/share/{token}', [UserTripController::class, 'publicView'])->name('trips.public');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -27,23 +30,32 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::middleware('auth')->group(function () {
+Route::get('/help', fn () => Inertia::render('Help/Index'))->middleware('auth')->name('help.index');
+Route::post('/tutorial/seen', [ProfileController::class, 'markTutorialSeen'])->middleware('auth')->name('tutorial.seen');
+
+Route::middleware(['auth', EnsureUserHasSeenTutorial::class])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/trips', fn () => Inertia::render('Trips/Index'))->name('trips.page');
+    Route::get('/trips/{trip}/map', [UserTripController::class, 'tripMap'])->name('trips.map');
     Route::get('/trip-builder', fn () => Inertia::render('Trips/Builder'))->name('trip-builder.page');
     Route::get('/flights', fn () => Inertia::render('Flights/Index'))->name('flights.page');
+    Route::get('/airports/map', fn () => Inertia::render('Airports/Map'))->name('airports.map');
     Route::get('/settings', fn () => Inertia::render('Settings/Index'))->name('settings.index');
 
     Route::prefix('client-api')->name('client-api.')->group(function (): void {
         Route::get('/trips', [UserTripController::class, 'index'])->name('trips.index');
         Route::get('/trips/{trip}', [UserTripController::class, 'show'])->name('trips.show');
         Route::patch('/trips/{trip}', [UserTripController::class, 'update'])->name('trips.update');
+        Route::delete('/trips/{trip}', [UserTripController::class, 'destroy'])->name('trips.destroy');
         Route::post('/trips/from-flight', [UserTripController::class, 'storeFromFlight'])->name('trips.from-flight');
         Route::post('/trips/{trip}/segments/from-flight', [UserTripController::class, 'appendFlight'])->name('trips.append-flight');
+        Route::put('/trips/{trip}/segments/replace-flight', [UserTripController::class, 'replaceFlightInOneWay'])->name('trips.replace-flight');
+        Route::post('/trips/{trip}/make-public', [UserTripController::class, 'makePublic'])->name('trips.make-public');
         Route::get('/flights', [ClientTripBuilderController::class, 'exploreFlights'])->name('flights.index');
         Route::get('/airports/search', [ClientTripBuilderController::class, 'airportSuggestions'])->name('airports.search');
+        Route::get('/airports/map-data', [ClientTripBuilderController::class, 'airportMapData'])->name('airports.map-data');
         Route::get('/airlines/options', [ClientTripBuilderController::class, 'airlineOptions'])->name('airlines.options');
         Route::post('/trip-builder/flights/search', [ClientTripBuilderController::class, 'searchFlights'])->name('trip-builder.search');
         Route::post('/trip-builder/book', [ClientTripBuilderController::class, 'book'])->name('trip-builder.book');

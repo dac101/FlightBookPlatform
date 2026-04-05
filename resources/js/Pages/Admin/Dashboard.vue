@@ -43,13 +43,13 @@ onMounted(() => {
     <AuthenticatedLayout>
         <template #header>
             <div class="flex flex-col gap-2">
-                <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-600">Administration</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-400">Administration</p>
                 <div class="flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
                     <div>
-                        <h1 class="text-3xl font-semibold text-slate-900">FlightBook control center</h1>
-                        <p class="text-sm text-slate-500">Single-page admin management for application data.</p>
+                        <h1 class="text-3xl font-semibold text-white">FlightBook control center</h1>
+                        <p class="text-sm text-slate-300">Single-page admin management for application data.</p>
                     </div>
-                    <button class="w-fit rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700" @click="loadStats">
+                    <button class="w-fit rounded-full border border-slate-500 px-4 py-2 text-sm font-medium text-white" @click="loadStats">
                         Refresh stats
                     </button>
                 </div>

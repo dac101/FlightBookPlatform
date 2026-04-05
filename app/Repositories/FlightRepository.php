@@ -27,23 +27,24 @@ class FlightRepository implements FlightRepositoryInterface
 
         if (! empty($filters['search'])) {
             $search = trim($filters['search']);
+            $searchLower = strtolower($search);
             $searchCode = strtoupper($search);
 
-            $query->where(function ($builder) use ($search, $searchCode): void {
+            $query->where(function ($builder) use ($searchLower, $searchCode): void {
                 $builder->where('flight_number', 'like', '%'.$searchCode.'%')
-                    ->orWhereHas('airline', function ($airlineQuery) use ($search, $searchCode): void {
-                        $airlineQuery->where('name', 'like', '%'.$search.'%')
+                    ->orWhereHas('airline', function ($airlineQuery) use ($searchLower, $searchCode): void {
+                        $airlineQuery->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
                             ->orWhere('iata_code', 'like', '%'.$searchCode.'%');
                     })
-                    ->orWhereHas('departureAirport', function ($airportQuery) use ($search, $searchCode): void {
-                        $airportQuery->where('name', 'like', '%'.$search.'%')
-                            ->orWhere('city', 'like', '%'.$search.'%')
+                    ->orWhereHas('departureAirport', function ($airportQuery) use ($searchLower, $searchCode): void {
+                        $airportQuery->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
+                            ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$searchLower.'%'])
                             ->orWhere('iata_code', 'like', '%'.$searchCode.'%')
                             ->orWhere('city_code', 'like', '%'.$searchCode.'%');
                     })
-                    ->orWhereHas('arrivalAirport', function ($airportQuery) use ($search, $searchCode): void {
-                        $airportQuery->where('name', 'like', '%'.$search.'%')
-                            ->orWhere('city', 'like', '%'.$search.'%')
+                    ->orWhereHas('arrivalAirport', function ($airportQuery) use ($searchLower, $searchCode): void {
+                        $airportQuery->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
+                            ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$searchLower.'%'])
                             ->orWhere('iata_code', 'like', '%'.$searchCode.'%')
                             ->orWhere('city_code', 'like', '%'.$searchCode.'%');
                     });
@@ -52,11 +53,12 @@ class FlightRepository implements FlightRepositoryInterface
 
         if (! empty($filters['departure'])) {
             $departure = trim($filters['departure']);
+            $departureLower = strtolower($departure);
             $departureCode = strtoupper($departure);
 
-            $query->whereHas('departureAirport', function ($q) use ($departure, $departureCode): void {
-                $q->where('name', 'like', '%'.$departure.'%')
-                    ->orWhere('city', 'like', '%'.$departure.'%')
+            $query->whereHas('departureAirport', function ($q) use ($departureLower, $departureCode): void {
+                $q->whereRaw('LOWER(name) LIKE ?', ['%'.$departureLower.'%'])
+                    ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$departureLower.'%'])
                     ->orWhere('iata_code', 'like', '%'.$departureCode.'%')
                     ->orWhere('city_code', 'like', '%'.$departureCode.'%');
             });
@@ -64,25 +66,37 @@ class FlightRepository implements FlightRepositoryInterface
 
         if (! empty($filters['arrival'])) {
             $arrival = trim($filters['arrival']);
+            $arrivalLower = strtolower($arrival);
             $arrivalCode = strtoupper($arrival);
 
-            $query->whereHas('arrivalAirport', function ($q) use ($arrival, $arrivalCode): void {
-                $q->where('name', 'like', '%'.$arrival.'%')
-                    ->orWhere('city', 'like', '%'.$arrival.'%')
+            $query->whereHas('arrivalAirport', function ($q) use ($arrivalLower, $arrivalCode): void {
+                $q->whereRaw('LOWER(name) LIKE ?', ['%'.$arrivalLower.'%'])
+                    ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$arrivalLower.'%'])
                     ->orWhere('iata_code', 'like', '%'.$arrivalCode.'%')
                     ->orWhere('city_code', 'like', '%'.$arrivalCode.'%');
             });
         }
 
         if (! empty($filters['airline'])) {
-            $query->whereHas('airline', function ($q) use ($filters): void {
-                $q->where('name', 'like', '%'.$filters['airline'].'%')
-                    ->orWhere('iata_code', 'like', '%'.strtoupper($filters['airline']).'%');
+            $airlineLower = strtolower($filters['airline']);
+            $airlineCode = strtoupper($filters['airline']);
+
+            $query->whereHas('airline', function ($q) use ($airlineLower, $airlineCode): void {
+                $q->whereRaw('LOWER(name) LIKE ?', ['%'.$airlineLower.'%'])
+                    ->orWhere('iata_code', 'like', '%'.$airlineCode.'%');
             });
         }
 
         if (! empty($filters['preferred_airline_ids'])) {
             $query->whereIn('airline_id', $filters['preferred_airline_ids']);
+        }
+
+        if (! empty($filters['scheduled_date_from'])) {
+            $query->where('scheduled_date', '>=', $filters['scheduled_date_from']);
+        }
+
+        if (! empty($filters['scheduled_date_to'])) {
+            $query->where('scheduled_date', '<=', $filters['scheduled_date_to']);
         }
 
         $query = match ($filters['sort'] ?? 'recent') {
@@ -110,29 +124,34 @@ class FlightRepository implements FlightRepositoryInterface
             ->whereIn('airport_departure_id', $criteria['departure_airport_ids'])
             ->whereIn('airport_arrival_id', $criteria['arrival_airport_ids']);
 
+        if (! empty($criteria['scheduled_date_from'])) {
+            $query->where('scheduled_date', '>=', $criteria['scheduled_date_from']);
+        }
+
         if (! empty($criteria['preferred_airline_ids'])) {
             $query->whereIn('airline_id', $criteria['preferred_airline_ids']);
         }
 
         if (! empty($criteria['search'])) {
             $search = trim($criteria['search']);
+            $searchLower = strtolower($search);
             $searchCode = strtoupper($search);
 
-            $query->where(function ($builder) use ($search, $searchCode): void {
+            $query->where(function ($builder) use ($searchLower, $searchCode): void {
                 $builder->where('flight_number', 'like', '%'.$searchCode.'%')
-                    ->orWhereHas('airline', function ($airlineQuery) use ($search, $searchCode): void {
-                        $airlineQuery->where('name', 'like', '%'.$search.'%')
+                    ->orWhereHas('airline', function ($airlineQuery) use ($searchLower, $searchCode): void {
+                        $airlineQuery->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
                             ->orWhere('iata_code', 'like', '%'.$searchCode.'%');
                     })
-                    ->orWhereHas('departureAirport', function ($airportQuery) use ($search, $searchCode): void {
-                        $airportQuery->where('name', 'like', '%'.$search.'%')
-                            ->orWhere('city', 'like', '%'.$search.'%')
+                    ->orWhereHas('departureAirport', function ($airportQuery) use ($searchLower, $searchCode): void {
+                        $airportQuery->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
+                            ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$searchLower.'%'])
                             ->orWhere('iata_code', 'like', '%'.$searchCode.'%')
                             ->orWhere('city_code', 'like', '%'.$searchCode.'%');
                     })
-                    ->orWhereHas('arrivalAirport', function ($airportQuery) use ($search, $searchCode): void {
-                        $airportQuery->where('name', 'like', '%'.$search.'%')
-                            ->orWhere('city', 'like', '%'.$search.'%')
+                    ->orWhereHas('arrivalAirport', function ($airportQuery) use ($searchLower, $searchCode): void {
+                        $airportQuery->whereRaw('LOWER(name) LIKE ?', ['%'.$searchLower.'%'])
+                            ->orWhereRaw('LOWER(city) LIKE ?', ['%'.$searchLower.'%'])
                             ->orWhere('iata_code', 'like', '%'.$searchCode.'%')
                             ->orWhere('city_code', 'like', '%'.$searchCode.'%');
                     });

@@ -152,7 +152,8 @@ class FlightImportService
                 'airport_arrival_id' => $arrivalAirport->id,
                 'departure_time' => Carbon::parse($depScheduled)->format('H:i:s'),
                 'arrival_time' => Carbon::parse($arrScheduled)->format('H:i:s'),
-                'price' => rand(150,3000),
+                'price' => rand(150, 3000),
+                'scheduled_date' => now()->addDays(rand(1, 90))->toDateString(),
             ]);
 
             return 'processed';

@@ -80,6 +80,9 @@ export const api = {
     patch(url, body) {
         return request(url, { method: 'PATCH', body });
     },
+    put(url, body) {
+        return request(url, { method: 'PUT', body });
+    },
     delete(url) {
         return request(url, { method: 'DELETE' });
     },

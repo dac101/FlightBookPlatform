@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 
-#[Fillable(['user_id', 'trip_name', 'trip_type', 'status', 'departure_date', 'total_price_cache'])]
+#[Fillable(['user_id', 'trip_name', 'trip_type', 'status', 'departure_date', 'total_price_cache', 'public_token'])]
 class Trip extends Model
 {
     /** @use HasFactory<TripFactory> */

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Airport;
+use App\Models\Flight;
 use App\Services\AirlineService;
 use App\Services\FlightService;
 use App\Services\TripBuilderService;
@@ -29,6 +31,16 @@ class ClientTripBuilderController extends Controller
         );
     }
 
+    public function airportMapData(): JsonResponse
+    {
+        $airports = Airport::query()
+            ->whereNotNull('latitude')
+            ->whereNotNull('longitude')
+            ->get(['id', 'name', 'city', 'iata_code', 'city_code', 'country_code', 'latitude', 'longitude', 'timezone']);
+
+        return response()->json($airports);
+    }
+
     public function airlineOptions(): JsonResponse
     {
         return response()->json($this->airlineService->all());
@@ -46,6 +58,7 @@ class ClientTripBuilderController extends Controller
             'sort' => ['nullable', Rule::in(['price', 'departure_time', 'arrival_time', 'duration'])],
             'search' => ['nullable', 'string', 'max:255'],
             'page' => ['nullable', 'integer', 'min:1'],
+            'scheduled_date_from' => ['nullable', 'date'],
         ]);
 
         return response()->json(
@@ -64,6 +77,8 @@ class ClientTripBuilderController extends Controller
             'preferred_airline_ids.*' => ['integer', 'exists:airlines,id'],
             'sort' => ['nullable', Rule::in(['recent', 'price', 'departure_time', 'arrival_time'])],
             'per_page' => ['nullable', 'integer', 'min:1', 'max:50'],
+            'scheduled_date_from' => ['nullable', 'date'],
+            'scheduled_date_to' => ['nullable', 'date'],
         ]);
 
         return response()->json(
@@ -77,12 +92,17 @@ class ClientTripBuilderController extends Controller
             'trip_name' => ['nullable', 'string', 'max:120'],
             'trip_type' => ['required', Rule::in(['one_way', 'round_trip', 'open_jaw', 'multi_city'])],
             'radius_km' => ['nullable', 'numeric', 'min:1', 'max:1000'],
+            'trip_id' => ['nullable', 'integer', 'exists:trips,id'],
             'legs' => ['required', 'array', 'min:1', 'max:5'],
             'legs.*.departure_airport_id' => ['required', 'integer', 'exists:airports,id'],
             'legs.*.arrival_airport_id' => ['required', 'integer', 'exists:airports,id'],
-            'legs.*.departure_date' => ['required', 'date'],
             'legs.*.selected_flight_id' => ['required', 'integer', 'exists:flights,id'],
         ]);
+
+        foreach ($validated['legs'] as $index => $leg) {
+            $flight = Flight::findOrFail($leg['selected_flight_id']);
+            $validated['legs'][$index]['departure_date'] = $flight->scheduled_date->toDateString();
+        }
 
         $trip = $this->tripBuilderService->book($request->user(), $validated);
 

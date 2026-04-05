@@ -3,12 +3,15 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Flight;
 use App\Models\Trip;
 use App\Services\TripBuilderService;
 use App\Services\TripService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Str;
+use Inertia\Inertia;
 
 class TripController extends Controller
 {
@@ -53,6 +56,7 @@ class TripController extends Controller
 
         $validated = $request->validate([
             'trip_name' => 'sometimes|nullable|string|max:120',
+            'trip_type' => 'sometimes|string|in:one_way,round_trip,open_jaw,multi_city',
             'status' => 'sometimes|string|in:pending,confirmed,cancelled',
             'departure_date' => 'sometimes|date|after_or_equal:today|before_or_equal:'.now()->addDays(365)->toDateString(),
         ]);
@@ -73,9 +77,12 @@ class TripController extends Controller
     {
         $validated = $request->validate([
             'trip_name' => ['nullable', 'string', 'max:120'],
+            'trip_type' => ['nullable', 'string', 'in:one_way,round_trip,open_jaw,multi_city'],
             'flight_id' => ['required', 'integer', 'exists:flights,id'],
-            'departure_date' => ['required', 'date'],
         ]);
+
+        $flight = Flight::findOrFail($validated['flight_id']);
+        $validated['departure_date'] = $flight->scheduled_date->toDateString();
 
         $trip = $this->tripBuilderService->createTripFromFlight($request->user(), $validated);
 
@@ -89,16 +96,83 @@ class TripController extends Controller
     {
         $this->authorize('update', $trip);
 
+        if ($trip->trip_type === 'one_way') {
+            return response()->json(
+                ['message' => 'One-way trips can only have a single flight segment.'],
+                Response::HTTP_UNPROCESSABLE_ENTITY
+            );
+        }
+
         $validated = $request->validate([
             'flight_id' => ['required', 'integer', 'exists:flights,id'],
-            'departure_date' => ['required', 'date'],
         ]);
+
+        $flight = Flight::findOrFail($validated['flight_id']);
+        $validated['departure_date'] = $flight->scheduled_date->toDateString();
 
         $updatedTrip = $this->tripBuilderService->appendFlightToTrip($request->user(), $trip, $validated);
 
         return response()->json([
             'message' => 'Flight added to trip plan.',
             'data' => $updatedTrip,
+        ]);
+    }
+
+    public function replaceFlightInOneWay(Request $request, Trip $trip): JsonResponse
+    {
+        $this->authorize('update', $trip);
+
+        $validated = $request->validate([
+            'flight_id' => ['required', 'integer', 'exists:flights,id'],
+        ]);
+
+        $flight = Flight::findOrFail($validated['flight_id']);
+        $validated['departure_date'] = $flight->scheduled_date->toDateString();
+
+        $updatedTrip = $this->tripBuilderService->replaceFlightInOneWayTrip($request->user(), $trip, $validated);
+
+        return response()->json([
+            'message' => 'Flight replaced in one-way trip.',
+            'data' => $updatedTrip,
+        ]);
+    }
+
+    public function tripMap(Request $request, Trip $trip): \Inertia\Response
+    {
+        $this->authorize('view', $trip);
+
+        return Inertia::render('Trips/TripMap', [
+            'trip' => $this->tripService->getWithSegments($trip),
+        ]);
+    }
+
+    public function makePublic(Request $request, Trip $trip): JsonResponse
+    {
+        $this->authorize('update', $trip);
+
+        if (! $trip->public_token) {
+            $trip->public_token = Str::random(48);
+            $trip->save();
+        }
+
+        return response()->json([
+            'public_url' => route('trips.public', $trip->public_token),
+            'token' => $trip->public_token,
+        ]);
+    }
+
+    public function publicView(string $token): \Inertia\Response
+    {
+        $trip = Trip::with([
+            'segments.flight.airline',
+            'segments.flight.departureAirport',
+            'segments.flight.arrivalAirport',
+        ])
+            ->where('public_token', $token)
+            ->firstOrFail();
+
+        return Inertia::render('Trips/PublicView', [
+            'trip' => $trip,
         ]);
     }
 }

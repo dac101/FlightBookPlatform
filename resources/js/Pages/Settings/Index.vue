@@ -37,8 +37,8 @@ function roleLabel(value) {
     <AuthenticatedLayout>
         <template #header>
             <div class="flex flex-col gap-2">
-                <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Settings Page</p>
-                <h2 class="text-3xl font-semibold tracking-tight text-slate-900">
+                <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-400">Settings Page</p>
+                <h2 class="text-3xl font-semibold tracking-tight text-white">
                     Account settings and preferences
                 </h2>
             </div>
@@ -48,7 +48,7 @@ function roleLabel(value) {
             <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:px-8">
                 <section class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
                     <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                        <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-700">Account</p>
+                        <p class="text-sm font-medium uppercase tracking-[0.22em] text-sky-400">Account</p>
                         <h3 class="mt-2 text-2xl font-semibold text-slate-900">Your account details</h3>
 
                         <div class="mt-6 space-y-4 text-sm text-slate-600">

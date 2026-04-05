@@ -6,7 +6,6 @@ use App\Enums\SegmentType;
 use App\Enums\TripStatus;
 use App\Enums\TripType;
 use App\Models\Airport;
-use App\Models\Flight;
 use App\Models\Trip;
 use App\Models\User;
 use Carbon\Carbon;
@@ -65,6 +64,7 @@ class TripBuilderService
             'sort' => $criteria['sort'] ?? 'price',
             'search' => $criteria['search'] ?? null,
             'page' => $criteria['page'] ?? 1,
+            'scheduled_date_from' => $criteria['scheduled_date_from'] ?? null,
         ], $perPage);
 
         return [
@@ -128,13 +128,27 @@ class TripBuilderService
             ];
         }
 
-        return $this->tripService->book($user, [
+        $tripData = [
             'trip_name' => $payload['trip_name'] ?? null,
             'trip_type' => $tripType->value,
             'status' => TripStatus::Confirmed->value,
             'departure_date' => $legs[0]['departure_date'],
             'total_price_cache' => $totalPrice,
-        ], $segments);
+        ];
+
+        if (! empty($payload['trip_id'])) {
+            $trip = $this->tripService->find((int) $payload['trip_id']);
+
+            if ($trip->user_id !== $user->id) {
+                throw ValidationException::withMessages([
+                    'trip_id' => 'You can only update your own trips.',
+                ]);
+            }
+
+            return $this->tripService->rebuildWithSegments($trip, $tripData, $segments);
+        }
+
+        return $this->tripService->book($user, $tripData, $segments);
     }
 
     /**
@@ -216,6 +230,39 @@ class TripBuilderService
         ], [
             'trip_type' => TripType::MultiCity->value,
             'status' => TripStatus::Pending->value,
+        ]);
+    }
+
+    /**
+     * @param  array{
+     *   flight_id: int,
+     *   departure_date: string
+     * }  $payload
+     */
+    public function replaceFlightInOneWayTrip(User $user, Trip $trip, array $payload): Trip
+    {
+        if ($trip->user_id !== $user->id) {
+            throw ValidationException::withMessages([
+                'trip_id' => 'You can only update your own trips.',
+            ]);
+        }
+
+        if ($trip->status === TripStatus::Cancelled) {
+            throw ValidationException::withMessages([
+                'trip_id' => 'Cancelled trips cannot be updated.',
+            ]);
+        }
+
+        $flight = $this->flightService->find((int) $payload['flight_id']);
+        $departureDate = $this->validatedSingleFlightDepartureDate($payload['departure_date']);
+
+        return $this->tripService->replaceSegment($trip, [
+            'flight_id' => $flight->id,
+            'departure_date' => $departureDate,
+            'segment_type' => SegmentType::Outbound->value,
+        ], [
+            'departure_date' => $departureDate,
+            'total_price_cache' => (float) $flight->price,
         ]);
     }
 

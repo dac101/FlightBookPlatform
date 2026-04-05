@@ -34,10 +34,10 @@ const showingNavigationDropdown = ref(false);
                                 class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex"
                             >
                                 <NavLink
-                                    :href="route('profile.edit')"
-                                    :active="route().current('profile.*')"
+                                    :href="route('dashboard')"
+                                    :active="route().current('dashboard')"
                                 >
-                                    Profile
+                                    Dashboard
                                 </NavLink>
                                 <NavLink
                                     :href="route('trips.page')"
@@ -52,22 +52,22 @@ const showingNavigationDropdown = ref(false);
                                     Trip Builder
                                 </NavLink>
                                 <NavLink
-                                    :href="route('flights.page')"
-                                    :active="route().current('flights.page')"
+                                    :href="route('airports.map')"
+                                    :active="route().current('airports.map')"
                                 >
-                                    Flight Explorer
+                                    Map
                                 </NavLink>
                                 <NavLink
-                                    :href="route('settings.index')"
-                                    :active="route().current('settings.index')"
+                                    :href="route('profile.edit')"
+                                    :active="route().current('profile.*')"
                                 >
-                                    Settings
+                                    Profile
                                 </NavLink>
                                 <NavLink
-                                    :href="route('dashboard')"
-                                    :active="route().current('dashboard')"
+                                    :href="route('help.index')"
+                                    :active="route().current('help.*')"
                                 >
-                                    Dashboard
+                                    Help
                                 </NavLink>
                                 <NavLink v-if="$page.props.auth.user?.role === 'admin'" :href="route('admin.dashboard')" :active="route().current('admin.*')">
                                     Admin
@@ -174,10 +174,10 @@ const showingNavigationDropdown = ref(false);
                 >
                     <div class="space-y-1 pb-3 pt-2">
                         <ResponsiveNavLink
-                            :href="route('profile.edit')"
-                            :active="route().current('profile.*')"
+                            :href="route('dashboard')"
+                            :active="route().current('dashboard')"
                         >
-                            Profile
+                            Dashboard
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             :href="route('trips.page')"
@@ -192,22 +192,22 @@ const showingNavigationDropdown = ref(false);
                             Trip Builder
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('flights.page')"
-                            :active="route().current('flights.page')"
+                            :href="route('airports.map')"
+                            :active="route().current('airports.map')"
                         >
-                            Flight Explorer
+                            Map
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('settings.index')"
-                            :active="route().current('settings.index')"
+                            :href="route('profile.edit')"
+                            :active="route().current('profile.*')"
                         >
-                            Settings
+                            Profile
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('dashboard')"
-                            :active="route().current('dashboard')"
+                            :href="route('help.index')"
+                            :active="route().current('help.*')"
                         >
-                            Dashboard
+                            Help
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
                             v-if="$page.props.auth.user?.role === 'admin'"
@@ -234,21 +234,6 @@ const showingNavigationDropdown = ref(false);
                         </div>
 
                         <div class="mt-3 space-y-1">
-                            <ResponsiveNavLink :href="route('profile.edit')">
-                                Profile
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('trips.page')">
-                                Trips
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('trip-builder.page')">
-                                Trip Builder
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('flights.page')">
-                                Flight Explorer
-                            </ResponsiveNavLink>
-                            <ResponsiveNavLink :href="route('settings.index')">
-                                Settings
-                            </ResponsiveNavLink>
                             <ResponsiveNavLink
                                 :href="route('logout')"
                                 method="post"
@@ -263,7 +248,7 @@ const showingNavigationDropdown = ref(false);
 
             <!-- Page Heading -->
             <header
-                class="bg-white shadow dark:bg-gray-800"
+                class="bg-slate-900 shadow"
                 v-if="$slots.header"
             >
                 <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
