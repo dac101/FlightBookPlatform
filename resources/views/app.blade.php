@@ -15,6 +15,14 @@
         @routes
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @inertiaHead
+        <script>
+            (function () {
+                var c = document.cookie.split('; ').find(function (s) { return s.startsWith('appearance='); });
+                var val = c ? c.split('=')[1] : 'system';
+                var dark = val === 'dark' || (val === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                if (dark) { document.documentElement.classList.add('dark'); }
+            })();
+        </script>
     </head>
     <body class="font-sans antialiased">
         @inertia

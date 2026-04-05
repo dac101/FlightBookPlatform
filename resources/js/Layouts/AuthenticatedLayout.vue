@@ -46,6 +46,12 @@ const showingNavigationDropdown = ref(false);
                                     Trips
                                 </NavLink>
                                 <NavLink
+                                    :href="route('flights.page')"
+                                    :active="route().current('flights.page')"
+                                >
+                                    Flights
+                                </NavLink>
+                                <NavLink
                                     :href="route('trip-builder.page')"
                                     :active="route().current('trip-builder.page')"
                                 >

@@ -23,7 +23,7 @@ const confirmationMessage = ref('');
 const bookingError = ref('');
 const bookingErrors = ref({});
 const booking = ref(false);
-const showAdvancedOptions = ref(false);
+const showAdvancedOptions = ref(true);
 
 // Existing trip loading
 const editingTripId = ref(null);

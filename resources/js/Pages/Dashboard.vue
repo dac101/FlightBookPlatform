@@ -48,6 +48,10 @@ onMounted(() => {
 
 watch(appearance, (value) => {
     document.cookie = `appearance=${value}; path=/; max-age=${60 * 60 * 24 * 365}`;
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const applyDark = value === 'dark' || (value === 'system' && prefersDark);
+    document.documentElement.classList.toggle('dark', applyDark);
 });
 
 watch(tripAlerts, (value) => {
