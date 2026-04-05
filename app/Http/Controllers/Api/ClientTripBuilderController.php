@@ -74,6 +74,7 @@ class ClientTripBuilderController extends Controller
     public function book(Request $request): JsonResponse
     {
         $validated = $request->validate([
+            'trip_name' => ['nullable', 'string', 'max:120'],
             'trip_type' => ['required', Rule::in(['one_way', 'round_trip', 'open_jaw', 'multi_city'])],
             'radius_km' => ['nullable', 'numeric', 'min:1', 'max:1000'],
             'legs' => ['required', 'array', 'min:1', 'max:5'],

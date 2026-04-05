@@ -16,6 +16,7 @@ const saving = ref(false);
 const modalOpen = ref(false);
 const editingId = ref(null);
 const form = reactive({
+    trip_name: '',
     trip_type: '',
     status: '',
     departure_date: '',
@@ -66,6 +67,7 @@ function resetForm() {
     selectedTrip.value = null;
     errors.value = {};
     Object.assign(form, {
+        trip_name: '',
         trip_type: '',
         status: '',
         departure_date: '',
@@ -78,6 +80,7 @@ async function openEdit(id) {
     editingId.value = id;
     selectedTrip.value = trip;
     Object.assign(form, {
+        trip_name: trip.trip_name ?? '',
         trip_type: trip.trip_type,
         status: trip.status,
         departure_date: trip.departure_date,
@@ -193,7 +196,8 @@ onMounted(() => {
                     </tr>
                     <tr v-for="trip in trips" :key="trip.id">
                         <td class="py-4 pr-4">
-                            <div class="font-medium text-slate-900">#{{ trip.id }}</div>
+                            <div class="font-medium text-slate-900">{{ trip.trip_name || `#${trip.id}` }}</div>
+                            <div v-if="trip.trip_name" class="text-slate-500">#{{ trip.id }}</div>
                             <div class="text-slate-500">{{ trip.segments?.length || 0 }} segments</div>
                         </td>
                         <td class="py-4 pr-4">
@@ -253,6 +257,11 @@ onMounted(() => {
                 </div>
 
                 <div class="mt-6 grid gap-4 md:grid-cols-2">
+                    <div class="md:col-span-2">
+                        <label class="mb-2 block text-sm font-medium text-slate-700">Trip name</label>
+                        <input v-model="form.trip_name" type="text" class="w-full rounded-2xl border border-slate-300 px-4 py-3" placeholder="Optional trip name" />
+                        <p v-if="errors.trip_name" class="mt-1 text-sm text-red-600">{{ errors.trip_name[0] }}</p>
+                    </div>
                     <div>
                         <label class="mb-2 block text-sm font-medium text-slate-700">Trip type</label>
                         <select v-model="form.trip_type" class="w-full rounded-2xl border border-slate-300 px-4 py-3">

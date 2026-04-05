@@ -12,6 +12,7 @@ const tripTypes = [
 ];
 
 const tripType = ref('one_way');
+const tripName = ref('');
 const radiusKm = ref(150);
 const flightSearchKeyword = ref('');
 const resultSort = ref('price');
@@ -292,6 +293,7 @@ async function confirmTrip() {
 
     try {
         const response = await api.post('/client-api/trip-builder/book', {
+            trip_name: tripName.value,
             trip_type: tripType.value,
             radius_km: radiusKm.value,
             legs: legs.value.map((leg) => ({
@@ -303,6 +305,7 @@ async function confirmTrip() {
         });
 
         confirmationMessage.value = response.message;
+        tripName.value = '';
         initializeLegs(tripType.value);
         emit('booked');
     } catch (error) {
@@ -352,6 +355,18 @@ onMounted(async () => {
             <div class="rounded-[1.75rem] border border-slate-200 p-6">
                 <p class="text-sm font-medium uppercase tracking-[0.22em] text-amber-700">Search options</p>
                 <div class="mt-4 grid gap-4 md:grid-cols-2">
+                    <div class="md:col-span-2">
+                        <label class="mb-2 block text-sm font-medium text-slate-700">Trip name</label>
+                        <input
+                            v-model="tripName"
+                            class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
+                            placeholder="Summer getaway, Team conference, Family visit"
+                        />
+                        <p v-if="bookingErrors.trip_name" class="mt-1 text-sm text-red-600">
+                            {{ bookingErrors.trip_name[0] }}
+                        </p>
+                    </div>
+
                     <div class="md:col-span-2">
                         <label class="mb-2 block text-sm font-medium text-slate-700">Flight keyword search</label>
                         <input

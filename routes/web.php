@@ -38,6 +38,8 @@ Route::middleware('auth')->group(function () {
 
     Route::prefix('client-api')->name('client-api.')->group(function (): void {
         Route::get('/trips', [UserTripController::class, 'index'])->name('trips.index');
+        Route::get('/trips/{trip}', [UserTripController::class, 'show'])->name('trips.show');
+        Route::patch('/trips/{trip}', [UserTripController::class, 'update'])->name('trips.update');
         Route::post('/trips/from-flight', [UserTripController::class, 'storeFromFlight'])->name('trips.from-flight');
         Route::post('/trips/{trip}/segments/from-flight', [UserTripController::class, 'appendFlight'])->name('trips.append-flight');
         Route::get('/flights', [ClientTripBuilderController::class, 'exploreFlights'])->name('flights.index');

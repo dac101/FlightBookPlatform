@@ -30,7 +30,8 @@ class TripRepository implements TripRepositoryInterface
                     $builder->whereHas('user', function ($userQuery) use ($search): void {
                         $userQuery->where('name', 'like', '%'.$search.'%')
                             ->orWhere('email', 'like', '%'.$search.'%');
-                    })->orWhere('id', $search);
+                    })->orWhere('trip_name', 'like', '%'.$search.'%')
+                        ->orWhere('id', $search);
                 });
             }
 

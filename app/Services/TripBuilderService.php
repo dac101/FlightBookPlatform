@@ -78,6 +78,7 @@ class TripBuilderService
 
     /**
      * @param  array{
+     *   trip_name?: string|null,
      *   trip_type: string,
      *   radius_km?: float|int,
      *   legs: array<int, array{
@@ -128,6 +129,7 @@ class TripBuilderService
         }
 
         return $this->tripService->book($user, [
+            'trip_name' => $payload['trip_name'] ?? null,
             'trip_type' => $tripType->value,
             'status' => TripStatus::Confirmed->value,
             'departure_date' => $legs[0]['departure_date'],
@@ -137,6 +139,7 @@ class TripBuilderService
 
     /**
      * @param  array{
+     *   trip_name?: string|null,
      *   flight_id: int,
      *   departure_date: string
      * }  $payload
@@ -147,6 +150,7 @@ class TripBuilderService
         $departureDate = $this->validatedSingleFlightDepartureDate($payload['departure_date']);
 
         return $this->tripService->book($user, [
+            'trip_name' => $payload['trip_name'] ?? null,
             'trip_type' => TripType::OneWay->value,
             'status' => TripStatus::Pending->value,
             'departure_date' => $departureDate,

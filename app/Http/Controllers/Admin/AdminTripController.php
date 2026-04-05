@@ -34,6 +34,7 @@ class AdminTripController extends Controller
     public function update(Request $request, int $trip): JsonResponse
     {
         $validated = $request->validate([
+            'trip_name' => ['sometimes', 'nullable', 'string', 'max:120'],
             'trip_type' => ['sometimes', Rule::enum(TripType::class)],
             'status' => ['sometimes', Rule::enum(TripStatus::class)],
             'departure_date' => ['sometimes', 'date'],

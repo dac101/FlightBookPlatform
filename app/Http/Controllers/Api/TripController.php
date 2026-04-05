@@ -30,6 +30,7 @@ class TripController extends Controller
     public function store(Request $request): JsonResponse
     {
         $validated = $request->validate([
+            'trip_name' => 'nullable|string|max:120',
             'trip_type' => 'required|string|in:one_way,round_trip,open_jaw,multi_city',
             'departure_date' => 'required|date|after_or_equal:today|before_or_equal:'.now()->addDays(365)->toDateString(),
         ]);
@@ -51,6 +52,7 @@ class TripController extends Controller
         $this->authorize('update', $trip);
 
         $validated = $request->validate([
+            'trip_name' => 'sometimes|nullable|string|max:120',
             'status' => 'sometimes|string|in:pending,confirmed,cancelled',
             'departure_date' => 'sometimes|date|after_or_equal:today|before_or_equal:'.now()->addDays(365)->toDateString(),
         ]);
@@ -70,6 +72,7 @@ class TripController extends Controller
     public function storeFromFlight(Request $request): JsonResponse
     {
         $validated = $request->validate([
+            'trip_name' => ['nullable', 'string', 'max:120'],
             'flight_id' => ['required', 'integer', 'exists:flights,id'],
             'departure_date' => ['required', 'date'],
         ]);

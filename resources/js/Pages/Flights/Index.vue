@@ -44,6 +44,7 @@ async function loadAirlineOptions() {
 function getFlightAction(flightId) {
     if (!flightActions[flightId]) {
         flightActions[flightId] = {
+            tripName: '',
             departureDate: '',
             selectedTripId: '',
             submitting: false,
@@ -131,7 +132,7 @@ function tripPlanLabel(trip) {
         ? `Ends at ${lastSegment.flight.arrival_airport.iata_code}`
         : `Starts ${trip.departure_date}`;
 
-    return `Trip #${trip.id} | ${tripTypeLabel(trip.trip_type)} | ${tripStatusLabel(trip.status)} | ${route}`;
+    return `${trip.trip_name || `Trip #${trip.id}`} | ${tripTypeLabel(trip.trip_type)} | ${tripStatusLabel(trip.status)} | ${route}`;
 }
 
 function extractErrorMessage(error) {
@@ -159,6 +160,7 @@ async function createTripFromFlight(flightId) {
 
     try {
         await api.post('/client-api/trips/from-flight', {
+            trip_name: action.tripName,
             flight_id: flightId,
             departure_date: action.departureDate,
         });
@@ -430,7 +432,16 @@ onMounted(async () => {
                             </div>
 
                             <div class="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                                <div class="grid gap-4 lg:grid-cols-[0.7fr_1.1fr_1fr]">
+                                <div class="grid gap-4 lg:grid-cols-[0.8fr_0.7fr_1.1fr_1fr]">
+                                    <div>
+                                        <label class="mb-2 block text-sm font-medium text-slate-700">Trip name</label>
+                                        <input
+                                            v-model="getFlightAction(flight.id).tripName"
+                                            class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
+                                            placeholder="Name this trip"
+                                        />
+                                    </div>
+
                                     <div>
                                         <label class="mb-2 block text-sm font-medium text-slate-700">Departure date</label>
                                         <input

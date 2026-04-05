@@ -152,7 +152,7 @@ class FlightImportService
                 'airport_arrival_id' => $arrivalAirport->id,
                 'departure_time' => Carbon::parse($depScheduled)->format('H:i:s'),
                 'arrival_time' => Carbon::parse($arrScheduled)->format('H:i:s'),
-                'price' => 0.00,
+                'price' => rand(150,3000),
             ]);
 
             return 'processed';

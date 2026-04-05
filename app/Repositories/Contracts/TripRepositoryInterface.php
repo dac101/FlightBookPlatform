@@ -3,7 +3,6 @@
 namespace App\Repositories\Contracts;
 
 use App\Models\Trip;
-use App\Models\TripSegment;
 use App\Models\User;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
