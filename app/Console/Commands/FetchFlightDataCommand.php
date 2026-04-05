@@ -18,10 +18,10 @@ class FetchFlightDataCommand extends Command
      * @var array<string>
      */
     private const AIRPORTS = [
-        //        'MBJ', // Sangster International — Montego Bay, Jamaica
-        //        'JFK', // John F. Kennedy — New York
+        'MBJ', // Sangster International — Montego Bay, Jamaica
+        'JFK', // John F. Kennedy — New York
         'YUL', // Pierre Elliott Trudeau — Montreal
-        /*        'YYZ', // Pearson — Toronto
+        'YYZ', // Pearson — Toronto
         'YVR', // Vancouver International
         'LAX', // Los Angeles International
         'MIA', // Miami International

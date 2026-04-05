@@ -39,12 +39,26 @@ class FlightImportRepository implements FlightImportRepositoryInterface
     public function createAirport(array $data): Airport
     {
         try {
-            $airport = Airport::create($data);
+            $iataCode = strtoupper($data['iata_code']);
+            $airport = Airport::updateOrCreate(
+                ['iata_code' => $iataCode],
+                [
+                    'name' => $data['name'],
+                    'city' => $data['city'],
+                    'city_code' => strtoupper($data['city_code']),
+                    'country_code' => strtoupper($data['country_code']),
+                    'region_code' => $data['region_code'] ? strtoupper($data['region_code']) : null,
+                    'latitude' => $data['latitude'],
+                    'longitude' => $data['longitude'],
+                    'timezone' => $data['timezone'],
+                ]
+            );
 
-            Log::channel('flights')->info('FlightImportRepository: airport created from CSV', [
-                'iata_code' => $data['iata_code'],
+            Log::channel('flights')->info('FlightImportRepository: airport resolved from CSV', [
+                'iata_code' => $iataCode,
                 'name' => $data['name'],
                 'city' => $data['city'],
+                'created' => $airport->wasRecentlyCreated,
             ]);
 
             return $airport;
