@@ -66,6 +66,7 @@ pipelines:
                   sudo chmod -R 775 /var/www/flightbookplatform/storage /var/www/flightbookplatform/bootstrap/cache
 
                   echo "[REMOTE] Pulling latest code..."
+                  git checkout main
                   git fetch origin
                   git reset --hard origin/$BITBUCKET_BRANCH
 
