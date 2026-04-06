@@ -39,14 +39,6 @@ definitions:
           - ./vendor/bin/phpunit
 
 pipelines:
-  default:
-    - step: *lint
-    - parallel:
-        steps:
-          - step: *test-83
-          - step: *test-84
-          - step: *test-85
-
   branches:
     master:
       - step: *lint
