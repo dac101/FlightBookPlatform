@@ -65,6 +65,8 @@ class TripBuilderService
             'search' => $criteria['search'] ?? null,
             'page' => $criteria['page'] ?? 1,
             'scheduled_date_from' => $criteria['scheduled_date_from'] ?? null,
+            'price_min' => $criteria['price_min'] ?? null,
+            'price_max' => $criteria['price_max'] ?? null,
         ], $perPage);
 
         return [

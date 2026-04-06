@@ -1,0 +1,196 @@
+# QuantumStack Jobs - CI/CD Pipeline
+
+image: composer:2
+
+pipelines:
+  default:
+    - step:
+        name: Test
+        script:
+          - echo "Name"
+        caches:
+          - composer
+    - step:
+        name: Deploy to server
+        script:
+          - pipe: atlassian/ssh-run:0.8.1
+            variables:
+              SSH_USER: 'ubuntu'
+              SERVER: '100.51.99.192'
+              COMMAND: |
+                set -e
+
+                if [ ! -d /var/www/quantumstackjobs/.git ]; then
+                  echo "[REMOTE] First deploy - cloning repo..."
+                  git clone git@bitbucket.org:zentrianalytics/quantumstackjobs.git /var/www/quantumstackjobs
+                fi
+
+                cd /var/www/quantumstackjobs
+                
+                echo "[REMOTE] Setting permissions..."
+                sudo chown -R ubuntu:www-data /var/www/quantumstackjobs/storage /var/www/quantumstackjobs/bootstrap/cache
+                sudo chmod -R 775 /var/www/quantumstackjobs/storage /var/www/quantumstackjobs/bootstrap/cache
+
+                echo "[REMOTE] Pulling latest code..."
+                git fetch origin
+                git reset --hard origin/$BITBUCKET_BRANCH
+
+                cat > .env << EOF
+                APP_NAME="Quantum Stack Jobs"
+                APP_ENV=production
+                APP_KEY=${APP_KEY}
+                APP_DEBUG=false
+                APP_URL="https://quantumstackjobs.zentrianalytics.com"
+
+                DB_CONNECTION=pgsql
+                DB_HOST=${DB_HOST}
+                DB_PORT=5432
+                DB_DATABASE=${DB_DATABASE}
+                DB_USERNAME=${DB_USERNAME}
+                DB_PASSWORD=${DB_PASSWORD}
+
+                LOG_CHANNEL=stack
+                LOG_STACK="daily,slack"
+                LOG_LEVEL=info
+                LOG_SLACK_LEVEL=error
+                LOG_SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+                LOG_SLACK_USERNAME=quantumstackjobs
+
+                SESSION_DRIVER=database
+                SESSION_LIFETIME=120
+                CACHE_STORE=database
+                QUEUE_CONNECTION=redis
+
+                MAIL_MAILER=ses
+                MAIL_FROM_ADDRESS="noreply@zentrianalytics.com"
+                MAIL_FROM_NAME="QuantumStack Jobs"
+
+                REDIS_CLIENT=phpredis
+                REDIS_HOST=127.0.0.1
+                REDIS_PASSWORD=null
+                REDIS_PORT=6379
+
+                AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+                AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+                AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+                AWS_BUCKET=${AWS_BUCKET}
+
+                GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+                GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+                GOOGLE_REDIRECT_URI=https://quantumstackjobs.zentrianalytics.com/auth/google/callback
+
+                REDDIT_CLIENT_ID=${REDDIT_CLIENT_ID}
+                REDDIT_CLIENT_SECRET=${REDDIT_CLIENT_SECRET}
+
+                BLUESKY_IDENTIFIER=${BLUESKY_IDENTIFIER}
+                BLUESKY_PASSWORD=${BLUESKY_PASSWORD}
+                BLUESKY_SERVICE=https://bsky.social
+
+                MASTODON_INSTANCE=https://mastodon.social
+                MASTODON_ACCESS_TOKEN=${MASTODON_ACCESS_TOKEN}
+                MASTODON_CA_INSTANCE=https://mstdn.ca
+                MASTODON_CA_ACCESS_TOKEN=${MASTODON_CA_ACCESS_TOKEN}
+
+                FACEBOOK_APP_ID=${FACEBOOK_APP_ID}
+                FACEBOOK_APP_SECRET=${FACEBOOK_APP_SECRET}
+                FACEBOOK_PAGE_ID=${FACEBOOK_PAGE_ID}
+                FACEBOOK_PAGE_NAME=QuantumStack
+                FACEBOOK_PAGE_ACCESS_TOKEN=${FACEBOOK_PAGE_ACCESS_TOKEN}
+                
+                FACEBOOK_LONG_LIVED_TOKEN=${FACEBOOK_LONG_LIVED_TOKEN}          
+                FACEBOOK_PAGE_ACCESS_TOKEN=${FACEBOOK_PAGE_ACCESS_TOKEN}
+  
+  
+                GEMINI_API_KEYS=${GEMINI_API_KEYS}
+                GEMINI_MODEL=${GEMINI_MODEL}
+                
+                GOOGLE_WEBSITE_VERIFICATION=${GOOGLE_WEBSITE_VERIFICATION}
+                YANDEX_WEBSITE_VERIFICATION=${YANDEX_WEBSITE_VERIFICATION}
+                BING_WEBSITE_VERIFICATION=${BING_WEBSITE_VERIFICATION}
+                PINTEREST_VERIFICATION=${PINTEREST_VERIFICATION}
+
+                TELESCOPE_ENABLED=true
+                EOF
+                
+                echo "[REMOTE] Installing composer dependencies..."
+                composer update
+
+                echo "[REMOTE] Installing composer dependencies..."
+                composer install --no-dev --optimize-autoloader --no-interaction
+
+                echo "[REMOTE] Installing npm dependencies and building assets..."
+                npm ci
+                npm run build
+
+                echo "[REMOTE] Running migrations..."
+                php artisan migrate --force
+
+                echo "[REMOTE] Seeding database..."
+                php artisan db:seed --force
+
+                echo "[REMOTE] Clearing old caches..."
+                php artisan optimize:clear
+
+                echo "[REMOTE] Publishing Telescope assets..."
+                php artisan telescope:publish --force
+
+                echo "[REMOTE] Rebuilding caches..."
+                php artisan optimize
+
+                echo "[REMOTE] Resuming scheduler..."
+                php artisan schedule:continue || true
+
+                echo "[REMOTE] Generating sitemap..."
+                php artisan sitemap:generate
+            
+                echo "[REMOTE] Installing nginx site config..."
+                sudo cp /var/www/quantumstackjobs/infra/nginx/quantumstackjobs.conf /etc/nginx/sites-available/quantumstackjobs.zentrianalytics.com
+                sudo ln -sf /etc/nginx/sites-available/quantumstackjobs.zentrianalytics.com /etc/nginx/sites-enabled/quantumstackjobs.zentrianalytics.com
+                sudo nginx -t
+
+                echo "[REMOTE] Reloading services..."
+                sudo systemctl reload php8.4-fpm
+                sudo systemctl reload nginx
+
+                echo "[REMOTE] Setting up Laravel scheduler cron..."
+                crontab -l 2>/dev/null | grep -v "quantumstackjobs" > /tmp/quantumstack_cron || true
+                echo "* * * * * cd /var/www/quantumstackjobs && php artisan schedule:run >> /dev/null 2>&1" >> /tmp/quantumstack_cron
+                crontab /tmp/quantumstack_cron
+                rm -f /tmp/quantumstack_cron
+
+                echo "[REMOTE] Setting up Horizon systemd service..."
+                sudo tee /etc/systemd/system/horizon.service > /dev/null << 'SYSTEMD'
+                [Unit]
+                Description=Laravel Horizon Queue Manager
+                After=network.target redis-server.service
+
+                [Service]
+                User=ubuntu
+                Group=www-data
+                WorkingDirectory=/var/www/quantumstackjobs
+                ExecStart=/usr/bin/php artisan horizon
+                Restart=always
+                RestartSec=5
+                StandardOutput=append:/var/www/quantumstackjobs/storage/logs/horizon.log
+                StandardError=append:/var/www/quantumstackjobs/storage/logs/horizon.log
+
+                [Install]
+                WantedBy=multi-user.target
+                SYSTEMD
+
+                sudo systemctl daemon-reload
+                sudo systemctl enable horizon
+                sudo systemctl restart horizon
+
+                echo "[REMOTE] Terminating old Horizon workers..."
+                php artisan horizon:terminate || true
+
+                echo "[REMOTE] Deploy complete!"
+    - step:
+        name: Notify Slack
+        script:
+          - pipe: atlassian/slack-notify:2.3.1
+            variables:
+              WEBHOOK_URL: $SLACK_WEBHOOK_URL
+              MESSAGE: "Build complete on $BITBUCKET_BRANCH 🚀"
+              IGNORE_ERRORS: 'true'

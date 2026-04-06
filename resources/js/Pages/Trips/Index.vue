@@ -313,7 +313,7 @@ onMounted(() => {
                                             {{ isExpanded(trip.id) ? 'Hide flights' : 'View flights' }}
                                         </button>
                                         <Link
-                                            :href="route('trip-builder.page')"
+                                            :href="route('trip-builder.page') + '?trip=' + trip.id"
                                             class="rounded-full border border-sky-300 px-4 py-2 text-xs font-semibold text-sky-700 transition hover:bg-sky-700 hover:text-white"
                                         >
                                             Continue in builder

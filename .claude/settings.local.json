@@ -27,7 +27,8 @@
       "Bash(grep -r \"dark\\\\|appearance\" /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/resources/js/ --include=*.js --include=*.ts)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(list\\(d.keys\\(\\)\\)[:5]\\)\")",
       "Bash(grep -l \"app.css\\\\|app-\" /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/public/build/assets/*.css)",
-      "Bash(ls /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/public/build/assets/*.css)"
+      "Bash(ls /Users/dacoriesmith/Developer/BitBucket/flightbookplatform/public/build/assets/*.css)",
+      "Bash(./vendor/bin/sail artisan:*)"
     ]
   }
 }

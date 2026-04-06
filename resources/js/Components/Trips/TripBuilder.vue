@@ -18,6 +18,8 @@ const flightSearchKeyword = ref('');
 const resultSort = ref('price');
 const preferredAirlineIds = ref([]);
 const airlineOptions = ref([]);
+const priceMin = ref('');
+const priceMax = ref('');
 const legs = ref([]);
 const confirmationMessage = ref('');
 const bookingError = ref('');
@@ -118,21 +120,28 @@ function syncTripTypeStructure() {
     if (tripType.value === 'round_trip' && legs.value.length >= 2) {
         const outbound = legs.value[0];
         const inbound = legs.value[1];
+        const newDep = outbound.arrivalAirport;
+        const newArr = outbound.departureAirport;
 
-        inbound.departureAirport = outbound.arrivalAirport;
-        inbound.departureQuery = airportLabel(outbound.arrivalAirport);
-        inbound.arrivalAirport = outbound.departureAirport;
-        inbound.arrivalQuery = airportLabel(outbound.departureAirport);
-        resetSearchMeta(inbound);
+        if (inbound.departureAirport?.id !== newDep?.id || inbound.arrivalAirport?.id !== newArr?.id) {
+            inbound.departureAirport = newDep;
+            inbound.departureQuery = airportLabel(newDep);
+            inbound.arrivalAirport = newArr;
+            inbound.arrivalQuery = airportLabel(newArr);
+            resetSearchMeta(inbound);
+        }
     }
 
     if (tripType.value === 'open_jaw' && legs.value.length >= 2) {
         const outbound = legs.value[0];
         const inbound = legs.value[1];
+        const newArr = outbound.departureAirport;
 
-        inbound.arrivalAirport = outbound.departureAirport;
-        inbound.arrivalQuery = airportLabel(outbound.departureAirport);
-        resetSearchMeta(inbound);
+        if (inbound.arrivalAirport?.id !== newArr?.id) {
+            inbound.arrivalAirport = newArr;
+            inbound.arrivalQuery = airportLabel(newArr);
+            resetSearchMeta(inbound);
+        }
     }
 
     if (tripType.value === 'multi_city') {
@@ -142,9 +151,12 @@ function syncTripTypeStructure() {
             }
 
             const previousArrival = legs.value[index - 1].arrivalAirport;
-            leg.departureAirport = previousArrival;
-            leg.departureQuery = airportLabel(previousArrival);
-            resetSearchMeta(leg);
+
+            if (leg.departureAirport?.id !== previousArrival?.id) {
+                leg.departureAirport = previousArrival;
+                leg.departureQuery = airportLabel(previousArrival);
+                resetSearchMeta(leg);
+            }
         });
     }
 }
@@ -367,6 +379,8 @@ async function searchLegFlights(leg, page = 1) {
                 search: flightSearchKeyword.value,
                 page,
                 scheduled_date_from: minDate ?? undefined,
+                price_min: priceMin.value ? Number(priceMin.value) : undefined,
+                price_max: priceMax.value ? Number(priceMax.value) : undefined,
             });
 
             leg.searchMeta = {
@@ -423,6 +437,14 @@ async function searchLegFlights(leg, page = 1) {
 
         if (flightSearchKeyword.value) {
             params.search = flightSearchKeyword.value;
+        }
+
+        if (priceMin.value) {
+            params.price_min = Number(priceMin.value);
+        }
+
+        if (priceMax.value) {
+            params.price_max = Number(priceMax.value);
         }
 
         const response = await api.get('/client-api/flights', params);
@@ -542,6 +564,17 @@ function formatTime(value) {
 onMounted(async () => {
     initializeLegs();
     await Promise.all([loadAirlineOptions(), fetchTrips()]);
+
+    const params = new URLSearchParams(window.location.search);
+    const tripIdParam = params.get('trip');
+
+    if (tripIdParam) {
+        const tripToLoad = loadedTrips.value.find((t) => String(t.id) === String(tripIdParam));
+
+        if (tripToLoad) {
+            loadTripIntoBuilder(tripToLoad);
+        }
+    }
 });
 </script>
 
@@ -644,7 +677,7 @@ onMounted(async () => {
             >
                 <span>{{ showAdvancedOptions ? '▲' : '▼' }}</span>
                 Advanced options
-                <span v-if="tripName || flightSearchKeyword || preferredAirlineIds.length" class="rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-700">active</span>
+                <span v-if="tripName || flightSearchKeyword || preferredAirlineIds.length || priceMin || priceMax" class="rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-700">active</span>
             </button>
 
             <div v-if="showAdvancedOptions" class="mt-4 rounded-2xl border border-slate-200 p-5">
@@ -706,6 +739,27 @@ onMounted(async () => {
                             max="1000"
                             class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
                         />
+                    </div>
+
+                    <div class="sm:col-span-2">
+                        <label class="mb-1.5 block text-xs font-medium text-slate-600">Price range ($)</label>
+                        <div class="flex items-center gap-2">
+                            <input
+                                v-model="priceMin"
+                                type="number"
+                                min="0"
+                                placeholder="Min"
+                                class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
+                            />
+                            <span class="shrink-0 text-sm text-slate-400">–</span>
+                            <input
+                                v-model="priceMax"
+                                type="number"
+                                min="0"
+                                placeholder="Max"
+                                class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

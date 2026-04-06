@@ -10,7 +10,6 @@ const user = computed(() => page.props.auth.user);
 const trips = ref([]);
 const loadingTrips = ref(false);
 
-const appearance = ref('system');
 const tripAlerts = ref(true);
 
 const today = new Date().toISOString().slice(0, 10);
@@ -36,22 +35,8 @@ async function loadTrips() {
 onMounted(() => {
     loadTrips();
 
-    appearance.value =
-        document.cookie
-            .split('; ')
-            .find((entry) => entry.startsWith('appearance='))
-            ?.split('=')[1] || 'system';
-
     const savedTripAlerts = window.localStorage.getItem('trip_alerts');
     tripAlerts.value = savedTripAlerts === null ? true : savedTripAlerts === 'true';
-});
-
-watch(appearance, (value) => {
-    document.cookie = `appearance=${value}; path=/; max-age=${60 * 60 * 24 * 365}`;
-
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const applyDark = value === 'dark' || (value === 'system' && prefersDark);
-    document.documentElement.classList.toggle('dark', applyDark);
 });
 
 watch(tripAlerts, (value) => {
@@ -213,27 +198,6 @@ const quickLinks = [
                     <h3 class="mt-2 text-2xl font-semibold text-slate-900">Personal preferences</h3>
 
                     <div class="mt-6 grid gap-6 lg:grid-cols-2">
-                        <div class="rounded-2xl border border-slate-200 p-6">
-                            <p class="text-base font-semibold text-slate-900">Appearance</p>
-                            <p class="mt-2 text-sm leading-7 text-slate-600">
-                                Choose how the interface should behave on this device.
-                            </p>
-                            <div class="mt-4 space-y-3">
-                                <label class="flex items-center gap-3 text-sm text-slate-700">
-                                    <input v-model="appearance" type="radio" value="system" />
-                                    Follow system preference
-                                </label>
-                                <label class="flex items-center gap-3 text-sm text-slate-700">
-                                    <input v-model="appearance" type="radio" value="light" />
-                                    Light appearance
-                                </label>
-                                <label class="flex items-center gap-3 text-sm text-slate-700">
-                                    <input v-model="appearance" type="radio" value="dark" />
-                                    Dark appearance
-                                </label>
-                            </div>
-                        </div>
-
                         <div class="rounded-2xl border border-slate-200 p-6">
                             <p class="text-base font-semibold text-slate-900">Trip alerts</p>
                             <p class="mt-2 text-sm leading-7 text-slate-600">

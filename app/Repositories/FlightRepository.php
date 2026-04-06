@@ -99,6 +99,14 @@ class FlightRepository implements FlightRepositoryInterface
             $query->where('scheduled_date', '<=', $filters['scheduled_date_to']);
         }
 
+        if (isset($filters['price_min']) && $filters['price_min'] !== '' && $filters['price_min'] !== null) {
+            $query->where('price', '>=', (float) $filters['price_min']);
+        }
+
+        if (isset($filters['price_max']) && $filters['price_max'] !== '' && $filters['price_max'] !== null) {
+            $query->where('price', '<=', (float) $filters['price_max']);
+        }
+
         $query = match ($filters['sort'] ?? 'recent') {
             'departure_time' => $query->orderByDesc('departure_time')->orderByDesc('created_at'),
             'arrival_time' => $query->orderByDesc('arrival_time')->orderByDesc('created_at'),
@@ -158,6 +166,14 @@ class FlightRepository implements FlightRepositoryInterface
             });
         }
 
+        if (isset($criteria['price_min']) && $criteria['price_min'] !== '' && $criteria['price_min'] !== null) {
+            $query->where('price', '>=', (float) $criteria['price_min']);
+        }
+
+        if (isset($criteria['price_max']) && $criteria['price_max'] !== '' && $criteria['price_max'] !== null) {
+            $query->where('price', '<=', (float) $criteria['price_max']);
+        }
+
         $flights = $query->get()->map(function (Flight $flight) {
             $flight->setAttribute('duration_minutes', $flight->durationMinutes());
             $flight->setAttribute('duration_label', $flight->durationLabel());
@@ -166,10 +182,10 @@ class FlightRepository implements FlightRepositoryInterface
         });
 
         $sortedFlights = (match ($criteria['sort'] ?? 'price') {
-            'departure_time' => $flights->sortBy('departure_time'),
-            'arrival_time' => $flights->sortBy('arrival_time'),
-            'duration' => $flights->sortBy('duration_minutes'),
-            default => $flights->sortBy('price'),
+            'departure_time' => $flights->sortBy([['scheduled_date', 'asc'], ['departure_time', 'asc']]),
+            'arrival_time' => $flights->sortBy([['scheduled_date', 'asc'], ['arrival_time', 'asc']]),
+            'duration' => $flights->sortBy([['scheduled_date', 'asc'], ['duration_minutes', 'asc']]),
+            default => $flights->sortBy([['scheduled_date', 'asc'], ['price', 'asc']]),
         })->values();
 
         $page = max(1, (int) ($criteria['page'] ?? 1));

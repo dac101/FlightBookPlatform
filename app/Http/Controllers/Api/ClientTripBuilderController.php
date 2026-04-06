@@ -59,6 +59,8 @@ class ClientTripBuilderController extends Controller
             'search' => ['nullable', 'string', 'max:255'],
             'page' => ['nullable', 'integer', 'min:1'],
             'scheduled_date_from' => ['nullable', 'date'],
+            'price_min' => ['nullable', 'numeric', 'min:0'],
+            'price_max' => ['nullable', 'numeric', 'min:0'],
         ]);
 
         return response()->json(
@@ -79,6 +81,8 @@ class ClientTripBuilderController extends Controller
             'per_page' => ['nullable', 'integer', 'min:1', 'max:50'],
             'scheduled_date_from' => ['nullable', 'date'],
             'scheduled_date_to' => ['nullable', 'date'],
+            'price_min' => ['nullable', 'numeric', 'min:0'],
+            'price_max' => ['nullable', 'numeric', 'min:0'],
         ]);
 
         return response()->json(
