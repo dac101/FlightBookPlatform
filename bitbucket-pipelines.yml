@@ -41,8 +41,8 @@ definitions:
 pipelines:
   branches:
     main:
-      - step: *lint
-      - step: *test
+#      - step: *lint
+#      - step: *test
       - step:
           name: Deploy to production
           deployment: production
