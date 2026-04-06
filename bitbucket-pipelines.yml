@@ -115,8 +115,14 @@ pipelines:
                   npm ci
                   npm run build
 
+                  echo "[REMOTE] Unzipping airports CSV..."
+                  unzip -o public/airports.csv.zip -d public/
+
                   echo "[REMOTE] Running migrations..."
                   php artisan migrate --force
+
+                  echo "[REMOTE] Publishing Telescope assets..."
+                  php artisan telescope:publish --force
 
                   echo "[REMOTE] Clearing old caches..."
                   php artisan optimize:clear
@@ -128,6 +134,29 @@ pipelines:
                   sudo systemctl reload php8.4-fpm
                   sudo systemctl reload nginx
 
+                  echo "[REMOTE] Setting up Horizon systemd service..."
+                  sudo tee /etc/systemd/system/horizon.service > /dev/null << 'SYSTEMD'
+                  [Unit]
+                  Description=Laravel Horizon Queue Manager
+                  After=network.target redis-server.service
+
+                  [Service]
+                  User=ubuntu
+                  Group=www-data
+                  WorkingDirectory=/var/www/flightbookplatform
+                  ExecStart=/usr/bin/php artisan horizon
+                  Restart=always
+                  RestartSec=5
+                  StandardOutput=append:/var/www/flightbookplatform/storage/logs/horizon.log
+                  StandardError=append:/var/www/flightbookplatform/storage/logs/horizon.log
+
+                  [Install]
+                  WantedBy=multi-user.target
+                  SYSTEMD
+
+                  sudo systemctl daemon-reload
+                  sudo systemctl enable horizon
+
                   echo "[REMOTE] Terminating old Horizon workers gracefully..."
                   php artisan horizon:terminate || true
 
@@ -135,11 +164,15 @@ pipelines:
                   sudo systemctl restart horizon
 
                   echo "[REMOTE] Deploy complete!"
-      - step:
-          name: Notify Slack
-          script:
-            - pipe: atlassian/slack-notify:2.3.1
-              variables:
-                WEBHOOK_URL: $SLACK_WEBHOOK_URL
-                MESSAGE: "FlightBook Platform deployed from $BITBUCKET_BRANCH"
-                IGNORE_ERRORS: 'true'
+
+
+
+
+#      - step:
+#          name: Notify Slack
+#          script:
+#            - pipe: atlassian/slack-notify:2.3.1
+#              variables:
+#                WEBHOOK_URL: $SLACK_WEBHOOK_URL
+#                MESSAGE: "FlightBook Platform deployed from $BITBUCKET_BRANCH"
+#                IGNORE_ERRORS: 'true'

@@ -21,6 +21,15 @@ class UserSeeder extends Seeder
             ]
         );
 
+        User::firstOrCreate(
+            ['email' => 'pascal@flightbookplatform.com'],
+            [
+                'name' => 'Admin',
+                'password' => Hash::make('-d1~756Wu%hB'),
+                'role' => UserRole::Admin,
+            ]
+        );
+
         // Standard demo user
         User::firstOrCreate(
             ['email' => 'user@flightbookplatform.com'],

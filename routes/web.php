@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminAirlineController;
 use App\Http\Controllers\Admin\AdminAirportController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminFlightController;
+use App\Http\Controllers\Admin\AdminFlightImportController;
 use App\Http\Controllers\Admin\AdminTripController;
 use App\Http\Controllers\Admin\AdminUserController;
 use App\Http\Controllers\Api\ClientTripBuilderController;
@@ -103,6 +104,8 @@ Route::middleware(['auth', 'verified', EnsureUserIsAdmin::class])
                 Route::get('/trips/{trip}', [AdminTripController::class, 'show'])->name('trips.show');
                 Route::patch('/trips/{trip}', [AdminTripController::class, 'update'])->name('trips.update');
                 Route::delete('/trips/{trip}', [AdminTripController::class, 'destroy'])->name('trips.destroy');
+
+                Route::post('/flight-imports', [AdminFlightImportController::class, 'upload'])->name('flight-imports.upload');
             });
     });
 

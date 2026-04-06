@@ -20,3 +20,5 @@ Schedule::command(FetchFlightDataCommand::class)
     ->withoutOverlapping()
     ->runInBackground()
     ->appendOutputTo(storage_path('logs/flights-fetch.log'));
+
+Schedule::command('telescope:prune --hours=48')->hourly();

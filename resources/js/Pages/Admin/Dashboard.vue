@@ -1,6 +1,7 @@
 <script setup>
 import AdminAirlinesManager from '@/Components/Admin/AdminAirlinesManager.vue';
 import AdminAirportsManager from '@/Components/Admin/AdminAirportsManager.vue';
+import AdminFlightImportManager from '@/Components/Admin/AdminFlightImportManager.vue';
 import AdminFlightsManager from '@/Components/Admin/AdminFlightsManager.vue';
 import AdminStatsGrid from '@/Components/Admin/AdminStatsGrid.vue';
 import AdminTripsManager from '@/Components/Admin/AdminTripsManager.vue';
@@ -20,6 +21,7 @@ const tabs = [
     { id: 'airports', label: 'Airports' },
     { id: 'flights', label: 'Flights' },
     { id: 'trips', label: 'Trips' },
+    { id: 'flight-import', label: 'Flight Import' },
 ];
 
 async function loadStats() {
@@ -81,6 +83,7 @@ onMounted(() => {
                 <AdminAirportsManager v-if="activeTab === 'airports'" />
                 <AdminFlightsManager v-if="activeTab === 'flights'" />
                 <AdminTripsManager v-if="activeTab === 'trips'" />
+                <AdminFlightImportManager v-if="activeTab === 'flight-import'" />
             </div>
         </div>
     </AuthenticatedLayout>
