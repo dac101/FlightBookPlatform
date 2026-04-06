@@ -62,7 +62,7 @@ pipelines:
                   cd /var/www/flightbookplatform
 
                   echo "[REMOTE] Setting permissions..."
-                  sudo chown -R $DEPLOY_SSH_USER:www-data /var/www/flightbookplatform/storage /var/www/flightbookplatform/bootstrap/cache
+                  sudo chown -R ubuntu:www-data:www-data /var/www/flightbookplatform/storage /var/www/flightbookplatform/bootstrap/cache
                   sudo chmod -R 775 /var/www/flightbookplatform/storage /var/www/flightbookplatform/bootstrap/cache
 
                   echo "[REMOTE] Pulling latest code..."
