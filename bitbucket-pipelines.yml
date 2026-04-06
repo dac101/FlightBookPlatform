@@ -49,8 +49,8 @@ pipelines:
           script:
             - pipe: atlassian/ssh-run:0.8.1
               variables:
-                SSH_USER: $DEPLOY_SSH_USER
-                SERVER: $DEPLOY_SERVER
+                SSH_USER: 'ubuntu'
+                SERVER: '100.51.99.192'
                 COMMAND: |
                   set -e
 
