@@ -40,7 +40,7 @@ definitions:
 
 pipelines:
   branches:
-    master:
+    main:
       - step: *lint
       - step: *test
       - step:
