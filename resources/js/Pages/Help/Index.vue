@@ -1,7 +1,7 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { api } from '@/lib/api';
-import { Head, router } from '@inertiajs/vue3';
+import { Head } from '@inertiajs/vue3';
 import { onMounted, onUnmounted, ref } from 'vue';
 
 const scrolled = ref(false);
@@ -97,7 +97,6 @@ async function markSeen() {
 
     try {
         await api.post('/tutorial/seen', {});
-        router.visit(route('dashboard'));
     } finally {
         marking.value = false;
     }
@@ -225,14 +224,15 @@ onMounted(() => {
                     <p v-if="!scrolled" class="text-sm text-slate-500">↓ Keep scrolling to reach the end</p>
                     <template v-else>
                         <p class="text-lg font-semibold text-slate-900">You're all set!</p>
-                        <p class="mt-2 text-sm text-slate-600">You can always return to this page from the Help link in the navigation.</p>
+                        <p class="mt-2 text-sm text-slate-600">Use the navigation above to go wherever you'd like next.</p>
                         <button
-                            class="mt-6 rounded-full bg-slate-900 px-8 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700 disabled:opacity-50"
+                            class="mt-6 rounded-full bg-emerald-700 px-8 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800 disabled:opacity-50"
                             :disabled="marking"
                             @click="markSeen"
                         >
-                            {{ marking ? 'One moment...' : "I'm ready to explore →" }}
+                            {{ marking ? 'One moment...' : "Got it, start exploring →" }}
                         </button>
+                        <p class="mt-3 text-xs text-slate-500">You can return here anytime from the Help link in the navigation.</p>
                     </template>
                 </div>
 

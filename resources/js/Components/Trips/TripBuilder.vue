@@ -14,10 +14,41 @@ const tripTypes = [
 const tripType = ref('one_way');
 const tripName = ref('');
 const radiusKm = ref(150);
-const flightSearchKeyword = ref('');
 const resultSort = ref('price');
 const preferredAirlineIds = ref([]);
 const airlineOptions = ref([]);
+
+// Airline tag-input state
+const airlineQuery = ref('');
+const airlineDropdownOpen = ref(false);
+const airlineSuggestions = computed(() => {
+    const q = airlineQuery.value.trim().toLowerCase();
+    if (!q) {
+        return airlineOptions.value.filter((a) => !preferredAirlineIds.value.includes(a.id)).slice(0, 8);
+    }
+    return airlineOptions.value
+        .filter((a) => !preferredAirlineIds.value.includes(a.id))
+        .filter((a) => a.name.toLowerCase().includes(q) || a.iata_code.toLowerCase().includes(q))
+        .slice(0, 8);
+});
+const selectedAirlines = computed(() =>
+    airlineOptions.value.filter((a) => preferredAirlineIds.value.includes(a.id)),
+);
+function addAirline(airline) {
+    if (!preferredAirlineIds.value.includes(airline.id)) {
+        preferredAirlineIds.value.push(airline.id);
+    }
+    airlineQuery.value = '';
+    airlineDropdownOpen.value = false;
+}
+function removeAirline(id) {
+    preferredAirlineIds.value = preferredAirlineIds.value.filter((i) => i !== id);
+}
+function closeAirlineDropdown() {
+    setTimeout(() => {
+        airlineDropdownOpen.value = false;
+    }, 150);
+}
 const priceMin = ref('');
 const priceMax = ref('');
 const legs = ref([]);
@@ -376,7 +407,6 @@ async function searchLegFlights(leg, page = 1) {
                 preferred_airline_ids: preferredAirlineIds.value,
                 radius_km: radiusKm.value,
                 sort: resultSort.value,
-                search: flightSearchKeyword.value,
                 page,
                 scheduled_date_from: minDate ?? undefined,
                 price_min: priceMin.value ? Number(priceMin.value) : undefined,
@@ -435,9 +465,6 @@ async function searchLegFlights(leg, page = 1) {
             params.preferred_airline_ids = preferredAirlineIds.value;
         }
 
-        if (flightSearchKeyword.value) {
-            params.search = flightSearchKeyword.value;
-        }
 
         if (priceMin.value) {
             params.price_min = Number(priceMin.value);
@@ -677,7 +704,7 @@ onMounted(async () => {
             >
                 <span>{{ showAdvancedOptions ? '▲' : '▼' }}</span>
                 Advanced options
-                <span v-if="tripName || flightSearchKeyword || preferredAirlineIds.length || priceMin || priceMax" class="rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-700">active</span>
+                <span v-if="tripName || preferredAirlineIds.length || priceMin || priceMax" class="rounded-full bg-sky-100 px-2 py-0.5 text-xs font-semibold text-sky-700">active</span>
             </button>
 
             <div v-if="showAdvancedOptions" class="mt-4 rounded-2xl border border-slate-200 p-5">
@@ -694,30 +721,45 @@ onMounted(async () => {
                         </p>
                     </div>
 
-                    <div class="sm:col-span-2">
-                        <label class="mb-1.5 block text-xs font-medium text-slate-600">Flight keyword</label>
-                        <input
-                            v-model="flightSearchKeyword"
-                            class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
-                            placeholder="Flight number, airline, city..."
-                        />
-                    </div>
+                    <div class="sm:col-span-2 lg:col-span-4">
+                        <label class="mb-1.5 block text-xs font-medium text-slate-600">Preferred airlines</label>
 
-                    <div class="sm:col-span-2">
-                        <label class="mb-1.5 block text-xs font-medium text-slate-600">Preferred airlines <span class="text-slate-400">(hold Ctrl/Cmd to multi-select)</span></label>
-                        <select
-                            v-model="preferredAirlineIds"
-                            multiple
-                            class="h-28 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
-                        >
-                            <option
-                                v-for="airline in airlineOptions"
+                        <!-- Selected tags -->
+                        <div v-if="selectedAirlines.length" class="mb-2 flex flex-wrap gap-1.5">
+                            <span
+                                v-for="airline in selectedAirlines"
                                 :key="airline.id"
-                                :value="airline.id"
+                                class="inline-flex items-center gap-1 rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-sky-800"
                             >
-                                {{ airline.name }} ({{ airline.iata_code }})
-                            </option>
-                        </select>
+                                {{ airline.iata_code }} · {{ airline.name }}
+                                <button type="button" class="ml-0.5 text-sky-500 hover:text-sky-800" @click="removeAirline(airline.id)">✕</button>
+                            </span>
+                        </div>
+
+                        <!-- Typeahead input -->
+                        <div class="relative">
+                            <input
+                                v-model="airlineQuery"
+                                type="text"
+                                class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
+                                placeholder="Type an airline name or code..."
+                                @focus="airlineDropdownOpen = true"
+                                @blur="closeAirlineDropdown"
+                            />
+                            <ul
+                                v-if="airlineDropdownOpen && airlineSuggestions.length"
+                                class="absolute z-20 mt-1 max-h-48 w-full overflow-auto rounded-xl border border-slate-200 bg-white shadow-lg"
+                            >
+                                <li
+                                    v-for="airline in airlineSuggestions"
+                                    :key="airline.id"
+                                    class="cursor-pointer px-4 py-2.5 text-sm text-slate-700 hover:bg-sky-50"
+                                    @mousedown.prevent="addAirline(airline)"
+                                >
+                                    <span class="font-medium">{{ airline.iata_code }}</span> · {{ airline.name }}
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div>
