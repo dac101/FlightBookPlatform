@@ -39,7 +39,6 @@ function addAirline(airline) {
         preferredAirlineIds.value.push(airline.id);
     }
     airlineQuery.value = '';
-    airlineDropdownOpen.value = false;
 }
 function removeAirline(id) {
     preferredAirlineIds.value = preferredAirlineIds.value.filter((i) => i !== id);
@@ -744,6 +743,7 @@ onMounted(async () => {
                                 class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"
                                 placeholder="Type an airline name or code..."
                                 @focus="airlineDropdownOpen = true"
+                                @input="airlineDropdownOpen = true"
                                 @blur="closeAirlineDropdown"
                             />
                             <ul
