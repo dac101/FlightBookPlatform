@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>CombinedProjectDocument</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#flightbookplatform-review-pack"
+id="toc-flightbookplatform-review-pack">FlightBookPlatform Review
+Pack</a>
+<ul>
+<li><a href="#table-of-contents" id="toc-table-of-contents">Table of
+Contents</a></li>
+</ul></li>
+<li><a href="#requirement-responses"
+id="toc-requirement-responses">Requirement Responses</a></li>
+<li><a href="#requirement-responses-1"
+id="toc-requirement-responses-1">Requirement Responses</a>
+<ul>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#deploy-the-application-online-to-ease-the-review-process"
+id="toc-deploy-the-application-online-to-ease-the-review-process">1.
+Deploy the application online to ease the review process</a></li>
+<li><a href="#scale-beyond-sample-data"
+id="toc-scale-beyond-sample-data">2. Scale beyond sample data</a></li>
+<li><a href="#use-data-storages-provisioned-within-the-environment"
+id="toc-use-data-storages-provisioned-within-the-environment">3. Use
+data storage(s) provisioned within the environment</a></li>
+<li><a href="#implement-automated-software-tests"
+id="toc-implement-automated-software-tests">4. Implement automated
+software tests</a></li>
+<li><a href="#document-web-services" id="toc-document-web-services">5.
+Document Web Services</a></li>
+<li><a href="#allow-flights-to-be-restricted-to-a-preferred-airline"
+id="toc-allow-flights-to-be-restricted-to-a-preferred-airline">6. Allow
+flights to be restricted to a preferred airline</a></li>
+<li><a href="#sort-trip-listings" id="toc-sort-trip-listings">7. Sort
+trip listings</a></li>
+<li><a href="#paginate-trip-listings" id="toc-paginate-trip-listings">8.
+Paginate trip listings</a></li>
+<li><a
+href="#allow-flights-departing-andor-arriving-in-the-vicinity-of-requested-locations"
+id="toc-allow-flights-departing-andor-arriving-in-the-vicinity-of-requested-locations">9.
+Allow flights departing and/or arriving in the vicinity of requested
+locations</a></li>
+<li><a
+href="#support-open-jaw-trips-a-pair-of-one-ways-getting-from-a-to-b-then-from-c-to-a"
+id="toc-support-open-jaw-trips-a-pair-of-one-ways-getting-from-a-to-b-then-from-c-to-a">10.
+Support open-jaw trips, a pair of one-ways getting from A to B then from
+C to A</a></li>
+<li><a
+href="#support-multi-city-trips-one-ways-up-to-5-from-a-to-b-b-to-c-c-to-d-etc."
+id="toc-support-multi-city-trips-one-ways-up-to-5-from-a-to-b-b-to-c-c-to-d-etc.">11.
+Support multi-city trips, one-ways (up to 5) from A to B, B to C, C to
+D, etc.</a></li>
+</ul></li>
+<li><a href="#readme" id="toc-readme">README</a></li>
+<li><a href="#flight-book-platform-trip-builder"
+id="toc-flight-book-platform-trip-builder">Flight Book Platform — Trip
+Builder</a>
+<ul>
+<li><a href="#project-overview" id="toc-project-overview">Project
+Overview</a>
+<ul>
+<li><a href="#supported-trip-types"
+id="toc-supported-trip-types">Supported Trip Types</a></li>
+<li><a href="#business-rules" id="toc-business-rules">Business
+Rules</a></li>
+</ul></li>
+<li><a href="#tech-stack" id="toc-tech-stack">Tech Stack</a></li>
+<li><a href="#quick-start" id="toc-quick-start">Quick Start</a>
+<ul>
+<li><a href="#prerequisites"
+id="toc-prerequisites">Prerequisites</a></li>
+<li><a href="#clone-the-repository" id="toc-clone-the-repository">1.
+Clone the repository</a></li>
+<li><a href="#configure-environment" id="toc-configure-environment">2.
+Configure environment</a></li>
+<li><a href="#build-and-start-containers"
+id="toc-build-and-start-containers">3. Build and start
+containers</a></li>
+<li><a href="#open-the-application" id="toc-open-the-application">4.
+Open the application</a></li>
+</ul></li>
+<li><a href="#source-code-architecture"
+id="toc-source-code-architecture">Source Code Architecture</a></li>
+<li><a href="#default-credentials" id="toc-default-credentials">Default
+Credentials</a></li>
+<li><a href="#api-endpoints" id="toc-api-endpoints">API Endpoints</a>
+<ul>
+<li><a href="#public" id="toc-public">Public</a></li>
+<li><a href="#authenticated-sanctum"
+id="toc-authenticated-sanctum">Authenticated (Sanctum)</a></li>
+</ul></li>
+<li><a href="#artisan-commands" id="toc-artisan-commands">Artisan
+Commands</a></li>
+<li><a href="#scheduled-jobs" id="toc-scheduled-jobs">Scheduled
+Jobs</a></li>
+<li><a href="#sample-data" id="toc-sample-data">Sample Data</a></li>
+<li><a href="#project-structure" id="toc-project-structure">Project
+Structure</a></li>
+<li><a href="#how-to-add-a-job-to-be-queue"
+id="toc-how-to-add-a-job-to-be-queue">How to add a job to be
+queue</a></li>
+<li><a href="#troubleshooting"
+id="toc-troubleshooting">Troubleshooting</a></li>
+</ul></li>
+<li><a href="#quick-start-guide" id="toc-quick-start-guide">Quick Start
+Guide</a></li>
+<li><a href="#flightbookplatform-local-setup-guide"
+id="toc-flightbookplatform-local-setup-guide">FlightBookPlatform — Local
+Setup Guide</a>
+<ul>
+<li><a href="#software-versions" id="toc-software-versions">Software
+Versions</a>
+<ul>
+<li><a href="#infrastructure-and-runtime-versions"
+id="toc-infrastructure-and-runtime-versions">Infrastructure And Runtime
+Versions</a></li>
+<li><a href="#backend-package-versions"
+id="toc-backend-package-versions">Backend Package Versions</a></li>
+<li><a href="#frontend-package-versions"
+id="toc-frontend-package-versions">Frontend Package Versions</a></li>
+</ul></li>
+<li><a href="#prerequisites-1"
+id="toc-prerequisites-1">Prerequisites</a></li>
+<li><a href="#quick-start-1" id="toc-quick-start-1">Quick Start</a></li>
+<li><a
+href="#in-the-.env-file-replace-aviationstack_api_keyapi_key-with-necessary-key"
+id="toc-in-the-.env-file-replace-aviationstack_api_keyapi_key-with-necessary-key">**
+in the .env file replace AVIATIONSTACK_API_KEY=api_key with necessary
+key</a></li>
+<li><a href="#service-urls" id="toc-service-urls">Service URLs</a></li>
+<li><a href="#database-credentials-default"
+id="toc-database-credentials-default">Database Credentials
+(default)</a></li>
+<li><a href="#custom-environment-variables"
+id="toc-custom-environment-variables">Custom Environment
+Variables</a></li>
+<li><a href="#stopping-the-app" id="toc-stopping-the-app">Stopping the
+App</a></li>
+</ul></li>
+<li><a href="#aws-online-deployment" id="toc-aws-online-deployment">AWS
+Online Deployment</a></li>
+<li><a href="#aws-online-deployment-1"
+id="toc-aws-online-deployment-1">AWS Online Deployment</a>
+<ul>
+<li><a href="#overview-1" id="toc-overview-1">Overview</a></li>
+<li><a href="#production-deployment-target"
+id="toc-production-deployment-target">Production Deployment
+Target</a></li>
+<li><a href="#deployment-workflow"
+id="toc-deployment-workflow">Deployment Workflow</a></li>
+<li><a href="#environment-configuration"
+id="toc-environment-configuration">Environment Configuration</a></li>
+<li><a href="#laravel-services-managed-in-production"
+id="toc-laravel-services-managed-in-production">Laravel Services Managed
+In Production</a>
+<ul>
+<li><a href="#web-application" id="toc-web-application">Web
+Application</a></li>
+<li><a href="#queue-processing" id="toc-queue-processing">Queue
+Processing</a></li>
+<li><a href="#database-and-cache" id="toc-database-and-cache">Database
+And Cache</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#document-web-services-1"
+id="toc-document-web-services-1">Document Web Services</a></li>
+<li><a href="#document-web-services-2"
+id="toc-document-web-services-2">Document Web Services</a>
+<ul>
+<li><a href="#overview-2" id="toc-overview-2">Overview</a></li>
+<li><a href="#public-web-services" id="toc-public-web-services">1.
+Public Web Services</a>
+<ul>
+<li><a href="#homepage-service" id="toc-homepage-service">Homepage
+Service</a></li>
+<li><a href="#public-trip-sharing-service"
+id="toc-public-trip-sharing-service">Public Trip Sharing
+Service</a></li>
+</ul></li>
+<li><a href="#authentication-services"
+id="toc-authentication-services">2. Authentication Services</a>
+<ul>
+<li><a href="#login-service" id="toc-login-service">Login
+Service</a></li>
+<li><a href="#logout-service" id="toc-logout-service">Logout
+Service</a></li>
+<li><a href="#registration-service"
+id="toc-registration-service">Registration Service</a></li>
+<li><a href="#password-recovery-service"
+id="toc-password-recovery-service">Password Recovery Service</a></li>
+<li><a href="#email-verification-service"
+id="toc-email-verification-service">Email Verification Service</a></li>
+<li><a href="#password-confirmation-and-two-factor-services"
+id="toc-password-confirmation-and-two-factor-services">Password
+Confirmation And Two-Factor Services</a></li>
+</ul></li>
+<li><a href="#authenticated-user-web-services"
+id="toc-authenticated-user-web-services">3. Authenticated User Web
+Services</a>
+<ul>
+<li><a href="#user-dashboard-service"
+id="toc-user-dashboard-service">User Dashboard Service</a></li>
+<li><a href="#help-and-tutorial-services"
+id="toc-help-and-tutorial-services">Help And Tutorial Services</a></li>
+<li><a href="#profile-service" id="toc-profile-service">Profile
+Service</a></li>
+<li><a href="#trips-and-planning-pages"
+id="toc-trips-and-planning-pages">Trips And Planning Pages</a></li>
+</ul></li>
+<li><a href="#client-spa-api-services"
+id="toc-client-spa-api-services">4. Client SPA API Services</a>
+<ul>
+<li><a href="#user-trip-management-api"
+id="toc-user-trip-management-api">User Trip Management API</a></li>
+<li><a href="#quick-trip-creation-and-editing-api"
+id="toc-quick-trip-creation-and-editing-api">Quick Trip Creation And
+Editing API</a></li>
+<li><a href="#flight-search-and-builder-support-api"
+id="toc-flight-search-and-builder-support-api">Flight Search And Builder
+Support API</a></li>
+</ul></li>
+<li><a href="#public-rest-api-services"
+id="toc-public-rest-api-services">5. Public REST API Services</a>
+<ul>
+<li><a href="#airline-api" id="toc-airline-api">Airline API</a></li>
+<li><a href="#airport-api" id="toc-airport-api">Airport API</a></li>
+<li><a href="#flight-api" id="toc-flight-api">Flight API</a></li>
+<li><a href="#authenticated-trip-api"
+id="toc-authenticated-trip-api">Authenticated Trip API</a></li>
+</ul></li>
+<li><a href="#administrative-web-services"
+id="toc-administrative-web-services">6. Administrative Web Services</a>
+<ul>
+<li><a href="#admin-dashboard-service"
+id="toc-admin-dashboard-service">Admin Dashboard Service</a></li>
+<li><a href="#admin-user-management-service"
+id="toc-admin-user-management-service">Admin User Management
+Service</a></li>
+<li><a href="#admin-airline-management-service"
+id="toc-admin-airline-management-service">Admin Airline Management
+Service</a></li>
+<li><a href="#admin-airport-management-service"
+id="toc-admin-airport-management-service">Admin Airport Management
+Service</a></li>
+<li><a href="#admin-flight-management-service"
+id="toc-admin-flight-management-service">Admin Flight Management
+Service</a></li>
+<li><a href="#admin-trip-management-service"
+id="toc-admin-trip-management-service">Admin Trip Management
+Service</a></li>
+<li><a href="#admin-flight-import-service"
+id="toc-admin-flight-import-service">Admin Flight Import
+Service</a></li>
+</ul></li>
+<li><a href="#utility-service" id="toc-utility-service">7. Utility
+Service</a>
+<ul>
+<li><a href="#sanctum-csrf-service"
+id="toc-sanctum-csrf-service">Sanctum CSRF Service</a></li>
+</ul></li>
+<li><a href="#summary" id="toc-summary">8. Summary</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="flightbookplatform-review-pack">FlightBookPlatform Review
+Pack</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<h1 id="requirement-responses">Requirement Responses</h1>
+<h1 id="requirement-responses-1">Requirement Responses</h1>
+<h2 id="overview">Overview</h2>
+<p>This document answers the requested project requirements . Each item
+below states the requirement and summarizes how it is implemented.</p>
+<h2 id="deploy-the-application-online-to-ease-the-review-process">1.
+Deploy the application online to ease the review process</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>The application has a online deployment path through Bitbucket
+Pipelines, defined in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/bitbucket-pipelines.yml">bitbucket-pipelines.yml</a>.
+The production deployment target is
+<code>https://quantumstackjobs.zentrianalytics.com/</code>, and the
+deployment process updates code on a remote Ubuntu host, rebuilds
+assets, runs migrations, reloads Nginx and PHP-FPM, and restarts
+Horizon.</p>
+<p>Supporting deployment documentation is also available in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/aws_online_deployment.md">aws_online_deployment.md</a>.</p>
+<h2 id="scale-beyond-sample-data">2. Scale beyond sample data</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>The application is built on PostgreSQL and uses
+repository/service/controller layers rather than hardcoded sample-only
+logic. Listings are queried dynamically with filtering, pagination,
+sorting, and relational loading, which allows the application to operate
+beyond seeded demo records.</p>
+<p>The application also includes a live data ingestion path through the
+AviationStack API, which is used to pull flight arrival information by
+airport IATA code and feed it into the system for processing. That
+import flow is implemented in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/AviationStackService.php">AviationStackService.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Console/Commands/FetchFlightDataCommand.php">FetchFlightDataCommand.php</a>,
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Jobs/ProcessAviationStackFlightsJob.php">ProcessAviationStackFlightsJob.php</a>.</p>
+<p>This broader scalability can be seen in the data-access and service
+layers such as <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/FlightService.php">FlightService.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripService.php">TripService.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/routes/web.php">routes/web.php</a>,
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/routes/api.php">routes/api.php</a>.</p>
+<h2 id="use-data-storages-provisioned-within-the-environment">3. Use
+data storage(s) provisioned within the environment</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>The application uses PostgreSQL for primary relational data and Redis
+for cache, sessions, and queue workloads. These services are provisioned
+directly in the environment through <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/docker-compose.yml">docker-compose.yml</a>
+for local/demo use and are also expected in production through
+deployment environment configuration.</p>
+<p>The application also stores imported AviationStack JSON payloads on
+Laravel storage before processing them asynchronously, as shown in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/AviationStackService.php">AviationStackService.php</a>.</p>
+<h2 id="implement-automated-software-tests">4. Implement automated
+software tests</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>The codebase includes both unit and feature tests. Service-layer unit
+tests exist under <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/tests/Unit/Services">tests/Unit/Services</a>,
+and controller/API feature tests exist under <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/tests/Feature">tests/Feature</a>.</p>
+<p>Examples include <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/tests/Unit/Services/TripBuilderServiceTest.php">TripBuilderServiceTest.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/tests/Feature/Admin/AdminTripControllerTest.php">AdminTripControllerTest.php</a>,
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/tests/Feature/Api/ClientTripBuilderControllerTest.php">ClientTripBuilderControllerTest.php</a>.
+The Bitbucket pipeline also defines lint and test steps in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/bitbucket-pipelines.yml">bitbucket-pipelines.yml</a>.</p>
+<h2 id="document-web-services">5. Document Web Services</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>The application web services are documented in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/ApplicationEndpoints.md">ApplicationEndpoints.md</a>.
+That document groups the platform into public services, authentication
+services, authenticated user services, client SPA APIs, public REST
+APIs, admin services, and utility services.</p>
+<p>This provides a presentation-ready summary of the available web
+service surface for interview or review purposes.</p>
+<h2 id="allow-flights-to-be-restricted-to-a-preferred-airline">6. Allow
+flights to be restricted to a preferred airline</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>Preferred airline filtering is supported in the flight explorer and
+trip-builder flows. The client API accepts preferred airline IDs, and
+the flight search logic passes those restrictions into the search
+layer.</p>
+<p>Relevant implementation points include <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Http/Controllers/Api/ClientTripBuilderController.php">ClientTripBuilderController.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripBuilderService.php">TripBuilderService.php</a>,
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/FlightService.php">FlightService.php</a>.</p>
+<h2 id="sort-trip-listings">7. Sort trip listings</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>Trip listing sort support exists in the application service and admin
+management layers. Admin trip listing endpoints explicitly accept
+sorting input, and trip data is returned through structured listing
+services instead of static unordered output.</p>
+<p>The relevant flow is visible in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Http/Controllers/Admin/AdminTripController.php">AdminTripController.php</a>
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripService.php">TripService.php</a>.</p>
+<h2 id="paginate-trip-listings">8. Paginate trip listings</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>Trip listings are paginated both for users and for administrators.
+The application returns paginated trip collections through the service
+and repository layers, and those are exposed through the relevant API
+and admin endpoints.</p>
+<p>This behavior is implemented through <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripService.php">TripService.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Http/Controllers/Api/TripController.php">TripController.php</a>,
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Http/Controllers/Admin/AdminTripController.php">AdminTripController.php</a>.</p>
+<h2
+id="allow-flights-departing-andor-arriving-in-the-vicinity-of-requested-locations">9.
+Allow flights departing and/or arriving in the vicinity of requested
+locations</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>The trip builder supports nearby airport logic based on requested
+locations. It finds nearby airports around the selected departure and
+arrival airports and expands the search so results can include flights
+in the vicinity rather than only exact-airport matches.</p>
+<p>This is implemented in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripBuilderService.php">TripBuilderService.php</a>
+and depends on nearby-airport support exposed through <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/AirportService.php">AirportService.php</a>.</p>
+<h2
+id="support-open-jaw-trips-a-pair-of-one-ways-getting-from-a-to-b-then-from-c-to-a">10.
+Support open-jaw trips, a pair of one-ways getting from A to B then from
+C to A</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>Open-jaw trips are explicitly modeled and validated. The trip type
+exists in the enum, and the trip builder validates the required route
+shape so the second segment ends at the original departure airport while
+allowing a different departure city on the return leg.</p>
+<p>This support is implemented in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Enums/TripType.php">TripType.php</a>
+and the leg validation rules in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripBuilderService.php">TripBuilderService.php</a>.</p>
+<h2
+id="support-multi-city-trips-one-ways-up-to-5-from-a-to-b-b-to-c-c-to-d-etc.">11.
+Support multi-city trips, one-ways (up to 5) from A to B, B to C, C to
+D, etc.</h2>
+<p><strong>Status:</strong> Implemented</p>
+<p>Multi-city trips are explicitly supported up to five segments. The
+builder validates the leg count and enforces sequential route continuity
+so each leg departs from the previous leg’s arrival airport.</p>
+<p>This is implemented in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Enums/TripType.php">TripType.php</a>
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripBuilderService.php">TripBuilderService.php</a>,
+where <code>MAX_MULTI_CITY_SEGMENTS</code> is set to <code>5</code>.</p>
+<h1 id="readme">README</h1>
+<h1 id="flight-book-platform-trip-builder">Flight Book Platform — Trip
+Builder</h1>
+<p>A fully functional Laravel flight booking web application and API for
+building and navigating trips for a single passenger.</p>
+<hr />
+<h2 id="project-overview">Project Overview</h2>
+<p>This application allows users to search and book flights across
+airports, build multi-segment trips, and manage their bookings through a
+modern single-page application interface.</p>
+<h3 id="supported-trip-types">Supported Trip Types</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>One-Way</strong></td>
+<td>A flight getting from A to B</td>
+</tr>
+<tr class="even">
+<td><strong>Round-Trip</strong></td>
+<td>A pair of one-ways: A → B then B → A</td>
+</tr>
+<tr class="odd">
+<td><strong>Open-Jaw</strong></td>
+<td>A pair of one-ways: A → B then C → A</td>
+</tr>
+<tr class="even">
+<td><strong>Multi-City</strong></td>
+<td>Up to 5 one-ways: A → B → C → D → E</td>
+</tr>
+</tbody>
+</table>
+<h3 id="business-rules">Business Rules</h3>
+<ul>
+<li>A trip <strong>must</strong> depart no earlier than the time of
+creation</li>
+<li>A trip <strong>must</strong> depart no later than 365 days after
+creation</li>
+<li>Trip price = sum of all referenced flight prices</li>
+<li>Flights are priced per single passenger in a neutral currency</li>
+</ul>
+<hr />
+<h2 id="tech-stack">Tech Stack</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Layer</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Backend</td>
+<td>PHP 8.4, Laravel 13</td>
+</tr>
+<tr class="even">
+<td>Frontend</td>
+<td>Vue 3, Inertia.js v3, Vite</td>
+</tr>
+<tr class="odd">
+<td>Auth</td>
+<td>Laravel Breeze + Fortify</td>
+</tr>
+<tr class="even">
+<td>Queue</td>
+<td>Laravel Horizon (Redis)</td>
+</tr>
+<tr class="odd">
+<td>Database</td>
+<td>PostgreSQL 17</td>
+</tr>
+<tr class="even">
+<td>Cache/Sessions</td>
+<td>Redis 7</td>
+</tr>
+<tr class="odd">
+<td>Web Server</td>
+<td>Nginx</td>
+</tr>
+<tr class="even">
+<td>Mail (dev)</td>
+<td>Mailpit</td>
+</tr>
+<tr class="odd">
+<td>Containerisation</td>
+<td>Docker Compose</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><a href="https://www.docker.com/products/docker-desktop/">Docker
+Desktop</a> (Mac / Windows / Linux)</li>
+<li>Git</li>
+</ul>
+<h3 id="clone-the-repository">1. Clone the repository</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://bitbucket.org/zentrianalytics/flightbookplatform.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> flightbookplatform</span></code></pre></div>
+<h3 id="configure-environment">2. Configure environment</h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> .env.example .env</span></code></pre></div>
+<p>Edit <code>.env</code> and set your AviationStack API key (free at <a
+href="https://aviationstack.com">aviationstack.com</a>):</p>
+<pre><code>AVIATIONSTACK_API_KEY=your_key_here</code></pre>
+<h3 id="build-and-start-containers">3. Build and start containers</h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">--build</span></span></code></pre></div>
+<blockquote>
+<p>First build takes a few minutes. Subsequent starts are fast.</p>
+</blockquote>
+<p>The entrypoint script automatically: - Installs Composer dependencies
+- Installs npm dependencies and builds frontend assets - Waits for
+PostgreSQL to be ready - Runs database migrations - Seeds demo users,
+airlines, airports, and sample flights on first boot - Reprocesses
+bundled AviationStack JSON files on first boot</p>
+<h3 id="open-the-application">4. Open the application</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Application</td>
+<td>http://localhost</td>
+</tr>
+<tr class="even">
+<td>Mailpit (test mail)</td>
+<td>http://localhost:8025</td>
+</tr>
+<tr class="odd">
+<td>Horizon dashboard</td>
+<td>http://localhost/horizon</td>
+</tr>
+</tbody>
+</table>
+<p>If you want live AviationStack imports to work, set a valid
+<code>AVIATIONSTACK_API_KEY</code> in <code>.env</code> before starting
+the containers.</p>
+<hr />
+<h2 id="source-code-architecture">Source Code Architecture</h2>
+<p>The backend follows a repository pattern so business logic is
+separated from persistence logic. Controllers delegate to service
+classes such as <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/FlightService.php">FlightService.php</a>,
+<a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripService.php">TripService.php</a>,
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/FlightImportService.php">FlightImportService.php</a>,
+while data access is handled through repository interfaces and
+implementations under <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Repositories">app/Repositories</a>
+and <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Repositories/Contracts">app/Repositories/Contracts</a>.
+This structure makes the code easier to test, maintain, and extend as
+the application grows beyond demo data.</p>
+<p>Flight import and reprocessing workflows are handled asynchronously
+with Laravel Horizon and Redis-backed queues. Live AviationStack
+payloads are fetched by <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Console/Commands/FetchFlightDataCommand.php">FetchFlightDataCommand.php</a>,
+stored to JSON by <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/AviationStackService.php">AviationStackService.php</a>,
+and processed in the background by <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Jobs/ProcessAviationStackFlightsJob.php">ProcessAviationStackFlightsJob.php</a>,
+allowing larger import workloads to be handled without blocking
+user-facing requests.</p>
+<hr />
+<h2 id="default-credentials">Default Credentials</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Role</th>
+<th>Email</th>
+<th>Password</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Admin</td>
+<td>admin@flightbookplatform.com</td>
+<td>password</td>
+</tr>
+<tr class="even">
+<td>User</td>
+<td>user@flightbookplatform.com</td>
+<td>password</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="api-endpoints">API Endpoints</h2>
+<p>All API endpoints are prefixed with <code>/api/v1</code>.</p>
+<h3 id="public">Public</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GET</td>
+<td><code>/api/v1/airlines</code></td>
+<td>List all airlines (paginated)</td>
+</tr>
+<tr class="even">
+<td>GET</td>
+<td><code>/api/v1/airlines/{airline}</code></td>
+<td>Show airline with flights</td>
+</tr>
+<tr class="odd">
+<td>GET</td>
+<td><code>/api/v1/airports</code></td>
+<td>List all airports (paginated)</td>
+</tr>
+<tr class="even">
+<td>GET</td>
+<td><code>/api/v1/airports/{airport}</code></td>
+<td>Show airport with flights</td>
+</tr>
+<tr class="odd">
+<td>GET</td>
+<td><code>/api/v1/flights</code></td>
+<td>List flights (filterable)</td>
+</tr>
+<tr class="even">
+<td>GET</td>
+<td><code>/api/v1/flights/{flight}</code></td>
+<td>Show flight details</td>
+</tr>
+</tbody>
+</table>
+<h4 id="flight-filters-query-string">Flight filters (query string)</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parameter</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>departure</code></td>
+<td><code>?departure=YUL</code></td>
+<td>Filter by departure airport IATA code</td>
+</tr>
+<tr class="even">
+<td><code>arrival</code></td>
+<td><code>?arrival=YVR</code></td>
+<td>Filter by arrival airport IATA code</td>
+</tr>
+<tr class="odd">
+<td><code>airline</code></td>
+<td><code>?airline=AC</code></td>
+<td>Filter by airline IATA code</td>
+</tr>
+</tbody>
+</table>
+<h3 id="authenticated-sanctum">Authenticated (Sanctum)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GET</td>
+<td><code>/api/v1/trips</code></td>
+<td>List authenticated user’s trips</td>
+</tr>
+<tr class="even">
+<td>POST</td>
+<td><code>/api/v1/trips</code></td>
+<td>Create a new trip</td>
+</tr>
+<tr class="odd">
+<td>GET</td>
+<td><code>/api/v1/trips/{trip}</code></td>
+<td>Show trip with segments</td>
+</tr>
+<tr class="even">
+<td>PUT/PATCH</td>
+<td><code>/api/v1/trips/{trip}</code></td>
+<td>Update trip</td>
+</tr>
+<tr class="odd">
+<td>DELETE</td>
+<td><code>/api/v1/trips/{trip}</code></td>
+<td>Delete trip</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="artisan-commands">Artisan Commands</h2>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fetch live flight data from AviationStack (runs automatically every 12 hours)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose exec php php artisan flights:fetch</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Run database migrations</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose exec php php artisan migrate</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Seed sample data</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose exec php php artisan db:seed</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Monitor queues</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose exec php php artisan horizon</span></code></pre></div>
+<hr />
+<h2 id="scheduled-jobs">Scheduled Jobs</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Schedule</th>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Every 12 hours (06:00 &amp; 18:00)</td>
+<td><code>flights:fetch</code></td>
+<td>Fetches live arrivals for 8 airports from AviationStack API, saves
+raw JSON to storage, and dispatches processing jobs to the
+<code>flight-imports</code> Horizon queue</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="sample-data">Sample Data</h2>
+<p>The database seeder includes the following sample data from the
+assignment specification:</p>
+<p><strong>Airlines:</strong> Air Canada (AC), WestJet (WJ), Porter
+Airlines (PD)</p>
+<p><strong>Airports:</strong> YUL (Montreal), YVR (Vancouver), YYZ
+(Toronto), YYC (Calgary)</p>
+<p><strong>Flights:</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th>Flight</th>
+<th>Route</th>
+<th>Departure</th>
+<th>Arrival</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AC301</td>
+<td>YUL → YVR</td>
+<td>07:35</td>
+<td>10:05</td>
+<td>$273.23</td>
+</tr>
+<tr class="even">
+<td>AC302</td>
+<td>YVR → YUL</td>
+<td>11:30</td>
+<td>19:11</td>
+<td>$220.63</td>
+</tr>
+<tr class="odd">
+<td>AC101</td>
+<td>YUL → YYZ</td>
+<td>06:00</td>
+<td>07:30</td>
+<td>$149.00</td>
+</tr>
+<tr class="even">
+<td>AC201</td>
+<td>YYZ → YVR</td>
+<td>09:00</td>
+<td>11:45</td>
+<td>$310.00</td>
+</tr>
+<tr class="odd">
+<td>WJ500</td>
+<td>YYC → YYZ</td>
+<td>08:15</td>
+<td>12:30</td>
+<td>$195.00</td>
+</tr>
+<tr class="even">
+<td>PD100</td>
+<td>YYZ → YUL</td>
+<td>14:00</td>
+<td>15:45</td>
+<td>$120.00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="project-structure">Project Structure</h2>
+<pre><code>flightbookplatform/
+├── app/
+│   ├── Console/Commands/        # FetchFlightDataCommand
+│   ├── Enums/                   # UserRole, TripType, TripStatus, SegmentType
+│   ├── Http/Controllers/Api/    # REST API controllers
+│   ├── Jobs/                    # ProcessAviationStackFlightsJob
+│   ├── Models/                  # Airline, Airport, Flight, Trip, TripSegment, User
+│   ├── Policies/                # TripPolicy (ownership authorization)
+│   └── Services/                # AviationStackService
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── docker-compose/
+│   └── services/
+│       ├── nginx/               # Nginx config
+│       └── php-84/build/        # Dockerfile + entrypoint.sh
+├── routes/
+│   ├── api.php                  # Versioned API routes
+│   └── web.php
+├── docker-compose.yml
+└── Documentation.md             # Docker troubleshooting guide</code></pre>
+<hr />
+<h2 id="how-to-add-a-job-to-be-queue">How to add a job to be queue</h2>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose exec php php artisan tinker <span class="at">--execute</span> <span class="st">&#39;                                                                                                                                                   </span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="st">App\Jobs\ProcessAviationStackFlightsJob::dispatch(                                                                                                                                                       </span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;aviation_stack/YUL/2026-04-04_18-42-03.json&quot;,                                                                                                                                                       </span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;YUL&quot;                                                                                                                                                                                                </span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="st">)-&gt;onQueue(&quot;flight-imports&quot;);                                                                                                                                                                            </span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;</span></span></code></pre></div>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>See <a href="Documentation.md">Documentation.md</a> for a detailed
+guide covering:</p>
+<ul>
+<li>PostgreSQL startup issues on macOS</li>
+<li>Docker named volume setup</li>
+<li>Redis and queue configuration</li>
+<li>Common error messages and fixes</li>
+</ul>
+<h1 id="quick-start-guide">Quick Start Guide</h1>
+<h1 id="flightbookplatform-local-setup-guide">FlightBookPlatform — Local
+Setup Guide</h1>
+<p>FlightBookPlatform integrates with the AviationStack API to fetch
+live arrival flight data by airport IATA code. The application stores
+the raw JSON response, then processes it asynchronously through Laravel
+Horizon so imported airlines, airports, and flights can power trip
+planning, search, and admin management features.</p>
+<p>Commands to process the data</p>
+<p>sudo docker compose exec php php artisan flights:fetch sudo docker
+compose exec php php artisan flights:reprocess ## Stack</p>
+<table>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>Technology</th>
+<th>Port</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Web server</td>
+<td>Nginx (alpine)</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>App</td>
+<td>PHP 8.4 FPM</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Queue</td>
+<td>Laravel Horizon (Redis)</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Scheduler</td>
+<td>Laravel Scheduler</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Database</td>
+<td>PostgreSQL 17</td>
+<td>5432</td>
+</tr>
+<tr class="even">
+<td>Cache/Queue</td>
+<td>Redis 7</td>
+<td>6379</td>
+</tr>
+<tr class="odd">
+<td>Mail (test)</td>
+<td>Mailpit</td>
+<td>1025 / 8025</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="software-versions">Software Versions</h2>
+<p>The application runs on a Docker-based Laravel and Vue stack with
+PostgreSQL, Redis, and Nginx. The versions below reflect the container
+images and the current locked application dependencies in this
+repository.</p>
+<h3 id="infrastructure-and-runtime-versions">Infrastructure And Runtime
+Versions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PHP-FPM</td>
+<td><code>8.4</code></td>
+</tr>
+<tr class="even">
+<td>Node.js</td>
+<td><code>22.x</code></td>
+</tr>
+<tr class="odd">
+<td>Nginx</td>
+<td><code>alpine</code> image</td>
+</tr>
+<tr class="even">
+<td>PostgreSQL</td>
+<td><code>17-alpine</code></td>
+</tr>
+<tr class="odd">
+<td>Redis</td>
+<td><code>7-alpine</code></td>
+</tr>
+<tr class="even">
+<td>Mailpit</td>
+<td><code>latest</code> image</td>
+</tr>
+</tbody>
+</table>
+<h3 id="backend-package-versions">Backend Package Versions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Laravel Framework</td>
+<td><code>13.3.0</code></td>
+</tr>
+<tr class="even">
+<td>Inertia Laravel</td>
+<td><code>3.0.1</code></td>
+</tr>
+<tr class="odd">
+<td>Laravel Fortify</td>
+<td><code>1.36.2</code></td>
+</tr>
+<tr class="even">
+<td>Laravel Horizon</td>
+<td><code>5.45.5</code></td>
+</tr>
+<tr class="odd">
+<td>Laravel Sanctum</td>
+<td><code>4.3.1</code></td>
+</tr>
+<tr class="even">
+<td>Laravel Telescope</td>
+<td><code>5.19.0</code></td>
+</tr>
+<tr class="odd">
+<td>PHPUnit</td>
+<td><code>12.5.16</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="frontend-package-versions">Frontend Package Versions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vue</td>
+<td><code>3.5.32</code></td>
+</tr>
+<tr class="even">
+<td>Inertia Vue 3</td>
+<td><code>3.0.2</code></td>
+</tr>
+<tr class="odd">
+<td>Vite</td>
+<td><code>8.0.6</code></td>
+</tr>
+<tr class="even">
+<td>Tailwind CSS</td>
+<td><code>4.2.2</code></td>
+</tr>
+<tr class="odd">
+<td>Laravel Vite Plugin</td>
+<td><code>3.0.1</code></td>
+</tr>
+<tr class="even">
+<td><code>@vitejs/plugin-vue</code></td>
+<td><code>6.0.5</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="prerequisites-1">Prerequisites</h2>
+<ul>
+<li><a href="https://www.docker.com/products/docker-desktop/">Docker
+Desktop</a> installed and running</li>
+<li>Git</li>
+</ul>
+<p>That’s it. PHP, Composer, and Node are all handled inside the
+containers.</p>
+<hr />
+<h2 id="quick-start-1">Quick Start</h2>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Clone the repo</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://zentrianalytics-admin@bitbucket.org/zentrianalytics/flightbookplatform.git</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> flightbookplatform</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Build and start all services</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">--build</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. commands that should resolve most issues</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">--build</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker compose exec php npm install</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker compose exec php npm run build</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker compose exec php php artisan optimize  </span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker compose exec php php artisan flights:fetch </span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> docker compose exec php php artisan migrate</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<p>On first boot the <code>php</code> container will automatically: -
+Copy <code>.env.example</code> → <code>.env</code> - Generate an
+<code>APP_KEY</code> - Install Composer dependencies - Install Node
+dependencies and build frontend assets - Wait for PostgreSQL to be ready
+- Run database migrations - Seed demo users and sample flight data -
+Reprocess bundled <code>aviation_stack</code> JSON files - Start
+PHP-FPM</p>
+<p>If you want live flight imports from AviationStack to work, set a
+valid <code>AVIATIONSTACK_API_KEY</code> in <code>.env</code> before the
+first <code>docker compose up --build</code>.</p>
+<p><strong>The app will be available at: http://localhost</strong></p>
+<h2
+id="in-the-.env-file-replace-aviationstack_api_keyapi_key-with-necessary-key">**
+in the .env file replace AVIATIONSTACK_API_KEY=api_key with necessary
+key</h2>
+<h2 id="service-urls">Service URLs</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Service</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Application</td>
+<td>http://localhost</td>
+</tr>
+<tr class="even">
+<td>Mailpit (UI)</td>
+<td>http://localhost:8025</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="database-credentials-default">Database Credentials
+(default)</h2>
+<p>Use these to connect with DBeaver, TablePlus, or any SQL client:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Host</td>
+<td><code>localhost</code></td>
+</tr>
+<tr class="even">
+<td>Port</td>
+<td><code>5432</code></td>
+</tr>
+<tr class="odd">
+<td>Database</td>
+<td><code>flightbookplatform</code></td>
+</tr>
+<tr class="even">
+<td>Username</td>
+<td><code>flightbookplatform</code></td>
+</tr>
+<tr class="odd">
+<td>Password</td>
+<td><code>secret</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>To use custom credentials, set <code>DB_DATABASE</code>,
+<code>DB_USERNAME</code>, and <code>DB_PASSWORD</code> in a
+<code>.env</code> file in the project root <strong>before</strong>
+running <code>docker compose up</code> for the first time.</p>
+</blockquote>
+<hr />
+<h2 id="custom-environment-variables">Custom Environment Variables</h2>
+<p>Docker Compose reads your local <code>.env</code> file for these
+overrides:</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 28%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>DB_DATABASE</code></td>
+<td><code>flightbookplatform</code></td>
+<td>Postgres database name</td>
+</tr>
+<tr class="even">
+<td><code>DB_USERNAME</code></td>
+<td><code>flightbookplatform</code></td>
+<td>Postgres username</td>
+</tr>
+<tr class="odd">
+<td><code>DB_PASSWORD</code></td>
+<td><code>secret</code></td>
+<td>Postgres password</td>
+</tr>
+<tr class="even">
+<td><code>APP_PORT</code></td>
+<td><code>80</code></td>
+<td>Host port for the web app</td>
+</tr>
+<tr class="odd">
+<td><code>DB_PORT_FORWARD</code></td>
+<td><code>5432</code></td>
+<td>Host port forwarded to Postgres</td>
+</tr>
+<tr class="even">
+<td><code>REDIS_PORT_FORWARD</code></td>
+<td><code>6379</code></td>
+<td>Host port forwarded to Redis</td>
+</tr>
+<tr class="odd">
+<td><code>MAIL_PORT_FORWARD</code></td>
+<td><code>1025</code></td>
+<td>Host port forwarded to Mailpit SMTP</td>
+</tr>
+<tr class="even">
+<td><code>MAILPIT_UI_PORT</code></td>
+<td><code>8025</code></td>
+<td>Host port for Mailpit web UI</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="stopping-the-app">Stopping the App</h2>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stop containers (keeps data)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose down</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Stop and wipe ALL data (full reset)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose down <span class="at">-v</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">--build</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<hr />
+<h1 id="aws-online-deployment">AWS Online Deployment</h1>
+<h1 id="aws-online-deployment-1">AWS Online Deployment</h1>
+<h2 id="overview-1">Overview</h2>
+<p>FlightBookPlatform is configured for online deployment through
+Bitbucket Pipelines. The production deployment target is the live
+application at
+<code>https://quantumstackjobs.zentrianalytics.com/</code>.</p>
+<p>The CI/CD pipeline in <a
+href="/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/bitbucket-pipelines.yml">bitbucket-pipelines.yml</a>
+connects to a remote Linux server over SSH, updates the codebase,
+prepares the Laravel environment, builds assets, runs migrations, and
+restarts the required services.</p>
+<h2 id="production-deployment-target">Production Deployment Target</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Production URL</td>
+<td><code>https://quantumstackjobs.zentrianalytics.com/</code></td>
+</tr>
+<tr class="even">
+<td>Deployment trigger</td>
+<td>Push to <code>main</code> branch</td>
+</tr>
+<tr class="odd">
+<td>CI/CD platform</td>
+<td>Bitbucket Pipelines</td>
+</tr>
+<tr class="even">
+<td>Remote deploy method</td>
+<td>SSH remote execution</td>
+</tr>
+<tr class="odd">
+<td>Web stack</td>
+<td>Nginx + PHP-FPM</td>
+</tr>
+<tr class="even">
+<td>Queue manager</td>
+<td>Laravel Horizon</td>
+</tr>
+<tr class="odd">
+<td>Cache / queue backend</td>
+<td>Redis</td>
+</tr>
+<tr class="even">
+<td>Database</td>
+<td>PostgreSQL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deployment-workflow">Deployment Workflow</h2>
+<p>The production deployment is defined under the <code>main</code>
+branch pipeline. When changes are pushed to <code>main</code>, Bitbucket
+Pipelines runs a deployment step named
+<code>Deploy to production</code>.</p>
+<p>The remote deployment script performs the following actions:</p>
+<ol type="1">
+<li>Connects to the remote Ubuntu server over SSH.</li>
+<li>Clones the repository on first deploy if it is not already
+present.</li>
+<li>Moves into <code>/var/www/flightbookplatform</code>.</li>
+<li>Sets storage and cache directory permissions.</li>
+<li>Checks out <code>main</code>, fetches the latest code, and
+hard-resets to the branch head.</li>
+<li>Writes the production <code>.env</code> file from Bitbucket
+deployment variables.</li>
+<li>Installs Composer dependencies without development packages.</li>
+<li>Installs frontend dependencies and builds production assets.</li>
+<li>Unzips the airports CSV asset bundle.</li>
+<li>Runs Laravel database migrations in force mode.</li>
+<li>Publishes Telescope assets.</li>
+<li>Clears and rebuilds Laravel caches.</li>
+<li>Reloads <code>php8.4-fpm</code> and <code>nginx</code>.</li>
+<li>Creates or refreshes the <code>horizon.service</code> systemd
+unit.</li>
+<li>Gracefully terminates old Horizon workers and restarts Horizon.</li>
+</ol>
+<h2 id="environment-configuration">Environment Configuration</h2>
+<p>The pipeline writes the production environment file during
+deployment. The generated <code>.env</code> includes application,
+database, logging, mail, Redis, and AviationStack settings.</p>
+<p>Important production variables referenced by the pipeline
+include:</p>
+<ul>
+<li><code>APP_KEY</code></li>
+<li><code>APP_URL</code></li>
+<li><code>DB_HOST</code></li>
+<li><code>DB_DATABASE</code></li>
+<li><code>DB_USERNAME</code></li>
+<li><code>DB_PASSWORD</code></li>
+<li><code>SLACK_WEBHOOK_URL</code></li>
+<li><code>MAIL_MAILER</code></li>
+<li><code>MAIL_FROM_ADDRESS</code></li>
+<li><code>AVIATIONSTACK_API_KEY</code></li>
+</ul>
+<p>These values are stored securely in Bitbucket deployment variables
+rather than committed into the repository.</p>
+<h2 id="laravel-services-managed-in-production">Laravel Services Managed
+In Production</h2>
+<h3 id="web-application">Web Application</h3>
+<p>The application is served through Nginx with PHP 8.4 FPM. During
+deployment, both services are reloaded so the newest code and built
+assets are served immediately.</p>
+<h3 id="queue-processing">Queue Processing</h3>
+<p>Laravel Horizon is managed as a systemd service on the production
+server. The deployment script ensures the service definition exists,
+reloads systemd, gracefully terminates older workers, and restarts
+Horizon with the latest code.</p>
+<h3 id="database-and-cache">Database And Cache</h3>
+<p>The application uses PostgreSQL for persistent data and Redis for
+cache, session, and queue workloads.</p>
+<h1 id="document-web-services-1">Document Web Services</h1>
+<h1 id="document-web-services-2">Document Web Services</h1>
+<h2 id="overview-2">Overview</h2>
+<p>This document summarizes the web services exposed by
+FlightBookPlatform. The application provides a mix of public pages,
+authentication services, authenticated SPA endpoints, REST APIs, and
+admin management services.</p>
+<p>The platform is built around flight discovery, trip building, booking
+management, and administration of core travel data such as users,
+airlines, airports, flights, and trips. The endpoint groups below are
+organized to support a clear interview walkthrough from public entry
+points through user workflows and finally into administrative
+services.</p>
+<h2 id="public-web-services">1. Public Web Services</h2>
+<h3 id="homepage-service">Homepage Service</h3>
+<p><code>GET /</code><br />
+This is the public landing page for the application. It introduces the
+platform and gives guests access to sign in or create an account.</p>
+<h3 id="public-trip-sharing-service">Public Trip Sharing Service</h3>
+<p><code>GET /share/{token}</code><br />
+This service displays a shared trip using a public token. It allows an
+itinerary to be viewed without requiring authentication.</p>
+<h2 id="authentication-services">2. Authentication Services</h2>
+<h3 id="login-service">Login Service</h3>
+<p><code>GET /login</code><br />
+Displays the login form for existing users. It is the entry point into
+the authenticated application.</p>
+<p><code>POST /login</code><br />
+Submits user credentials and creates an authenticated session. It is
+used by standard users and admins to access protected features.</p>
+<h3 id="logout-service">Logout Service</h3>
+<p><code>POST /logout</code><br />
+Ends the current authenticated session. It returns the user to the
+public side of the application.</p>
+<h3 id="registration-service">Registration Service</h3>
+<p><code>GET /register</code><br />
+Displays the account registration form. It is used by new users joining
+the platform.</p>
+<p><code>POST /register</code><br />
+Creates a new user account. New registrations default to the Standard
+User role.</p>
+<h3 id="password-recovery-service">Password Recovery Service</h3>
+<p><code>GET /forgot-password</code><br />
+Displays the password reset request form. It allows a user to begin
+account recovery.</p>
+<p><code>POST /forgot-password</code><br />
+Sends a password reset link to the user’s email address. It supports
+users who cannot log in with their current password.</p>
+<p><code>GET /reset-password/{token}</code><br />
+Displays the password reset form for a valid reset token. It is the
+second step of the password recovery workflow.</p>
+<p><code>POST /reset-password</code><br />
+Stores the user’s new password after reset validation passes. It
+completes the password recovery process.</p>
+<h3 id="email-verification-service">Email Verification Service</h3>
+<p><code>GET /email/verify</code><br />
+Displays the email verification notice for authenticated users. It
+reminds users to verify their email before accessing restricted
+features.</p>
+<p><code>GET /email/verify/{id}/{hash}</code><br />
+Processes the signed verification link. It marks the user’s email as
+verified when the request is valid.</p>
+<p><code>POST /email/verification-notification</code><br />
+Resends the email verification notification. It supports users who need
+a fresh verification link.</p>
+<h3 id="password-confirmation-and-two-factor-services">Password
+Confirmation And Two-Factor Services</h3>
+<p><code>PUT /password</code><br />
+Updates the password for the authenticated user. It is used inside
+account maintenance workflows.</p>
+<p><code>GET /user/confirm-password</code>,
+<code>POST /user/confirm-password</code>,
+<code>GET /user/confirmed-password-status</code><br />
+These services support password confirmation before sensitive
+operations. They are part of the Fortify security workflow.</p>
+<p><code>GET /two-factor-challenge</code>,
+<code>POST /two-factor-challenge</code><br />
+These services handle the two-factor authentication challenge during
+login. They add an additional verification step before full access is
+granted.</p>
+<p><code>POST /user/two-factor-authentication</code>,
+<code>DELETE /user/two-factor-authentication</code>,
+<code>POST /user/confirmed-two-factor-authentication</code>,
+<code>GET /user/two-factor-qr-code</code>,
+<code>GET /user/two-factor-secret-key</code>,
+<code>GET /user/two-factor-recovery-codes</code>,
+<code>POST /user/two-factor-recovery-codes</code><br />
+These services manage two-factor authentication setup and recovery. They
+support enabling, confirming, viewing, regenerating, and disabling 2FA
+for the current user.</p>
+<h2 id="authenticated-user-web-services">3. Authenticated User Web
+Services</h2>
+<h3 id="user-dashboard-service">User Dashboard Service</h3>
+<p><code>GET /dashboard</code><br />
+Displays the main application dashboard for authenticated and verified
+users. It serves as the main entry point after login.</p>
+<h3 id="help-and-tutorial-services">Help And Tutorial Services</h3>
+<p><code>GET /help</code><br />
+Displays tutorial or onboarding help content. It supports users who have
+not yet completed the tutorial flow.</p>
+<p><code>POST /tutorial/seen</code><br />
+Marks the tutorial as completed for the current user. This unlocks the
+rest of the gated application experience.</p>
+<h3 id="profile-service">Profile Service</h3>
+<p><code>GET /profile</code><br />
+Displays the user profile page. It allows the user to review their
+personal information.</p>
+<p><code>PATCH /profile</code><br />
+Updates the user’s profile details. It supports changes such as name and
+email address.</p>
+<p><code>DELETE /profile</code><br />
+Deletes the authenticated user’s account. It completes account removal
+and ends the session.</p>
+<h3 id="trips-and-planning-pages">Trips And Planning Pages</h3>
+<p><code>GET /trips</code><br />
+Displays the trips page with booking history and upcoming trips. It is
+focused on reviewing saved travel plans.</p>
+<p><code>GET /trip-builder</code><br />
+Displays the trip builder interface. It supports building one-way,
+round-trip, open-jaw, and multi-city itineraries.</p>
+<p><code>GET /flights</code><br />
+Displays the flight explorer page. It allows users to browse and filter
+flights before building or updating a trip.</p>
+<p><code>GET /trips/{trip}/map</code><br />
+Displays a map view for a specific trip. It helps users visualize the
+itinerary and route sequence.</p>
+<p><code>GET /airports/map</code><br />
+Displays airport information on a map. It supports geographic
+exploration of airport locations.</p>
+<p><code>GET /settings</code><br />
+Displays the settings hub page. It acts as a central place for account
+and preference-related options.</p>
+<h2 id="client-spa-api-services">4. Client SPA API Services</h2>
+<p>These services support the no-refresh single-page user experience.
+They are consumed directly by the Vue frontend components.</p>
+<h3 id="user-trip-management-api">User Trip Management API</h3>
+<p><code>GET /client-api/trips</code><br />
+Returns the authenticated user’s trip list. It supports the trips page
+and user account overview features.</p>
+<p><code>GET /client-api/trips/{trip}</code><br />
+Returns a single trip with its related segments. It is used when a user
+views itinerary details.</p>
+<p><code>PATCH /client-api/trips/{trip}</code><br />
+Updates trip details such as name, status, or departure information. It
+supports lightweight trip edits inside the SPA.</p>
+<p><code>DELETE /client-api/trips/{trip}</code><br />
+Deletes a trip owned by the authenticated user. It supports self-service
+trip cleanup.</p>
+<h3 id="quick-trip-creation-and-editing-api">Quick Trip Creation And
+Editing API</h3>
+<p><code>POST /client-api/trips/from-flight</code><br />
+Creates a new trip directly from a selected flight. It reduces friction
+by allowing users to start a plan from the flight explorer.</p>
+<p><code>POST /client-api/trips/{trip}/segments/from-flight</code><br />
+Appends a new segment to an existing trip. It supports growing a trip
+plan without restarting the booking flow.</p>
+<p><code>PUT /client-api/trips/{trip}/segments/replace-flight</code><br />
+Replaces the selected flight in a one-way trip. It supports quick
+changes when the user wants a better option.</p>
+<p><code>POST /client-api/trips/{trip}/make-public</code><br />
+Generates or returns a public sharing token for a trip. It enables
+public itinerary sharing through a shareable URL.</p>
+<h3 id="flight-search-and-builder-support-api">Flight Search And Builder
+Support API</h3>
+<p><code>GET /client-api/flights</code><br />
+Returns flight explorer results for the authenticated user. It supports
+filtering, sorting, and browsing flights in the SPA.</p>
+<p><code>GET /client-api/airports/search</code><br />
+Returns airport suggestions based on user input. It supports search by
+airport name, airport code, and city code.</p>
+<p><code>GET /client-api/airports/map-data</code><br />
+Returns airport data with coordinate information. It is used for
+map-based frontend features.</p>
+<p><code>GET /client-api/airlines/options</code><br />
+Returns airline options for selectors and filters. It supports preferred
+airline filtering in the booking flow.</p>
+<p><code>POST /client-api/trip-builder/flights/search</code><br />
+Searches flights for a trip-builder leg request. It supports route-based
+search, nearby airport expansion, filtering, sorting, and
+pagination.</p>
+<p><code>POST /client-api/trip-builder/book</code><br />
+Books and stores a trip from the trip-builder payload. It validates the
+itinerary and persists the trip with its segments.</p>
+<h2 id="public-rest-api-services">5. Public REST API Services</h2>
+<p>These services provide JSON endpoints for external consumers and
+decoupled clients.</p>
+<h3 id="airline-api">Airline API</h3>
+<p><code>GET /api/v1/airlines</code><br />
+Returns a list of airlines. It supports external consumers that need
+airline reference data.</p>
+<p><code>GET /api/v1/airlines/{airline}</code><br />
+Returns a single airline with related data. It is used when an
+integration needs airline detail information.</p>
+<h3 id="airport-api">Airport API</h3>
+<p><code>GET /api/v1/airports</code><br />
+Returns a list of airports. It supports external consumers that need
+airport reference records.</p>
+<p><code>GET /api/v1/airports/{airport}</code><br />
+Returns a single airport with related information. It is useful for
+integrations that need airport detail data.</p>
+<h3 id="flight-api">Flight API</h3>
+<p><code>GET /api/v1/flights</code><br />
+Returns a filtered list of flights. It supports external browsing and
+flight search use cases.</p>
+<p><code>GET /api/v1/flights/{flight}</code><br />
+Returns a single flight with its related records. It is used when a
+consumer needs complete flight details.</p>
+<h3 id="authenticated-trip-api">Authenticated Trip API</h3>
+<p><code>GET /api/v1/trips</code><br />
+Returns the authenticated user’s trips through the Sanctum-protected
+API. It supports external clients that need trip listing
+functionality.</p>
+<p><code>POST /api/v1/trips</code><br />
+Creates a new trip through the API. It supports programmatic or
+decoupled trip creation.</p>
+<p><code>GET /api/v1/trips/{trip}</code><br />
+Returns a single trip owned by the authenticated user. It enforces
+ownership rules through policy authorization.</p>
+<p><code>PUT /api/v1/trips/{trip}</code> and
+<code>PATCH /api/v1/trips/{trip}</code><br />
+Updates a trip through the API. It supports external editing workflows
+for trip details.</p>
+<p><code>DELETE /api/v1/trips/{trip}</code><br />
+Deletes a trip through the API. It allows an authenticated client to
+remove a user-owned trip.</p>
+<h2 id="administrative-web-services">6. Administrative Web Services</h2>
+<p>These services are restricted to authenticated administrators. They
+power the admin SPA and the backend data-management workflows.</p>
+<h3 id="admin-dashboard-service">Admin Dashboard Service</h3>
+<p><code>GET /admin</code><br />
+Displays the admin dashboard page. It is the SPA shell for
+administrative tools.</p>
+<p><code>GET /admin/api/dashboard/stats</code><br />
+Returns summary statistics for users, airlines, airports, flights, and
+trips. It powers dashboard widgets and high-level system reporting.</p>
+<h3 id="admin-user-management-service">Admin User Management
+Service</h3>
+<p><code>GET /admin/api/users</code>,
+<code>POST /admin/api/users</code>,
+<code>GET /admin/api/users/{user}</code>,
+<code>PATCH /admin/api/users/{user}</code>,
+<code>DELETE /admin/api/users/{user}</code><br />
+These services provide full CRUD management for users. They support
+administration of accounts, roles, and account lifecycle operations.</p>
+<h3 id="admin-airline-management-service">Admin Airline Management
+Service</h3>
+<p><code>GET /admin/api/airlines/options</code>,
+<code>GET /admin/api/airlines</code>,
+<code>POST /admin/api/airlines</code>,
+<code>GET /admin/api/airlines/{airline}</code>,
+<code>PATCH /admin/api/airlines/{airline}</code>,
+<code>DELETE /admin/api/airlines/{airline}</code><br />
+These services manage airline records in the admin system. They support
+listing, lookup, option loading, creation, updating, and deletion.</p>
+<h3 id="admin-airport-management-service">Admin Airport Management
+Service</h3>
+<p><code>GET /admin/api/airports/options</code>,
+<code>GET /admin/api/airports</code>,
+<code>POST /admin/api/airports</code>,
+<code>GET /admin/api/airports/{airport}</code>,
+<code>PATCH /admin/api/airports/{airport}</code>,
+<code>DELETE /admin/api/airports/{airport}</code><br />
+These services manage airport master data. They support maintaining
+location, code, and mapping details for airports.</p>
+<h3 id="admin-flight-management-service">Admin Flight Management
+Service</h3>
+<p><code>GET /admin/api/flights</code>,
+<code>POST /admin/api/flights</code>,
+<code>GET /admin/api/flights/{flight}</code>,
+<code>PATCH /admin/api/flights/{flight}</code>,
+<code>DELETE /admin/api/flights/{flight}</code><br />
+These services manage flights within the admin application. They support
+search, inspection, creation, updates, and deletion of flight
+records.</p>
+<h3 id="admin-trip-management-service">Admin Trip Management
+Service</h3>
+<p><code>GET /admin/api/trips</code>,
+<code>GET /admin/api/trips/{trip}</code>,
+<code>PATCH /admin/api/trips/{trip}</code>,
+<code>DELETE /admin/api/trips/{trip}</code><br />
+These services let administrators inspect and manage trip records across
+all users. They support moderation, support, and data correction
+workflows.</p>
+<h3 id="admin-flight-import-service">Admin Flight Import Service</h3>
+<p><code>POST /admin/api/flight-imports</code><br />
+Uploads a raw JSON flight data file for processing. It stores the file
+and dispatches a background Horizon job to import the contained flight
+data.</p>
+<h2 id="utility-service">7. Utility Service</h2>
+<h3 id="sanctum-csrf-service">Sanctum CSRF Service</h3>
+<p><code>GET /sanctum/csrf-cookie</code><br />
+Returns the CSRF cookie used by Sanctum and session-based SPA requests.
+It is typically called before authenticated browser-based API
+requests.</p>
+<h2 id="summary">8. Summary</h2>
+<p>FlightBookPlatform exposes web services across three main layers:
+public access, authenticated user workflows, and administrator
+management services. The architecture supports both server-rendered
+entry pages and SPA-style JSON endpoints, which makes it suitable for
+interactive travel booking flows while still exposing reusable REST
+services for integrations and external clients.</p>
+</body>
+</html>

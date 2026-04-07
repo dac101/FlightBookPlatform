@@ -96,6 +96,14 @@ If you want live AviationStack imports to work, set a valid `AVIATIONSTACK_API_K
 
 ---
 
+## Source Code Architecture
+
+The backend follows a repository pattern so business logic is separated from persistence logic. Controllers delegate to service classes such as [FlightService.php](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/FlightService.php), [TripService.php](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/TripService.php), and [FlightImportService.php](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/FlightImportService.php), while data access is handled through repository interfaces and implementations under [app/Repositories](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Repositories) and [app/Repositories/Contracts](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Repositories/Contracts). This structure makes the code easier to test, maintain, and extend as the application grows beyond demo data.
+
+Flight import and reprocessing workflows are handled asynchronously with Laravel Horizon and Redis-backed queues. Live AviationStack payloads are fetched by [FetchFlightDataCommand.php](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Console/Commands/FetchFlightDataCommand.php), stored to JSON by [AviationStackService.php](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Services/AviationStackService.php), and processed in the background by [ProcessAviationStackFlightsJob.php](/Users/dacoriesmith/Developer/BitBucket/flightbookplatform/app/Jobs/ProcessAviationStackFlightsJob.php), allowing larger import workloads to be handled without blocking user-facing requests.
+
+---
+
 ## Default Credentials
 
 | Role | Email | Password |

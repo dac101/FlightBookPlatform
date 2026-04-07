@@ -2,6 +2,16 @@
 2. http://localhost/profile form  input box doesn't look like the form input from  http://localhost/login form change the box to look like this 
 3. When you clcik delete account the we get an overlay of the entire screen 
 4. in http://localhost/flights  it should use the same Preferred airlines input likje that is in http://localhost/trip-builder Preferred airlines
-5. the airport map should be clickable on the home page 
+5. the airport map should be clickable on the home page to need tab 
+
+6. shouldn't the logic for this be in a repository services.     public function airportMapData(): JsonResponse
+   {
+   $airports = Airport::query()
+   ->whereNotNull('latitude')
+   ->whereNotNull('longitude')
+   ->get(['id', 'name', 'city', 'iata_code', 'city_code', 'country_code', 'latitude', 'longitude', 'timezone']);
+
+        return response()->json($airports);
+   }
  
  

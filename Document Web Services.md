@@ -272,6 +272,9 @@ Uploads a raw JSON flight data file for processing. It stores the file and dispa
 `GET /sanctum/csrf-cookie`  
 Returns the CSRF cookie used by Sanctum and session-based SPA requests. It is typically called before authenticated browser-based API requests.
 
-## 8. Interview Summary
+## 8. Summary 
 
-FlightBookPlatform exposes web services across three main layers: public access, authenticated user workflows, and administrator management services. The architecture supports both server-rendered entry pages and SPA-style JSON endpoints, which makes it suitable for interactive travel booking flows while still exposing reusable REST services for integrations and external clients.
+FlightBookPlatform exposes web services across three main layers: public access, authenticated user workflows, 
+and administrator management services. The architecture supports both server-rendered entry pages and SPA-style JSON endpoints,
+which makes it suitable for interactive travel booking flows while still exposing reusable REST services for integrations and external
+clients.

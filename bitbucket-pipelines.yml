@@ -49,8 +49,8 @@ pipelines:
           script:
             - pipe: atlassian/ssh-run:0.8.1
               variables:
-                SSH_USER: 'ubuntu'
-                SERVER: '100.51.99.192'
+                SSH_USER: ${SSH_USER}
+                SERVER: ${SERVER}
                 COMMAND: |
                   set -e
 
@@ -164,15 +164,3 @@ pipelines:
                   sudo systemctl restart horizon
 
                   echo "[REMOTE] Deploy complete!"
-
-
-
-
-#      - step:
-#          name: Notify Slack
-#          script:
-#            - pipe: atlassian/slack-notify:2.3.1
-#              variables:
-#                WEBHOOK_URL: $SLACK_WEBHOOK_URL
-#                MESSAGE: "FlightBook Platform deployed from $BITBUCKET_BRANCH"
-#                IGNORE_ERRORS: 'true'
