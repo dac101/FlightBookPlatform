@@ -147,6 +147,24 @@ const aboutPoints = [
                     </article>
                 </section>
 
+                <section class="rounded-[2rem] border border-amber-200 bg-amber-50 p-8 shadow-sm">
+                    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                        <div>
+                            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-amber-700">Explore</p>
+                            <h3 class="mt-2 text-2xl font-semibold text-slate-900">Discover airports on an interactive map</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-600">
+                                Browse all airports visually on a world map. Click any marker to see its details, then jump straight to Flight Explorer for that location.
+                            </p>
+                        </div>
+                        <Link
+                            :href="$page.props.auth.user ? route('trip-builder.page') : route('login')"
+                            class="shrink-0 rounded-full bg-amber-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-700"
+                        >
+                            View airport map →
+                        </Link>
+                    </div>
+                </section>
+
                 <section class="grid gap-8 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
                     <div class="space-y-4">
                         <p class="text-xs font-semibold uppercase tracking-[0.28em] text-sky-700">About Us</p>

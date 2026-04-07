@@ -14,7 +14,8 @@ class UpdateAirportRequest extends FormRequest
 
     public function rules(): array
     {
-        $airportId = $this->route('airport')?->id;
+        $airport = $this->route('airport');
+        $airportId = is_object($airport) ? $airport->id : $airport;
 
         return [
             'iata_code' => ['sometimes', 'string', 'size:3', Rule::unique('airports', 'iata_code')->ignore($airportId)],

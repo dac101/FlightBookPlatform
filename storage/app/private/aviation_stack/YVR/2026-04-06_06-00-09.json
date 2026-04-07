@@ -1,0 +1,5449 @@
+{
+    "pagination": {
+        "limit": 100,
+        "offset": 0,
+        "count": 100,
+        "total": 991
+    },
+    "data": [
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D39",
+                "delay": null,
+                "scheduled": "2026-04-06T08:00:00+00:00",
+                "estimated": "2026-04-06T08:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C47",
+                "baggage": "5",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "7466",
+                "iata": "CA7466",
+                "icao": "CCA7466",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "185",
+                    "flight_iata": "ac185",
+                    "flight_icao": "aca185"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01753"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seoul (Incheon)",
+                "timezone": "Asia\/Seoul",
+                "iata": "ICN",
+                "icao": "RKSI",
+                "terminal": "2",
+                "gate": "A",
+                "delay": null,
+                "scheduled": "2026-04-06T18:45:00+00:00",
+                "estimated": "2026-04-06T18:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T12:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Korean Air",
+                "iata": "KE",
+                "icao": "KAL"
+            },
+            "flight": {
+                "number": "71",
+                "iata": "KE71",
+                "icao": "KAL71",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "71C570"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seoul (Incheon)",
+                "timezone": "Asia\/Seoul",
+                "iata": "ICN",
+                "icao": "RKSI",
+                "terminal": "2",
+                "gate": "A",
+                "delay": null,
+                "scheduled": "2026-04-06T18:45:00+00:00",
+                "estimated": "2026-04-06T18:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T12:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6061",
+                "iata": "WS6061",
+                "icao": "WJA6061",
+                "codeshared": {
+                    "airline_name": "korean air",
+                    "airline_iata": "ke",
+                    "airline_icao": "kal",
+                    "flight_number": "71",
+                    "flight_iata": "ke71",
+                    "flight_icao": "kal71"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "71C570"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Eindhoven",
+                "timezone": "Europe\/Amsterdam",
+                "iata": "EIN",
+                "icao": "EHEH",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T10:15:00+00:00",
+                "estimated": "2026-04-06T10:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T11:02:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "NATO",
+                "iata": null,
+                "icao": "OAN"
+            },
+            "flight": {
+                "number": null,
+                "iata": null,
+                "icao": "OAN",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "480C46"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Regina",
+                "timezone": "America\/Regina",
+                "iata": "YQR",
+                "icao": "CYQR",
+                "terminal": null,
+                "gate": "2",
+                "delay": null,
+                "scheduled": "2026-04-06T05:30:00+00:00",
+                "estimated": "2026-04-06T05:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C48",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "1101",
+                "iata": "AC1101",
+                "icao": "ACA1101",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EA2"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Regina",
+                "timezone": "America\/Regina",
+                "iata": "YQR",
+                "icao": "CYQR",
+                "terminal": null,
+                "gate": "2",
+                "delay": null,
+                "scheduled": "2026-04-06T05:30:00+00:00",
+                "estimated": "2026-04-06T05:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C48",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8357",
+                "iata": "UA8357",
+                "icao": "UAL8357",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "1101",
+                    "flight_iata": "ac1101",
+                    "flight_icao": "aca1101"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EA2"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Regina",
+                "timezone": "America\/Regina",
+                "iata": "YQR",
+                "icao": "CYQR",
+                "terminal": null,
+                "gate": "2",
+                "delay": null,
+                "scheduled": "2026-04-06T05:30:00+00:00",
+                "estimated": "2026-04-06T05:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C48",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "7518",
+                "iata": "CA7518",
+                "icao": "CCA7518",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "1101",
+                    "flight_iata": "ac1101",
+                    "flight_icao": "aca1101"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EA2"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D39",
+                "delay": null,
+                "scheduled": "2026-04-06T08:00:00+00:00",
+                "estimated": "2026-04-06T08:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C47",
+                "baggage": "5",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "185",
+                "iata": "AC185",
+                "icao": "ACA185",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01753"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:55:00+00:00",
+                "estimated": "2026-04-06T07:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T10:20:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Flair Airlines",
+                "iata": "F8",
+                "icao": "FLE"
+            },
+            "flight": {
+                "number": "601",
+                "iata": "F8601",
+                "icao": "FLE601",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "705",
+                "iata": "WS705",
+                "icao": "WJA705",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "China Eastern Airlines",
+                "iata": "MU",
+                "icao": "CES"
+            },
+            "flight": {
+                "number": "1994",
+                "iata": "MU1994",
+                "icao": "CES1994",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Xiamen Airlines",
+                "iata": "MF",
+                "icao": "CXA"
+            },
+            "flight": {
+                "number": "6039",
+                "iata": "MF6039",
+                "icao": "CXA6039",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Korean Air",
+                "iata": "KE",
+                "icao": "KAL"
+            },
+            "flight": {
+                "number": "6525",
+                "iata": "KE6525",
+                "icao": "KAL6525",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Japan Airlines",
+                "iata": "JL",
+                "icao": "JTL"
+            },
+            "flight": {
+                "number": "5807",
+                "iata": "JL5807",
+                "icao": "JTL5807",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "7163",
+                "iata": "DL7163",
+                "icao": "DAL7163",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "China Southern Airlines",
+                "iata": "CZ",
+                "icao": "CSN"
+            },
+            "flight": {
+                "number": "597",
+                "iata": "CZ597",
+                "icao": "CSN597",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "7045",
+                "iata": "CX7045",
+                "icao": "CPA7045",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:15:00+00:00",
+                "estimated": "2026-04-06T07:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B16",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:42:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "3029",
+                "iata": "AF3029",
+                "icao": "AFR3029",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "705",
+                    "flight_iata": "ws705",
+                    "flight_icao": "wja705"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C083AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Calgary International Airport",
+                "timezone": "America\/Edmonton",
+                "iata": "YYC",
+                "icao": "CYYC",
+                "terminal": null,
+                "gate": "C50",
+                "delay": null,
+                "scheduled": "2026-04-06T06:00:00+00:00",
+                "estimated": "2026-04-06T06:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C43",
+                "baggage": "6",
+                "scheduled": "2026-04-06T06:38:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "201",
+                "iata": "AC201",
+                "icao": "ACA201",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C007D0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Calgary International Airport",
+                "timezone": "America\/Edmonton",
+                "iata": "YYC",
+                "icao": "CYYC",
+                "terminal": null,
+                "gate": "C50",
+                "delay": null,
+                "scheduled": "2026-04-06T06:00:00+00:00",
+                "estimated": "2026-04-06T06:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C43",
+                "baggage": "6",
+                "scheduled": "2026-04-06T06:38:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "1543",
+                "iata": "CX1543",
+                "icao": "CPA1543",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "201",
+                    "flight_iata": "ac201",
+                    "flight_icao": "aca201"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C007D0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Whitehorse International",
+                "timezone": "America\/Whitehorse",
+                "iata": "YXY",
+                "icao": "CYXY",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-06T05:00:00+00:00",
+                "estimated": "2026-04-06T05:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C30",
+                "baggage": "4",
+                "scheduled": "2026-04-06T07:22:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8098",
+                "iata": "AC8098",
+                "icao": "ACA8098",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05D3C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Whitehorse International",
+                "timezone": "America\/Whitehorse",
+                "iata": "YXY",
+                "icao": "CYXY",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-06T05:00:00+00:00",
+                "estimated": "2026-04-06T05:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C30",
+                "baggage": "4",
+                "scheduled": "2026-04-06T07:22:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "ANA",
+                "iata": "NH",
+                "icao": "ANA"
+            },
+            "flight": {
+                "number": "6845",
+                "iata": "NH6845",
+                "icao": "ANA6845",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8098",
+                    "flight_iata": "ac8098",
+                    "flight_icao": "aca8098"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05D3C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Auckland International",
+                "timezone": "Pacific\/Auckland",
+                "iata": "AKL",
+                "icao": "NZAA",
+                "terminal": "I",
+                "gate": "15",
+                "delay": null,
+                "scheduled": "2026-04-06T20:00:00+00:00",
+                "estimated": "2026-04-06T20:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T14:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "7155",
+                "iata": "LH7155",
+                "icao": "DLH7155",
+                "codeshared": {
+                    "airline_name": "air new zealand",
+                    "airline_iata": "nz",
+                    "airline_icao": "anz",
+                    "flight_number": "24",
+                    "flight_iata": "nz24",
+                    "flight_icao": "anz24"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C820D4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Canc\u00fan International",
+                "timezone": "America\/Cancun",
+                "iata": "CUN",
+                "icao": "MMUN",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:00:00+00:00",
+                "estimated": "2026-04-06T07:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E80",
+                "baggage": null,
+                "scheduled": "2026-04-06T11:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "1315",
+                "iata": "AC1315",
+                "icao": "ACA1315",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C050AE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Yellowknife",
+                "timezone": "America\/Yellowknife",
+                "iata": "YZF",
+                "icao": "CYZF",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T05:35:00+00:00",
+                "estimated": "2026-04-06T05:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C39",
+                "baggage": "4",
+                "scheduled": "2026-04-06T07:12:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8023",
+                "iata": "AC8023",
+                "icao": "ACA8023",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05D08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Yellowknife",
+                "timezone": "America\/Yellowknife",
+                "iata": "YZF",
+                "icao": "CYZF",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T05:35:00+00:00",
+                "estimated": "2026-04-06T05:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C39",
+                "baggage": "4",
+                "scheduled": "2026-04-06T07:12:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8626",
+                "iata": "UA8626",
+                "icao": "UAL8626",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8023",
+                    "flight_iata": "ac8023",
+                    "flight_icao": "aca8023"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05D08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Yellowknife",
+                "timezone": "America\/Yellowknife",
+                "iata": "YZF",
+                "icao": "CYZF",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T05:35:00+00:00",
+                "estimated": "2026-04-06T05:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C39",
+                "baggage": "4",
+                "scheduled": "2026-04-06T07:12:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "ANA",
+                "iata": "NH",
+                "icao": "ANA"
+            },
+            "flight": {
+                "number": "5399",
+                "iata": "NH5399",
+                "icao": "ANA5399",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8023",
+                    "flight_iata": "ac8023",
+                    "flight_icao": "aca8023"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05D08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "John G. Diefenbaker International",
+                "timezone": "America\/Regina",
+                "iata": "YXE",
+                "icao": "CYXE",
+                "terminal": null,
+                "gate": "6",
+                "delay": null,
+                "scheduled": "2026-04-06T05:35:00+00:00",
+                "estimated": "2026-04-06T05:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C29",
+                "baggage": "4",
+                "scheduled": "2026-04-06T06:44:00+00:00",
+                "delay": 12,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8181",
+                "iata": "AC8181",
+                "icao": "ACA8181",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F0A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "John G. Diefenbaker International",
+                "timezone": "America\/Regina",
+                "iata": "YXE",
+                "icao": "CYXE",
+                "terminal": null,
+                "gate": "6",
+                "delay": null,
+                "scheduled": "2026-04-06T05:35:00+00:00",
+                "estimated": "2026-04-06T05:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C29",
+                "baggage": "4",
+                "scheduled": "2026-04-06T06:44:00+00:00",
+                "delay": 12,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8349",
+                "iata": "UA8349",
+                "icao": "UAL8349",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8181",
+                    "flight_iata": "ac8181",
+                    "flight_icao": "aca8181"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F0A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "John G. Diefenbaker International",
+                "timezone": "America\/Regina",
+                "iata": "YXE",
+                "icao": "CYXE",
+                "terminal": null,
+                "gate": "6",
+                "delay": null,
+                "scheduled": "2026-04-06T05:35:00+00:00",
+                "estimated": "2026-04-06T05:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C29",
+                "baggage": "4",
+                "scheduled": "2026-04-06T06:44:00+00:00",
+                "delay": 12,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "7514",
+                "iata": "CA7514",
+                "icao": "CCA7514",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8181",
+                    "flight_iata": "ac8181",
+                    "flight_icao": "aca8181"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F0A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A50",
+                "delay": null,
+                "scheduled": "2026-04-06T07:30:00+00:00",
+                "estimated": "2026-04-06T07:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "baggage": "4",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "301",
+                "iata": "AC301",
+                "icao": "ACA301",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04FDD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A50",
+                "delay": null,
+                "scheduled": "2026-04-06T07:30:00+00:00",
+                "estimated": "2026-04-06T07:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "baggage": "4",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "TAP Air Portugal",
+                "iata": "TP",
+                "icao": "TAP"
+            },
+            "flight": {
+                "number": "8035",
+                "iata": "TP8035",
+                "icao": "TAP8035",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "301",
+                    "flight_iata": "ac301",
+                    "flight_icao": "aca301"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04FDD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A50",
+                "delay": null,
+                "scheduled": "2026-04-06T07:30:00+00:00",
+                "estimated": "2026-04-06T07:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "baggage": "4",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "4741",
+                "iata": "NZ4741",
+                "icao": "ANZ4741",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "301",
+                    "flight_iata": "ac301",
+                    "flight_icao": "aca301"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04FDD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A50",
+                "delay": null,
+                "scheduled": "2026-04-06T07:30:00+00:00",
+                "estimated": "2026-04-06T07:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "baggage": "4",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "7468",
+                "iata": "CA7468",
+                "icao": "CCA7468",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "301",
+                    "flight_iata": "ac301",
+                    "flight_icao": "aca301"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04FDD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A50",
+                "delay": null,
+                "scheduled": "2026-04-06T07:30:00+00:00",
+                "estimated": "2026-04-06T07:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "baggage": "4",
+                "scheduled": "2026-04-06T09:50:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "6982",
+                "iata": "AV6982",
+                "icao": "AVA6982",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "301",
+                    "flight_iata": "ac301",
+                    "flight_icao": "aca301"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04FDD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Frankfurt International Airport",
+                "timezone": "Europe\/Berlin",
+                "iata": "FRA",
+                "icao": "EDDF",
+                "terminal": "1",
+                "gate": "B20",
+                "delay": null,
+                "scheduled": "2026-04-06T13:20:00+00:00",
+                "estimated": "2026-04-06T13:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D69",
+                "baggage": null,
+                "scheduled": "2026-04-06T14:20:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "492",
+                "iata": "LH492",
+                "icao": "DLH492",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "3C4AD9"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-06T07:45:00+00:00",
+                "estimated": "2026-04-06T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C46",
+                "baggage": "5",
+                "scheduled": "2026-04-06T10:09:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "341",
+                "iata": "AC341",
+                "icao": "ACA341",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030A6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-06T07:45:00+00:00",
+                "estimated": "2026-04-06T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C46",
+                "baggage": "5",
+                "scheduled": "2026-04-06T10:09:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Virgin Australia",
+                "iata": "VA",
+                "icao": "VOZ"
+            },
+            "flight": {
+                "number": "5175",
+                "iata": "VA5175",
+                "icao": "VOZ5175",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "341",
+                    "flight_iata": "ac341",
+                    "flight_icao": "aca341"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030A6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-06T07:45:00+00:00",
+                "estimated": "2026-04-06T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C46",
+                "baggage": "5",
+                "scheduled": "2026-04-06T10:09:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Asiana Airlines",
+                "iata": "OZ",
+                "icao": "AAR"
+            },
+            "flight": {
+                "number": "6111",
+                "iata": "OZ6111",
+                "icao": "AAR6111",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "341",
+                    "flight_iata": "ac341",
+                    "flight_icao": "aca341"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030A6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-06T07:45:00+00:00",
+                "estimated": "2026-04-06T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C46",
+                "baggage": "5",
+                "scheduled": "2026-04-06T10:09:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "4789",
+                "iata": "NZ4789",
+                "icao": "ANZ4789",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "341",
+                    "flight_iata": "ac341",
+                    "flight_icao": "aca341"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030A6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-06T07:45:00+00:00",
+                "estimated": "2026-04-06T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C46",
+                "baggage": "5",
+                "scheduled": "2026-04-06T10:09:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "ANA",
+                "iata": "NH",
+                "icao": "ANA"
+            },
+            "flight": {
+                "number": "6847",
+                "iata": "NH6847",
+                "icao": "ANA6847",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "341",
+                    "flight_iata": "ac341",
+                    "flight_icao": "aca341"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030A6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-06T07:45:00+00:00",
+                "estimated": "2026-04-06T07:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C46",
+                "baggage": "5",
+                "scheduled": "2026-04-06T10:09:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "7454",
+                "iata": "CA7454",
+                "icao": "CCA7454",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "341",
+                    "flight_iata": "ac341",
+                    "flight_icao": "aca341"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030A6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sydney Kingsford Smith Airport",
+                "timezone": "Australia\/Sydney",
+                "iata": "SYD",
+                "icao": "YSSY",
+                "terminal": "1",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T20:30:00+00:00",
+                "estimated": "2026-04-06T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T17:30:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qantas",
+                "iata": "QF",
+                "icao": "QFA"
+            },
+            "flight": {
+                "number": "75",
+                "iata": "QF75",
+                "icao": "QFA75",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "59",
+                "delay": null,
+                "scheduled": "2026-04-06T01:10:00+00:00",
+                "estimated": "2026-04-06T01:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T06:05:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "6111",
+                "iata": "WS6111",
+                "icao": "WJA6111",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "694",
+                    "flight_iata": "am694",
+                    "flight_icao": "amx694"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:00:00+00:00",
+                "estimated": "2026-04-06T07:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T09:14:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Porter",
+                "iata": "PD",
+                "icao": "POE"
+            },
+            "flight": {
+                "number": "301",
+                "iata": "PD301",
+                "icao": "POE301",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C060C6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T07:00:00+00:00",
+                "estimated": "2026-04-06T07:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T09:14:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "7900",
+                "iata": "TS7900",
+                "icao": "TSC7900",
+                "codeshared": {
+                    "airline_name": "porter",
+                    "airline_iata": "pd",
+                    "airline_icao": "poe",
+                    "flight_number": "301",
+                    "flight_iata": "pd301",
+                    "flight_icao": "poe301"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C060C6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D37",
+                "delay": null,
+                "scheduled": "2026-04-06T06:55:00+00:00",
+                "estimated": "2026-04-06T06:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C44",
+                "baggage": "5",
+                "scheduled": "2026-04-06T08:59:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "101",
+                "iata": "AC101",
+                "icao": "ACA101",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EAC"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D37",
+                "delay": null,
+                "scheduled": "2026-04-06T06:55:00+00:00",
+                "estimated": "2026-04-06T06:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C44",
+                "baggage": "5",
+                "scheduled": "2026-04-06T08:59:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "TAP Air Portugal",
+                "iata": "TP",
+                "icao": "TAP"
+            },
+            "flight": {
+                "number": "8040",
+                "iata": "TP8040",
+                "icao": "TAP8040",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "101",
+                    "flight_iata": "ac101",
+                    "flight_icao": "aca101"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EAC"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D37",
+                "delay": null,
+                "scheduled": "2026-04-06T06:55:00+00:00",
+                "estimated": "2026-04-06T06:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C44",
+                "baggage": "5",
+                "scheduled": "2026-04-06T08:59:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "6991",
+                "iata": "AV6991",
+                "icao": "AVA6991",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "101",
+                    "flight_iata": "ac101",
+                    "flight_icao": "aca101"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EAC"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "10",
+                "delay": null,
+                "scheduled": "2026-04-06T06:00:00+00:00",
+                "estimated": "2026-04-06T06:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C40",
+                "baggage": "6",
+                "scheduled": "2026-04-06T07:02:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "293",
+                "iata": "AC293",
+                "icao": "ACA293",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C010CB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "10",
+                "delay": null,
+                "scheduled": "2026-04-06T06:00:00+00:00",
+                "estimated": "2026-04-06T06:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C40",
+                "baggage": "6",
+                "scheduled": "2026-04-06T07:02:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "7478",
+                "iata": "CA7478",
+                "icao": "CCA7478",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "293",
+                    "flight_iata": "ac293",
+                    "flight_icao": "aca293"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C010CB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "10",
+                "delay": null,
+                "scheduled": "2026-04-06T06:00:00+00:00",
+                "estimated": "2026-04-06T06:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C40",
+                "baggage": "6",
+                "scheduled": "2026-04-06T07:02:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air India",
+                "iata": "AI",
+                "icao": "AIC"
+            },
+            "flight": {
+                "number": "6307",
+                "iata": "AI6307",
+                "icao": "AIC6307",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "293",
+                    "flight_iata": "ac293",
+                    "flight_icao": "aca293"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C010CB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "539",
+                "iata": "WS539",
+                "icao": "WJA539",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Korean Air",
+                "iata": "KE",
+                "icao": "KAL"
+            },
+            "flight": {
+                "number": "6514",
+                "iata": "KE6514",
+                "icao": "KAL6514",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "539",
+                    "flight_iata": "ws539",
+                    "flight_icao": "wja539"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Japan Airlines",
+                "iata": "JL",
+                "icao": "JTL"
+            },
+            "flight": {
+                "number": "5805",
+                "iata": "JL5805",
+                "icao": "JTL5805",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "539",
+                    "flight_iata": "ws539",
+                    "flight_icao": "wja539"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "7023",
+                "iata": "DL7023",
+                "icao": "DAL7023",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "539",
+                    "flight_iata": "ws539",
+                    "flight_icao": "wja539"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "7017",
+                "iata": "CX7017",
+                "icao": "CPA7017",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "539",
+                    "flight_iata": "ws539",
+                    "flight_icao": "wja539"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "7089",
+                "iata": "AM7089",
+                "icao": "AMX7089",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "539",
+                    "flight_iata": "ws539",
+                    "flight_icao": "wja539"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "9",
+                "delay": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "estimated": "2026-04-06T05:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "B19",
+                "baggage": null,
+                "scheduled": "2026-04-06T07:13:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "3010",
+                "iata": "AF3010",
+                "icao": "AFR3010",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "539",
+                    "flight_iata": "ws539",
+                    "flight_icao": "wja539"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07193"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "2",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T18:55:00+00:00",
+                "estimated": "2026-04-06T18:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T11:30:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Japan Airlines",
+                "iata": "JL",
+                "icao": "JTL"
+            },
+            "flight": {
+                "number": "18",
+                "iata": "JL18",
+                "icao": "JTL18",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Memphis International",
+                "timezone": "America\/Chicago",
+                "iata": "MEM",
+                "icao": "KMEM",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T03:12:00+00:00",
+                "estimated": "2026-04-06T03:12:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T05:37:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "FedEx",
+                "iata": "FX",
+                "icao": "FDX"
+            },
+            "flight": {
+                "number": "242",
+                "iata": "FX242",
+                "icao": "FDX242",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Beijing Capital International",
+                "timezone": "Asia\/Shanghai",
+                "iata": "PEK",
+                "icao": "ZBAA",
+                "terminal": "3",
+                "gate": "E11",
+                "delay": null,
+                "scheduled": "2026-04-06T14:00:00+00:00",
+                "estimated": "2026-04-06T14:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T10:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "6602",
+                "iata": "AC6602",
+                "icao": "ACA6602",
+                "codeshared": {
+                    "airline_name": "air china ltd",
+                    "airline_iata": "ca",
+                    "airline_icao": "cca",
+                    "flight_number": "991",
+                    "flight_iata": "ca991",
+                    "flight_icao": "cca991"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Kansai International",
+                "timezone": "Asia\/Tokyo",
+                "iata": "KIX",
+                "icao": "RJBB",
+                "terminal": "1",
+                "gate": "19",
+                "delay": null,
+                "scheduled": "2026-04-06T18:00:00+00:00",
+                "estimated": "2026-04-06T18:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D55",
+                "baggage": null,
+                "scheduled": "2026-04-06T11:14:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "24",
+                "iata": "AC24",
+                "icao": "ACA24",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C038AC"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seoul (Incheon)",
+                "timezone": "Asia\/Seoul",
+                "iata": "ICN",
+                "icao": "RKSI",
+                "terminal": "1",
+                "gate": "E03",
+                "delay": null,
+                "scheduled": "2026-04-06T17:45:00+00:00",
+                "estimated": "2026-04-06T17:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D58",
+                "baggage": null,
+                "scheduled": "2026-04-06T11:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "64",
+                "iata": "AC64",
+                "icao": "ACA64",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0103A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seoul (Incheon)",
+                "timezone": "Asia\/Seoul",
+                "iata": "ICN",
+                "icao": "RKSI",
+                "terminal": "1",
+                "gate": "E03",
+                "delay": null,
+                "scheduled": "2026-04-06T17:45:00+00:00",
+                "estimated": "2026-04-06T17:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D58",
+                "baggage": null,
+                "scheduled": "2026-04-06T11:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Singapore Airlines",
+                "iata": "SQ",
+                "icao": "SIA"
+            },
+            "flight": {
+                "number": "1002",
+                "iata": "SQ1002",
+                "icao": "SIA1002",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "64",
+                    "flight_iata": "ac64",
+                    "flight_icao": "aca64"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0103A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seoul (Incheon)",
+                "timezone": "Asia\/Seoul",
+                "iata": "ICN",
+                "icao": "RKSI",
+                "terminal": "1",
+                "gate": "E03",
+                "delay": null,
+                "scheduled": "2026-04-06T17:45:00+00:00",
+                "estimated": "2026-04-06T17:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D58",
+                "baggage": null,
+                "scheduled": "2026-04-06T11:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Asiana Airlines",
+                "iata": "OZ",
+                "icao": "AAR"
+            },
+            "flight": {
+                "number": "6102",
+                "iata": "OZ6102",
+                "icao": "AAR6102",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "64",
+                    "flight_iata": "ac64",
+                    "flight_icao": "aca64"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0103A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Charles De Gaulle",
+                "timezone": "Europe\/Paris",
+                "iata": "CDG",
+                "icao": "LFPG",
+                "terminal": "2E",
+                "gate": "E08",
+                "delay": null,
+                "scheduled": "2026-04-06T10:15:00+00:00",
+                "estimated": "2026-04-06T10:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T11:00:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air France",
+                "iata": "AF",
+                "icao": "AFR"
+            },
+            "flight": {
+                "number": "374",
+                "iata": "AF374",
+                "icao": "AFR374",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Shanghai Pudong International",
+                "timezone": "Asia\/Shanghai",
+                "iata": "PVG",
+                "icao": "ZSPD",
+                "terminal": "2",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T15:55:00+00:00",
+                "estimated": "2026-04-06T15:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D49",
+                "baggage": null,
+                "scheduled": "2026-04-06T11:20:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "26",
+                "iata": "AC26",
+                "icao": "ACA26",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C02EE9"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Auckland International",
+                "timezone": "Pacific\/Auckland",
+                "iata": "AKL",
+                "icao": "NZAA",
+                "terminal": "I",
+                "gate": "15",
+                "delay": null,
+                "scheduled": "2026-04-06T20:00:00+00:00",
+                "estimated": "2026-04-06T20:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T14:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "24",
+                "iata": "NZ24",
+                "icao": "ANZ24",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C820D4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "59",
+                "delay": null,
+                "scheduled": "2026-04-06T01:10:00+00:00",
+                "estimated": "2026-04-06T01:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T06:05:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "694",
+                "iata": "AM694",
+                "icao": "AMX694",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "1",
+                "gate": "43",
+                "delay": null,
+                "scheduled": "2026-04-06T16:55:00+00:00",
+                "estimated": "2026-04-06T16:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D51",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "4",
+                "iata": "AC4",
+                "icao": "ACA4",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01723"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "1",
+                "gate": "43",
+                "delay": null,
+                "scheduled": "2026-04-06T16:55:00+00:00",
+                "estimated": "2026-04-06T16:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D51",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Thai Airways International",
+                "iata": "TG",
+                "icao": "THA"
+            },
+            "flight": {
+                "number": "5837",
+                "iata": "TG5837",
+                "icao": "THA5837",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "4",
+                    "flight_iata": "ac4",
+                    "flight_icao": "aca4"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01723"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "1",
+                "gate": "43",
+                "delay": null,
+                "scheduled": "2026-04-06T16:55:00+00:00",
+                "estimated": "2026-04-06T16:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D51",
+                "baggage": null,
+                "scheduled": "2026-04-06T09:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "ANA",
+                "iata": "NH",
+                "icao": "ANA"
+            },
+            "flight": {
+                "number": "6814",
+                "iata": "NH6814",
+                "icao": "ANA6814",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "4",
+                    "flight_iata": "ac4",
+                    "flight_icao": "aca4"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01723"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Hong Kong International",
+                "timezone": "Asia\/Hong_Kong",
+                "iata": "HKG",
+                "icao": "VHHH",
+                "terminal": "1",
+                "gate": "BC",
+                "delay": null,
+                "scheduled": "2026-04-06T15:55:00+00:00",
+                "estimated": "2026-04-06T15:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T12:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "810",
+                "iata": "CX810",
+                "icao": "CPA810",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "780A19"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T00:45:00+00:00",
+                "estimated": "2026-04-06T00:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T05:55:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Flair Airlines",
+                "iata": "F8",
+                "icao": "FLE"
+            },
+            "flight": {
+                "number": "2821",
+                "iata": "F82821",
+                "icao": "FLE2821",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "1",
+                "gate": "24",
+                "delay": null,
+                "scheduled": "2026-04-06T15:55:00+00:00",
+                "estimated": "2026-04-06T15:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T08:30:00+00:00",
+                "delay": 30,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Zipair",
+                "iata": "ZG",
+                "icao": "TZP"
+            },
+            "flight": {
+                "number": "22",
+                "iata": "ZG22",
+                "icao": "TZP22",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Sydney Kingsford Smith Airport",
+                "timezone": "Australia\/Sydney",
+                "iata": "SYD",
+                "icao": "YSSY",
+                "terminal": "1",
+                "gate": "F",
+                "delay": null,
+                "scheduled": "2026-04-06T09:20:00+00:00",
+                "estimated": "2026-04-06T09:20:00+00:00",
+                "actual": "2026-04-06T09:49:00+00:00",
+                "estimated_runway": "2026-04-06T09:49:00+00:00",
+                "actual_runway": "2026-04-06T09:49:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D50",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:45:00+00:00",
+                "delay": 30,
+                "estimated": "2026-04-06T06:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Virgin Australia",
+                "iata": "VA",
+                "icao": "VOZ"
+            },
+            "flight": {
+                "number": "5150",
+                "iata": "VA5150",
+                "icao": "VOZ5150",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "34",
+                    "flight_iata": "ac34",
+                    "flight_icao": "aca34"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C023AE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Sydney Kingsford Smith Airport",
+                "timezone": "Australia\/Sydney",
+                "iata": "SYD",
+                "icao": "YSSY",
+                "terminal": "1",
+                "gate": "F",
+                "delay": null,
+                "scheduled": "2026-04-06T09:20:00+00:00",
+                "estimated": "2026-04-06T09:20:00+00:00",
+                "actual": "2026-04-06T09:49:00+00:00",
+                "estimated_runway": "2026-04-06T09:49:00+00:00",
+                "actual_runway": "2026-04-06T09:49:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D50",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:45:00+00:00",
+                "delay": 30,
+                "estimated": "2026-04-06T06:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "4760",
+                "iata": "NZ4760",
+                "icao": "ANZ4760",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "34",
+                    "flight_iata": "ac34",
+                    "flight_icao": "aca34"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C023AE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Brisbane International",
+                "timezone": "Australia\/Brisbane",
+                "iata": "BNE",
+                "icao": "YBBN",
+                "terminal": "I",
+                "gate": "80",
+                "delay": null,
+                "scheduled": "2026-04-06T10:01:00+00:00",
+                "estimated": "2026-04-06T10:01:00+00:00",
+                "actual": "2026-04-06T10:18:00+00:00",
+                "estimated_runway": "2026-04-06T10:18:00+00:00",
+                "actual_runway": "2026-04-06T10:18:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D68",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:29:00+00:00",
+                "delay": 17,
+                "estimated": "2026-04-06T06:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Virgin Australia",
+                "iata": "VA",
+                "icao": "VOZ"
+            },
+            "flight": {
+                "number": "5154",
+                "iata": "VA5154",
+                "icao": "VOZ5154",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "36",
+                    "flight_iata": "ac36",
+                    "flight_icao": "aca36"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01C52"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Shanghai Pudong International",
+                "timezone": "Asia\/Shanghai",
+                "iata": "PVG",
+                "icao": "ZSPD",
+                "terminal": "1",
+                "gate": "G101",
+                "delay": null,
+                "scheduled": "2026-04-06T13:20:00+00:00",
+                "estimated": "2026-04-06T13:20:00+00:00",
+                "actual": "2026-04-06T13:37:00+00:00",
+                "estimated_runway": "2026-04-06T13:37:00+00:00",
+                "actual_runway": "2026-04-06T13:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T09:10:00+00:00",
+                "delay": 18,
+                "estimated": "2026-04-06T08:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "China Eastern Airlines",
+                "iata": "MU",
+                "icao": "CES"
+            },
+            "flight": {
+                "number": "581",
+                "iata": "MU581",
+                "icao": "CES581",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "781FF7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Beijing Capital International",
+                "timezone": "Asia\/Shanghai",
+                "iata": "PEK",
+                "icao": "ZBAA",
+                "terminal": "3",
+                "gate": "E11",
+                "delay": null,
+                "scheduled": "2026-04-06T14:00:00+00:00",
+                "estimated": "2026-04-06T14:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T10:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air China LTD",
+                "iata": "CA",
+                "icao": "CCA"
+            },
+            "flight": {
+                "number": "991",
+                "iata": "CA991",
+                "icao": "CCA991",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Hong Kong International",
+                "timezone": "Asia\/Hong_Kong",
+                "iata": "HKG",
+                "icao": "VHHH",
+                "terminal": "1",
+                "gate": "BC",
+                "delay": null,
+                "scheduled": "2026-04-06T11:05:00+00:00",
+                "estimated": "2026-04-06T11:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:40:00+00:00",
+                "delay": 55,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "814",
+                "iata": "CX814",
+                "icao": "CPA814",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "780A64"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Cincinnati\/Northern Kentucky",
+                "timezone": "America\/New_York",
+                "iata": "CVG",
+                "icao": "KCVG",
+                "terminal": null,
+                "gate": null,
+                "delay": 28,
+                "scheduled": "2026-04-06T00:30:00+00:00",
+                "estimated": "2026-04-06T00:30:00+00:00",
+                "actual": "2026-04-06T00:55:00+00:00",
+                "estimated_runway": "2026-04-06T00:55:00+00:00",
+                "actual_runway": "2026-04-06T00:55:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T02:20:00+00:00",
+                "delay": 26,
+                "estimated": "2026-04-06T02:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cargojet",
+                "iata": "W8",
+                "icao": "CJT"
+            },
+            "flight": {
+                "number": "1926",
+                "iata": "W81926",
+                "icao": "CJT1926",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C010E6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T13:00:00+00:00",
+                "estimated": "2026-04-06T13:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T05:45:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cargojet",
+                "iata": "W8",
+                "icao": "CJT"
+            },
+            "flight": {
+                "number": "1802",
+                "iata": "W81802",
+                "icao": "CJT1802",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Ninoy Aquino International",
+                "timezone": "Asia\/Manila",
+                "iata": "MNL",
+                "icao": "RPLL",
+                "terminal": "3",
+                "gate": "111",
+                "delay": null,
+                "scheduled": "2026-04-06T09:25:00+00:00",
+                "estimated": "2026-04-06T09:25:00+00:00",
+                "actual": "2026-04-06T09:51:00+00:00",
+                "estimated_runway": "2026-04-06T09:51:00+00:00",
+                "actual_runway": "2026-04-06T09:51:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D49",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:25:00+00:00",
+                "delay": 27,
+                "estimated": "2026-04-06T05:52:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "18",
+                "iata": "AC18",
+                "icao": "ACA18",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C02FB8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Hong Kong International",
+                "timezone": "Asia\/Hong_Kong",
+                "iata": "HKG",
+                "icao": "VHHH",
+                "terminal": "1",
+                "gate": "D",
+                "delay": null,
+                "scheduled": "2026-04-06T09:45:00+00:00",
+                "estimated": "2026-04-06T09:45:00+00:00",
+                "actual": "2026-04-06T09:55:00+00:00",
+                "estimated_runway": "2026-04-06T09:55:00+00:00",
+                "actual_runway": "2026-04-06T09:55:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T06:20:00+00:00",
+                "delay": 10,
+                "estimated": "2026-04-06T05:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8",
+                "iata": "AC8",
+                "icao": "ACA8",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01040"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Hong Kong International",
+                "timezone": "Asia\/Hong_Kong",
+                "iata": "HKG",
+                "icao": "VHHH",
+                "terminal": "1",
+                "gate": "D",
+                "delay": null,
+                "scheduled": "2026-04-06T09:45:00+00:00",
+                "estimated": "2026-04-06T09:45:00+00:00",
+                "actual": "2026-04-06T09:55:00+00:00",
+                "estimated_runway": "2026-04-06T09:55:00+00:00",
+                "actual_runway": "2026-04-06T09:55:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T06:20:00+00:00",
+                "delay": 10,
+                "estimated": "2026-04-06T05:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Thai Airways International",
+                "iata": "TG",
+                "icao": "THA"
+            },
+            "flight": {
+                "number": "5866",
+                "iata": "TG5866",
+                "icao": "THA5866",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8",
+                    "flight_iata": "ac8",
+                    "flight_icao": "aca8"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01040"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Suvarnabhumi International",
+                "timezone": "Asia\/Bangkok",
+                "iata": "BKK",
+                "icao": "VTBS",
+                "terminal": null,
+                "gate": "F",
+                "delay": null,
+                "scheduled": "2026-04-06T07:05:00+00:00",
+                "estimated": "2026-04-06T07:05:00+00:00",
+                "actual": "2026-04-06T07:28:00+00:00",
+                "estimated_runway": "2026-04-06T07:28:00+00:00",
+                "actual_runway": "2026-04-06T07:28:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D58",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:35:00+00:00",
+                "delay": 23,
+                "estimated": "2026-04-06T06:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Thai Airways International",
+                "iata": "TG",
+                "icao": "THA"
+            },
+            "flight": {
+                "number": "5839",
+                "iata": "TG5839",
+                "icao": "THA5839",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "66",
+                    "flight_iata": "ac66",
+                    "flight_icao": "aca66"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0293E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Indira Gandhi International",
+                "timezone": "Asia\/Kolkata",
+                "iata": "DEL",
+                "icao": "VIDP",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T06:25:00+00:00",
+                "estimated": "2026-04-06T06:25:00+00:00",
+                "actual": "2026-04-06T06:57:00+00:00",
+                "estimated_runway": "2026-04-06T06:57:00+00:00",
+                "actual_runway": "2026-04-06T06:57:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T10:00:00+00:00",
+                "delay": 33,
+                "estimated": "2026-04-06T09:46:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air India",
+                "iata": "AI",
+                "icao": "AIC"
+            },
+            "flight": {
+                "number": "4185",
+                "iata": "AI4185",
+                "icao": "AIC4185",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "800C3E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Brisbane International",
+                "timezone": "Australia\/Brisbane",
+                "iata": "BNE",
+                "icao": "YBBN",
+                "terminal": "I",
+                "gate": "80",
+                "delay": null,
+                "scheduled": "2026-04-06T10:01:00+00:00",
+                "estimated": "2026-04-06T10:01:00+00:00",
+                "actual": "2026-04-06T10:18:00+00:00",
+                "estimated_runway": "2026-04-06T10:18:00+00:00",
+                "actual_runway": "2026-04-06T10:18:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D68",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:29:00+00:00",
+                "delay": 17,
+                "estimated": "2026-04-06T06:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "36",
+                "iata": "AC36",
+                "icao": "ACA36",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01C52"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Suvarnabhumi International",
+                "timezone": "Asia\/Bangkok",
+                "iata": "BKK",
+                "icao": "VTBS",
+                "terminal": null,
+                "gate": "F",
+                "delay": null,
+                "scheduled": "2026-04-06T07:05:00+00:00",
+                "estimated": "2026-04-06T07:05:00+00:00",
+                "actual": "2026-04-06T07:28:00+00:00",
+                "estimated_runway": "2026-04-06T07:28:00+00:00",
+                "actual_runway": "2026-04-06T07:28:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D58",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:35:00+00:00",
+                "delay": 23,
+                "estimated": "2026-04-06T06:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "66",
+                "iata": "AC66",
+                "icao": "ACA66",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0293E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Sydney Kingsford Smith Airport",
+                "timezone": "Australia\/Sydney",
+                "iata": "SYD",
+                "icao": "YSSY",
+                "terminal": "1",
+                "gate": "F",
+                "delay": null,
+                "scheduled": "2026-04-06T09:20:00+00:00",
+                "estimated": "2026-04-06T09:20:00+00:00",
+                "actual": "2026-04-06T09:49:00+00:00",
+                "estimated_runway": "2026-04-06T09:49:00+00:00",
+                "actual_runway": "2026-04-06T09:49:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "D50",
+                "baggage": null,
+                "scheduled": "2026-04-06T06:45:00+00:00",
+                "delay": 30,
+                "estimated": "2026-04-06T06:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "34",
+                "iata": "AC34",
+                "icao": "ACA34",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C023AE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hong Kong International",
+                "timezone": "Asia\/Hong_Kong",
+                "iata": "HKG",
+                "icao": "VHHH",
+                "terminal": "1",
+                "gate": "BC",
+                "delay": 24,
+                "scheduled": "2026-04-06T00:45:00+00:00",
+                "estimated": "2026-04-06T00:45:00+00:00",
+                "actual": "2026-04-06T01:53:00+00:00",
+                "estimated_runway": "2026-04-06T01:53:00+00:00",
+                "actual_runway": "2026-04-06T01:53:00+00:00"
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": null,
+                "baggage": "23",
+                "scheduled": "2026-04-05T21:25:00+00:00",
+                "delay": 24,
+                "estimated": "2026-04-05T21:46:00+00:00",
+                "actual": "2026-04-05T21:49:00+00:00",
+                "estimated_runway": "2026-04-05T21:49:00+00:00",
+                "actual_runway": "2026-04-05T21:49:00+00:00"
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "888",
+                "iata": "CX888",
+                "icao": "CPA888",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "780212"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C2H",
+                "delay": null,
+                "scheduled": "2026-04-05T23:10:00+00:00",
+                "estimated": "2026-04-05T23:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E91",
+                "baggage": "33",
+                "scheduled": "2026-04-06T00:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qantas",
+                "iata": "QF",
+                "icao": "QFA"
+            },
+            "flight": {
+                "number": "3723",
+                "iata": "QF3723",
+                "icao": "QFA3723",
+                "codeshared": {
+                    "airline_name": "alaska horizon",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "2296",
+                    "flight_iata": "as2296",
+                    "flight_icao": "asa2296"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8881E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C2H",
+                "delay": null,
+                "scheduled": "2026-04-05T23:10:00+00:00",
+                "estimated": "2026-04-05T23:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E91",
+                "baggage": "33",
+                "scheduled": "2026-04-06T00:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Korean Air",
+                "iata": "KE",
+                "icao": "KAL"
+            },
+            "flight": {
+                "number": "6161",
+                "iata": "KE6161",
+                "icao": "KAL6161",
+                "codeshared": {
+                    "airline_name": "alaska horizon",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "2296",
+                    "flight_iata": "as2296",
+                    "flight_icao": "asa2296"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8881E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C2H",
+                "delay": null,
+                "scheduled": "2026-04-05T23:10:00+00:00",
+                "estimated": "2026-04-05T23:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E91",
+                "baggage": "33",
+                "scheduled": "2026-04-06T00:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Hawaiian Airlines",
+                "iata": "HA",
+                "icao": "HAL"
+            },
+            "flight": {
+                "number": "6957",
+                "iata": "HA6957",
+                "icao": "HAL6957",
+                "codeshared": {
+                    "airline_name": "alaska horizon",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "2296",
+                    "flight_iata": "as2296",
+                    "flight_icao": "asa2296"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8881E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C2H",
+                "delay": null,
+                "scheduled": "2026-04-05T23:10:00+00:00",
+                "estimated": "2026-04-05T23:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E91",
+                "baggage": "33",
+                "scheduled": "2026-04-06T00:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Icelandair",
+                "iata": "FI",
+                "icao": "ICE"
+            },
+            "flight": {
+                "number": "7673",
+                "iata": "FI7673",
+                "icao": "ICE7673",
+                "codeshared": {
+                    "airline_name": "alaska horizon",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "2296",
+                    "flight_iata": "as2296",
+                    "flight_icao": "asa2296"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8881E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C2H",
+                "delay": null,
+                "scheduled": "2026-04-05T23:10:00+00:00",
+                "estimated": "2026-04-05T23:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E91",
+                "baggage": "33",
+                "scheduled": "2026-04-06T00:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "7541",
+                "iata": "BA7541",
+                "icao": "BAW7541",
+                "codeshared": {
+                    "airline_name": "alaska horizon",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "2296",
+                    "flight_iata": "as2296",
+                    "flight_icao": "asa2296"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8881E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "A12",
+                "delay": null,
+                "scheduled": "2026-04-05T22:55:00+00:00",
+                "estimated": "2026-04-05T22:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E86",
+                "baggage": null,
+                "scheduled": "2026-04-05T23:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "7071",
+                "iata": "WS7071",
+                "icao": "WJA7071",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "3853",
+                    "flight_iata": "dl3853",
+                    "flight_icao": "dal3853"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2FAD8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "A12",
+                "delay": null,
+                "scheduled": "2026-04-05T22:55:00+00:00",
+                "estimated": "2026-04-05T22:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "E86",
+                "baggage": null,
+                "scheduled": "2026-04-05T23:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Virgin Atlantic",
+                "iata": "VS",
+                "icao": "VIR"
+            },
+            "flight": {
+                "number": "1929",
+                "iata": "VS1929",
+                "icao": "VIR1929",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "3853",
+                    "flight_iata": "dl3853",
+                    "flight_icao": "dal3853"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2FAD8"
+            },
+            "live": null
+        }
+    ]
+}

@@ -1,9 +1,6 @@
 <script setup>
 import GuestLayout from '@/Layouts/GuestLayout.vue';
 import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 
 const form = useForm({
@@ -24,15 +21,18 @@ const submit = () => {
     <GuestLayout>
         <Head title="Register" />
 
+        <h1 class="mb-6 text-center text-2xl font-bold text-slate-800">Create your account</h1>
+
         <form @submit.prevent="submit">
             <div>
-                <InputLabel for="name" value="Name" />
+                <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
 
-                <TextInput
+                <input
                     id="name"
                     type="text"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
                     v-model="form.name"
+                    placeholder="Your name"
                     required
                     autofocus
                     autocomplete="name"
@@ -42,13 +42,14 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel for="email" value="Email" />
+                <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
 
-                <TextInput
+                <input
                     id="email"
                     type="email"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
                     v-model="form.email"
+                    placeholder="you@example.com"
                     required
                     autocomplete="username"
                 />
@@ -57,13 +58,14 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel for="password" value="Password" />
+                <label for="password" class="block text-sm font-medium text-slate-700">Password</label>
 
-                <TextInput
+                <input
                     id="password"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
                     v-model="form.password"
+                    placeholder="••••••••"
                     required
                     autocomplete="new-password"
                 />
@@ -72,42 +74,35 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel
-                    for="password_confirmation"
-                    value="Confirm Password"
-                />
+                <label for="password_confirmation" class="block text-sm font-medium text-slate-700">Confirm Password</label>
 
-                <TextInput
+                <input
                     id="password_confirmation"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
                     v-model="form.password_confirmation"
+                    placeholder="••••••••"
                     required
                     autocomplete="new-password"
                 />
 
-                <InputError
-                    class="mt-2"
-                    :message="form.errors.password_confirmation"
-                />
+                <InputError class="mt-2" :message="form.errors.password_confirmation" />
             </div>
 
-            <div class="mt-4 flex items-center justify-end">
-                <Link
-                    :href="route('login')"
-                    class="rounded-md text-sm text-gray-600 underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                    Already registered?
-                </Link>
-
-                <PrimaryButton
-                    class="ms-4"
-                    :class="{ 'opacity-25': form.processing }"
+            <div class="mt-6">
+                <button
+                    type="submit"
+                    class="w-full rounded-lg bg-[#2e67a8] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#265d97] focus:outline-none focus:ring-2 focus:ring-[#2e67a8] focus:ring-offset-2 disabled:opacity-50"
                     :disabled="form.processing"
                 >
                     Register
-                </PrimaryButton>
+                </button>
             </div>
+
+            <p class="mt-6 text-center text-sm text-slate-500">
+                Already have an account?
+                <Link :href="route('login')" class="font-medium text-[#2e67a8] hover:underline">Sign in</Link>
+            </p>
         </form>
     </GuestLayout>
 </template>

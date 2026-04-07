@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Models\Airport;
 use App\Models\Flight;
+use App\Repositories\Contracts\AirportRepositoryInterface;
 use App\Services\AirlineService;
 use App\Services\FlightService;
 use App\Services\TripBuilderService;
@@ -18,6 +18,7 @@ class ClientTripBuilderController extends Controller
         private readonly TripBuilderService $tripBuilderService,
         private readonly AirlineService $airlineService,
         private readonly FlightService $flightService,
+        private readonly AirportRepositoryInterface $airportRepository,
     ) {}
 
     public function airportSuggestions(Request $request): JsonResponse
@@ -33,12 +34,7 @@ class ClientTripBuilderController extends Controller
 
     public function airportMapData(): JsonResponse
     {
-        $airports = Airport::query()
-            ->whereNotNull('latitude')
-            ->whereNotNull('longitude')
-            ->get(['id', 'name', 'city', 'iata_code', 'city_code', 'country_code', 'latitude', 'longitude', 'timezone']);
-
-        return response()->json($airports);
+        return response()->json($this->airportRepository->forMap());
     }
 
     public function airlineOptions(): JsonResponse

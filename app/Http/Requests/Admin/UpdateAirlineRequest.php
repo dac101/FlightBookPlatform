@@ -14,7 +14,8 @@ class UpdateAirlineRequest extends FormRequest
 
     public function rules(): array
     {
-        $airlineId = $this->route('airline')?->id;
+        $airline = $this->route('airline');
+        $airlineId = is_object($airline) ? $airline->id : $airline;
 
         return [
             'name' => ['sometimes', 'string', 'max:255'],

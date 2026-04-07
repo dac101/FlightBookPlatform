@@ -1,0 +1,5486 @@
+{
+    "pagination": {
+        "limit": 100,
+        "offset": 0,
+        "count": 100,
+        "total": 2944
+    },
+    "data": [
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Istanbul Airport",
+                "timezone": "Europe\/Istanbul",
+                "iata": "IST",
+                "icao": "LTFM",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T01:50:00+00:00",
+                "estimated": "2026-04-06T01:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:10:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Turkish Airlines",
+                "iata": "TK",
+                "icao": "THY"
+            },
+            "flight": {
+                "number": "157",
+                "iata": "TK157",
+                "icao": "THY157",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Istanbul Airport",
+                "timezone": "Europe\/Istanbul",
+                "iata": "IST",
+                "icao": "LTFM",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T01:50:00+00:00",
+                "estimated": "2026-04-06T01:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:10:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Pakistan International Airlines",
+                "iata": "PK",
+                "icao": "PIA"
+            },
+            "flight": {
+                "number": "5157",
+                "iata": "PK5157",
+                "icao": "PIA5157",
+                "codeshared": {
+                    "airline_name": "turkish airlines",
+                    "airline_iata": "tk",
+                    "airline_icao": "thy",
+                    "flight_number": "157",
+                    "flight_iata": "tk157",
+                    "flight_icao": "thy157"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Istanbul Airport",
+                "timezone": "Europe\/Istanbul",
+                "iata": "IST",
+                "icao": "LTFM",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T01:50:00+00:00",
+                "estimated": "2026-04-06T01:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:10:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "IndiGo",
+                "iata": "6E",
+                "icao": "IGO"
+            },
+            "flight": {
+                "number": "4031",
+                "iata": "6E4031",
+                "icao": "IGO4031",
+                "codeshared": {
+                    "airline_name": "turkish airlines",
+                    "airline_iata": "tk",
+                    "airline_icao": "thy",
+                    "flight_number": "157",
+                    "flight_iata": "tk157",
+                    "flight_icao": "thy157"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T11:15:00+00:00",
+                "estimated": "2026-04-05T11:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T19:48:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Cargo Chile",
+                "iata": "UC",
+                "icao": "LCO"
+            },
+            "flight": {
+                "number": "2525",
+                "iata": "UC2525",
+                "icao": "LCO2525",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A736C1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "A",
+                "gate": "A34",
+                "delay": null,
+                "scheduled": "2026-04-05T21:08:00+00:00",
+                "estimated": "2026-04-05T21:08:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D9",
+                "baggage": "NO",
+                "scheduled": "2026-04-06T00:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "1314",
+                "iata": "AA1314",
+                "icao": "AAL1314",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB9ECA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Aeroporto Internacional Guarulhos",
+                "timezone": "America\/Sao_Paulo",
+                "iata": "GRU",
+                "icao": "SBGR",
+                "terminal": "3",
+                "gate": "326",
+                "delay": null,
+                "scheduled": "2026-04-05T23:00:00+00:00",
+                "estimated": "2026-04-05T23:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T06:25:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "8190",
+                "iata": "LA8190",
+                "icao": "LAN8190",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "E8046E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "B10",
+                "delay": null,
+                "scheduled": "2026-04-05T21:34:00+00:00",
+                "estimated": "2026-04-05T21:34:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D49",
+                "baggage": "25",
+                "scheduled": "2026-04-05T23:43:00+00:00",
+                "delay": 44,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2013",
+                "iata": "AA2013",
+                "icao": "AAL2013",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A506D1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ezeiza Ministro Pistarini",
+                "timezone": "America\/Argentina\/Buenos_Aires",
+                "iata": "EZE",
+                "icao": "SAEZ",
+                "terminal": "P",
+                "gate": "176",
+                "delay": null,
+                "scheduled": "2026-04-05T22:45:00+00:00",
+                "estimated": "2026-04-05T22:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aerolineas Argentinas",
+                "iata": "AR",
+                "icao": "ARG"
+            },
+            "flight": {
+                "number": "1302",
+                "iata": "AR1302",
+                "icao": "ARG1302",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "E06589"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ezeiza Ministro Pistarini",
+                "timezone": "America\/Argentina\/Buenos_Aires",
+                "iata": "EZE",
+                "icao": "SAEZ",
+                "terminal": "P",
+                "gate": "176",
+                "delay": null,
+                "scheduled": "2026-04-05T22:45:00+00:00",
+                "estimated": "2026-04-05T22:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "El Al",
+                "iata": "LY",
+                "icao": "ELY"
+            },
+            "flight": {
+                "number": "8840",
+                "iata": "LY8840",
+                "icao": "ELY8840",
+                "codeshared": {
+                    "airline_name": "aerolineas argentinas",
+                    "airline_iata": "ar",
+                    "airline_icao": "arg",
+                    "flight_number": "1302",
+                    "flight_iata": "ar1302",
+                    "flight_icao": "arg1302"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "E06589"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ezeiza Ministro Pistarini",
+                "timezone": "America\/Argentina\/Buenos_Aires",
+                "iata": "EZE",
+                "icao": "SAEZ",
+                "terminal": "P",
+                "gate": "176",
+                "delay": null,
+                "scheduled": "2026-04-05T22:45:00+00:00",
+                "estimated": "2026-04-05T22:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "7601",
+                "iata": "DL7601",
+                "icao": "DAL7601",
+                "codeshared": {
+                    "airline_name": "aerolineas argentinas",
+                    "airline_iata": "ar",
+                    "airline_icao": "arg",
+                    "flight_number": "1302",
+                    "flight_iata": "ar1302",
+                    "flight_icao": "arg1302"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "E06589"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ezeiza Ministro Pistarini",
+                "timezone": "America\/Argentina\/Buenos_Aires",
+                "iata": "EZE",
+                "icao": "SAEZ",
+                "terminal": "P",
+                "gate": "131",
+                "delay": null,
+                "scheduled": "2026-04-05T22:20:00+00:00",
+                "estimated": "2026-04-05T22:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D28",
+                "baggage": "CUST",
+                "scheduled": "2026-04-06T06:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "908",
+                "iata": "AA908",
+                "icao": "AAL908",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA9BB8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nashville International",
+                "timezone": "America\/Chicago",
+                "iata": "BNA",
+                "icao": "KBNA",
+                "terminal": null,
+                "gate": "C17",
+                "delay": null,
+                "scheduled": "2026-04-05T17:27:00+00:00",
+                "estimated": "2026-04-05T17:27:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E6",
+                "baggage": "25",
+                "scheduled": "2026-04-05T20:58:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2641",
+                "iata": "QR2641",
+                "icao": "QTR2641",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3287",
+                    "flight_iata": "aa3287",
+                    "flight_icao": "aal3287"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC96B8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nashville International",
+                "timezone": "America\/Chicago",
+                "iata": "BNA",
+                "icao": "KBNA",
+                "terminal": null,
+                "gate": "C17",
+                "delay": null,
+                "scheduled": "2026-04-05T17:27:00+00:00",
+                "estimated": "2026-04-05T17:27:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E6",
+                "baggage": "25",
+                "scheduled": "2026-04-05T20:58:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4532",
+                "iata": "IB4532",
+                "icao": "IBE4532",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3287",
+                    "flight_iata": "aa3287",
+                    "flight_icao": "aal3287"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC96B8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nashville International",
+                "timezone": "America\/Chicago",
+                "iata": "BNA",
+                "icao": "KBNA",
+                "terminal": null,
+                "gate": "C17",
+                "delay": null,
+                "scheduled": "2026-04-05T17:27:00+00:00",
+                "estimated": "2026-04-05T17:27:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E6",
+                "baggage": "25",
+                "scheduled": "2026-04-05T20:58:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "1709",
+                "iata": "BA1709",
+                "icao": "BAW1709",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3287",
+                    "flight_iata": "aa3287",
+                    "flight_icao": "aal3287"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC96B8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T12:40:00+00:00",
+                "estimated": "2026-04-05T12:40:00+00:00",
+                "actual": "2026-04-05T14:57:00+00:00",
+                "estimated_runway": "2026-04-05T14:57:00+00:00",
+                "actual_runway": "2026-04-05T14:57:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T14:37:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "9960",
+                "iata": "DL9960",
+                "icao": "DAL9960",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A44533"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Harry Reid International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAS",
+                "icao": "KLAS",
+                "terminal": "1",
+                "gate": "D7",
+                "delay": null,
+                "scheduled": "2026-04-05T13:20:00+00:00",
+                "estimated": "2026-04-05T13:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D43",
+                "baggage": "22",
+                "scheduled": "2026-04-05T21:09:00+00:00",
+                "delay": 25,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "9061",
+                "iata": "QR9061",
+                "icao": "QTR9061",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1851",
+                    "flight_iata": "aa1851",
+                    "flight_icao": "aal1851"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB284D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Harry Reid International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAS",
+                "icao": "KLAS",
+                "terminal": "1",
+                "gate": "D7",
+                "delay": null,
+                "scheduled": "2026-04-05T13:20:00+00:00",
+                "estimated": "2026-04-05T13:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D43",
+                "baggage": "22",
+                "scheduled": "2026-04-05T21:09:00+00:00",
+                "delay": 25,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6423",
+                "iata": "G36423",
+                "icao": "GLO6423",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1851",
+                    "flight_iata": "aa1851",
+                    "flight_icao": "aal1851"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB284D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Harry Reid International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAS",
+                "icao": "KLAS",
+                "terminal": "1",
+                "gate": "D7",
+                "delay": null,
+                "scheduled": "2026-04-05T13:20:00+00:00",
+                "estimated": "2026-04-05T13:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D43",
+                "baggage": "22",
+                "scheduled": "2026-04-05T21:09:00+00:00",
+                "delay": 25,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "4735",
+                "iata": "BA4735",
+                "icao": "BAW4735",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1851",
+                    "flight_iata": "aa1851",
+                    "flight_icao": "aal1851"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB284D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sky Harbor International",
+                "timezone": "America\/Phoenix",
+                "iata": "PHX",
+                "icao": "KPHX",
+                "terminal": "4",
+                "gate": "A11",
+                "delay": null,
+                "scheduled": "2026-04-05T13:11:00+00:00",
+                "estimated": "2026-04-05T13:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D26",
+                "baggage": "23",
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "7978",
+                "iata": "QR7978",
+                "icao": "QTR7978",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2112",
+                    "flight_iata": "aa2112",
+                    "flight_icao": "aal2112"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A56C19"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sky Harbor International",
+                "timezone": "America\/Phoenix",
+                "iata": "PHX",
+                "icao": "KPHX",
+                "terminal": "4",
+                "gate": "A11",
+                "delay": null,
+                "scheduled": "2026-04-05T13:11:00+00:00",
+                "estimated": "2026-04-05T13:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D26",
+                "baggage": "23",
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4045",
+                "iata": "IB4045",
+                "icao": "IBE4045",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2112",
+                    "flight_iata": "aa2112",
+                    "flight_icao": "aal2112"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A56C19"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sky Harbor International",
+                "timezone": "America\/Phoenix",
+                "iata": "PHX",
+                "icao": "KPHX",
+                "terminal": "4",
+                "gate": "A11",
+                "delay": null,
+                "scheduled": "2026-04-05T13:11:00+00:00",
+                "estimated": "2026-04-05T13:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D26",
+                "baggage": "23",
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6157",
+                "iata": "G36157",
+                "icao": "GLO6157",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2112",
+                    "flight_iata": "aa2112",
+                    "flight_icao": "aal2112"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A56C19"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sky Harbor International",
+                "timezone": "America\/Phoenix",
+                "iata": "PHX",
+                "icao": "KPHX",
+                "terminal": "4",
+                "gate": "A11",
+                "delay": null,
+                "scheduled": "2026-04-05T13:11:00+00:00",
+                "estimated": "2026-04-05T13:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D26",
+                "baggage": "23",
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "4534",
+                "iata": "AS4534",
+                "icao": "JAG4534",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2112",
+                    "flight_iata": "aa2112",
+                    "flight_icao": "aal2112"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A56C19"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Philadelphia International",
+                "timezone": "America\/New_York",
+                "iata": "PHL",
+                "icao": "KPHL",
+                "terminal": "C",
+                "gate": "C24",
+                "delay": null,
+                "scheduled": "2026-04-05T17:46:00+00:00",
+                "estimated": "2026-04-05T17:46:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D30",
+                "baggage": "24",
+                "scheduled": "2026-04-05T20:54:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6430",
+                "iata": "G36430",
+                "icao": "GLO6430",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2441",
+                    "flight_iata": "aa2441",
+                    "flight_icao": "aal2441"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6116"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Philadelphia International",
+                "timezone": "America\/New_York",
+                "iata": "PHL",
+                "icao": "KPHL",
+                "terminal": "C",
+                "gate": "C24",
+                "delay": null,
+                "scheduled": "2026-04-05T17:46:00+00:00",
+                "estimated": "2026-04-05T17:46:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D30",
+                "baggage": "24",
+                "scheduled": "2026-04-05T20:54:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "5413",
+                "iata": "BA5413",
+                "icao": "BAW5413",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2441",
+                    "flight_iata": "aa2441",
+                    "flight_icao": "aal2441"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6116"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "77",
+                "delay": null,
+                "scheduled": "2026-04-05T14:15:00+00:00",
+                "estimated": "2026-04-05T14:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H6",
+                "baggage": "J-FI",
+                "scheduled": "2026-04-05T19:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "9131",
+                "iata": "DL9131",
+                "icao": "DAL9131",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "422",
+                    "flight_iata": "am422",
+                    "flight_icao": "amx422"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA3B84"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "77",
+                "delay": null,
+                "scheduled": "2026-04-05T14:15:00+00:00",
+                "estimated": "2026-04-05T14:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H6",
+                "baggage": "J-FI",
+                "scheduled": "2026-04-05T19:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aerolineas Argentinas",
+                "iata": "AR",
+                "icao": "ARG"
+            },
+            "flight": {
+                "number": "7357",
+                "iata": "AR7357",
+                "icao": "ARG7357",
+                "codeshared": {
+                    "airline_name": "aeromexico",
+                    "airline_iata": "am",
+                    "airline_icao": "amx",
+                    "flight_number": "422",
+                    "flight_iata": "am422",
+                    "flight_icao": "amx422"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA3B84"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "C76",
+                "delay": null,
+                "scheduled": "2026-04-05T18:30:00+00:00",
+                "estimated": "2026-04-05T18:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "J8",
+                "baggage": "1",
+                "scheduled": "2026-04-05T22:17:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "6953",
+                "iata": "AV6953",
+                "icao": "AVA6953",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "1208",
+                    "flight_iata": "ac1208",
+                    "flight_icao": "aca1208"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07C7B"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Luis Munoz Marin International",
+                "timezone": "America\/Puerto_Rico",
+                "iata": "SJU",
+                "icao": "TJSJ",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T16:00:00+00:00",
+                "estimated": "2026-04-05T16:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T18:33:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Cargo Carriers",
+                "iata": "2Q",
+                "icao": "SNC"
+            },
+            "flight": {
+                "number": null,
+                "iata": "2Q",
+                "icao": "SNC",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA1A45"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Cap Haitien",
+                "timezone": "America\/Port-au-Prince",
+                "iata": "CAP",
+                "icao": "MTCH",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T17:15:00+00:00",
+                "estimated": "2026-04-05T17:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T18:57:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "GlobalX",
+                "iata": "G6",
+                "icao": "GXA"
+            },
+            "flight": {
+                "number": "614",
+                "iata": "G6614",
+                "icao": "GXA614",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C30",
+                "delay": null,
+                "scheduled": "2026-04-05T12:33:00+00:00",
+                "estimated": "2026-04-05T12:33:00+00:00",
+                "actual": "2026-04-05T12:44:00+00:00",
+                "estimated_runway": "2026-04-05T12:44:00+00:00",
+                "actual_runway": "2026-04-05T12:44:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D50",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:37:00+00:00",
+                "delay": 11,
+                "estimated": "2026-04-05T18:04:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "7786",
+                "iata": "QR7786",
+                "icao": "QTR7786",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1219",
+                    "flight_iata": "aa1219",
+                    "flight_icao": "aal1219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A5012D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C30",
+                "delay": null,
+                "scheduled": "2026-04-05T12:33:00+00:00",
+                "estimated": "2026-04-05T12:33:00+00:00",
+                "actual": "2026-04-05T12:44:00+00:00",
+                "estimated_runway": "2026-04-05T12:44:00+00:00",
+                "actual_runway": "2026-04-05T12:44:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D50",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:37:00+00:00",
+                "delay": 11,
+                "estimated": "2026-04-05T18:04:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6174",
+                "iata": "G36174",
+                "icao": "GLO6174",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1219",
+                    "flight_iata": "aa1219",
+                    "flight_icao": "aal1219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A5012D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C30",
+                "delay": null,
+                "scheduled": "2026-04-05T12:33:00+00:00",
+                "estimated": "2026-04-05T12:33:00+00:00",
+                "actual": "2026-04-05T12:44:00+00:00",
+                "estimated_runway": "2026-04-05T12:44:00+00:00",
+                "actual_runway": "2026-04-05T12:44:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D50",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:37:00+00:00",
+                "delay": 11,
+                "estimated": "2026-04-05T18:04:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Royal Air Maroc",
+                "iata": "AT",
+                "icao": "RAM"
+            },
+            "flight": {
+                "number": "5103",
+                "iata": "AT5103",
+                "icao": "RAM5103",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1219",
+                    "flight_iata": "aa1219",
+                    "flight_icao": "aal1219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A5012D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "C",
+                "gate": "C6",
+                "delay": null,
+                "scheduled": "2026-04-05T20:00:00+00:00",
+                "estimated": "2026-04-05T20:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D16",
+                "baggage": "23",
+                "scheduled": "2026-04-05T23:51:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "1663",
+                "iata": "AA1663",
+                "icao": "AAL1663",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACBE37"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "La Aurora",
+                "timezone": "America\/Guatemala",
+                "iata": "GUA",
+                "icao": "MGGT",
+                "terminal": null,
+                "gate": "15",
+                "delay": null,
+                "scheduled": "2026-04-05T18:38:00+00:00",
+                "estimated": "2026-04-05T18:38:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "F11",
+                "baggage": "3",
+                "scheduled": "2026-04-05T23:26:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "112",
+                "iata": "F9112",
+                "icao": "FFT112",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A34ECC"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tallahassee Regional Airport",
+                "timezone": "America\/New_York",
+                "iata": "TLH",
+                "icao": "KTLH",
+                "terminal": null,
+                "gate": "A3",
+                "delay": null,
+                "scheduled": "2026-04-05T20:51:00+00:00",
+                "estimated": "2026-04-05T20:51:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D53",
+                "baggage": "12",
+                "scheduled": "2026-04-05T22:18:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3966",
+                "iata": "AA3966",
+                "icao": "AAL3966",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1E5F1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tallahassee Regional Airport",
+                "timezone": "America\/New_York",
+                "iata": "TLH",
+                "icao": "KTLH",
+                "terminal": null,
+                "gate": "A3",
+                "delay": null,
+                "scheduled": "2026-04-05T20:51:00+00:00",
+                "estimated": "2026-04-05T20:51:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D53",
+                "baggage": "12",
+                "scheduled": "2026-04-05T22:18:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "9255",
+                "iata": "QR9255",
+                "icao": "QTR9255",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3966",
+                    "flight_iata": "aa3966",
+                    "flight_icao": "aal3966"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1E5F1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tallahassee Regional Airport",
+                "timezone": "America\/New_York",
+                "iata": "TLH",
+                "icao": "KTLH",
+                "terminal": null,
+                "gate": "A3",
+                "delay": null,
+                "scheduled": "2026-04-05T20:51:00+00:00",
+                "estimated": "2026-04-05T20:51:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D53",
+                "baggage": "12",
+                "scheduled": "2026-04-05T22:18:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "5700",
+                "iata": "BA5700",
+                "icao": "BAW5700",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3966",
+                    "flight_iata": "aa3966",
+                    "flight_icao": "aal3966"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1E5F1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "17",
+                "delay": null,
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "estimated": "2026-04-05T20:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D24",
+                "baggage": "24",
+                "scheduled": "2026-04-05T23:43:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3330",
+                "iata": "AA3330",
+                "icao": "AAL3330",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A17C95"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "22",
+                "delay": null,
+                "scheduled": "2026-04-05T15:55:00+00:00",
+                "estimated": "2026-04-05T15:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D6",
+                "baggage": "26",
+                "scheduled": "2026-04-05T19:19:00+00:00",
+                "delay": 31,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6166",
+                "iata": "G36166",
+                "icao": "GLO6166",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1753",
+                    "flight_iata": "aa1753",
+                    "flight_icao": "aal1753"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD20F4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Newark Liberty International",
+                "timezone": "America\/New_York",
+                "iata": "EWR",
+                "icao": "KEWR",
+                "terminal": "A",
+                "gate": "A27",
+                "delay": null,
+                "scheduled": "2026-04-05T20:17:00+00:00",
+                "estimated": "2026-04-05T20:17:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H15",
+                "baggage": "6",
+                "scheduled": "2026-04-05T23:32:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1128",
+                "iata": "UA1128",
+                "icao": "UAL1128",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2DFFE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Tahiti Nui",
+                "iata": "TN",
+                "icao": "THT"
+            },
+            "flight": {
+                "number": "1332",
+                "iata": "TN1332",
+                "icao": "THT1332",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qantas",
+                "iata": "QF",
+                "icao": "QFA"
+            },
+            "flight": {
+                "number": "4143",
+                "iata": "QF4143",
+                "icao": "QFA4143",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Malaysia Airlines",
+                "iata": "MH",
+                "icao": "MAS"
+            },
+            "flight": {
+                "number": "9370",
+                "iata": "MH9370",
+                "icao": "MAS9370",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4039",
+                "iata": "IB4039",
+                "icao": "IBE4039",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gulf Air",
+                "iata": "GF",
+                "icao": "GFA"
+            },
+            "flight": {
+                "number": "4372",
+                "iata": "GF4372",
+                "icao": "GFA4372",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6398",
+                "iata": "G36398",
+                "icao": "GLO6398",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "5251",
+                "iata": "BA5251",
+                "icao": "BAW5251",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "46C",
+                "delay": null,
+                "scheduled": "2026-04-05T10:47:00+00:00",
+                "estimated": "2026-04-05T10:47:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D39",
+                "baggage": "22",
+                "scheduled": "2026-04-05T18:53:00+00:00",
+                "delay": 77,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Royal Air Maroc",
+                "iata": "AT",
+                "icao": "RAM"
+            },
+            "flight": {
+                "number": "5091",
+                "iata": "AT5091",
+                "icao": "RAM5091",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2447",
+                    "flight_iata": "aa2447",
+                    "flight_icao": "aal2447"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A564AB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Westchester County Apt",
+                "timezone": "America\/New_York",
+                "iata": "HPN",
+                "icao": "KHPN",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T15:43:00+00:00",
+                "estimated": "2026-04-05T15:43:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T18:32:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Flexjet",
+                "iata": "LXJ",
+                "icao": "LXJ"
+            },
+            "flight": {
+                "number": "421",
+                "iata": "LXJ421",
+                "icao": "LXJ421",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Baltimore\/Washington International Thurgood Marshall",
+                "timezone": "America\/New_York",
+                "iata": "BWI",
+                "icao": "KBWI",
+                "terminal": null,
+                "gate": "C11",
+                "delay": null,
+                "scheduled": "2026-04-05T20:20:00+00:00",
+                "estimated": "2026-04-05T20:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "G15",
+                "baggage": "9",
+                "scheduled": "2026-04-05T23:00:00+00:00",
+                "delay": 15,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Southwest Airlines",
+                "iata": "WN",
+                "icao": "SWA"
+            },
+            "flight": {
+                "number": "3972",
+                "iata": "WN3972",
+                "icao": "SWA3972",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC1AD7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nashville International",
+                "timezone": "America\/Chicago",
+                "iata": "BNA",
+                "icao": "KBNA",
+                "terminal": null,
+                "gate": "D8",
+                "delay": null,
+                "scheduled": "2026-04-05T19:40:00+00:00",
+                "estimated": "2026-04-05T19:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "G19",
+                "baggage": null,
+                "scheduled": "2026-04-05T23:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Southwest Airlines",
+                "iata": "WN",
+                "icao": "SWA"
+            },
+            "flight": {
+                "number": "3585",
+                "iata": "WN3585",
+                "icao": "SWA3585",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ABC09E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Arturo Merino Benitez",
+                "timezone": "America\/Santiago",
+                "iata": "SCL",
+                "icao": "SCEL",
+                "terminal": "2",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "estimated": "2026-04-05T20:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D21",
+                "baggage": "CUST",
+                "scheduled": "2026-04-06T05:00:00+00:00",
+                "delay": 331,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "912",
+                "iata": "AA912",
+                "icao": "AAL912",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAE958"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "diverted",
+            "departure": {
+                "airport": "Hanscom Field",
+                "timezone": "America\/New_York",
+                "iata": "BED",
+                "icao": "KBED",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T12:44:00+00:00",
+                "estimated": "2026-04-05T12:44:00+00:00",
+                "actual": "2026-04-05T13:27:00+00:00",
+                "estimated_runway": "2026-04-05T13:27:00+00:00",
+                "actual_runway": "2026-04-05T13:27:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T15:46:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T15:06:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Flexjet",
+                "iata": "LXJ",
+                "icao": "LXJ"
+            },
+            "flight": {
+                "number": "447",
+                "iata": "LXJ447",
+                "icao": "LXJ447",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "N447FX",
+                "iata": "E545",
+                "icao": "E545",
+                "icao24": "A56531"
+            },
+            "live": {
+                "updated": "2026-04-05T19:12:21+00:00",
+                "latitude": 35.8951,
+                "longitude": -78.7598,
+                "altitude": 266.7,
+                "direction": 225,
+                "speed_horizontal": 209.276,
+                "speed_vertical": 0,
+                "is_ground": false
+            }
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tampa International",
+                "timezone": "America\/New_York",
+                "iata": "TPA",
+                "icao": "KTPA",
+                "terminal": null,
+                "gate": "F81",
+                "delay": null,
+                "scheduled": "2026-04-05T20:10:00+00:00",
+                "estimated": "2026-04-05T20:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D9",
+                "baggage": "27",
+                "scheduled": "2026-04-05T21:30:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3270",
+                "iata": "AA3270",
+                "icao": "AAL3270",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA1F97"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "2",
+                "gate": "K",
+                "delay": null,
+                "scheduled": "2026-04-05T18:35:00+00:00",
+                "estimated": "2026-04-05T18:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H6",
+                "baggage": "J-FI",
+                "scheduled": "2026-04-05T23:52:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aeromexico",
+                "iata": "AM",
+                "icao": "AMX"
+            },
+            "flight": {
+                "number": "428",
+                "iata": "AM428",
+                "icao": "AMX428",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": "27",
+                "delay": null,
+                "scheduled": "2026-04-05T13:55:00+00:00",
+                "estimated": "2026-04-05T13:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E9",
+                "baggage": "CUST",
+                "scheduled": "2026-04-05T19:21:00+00:00",
+                "delay": 79,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2836",
+                "iata": "QR2836",
+                "icao": "QTR2836",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "505",
+                    "flight_iata": "aa505",
+                    "flight_icao": "aal505"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3B8F5"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": "27",
+                "delay": null,
+                "scheduled": "2026-04-05T13:55:00+00:00",
+                "estimated": "2026-04-05T13:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E9",
+                "baggage": "CUST",
+                "scheduled": "2026-04-05T19:21:00+00:00",
+                "delay": 79,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4626",
+                "iata": "IB4626",
+                "icao": "IBE4626",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "505",
+                    "flight_iata": "aa505",
+                    "flight_icao": "aal505"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3B8F5"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": "27",
+                "delay": null,
+                "scheduled": "2026-04-05T13:55:00+00:00",
+                "estimated": "2026-04-05T13:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E9",
+                "baggage": "CUST",
+                "scheduled": "2026-04-05T19:21:00+00:00",
+                "delay": 79,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "4902",
+                "iata": "BA4902",
+                "icao": "BAW4902",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "505",
+                    "flight_iata": "aa505",
+                    "flight_icao": "aal505"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3B8F5"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "B",
+                "gate": "53",
+                "delay": null,
+                "scheduled": "2026-04-05T20:30:00+00:00",
+                "estimated": "2026-04-05T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E2",
+                "baggage": "25",
+                "scheduled": "2026-04-05T21:52:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "1917",
+                "iata": "AA1917",
+                "icao": "AAL1917",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9CCDE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "B",
+                "gate": "53",
+                "delay": null,
+                "scheduled": "2026-04-05T20:30:00+00:00",
+                "estimated": "2026-04-05T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E2",
+                "baggage": "25",
+                "scheduled": "2026-04-05T21:52:00+00:00",
+                "delay": 18,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2413",
+                "iata": "QR2413",
+                "icao": "QTR2413",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1917",
+                    "flight_iata": "aa1917",
+                    "flight_icao": "aal1917"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9CCDE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "B",
+                "gate": "53",
+                "delay": null,
+                "scheduled": "2026-04-05T20:30:00+00:00",
+                "estimated": "2026-04-05T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "E2",
+                "baggage": "25",
+                "scheduled": "2026-04-05T21:52:00+00:00",
+                "delay": 18,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6198",
+                "iata": "G36198",
+                "icao": "GLO6198",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1917",
+                    "flight_iata": "aa1917",
+                    "flight_icao": "aal1917"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9CCDE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "S",
+                "gate": "T04",
+                "delay": null,
+                "scheduled": "2026-04-05T20:30:00+00:00",
+                "estimated": "2026-04-05T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H07",
+                "baggage": null,
+                "scheduled": "2026-04-05T22:26:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1234",
+                "iata": "DL1234",
+                "icao": "DAL1234",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8E2D6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pensacola International Airport",
+                "timezone": "America\/Chicago",
+                "iata": "PNS",
+                "icao": "KPNS",
+                "terminal": null,
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:26:00+00:00",
+                "estimated": "2026-04-05T19:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60E",
+                "baggage": "12",
+                "scheduled": "2026-04-05T22:13:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3863",
+                "iata": "AA3863",
+                "icao": "AAL3863",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1A218"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pensacola International Airport",
+                "timezone": "America\/Chicago",
+                "iata": "PNS",
+                "icao": "KPNS",
+                "terminal": null,
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:26:00+00:00",
+                "estimated": "2026-04-05T19:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60E",
+                "baggage": "12",
+                "scheduled": "2026-04-05T22:13:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "7993",
+                "iata": "QR7993",
+                "icao": "QTR7993",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3863",
+                    "flight_iata": "aa3863",
+                    "flight_icao": "aal3863"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1A218"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Philadelphia International",
+                "timezone": "America\/New_York",
+                "iata": "PHL",
+                "icao": "KPHL",
+                "terminal": "E",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T20:16:00+00:00",
+                "estimated": "2026-04-05T20:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": "3",
+                "scheduled": "2026-04-05T23:11:00+00:00",
+                "delay": 16,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "4953",
+                "iata": "F94953",
+                "icao": "FFT4953",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A894B5"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nashville International",
+                "timezone": "America\/Chicago",
+                "iata": "BNA",
+                "icao": "KBNA",
+                "terminal": null,
+                "gate": "C15",
+                "delay": null,
+                "scheduled": "2026-04-05T18:39:00+00:00",
+                "estimated": "2026-04-05T18:39:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60R",
+                "baggage": "13",
+                "scheduled": "2026-04-05T21:55:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3827",
+                "iata": "AA3827",
+                "icao": "AAL3827",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A33222"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nashville International",
+                "timezone": "America\/Chicago",
+                "iata": "BNA",
+                "icao": "KBNA",
+                "terminal": null,
+                "gate": "C15",
+                "delay": null,
+                "scheduled": "2026-04-05T18:39:00+00:00",
+                "estimated": "2026-04-05T18:39:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60R",
+                "baggage": "13",
+                "scheduled": "2026-04-05T21:55:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2705",
+                "iata": "QR2705",
+                "icao": "QTR2705",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3827",
+                    "flight_iata": "aa3827",
+                    "flight_icao": "aal3827"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A33222"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "8",
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T13:53:00+00:00",
+                "estimated": "2026-04-05T13:53:00+00:00",
+                "actual": "2026-04-05T14:41:00+00:00",
+                "estimated_runway": "2026-04-05T14:41:00+00:00",
+                "actual_runway": "2026-04-05T14:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D51",
+                "baggage": "25",
+                "scheduled": "2026-04-05T17:09:00+00:00",
+                "delay": 48,
+                "estimated": "2026-04-05T16:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Malaysia Airlines",
+                "iata": "MH",
+                "icao": "MAS"
+            },
+            "flight": {
+                "number": "9471",
+                "iata": "MH9471",
+                "icao": "MAS9471",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "688",
+                    "flight_iata": "aa688",
+                    "flight_icao": "aal688"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35EB0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "8",
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T13:53:00+00:00",
+                "estimated": "2026-04-05T13:53:00+00:00",
+                "actual": "2026-04-05T14:41:00+00:00",
+                "estimated_runway": "2026-04-05T14:41:00+00:00",
+                "actual_runway": "2026-04-05T14:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D51",
+                "baggage": "25",
+                "scheduled": "2026-04-05T17:09:00+00:00",
+                "delay": 48,
+                "estimated": "2026-04-05T16:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Japan Airlines",
+                "iata": "JL",
+                "icao": "JTL"
+            },
+            "flight": {
+                "number": "7470",
+                "iata": "JL7470",
+                "icao": "JTL7470",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "688",
+                    "flight_iata": "aa688",
+                    "flight_icao": "aal688"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35EB0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "8",
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T13:53:00+00:00",
+                "estimated": "2026-04-05T13:53:00+00:00",
+                "actual": "2026-04-05T14:41:00+00:00",
+                "estimated_runway": "2026-04-05T14:41:00+00:00",
+                "actual_runway": "2026-04-05T14:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D51",
+                "baggage": "25",
+                "scheduled": "2026-04-05T17:09:00+00:00",
+                "delay": 48,
+                "estimated": "2026-04-05T16:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6433",
+                "iata": "G36433",
+                "icao": "GLO6433",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "688",
+                    "flight_iata": "aa688",
+                    "flight_icao": "aal688"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35EB0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "8",
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T13:53:00+00:00",
+                "estimated": "2026-04-05T13:53:00+00:00",
+                "actual": "2026-04-05T14:41:00+00:00",
+                "estimated_runway": "2026-04-05T14:41:00+00:00",
+                "actual_runway": "2026-04-05T14:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D51",
+                "baggage": "25",
+                "scheduled": "2026-04-05T17:09:00+00:00",
+                "delay": 48,
+                "estimated": "2026-04-05T16:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Cathay Pacific",
+                "iata": "CX",
+                "icao": "CPA"
+            },
+            "flight": {
+                "number": "7529",
+                "iata": "CX7529",
+                "icao": "CPA7529",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "688",
+                    "flight_iata": "aa688",
+                    "flight_icao": "aal688"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35EB0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "8",
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T13:53:00+00:00",
+                "estimated": "2026-04-05T13:53:00+00:00",
+                "actual": "2026-04-05T14:41:00+00:00",
+                "estimated_runway": "2026-04-05T14:41:00+00:00",
+                "actual_runway": "2026-04-05T14:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D51",
+                "baggage": "25",
+                "scheduled": "2026-04-05T17:09:00+00:00",
+                "delay": 48,
+                "estimated": "2026-04-05T16:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "4693",
+                "iata": "BA4693",
+                "icao": "BAW4693",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "688",
+                    "flight_iata": "aa688",
+                    "flight_icao": "aal688"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35EB0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Ramon Villeda Morales International",
+                "timezone": "America\/Tegucigalpa",
+                "iata": "SAP",
+                "icao": "MHLM",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T13:00:00+00:00",
+                "estimated": "2026-04-05T13:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T17:15:00+00:00",
+                "delay": 70,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Amerijet International",
+                "iata": "M6",
+                "icao": "AJT"
+            },
+            "flight": {
+                "number": "776",
+                "iata": "M6776",
+                "icao": "AJT776",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "San Diego International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SAN",
+                "icao": "KSAN",
+                "terminal": "2",
+                "gate": "23",
+                "delay": null,
+                "scheduled": "2026-04-05T13:01:00+00:00",
+                "estimated": "2026-04-05T13:01:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D6",
+                "baggage": "26",
+                "scheduled": "2026-04-05T21:02:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2661",
+                "iata": "QR2661",
+                "icao": "QTR2661",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3300",
+                    "flight_iata": "aa3300",
+                    "flight_icao": "aal3300"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3484E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "San Diego International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SAN",
+                "icao": "KSAN",
+                "terminal": "2",
+                "gate": "23",
+                "delay": null,
+                "scheduled": "2026-04-05T13:01:00+00:00",
+                "estimated": "2026-04-05T13:01:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D6",
+                "baggage": "26",
+                "scheduled": "2026-04-05T21:02:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6455",
+                "iata": "G36455",
+                "icao": "GLO6455",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3300",
+                    "flight_iata": "aa3300",
+                    "flight_icao": "aal3300"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3484E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "San Diego International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SAN",
+                "icao": "KSAN",
+                "terminal": "2",
+                "gate": "23",
+                "delay": null,
+                "scheduled": "2026-04-05T13:01:00+00:00",
+                "estimated": "2026-04-05T13:01:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D6",
+                "baggage": "26",
+                "scheduled": "2026-04-05T21:02:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6106",
+                "iata": "AS6106",
+                "icao": "JAG6106",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3300",
+                    "flight_iata": "aa3300",
+                    "flight_icao": "aal3300"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3484E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Louis Armstrong New Orl\u00e9ans International Airport",
+                "timezone": "America\/Chicago",
+                "iata": "MSY",
+                "icao": "KMSY",
+                "terminal": null,
+                "gate": "B14",
+                "delay": null,
+                "scheduled": "2026-04-05T18:21:00+00:00",
+                "estimated": "2026-04-05T18:21:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D41",
+                "baggage": "22",
+                "scheduled": "2026-04-05T21:26:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "9229",
+                "iata": "QR9229",
+                "icao": "QTR9229",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2959",
+                    "flight_iata": "aa2959",
+                    "flight_icao": "aal2959"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC6445"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Louis Armstrong New Orl\u00e9ans International Airport",
+                "timezone": "America\/Chicago",
+                "iata": "MSY",
+                "icao": "KMSY",
+                "terminal": null,
+                "gate": "B14",
+                "delay": null,
+                "scheduled": "2026-04-05T18:21:00+00:00",
+                "estimated": "2026-04-05T18:21:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D41",
+                "baggage": "22",
+                "scheduled": "2026-04-05T21:26:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4829",
+                "iata": "IB4829",
+                "icao": "IBE4829",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2959",
+                    "flight_iata": "aa2959",
+                    "flight_icao": "aal2959"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC6445"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Louis Armstrong New Orl\u00e9ans International Airport",
+                "timezone": "America\/Chicago",
+                "iata": "MSY",
+                "icao": "KMSY",
+                "terminal": null,
+                "gate": "B14",
+                "delay": null,
+                "scheduled": "2026-04-05T18:21:00+00:00",
+                "estimated": "2026-04-05T18:21:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D41",
+                "baggage": "22",
+                "scheduled": "2026-04-05T21:26:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gol",
+                "iata": "G3",
+                "icao": "GLO"
+            },
+            "flight": {
+                "number": "6466",
+                "iata": "G36466",
+                "icao": "GLO6466",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2959",
+                    "flight_iata": "aa2959",
+                    "flight_icao": "aal2959"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC6445"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Baltimore\/Washington International Thurgood Marshall",
+                "timezone": "America\/New_York",
+                "iata": "BWI",
+                "icao": "KBWI",
+                "terminal": null,
+                "gate": "C7",
+                "delay": null,
+                "scheduled": "2026-04-05T19:22:00+00:00",
+                "estimated": "2026-04-05T19:22:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D40",
+                "baggage": "25",
+                "scheduled": "2026-04-05T22:15:00+00:00",
+                "delay": 4,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "9148",
+                "iata": "QR9148",
+                "icao": "QTR9148",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1183",
+                    "flight_iata": "aa1183",
+                    "flight_icao": "aal1183"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB129A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "C",
+                "gate": "89A",
+                "delay": null,
+                "scheduled": "2026-04-05T15:25:00+00:00",
+                "estimated": "2026-04-05T15:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H11",
+                "baggage": "4",
+                "scheduled": "2026-04-05T18:51:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "7621",
+                "iata": "WS7621",
+                "icao": "WJA7621",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "2300",
+                    "flight_iata": "dl2300",
+                    "flight_icao": "dal2300"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A48321"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "C",
+                "gate": "89A",
+                "delay": null,
+                "scheduled": "2026-04-05T15:25:00+00:00",
+                "estimated": "2026-04-05T15:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H11",
+                "baggage": "4",
+                "scheduled": "2026-04-05T18:51:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "6631",
+                "iata": "LA6631",
+                "icao": "LAN6631",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "2300",
+                    "flight_iata": "dl2300",
+                    "flight_icao": "dal2300"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A48321"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Palm Beach International Airport",
+                "timezone": "America\/New_York",
+                "iata": "PBI",
+                "icao": "KPBI",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T19:36:00+00:00",
+                "estimated": "2026-04-05T19:36:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T20:06:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "NetJets Aviation",
+                "iata": "1I",
+                "icao": "EJA"
+            },
+            "flight": {
+                "number": "424",
+                "iata": "1I424",
+                "icao": "EJA424",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Savannah\/Hilton Head",
+                "timezone": "America\/New_York",
+                "iata": "SAV",
+                "icao": "KSAV",
+                "terminal": null,
+                "gate": "8",
+                "delay": null,
+                "scheduled": "2026-04-05T19:34:00+00:00",
+                "estimated": "2026-04-05T19:34:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60N",
+                "baggage": "13",
+                "scheduled": "2026-04-05T21:09:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3992",
+                "iata": "AA3992",
+                "icao": "AAL3992",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1C997"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Savannah\/Hilton Head",
+                "timezone": "America\/New_York",
+                "iata": "SAV",
+                "icao": "KSAV",
+                "terminal": null,
+                "gate": "8",
+                "delay": null,
+                "scheduled": "2026-04-05T19:34:00+00:00",
+                "estimated": "2026-04-05T19:34:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60N",
+                "baggage": "13",
+                "scheduled": "2026-04-05T21:09:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "9100",
+                "iata": "QR9100",
+                "icao": "QTR9100",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3992",
+                    "flight_iata": "aa3992",
+                    "flight_icao": "aal3992"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1C997"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Savannah\/Hilton Head",
+                "timezone": "America\/New_York",
+                "iata": "SAV",
+                "icao": "KSAV",
+                "terminal": null,
+                "gate": "8",
+                "delay": null,
+                "scheduled": "2026-04-05T19:34:00+00:00",
+                "estimated": "2026-04-05T19:34:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60N",
+                "baggage": "13",
+                "scheduled": "2026-04-05T21:09:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "4663",
+                "iata": "BA4663",
+                "icao": "BAW4663",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3992",
+                    "flight_iata": "aa3992",
+                    "flight_icao": "aal3992"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1C997"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "A",
+                "gate": "A22",
+                "delay": null,
+                "scheduled": "2026-04-05T19:54:00+00:00",
+                "estimated": "2026-04-05T19:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H08",
+                "baggage": null,
+                "scheduled": "2026-04-05T23:38:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1649",
+                "iata": "DL1649",
+                "icao": "DAL1649",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A445B0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "El Nuevo Dorado International",
+                "timezone": "America\/Bogota",
+                "iata": "BOG",
+                "icao": "SKBO",
+                "terminal": "1",
+                "gate": "A10",
+                "delay": null,
+                "scheduled": "2026-04-05T18:40:00+00:00",
+                "estimated": "2026-04-05T18:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T23:30:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "6",
+                "iata": "AV6",
+                "icao": "AVA6",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "El Nuevo Dorado International",
+                "timezone": "America\/Bogota",
+                "iata": "BOG",
+                "icao": "SKBO",
+                "terminal": "1",
+                "gate": "A10",
+                "delay": null,
+                "scheduled": "2026-04-05T18:40:00+00:00",
+                "estimated": "2026-04-05T18:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T23:30:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "6698",
+                "iata": "UA6698",
+                "icao": "UAL6698",
+                "codeshared": {
+                    "airline_name": "sa avianca",
+                    "airline_iata": "av",
+                    "airline_icao": "ava",
+                    "flight_number": "6",
+                    "flight_iata": "av6",
+                    "flight_icao": "ava6"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "El Nuevo Dorado International",
+                "timezone": "America\/Bogota",
+                "iata": "BOG",
+                "icao": "SKBO",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T18:20:00+00:00",
+                "estimated": "2026-04-05T18:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T23:20:00+00:00",
+                "delay": 56,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7261",
+                "iata": "AC7261",
+                "icao": "ACA7261",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C03261"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G11",
+                "delay": null,
+                "scheduled": "2026-04-05T18:59:00+00:00",
+                "estimated": "2026-04-05T18:59:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D44",
+                "baggage": "22",
+                "scheduled": "2026-04-05T23:08:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2901",
+                "iata": "AA2901",
+                "icao": "AAL2901",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ADF194"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C17",
+                "delay": null,
+                "scheduled": "2026-04-05T18:25:00+00:00",
+                "estimated": "2026-04-05T18:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "H17",
+                "baggage": null,
+                "scheduled": "2026-04-05T22:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "2180",
+                "iata": "UA2180",
+                "icao": "UAL2180",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A41E2C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Richmond International Airport",
+                "timezone": "America\/New_York",
+                "iata": "RIC",
+                "icao": "KRIC",
+                "terminal": null,
+                "gate": "A12",
+                "delay": null,
+                "scheduled": "2026-04-05T19:36:00+00:00",
+                "estimated": "2026-04-05T19:36:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D55",
+                "baggage": "12",
+                "scheduled": "2026-04-05T22:05:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3748",
+                "iata": "AA3748",
+                "icao": "AAL3748",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2AB6C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Richmond International Airport",
+                "timezone": "America\/New_York",
+                "iata": "RIC",
+                "icao": "KRIC",
+                "terminal": null,
+                "gate": "A12",
+                "delay": null,
+                "scheduled": "2026-04-05T19:36:00+00:00",
+                "estimated": "2026-04-05T19:36:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D60Q",
+                "baggage": "13",
+                "scheduled": "2026-04-05T22:05:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2659",
+                "iata": "QR2659",
+                "icao": "QTR2659",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3748",
+                    "flight_iata": "aa3748",
+                    "flight_icao": "aal3748"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2AB6C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Bradley International",
+                "timezone": "America\/New_York",
+                "iata": "BDL",
+                "icao": "KBDL",
+                "terminal": null,
+                "gate": "7",
+                "delay": null,
+                "scheduled": "2026-04-05T20:04:00+00:00",
+                "estimated": "2026-04-05T20:04:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "F9",
+                "baggage": "3",
+                "scheduled": "2026-04-05T23:16:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "2653",
+                "iata": "F92653",
+                "icao": "FFT2653",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9A7D0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Austin-bergstrom International",
+                "timezone": "America\/Chicago",
+                "iata": "AUS",
+                "icao": "KAUS",
+                "terminal": null,
+                "gate": "24",
+                "delay": null,
+                "scheduled": "2026-04-05T18:36:00+00:00",
+                "estimated": "2026-04-05T18:36:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D4",
+                "baggage": "26",
+                "scheduled": "2026-04-05T22:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "1121",
+                "iata": "AA1121",
+                "icao": "AAL1121",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACEA99"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Austin-bergstrom International",
+                "timezone": "America\/Chicago",
+                "iata": "AUS",
+                "icao": "KAUS",
+                "terminal": null,
+                "gate": "24",
+                "delay": null,
+                "scheduled": "2026-04-05T18:36:00+00:00",
+                "estimated": "2026-04-05T18:36:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D4",
+                "baggage": "26",
+                "scheduled": "2026-04-05T22:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "9408",
+                "iata": "QR9408",
+                "icao": "QTR9408",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1121",
+                    "flight_iata": "aa1121",
+                    "flight_icao": "aal1121"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACEA99"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "A30",
+                "delay": null,
+                "scheduled": "2026-04-05T14:54:00+00:00",
+                "estimated": "2026-04-05T14:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "F7",
+                "baggage": "3",
+                "scheduled": "2026-04-05T17:11:00+00:00",
+                "delay": 86,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Volaris",
+                "iata": "Y4",
+                "icao": "VOI"
+            },
+            "flight": {
+                "number": "2642",
+                "iata": "Y42642",
+                "icao": "VOI2642",
+                "codeshared": {
+                    "airline_name": "frontier airlines",
+                    "airline_iata": "f9",
+                    "airline_icao": "fft",
+                    "flight_number": "3699",
+                    "flight_iata": "f93699",
+                    "flight_icao": "fft3699"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8EED8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tocumen International",
+                "timezone": "America\/Panama",
+                "iata": "PTY",
+                "icao": "MPTO",
+                "terminal": "2",
+                "gate": "107",
+                "delay": null,
+                "scheduled": "2026-04-05T18:34:00+00:00",
+                "estimated": "2026-04-05T18:34:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "J14",
+                "baggage": "J-FI",
+                "scheduled": "2026-04-05T22:42:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Copa Airlines",
+                "iata": "CM",
+                "icao": "CMP"
+            },
+            "flight": {
+                "number": "441",
+                "iata": "CM441",
+                "icao": "CMP441",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tocumen International",
+                "timezone": "America\/Panama",
+                "iata": "PTY",
+                "icao": "MPTO",
+                "terminal": "2",
+                "gate": "107",
+                "delay": null,
+                "scheduled": "2026-04-05T18:34:00+00:00",
+                "estimated": "2026-04-05T18:34:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "J14",
+                "baggage": "J-FI",
+                "scheduled": "2026-04-05T22:42:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "7119",
+                "iata": "UA7119",
+                "icao": "UAL7119",
+                "codeshared": {
+                    "airline_name": "copa airlines",
+                    "airline_iata": "cm",
+                    "airline_icao": "cmp",
+                    "flight_number": "441",
+                    "flight_iata": "cm441",
+                    "flight_icao": "cmp441"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        }
+    ]
+}

@@ -1,2 +1,4 @@
 *
 !.gitignore
+!aviation_stack/
+!aviation_stack/**

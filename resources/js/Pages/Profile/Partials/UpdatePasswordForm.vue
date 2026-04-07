@@ -1,8 +1,5 @@
 <script setup>
 import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
 import { useForm } from '@inertiajs/vue3';
 import { ref } from 'vue';
 
@@ -48,14 +45,15 @@ const updatePassword = () => {
 
         <form @submit.prevent="updatePassword" class="mt-6 space-y-6">
             <div>
-                <InputLabel for="current_password" value="Current Password" />
+                <label for="current_password" class="block text-sm font-medium text-slate-700">Current Password</label>
 
-                <TextInput
+                <input
                     id="current_password"
                     ref="currentPasswordInput"
                     v-model="form.current_password"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
+                    placeholder="••••••••"
                     autocomplete="current-password"
                 />
 
@@ -66,14 +64,15 @@ const updatePassword = () => {
             </div>
 
             <div>
-                <InputLabel for="password" value="New Password" />
+                <label for="password" class="block text-sm font-medium text-slate-700">New Password</label>
 
-                <TextInput
+                <input
                     id="password"
                     ref="passwordInput"
                     v-model="form.password"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
+                    placeholder="••••••••"
                     autocomplete="new-password"
                 />
 
@@ -81,16 +80,14 @@ const updatePassword = () => {
             </div>
 
             <div>
-                <InputLabel
-                    for="password_confirmation"
-                    value="Confirm Password"
-                />
+                <label for="password_confirmation" class="block text-sm font-medium text-slate-700">Confirm Password</label>
 
-                <TextInput
+                <input
                     id="password_confirmation"
                     v-model="form.password_confirmation"
                     type="password"
-                    class="mt-1 block w-full"
+                    class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
+                    placeholder="••••••••"
                     autocomplete="new-password"
                 />
 
@@ -101,7 +98,13 @@ const updatePassword = () => {
             </div>
 
             <div class="flex items-center gap-4">
-                <PrimaryButton :disabled="form.processing">Save</PrimaryButton>
+                <button
+                    type="submit"
+                    class="rounded-lg bg-[#2e67a8] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#265d97] disabled:opacity-50"
+                    :disabled="form.processing"
+                >
+                    Save
+                </button>
 
                 <Transition
                     enter-active-class="transition ease-in-out"

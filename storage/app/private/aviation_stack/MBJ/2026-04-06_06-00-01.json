@@ -1,0 +1,2838 @@
+{
+    "pagination": {
+        "limit": 100,
+        "offset": 0,
+        "count": 54,
+        "total": 54
+    },
+    "data": [
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Halifax International",
+                "timezone": "America\/Halifax",
+                "iata": "YHZ",
+                "icao": "CYHZ",
+                "terminal": null,
+                "gate": "18",
+                "delay": null,
+                "scheduled": "2026-04-06T08:15:00+00:00",
+                "estimated": "2026-04-06T08:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T11:21:00+00:00",
+                "delay": 52,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2638",
+                "iata": "WS2638",
+                "icao": "WJA2638",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C063EB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "B40",
+                "delay": null,
+                "scheduled": "2026-04-06T06:35:00+00:00",
+                "estimated": "2026-04-06T06:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T09:59:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2708",
+                "iata": "WS2708",
+                "icao": "WJA2708",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0025A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gatwick",
+                "timezone": "Europe\/London",
+                "iata": "LGW",
+                "icao": "EGKK",
+                "terminal": "N",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T09:20:00+00:00",
+                "estimated": "2026-04-06T09:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T13:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "TUI Airways",
+                "iata": "BY",
+                "icao": "TOM"
+            },
+            "flight": {
+                "number": "44",
+                "iata": "BY44",
+                "icao": "TOM44",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E09",
+                "delay": null,
+                "scheduled": "2026-04-05T13:40:00+00:00",
+                "estimated": "2026-04-05T13:40:00+00:00",
+                "actual": "2026-04-05T13:46:00+00:00",
+                "estimated_runway": "2026-04-05T13:46:00+00:00",
+                "actual_runway": "2026-04-05T13:46:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G16",
+                "baggage": null,
+                "scheduled": "2026-04-05T15:28:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T15:06:00+00:00",
+                "actual": "2026-04-05T15:06:00+00:00",
+                "estimated_runway": "2026-04-05T15:06:00+00:00",
+                "actual_runway": "2026-04-05T15:06:00+00:00"
+            },
+            "airline": {
+                "name": "Virgin Atlantic",
+                "iata": "VS",
+                "icao": "VIR"
+            },
+            "flight": {
+                "number": "3800",
+                "iata": "VS3800",
+                "icao": "VIR3800",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1949",
+                    "flight_iata": "dl1949",
+                    "flight_icao": "dal1949"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A4462E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hewanorra",
+                "timezone": "America\/St_Lucia",
+                "iata": "UVF",
+                "icao": "TLPL",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T13:30:00+00:00",
+                "estimated": "2026-04-05T13:30:00+00:00",
+                "actual": "2026-04-05T12:48:00+00:00",
+                "estimated_runway": "2026-04-05T12:48:00+00:00",
+                "actual_runway": "2026-04-05T12:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T15:50:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T14:31:00+00:00",
+                "actual": "2026-04-05T14:32:00+00:00",
+                "estimated_runway": "2026-04-05T14:32:00+00:00",
+                "actual_runway": "2026-04-05T14:32:00+00:00"
+            },
+            "airline": {
+                "name": "empty",
+                "iata": null,
+                "icao": null
+            },
+            "flight": {
+                "number": null,
+                "iata": null,
+                "icao": null,
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A013A0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E31",
+                "delay": null,
+                "scheduled": "2026-04-05T10:18:00+00:00",
+                "estimated": "2026-04-05T10:18:00+00:00",
+                "actual": "2026-04-05T10:49:00+00:00",
+                "estimated_runway": "2026-04-05T10:49:00+00:00",
+                "actual_runway": "2026-04-05T10:49:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G3",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:12:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:05:00+00:00",
+                "actual": "2026-04-05T12:07:00+00:00",
+                "estimated_runway": "2026-04-05T12:07:00+00:00",
+                "actual_runway": "2026-04-05T12:07:00+00:00"
+            },
+            "airline": {
+                "name": "Virgin Atlantic",
+                "iata": "VS",
+                "icao": "VIR"
+            },
+            "flight": {
+                "number": "3826",
+                "iata": "VS3826",
+                "icao": "VIR3826",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1997",
+                    "flight_iata": "dl1997",
+                    "flight_icao": "dal1997"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC4D1A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E31",
+                "delay": null,
+                "scheduled": "2026-04-05T10:18:00+00:00",
+                "estimated": "2026-04-05T10:18:00+00:00",
+                "actual": "2026-04-05T10:49:00+00:00",
+                "estimated_runway": "2026-04-05T10:49:00+00:00",
+                "actual_runway": "2026-04-05T10:49:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G3",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:12:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:05:00+00:00",
+                "actual": "2026-04-05T12:07:00+00:00",
+                "estimated_runway": "2026-04-05T12:07:00+00:00",
+                "actual_runway": "2026-04-05T12:07:00+00:00"
+            },
+            "airline": {
+                "name": "KLM",
+                "iata": "KL",
+                "icao": "KLM"
+            },
+            "flight": {
+                "number": "5525",
+                "iata": "KL5525",
+                "icao": "KLM5525",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1997",
+                    "flight_iata": "dl1997",
+                    "flight_icao": "dal1997"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC4D1A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A59",
+                "delay": 6,
+                "scheduled": "2026-04-05T13:20:00+00:00",
+                "estimated": "2026-04-05T13:20:00+00:00",
+                "actual": "2026-04-05T13:35:00+00:00",
+                "estimated_runway": "2026-04-05T13:35:00+00:00",
+                "actual_runway": "2026-04-05T13:35:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "15",
+                "baggage": null,
+                "scheduled": "2026-04-05T16:50:00+00:00",
+                "delay": 6,
+                "estimated": "2026-04-05T16:55:00+00:00",
+                "actual": "2026-04-05T16:56:00+00:00",
+                "estimated_runway": "2026-04-05T16:56:00+00:00",
+                "actual_runway": "2026-04-05T16:56:00+00:00"
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "920",
+                "iata": "AC920",
+                "icao": "ACA920",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04FF7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E09",
+                "delay": null,
+                "scheduled": "2026-04-05T13:40:00+00:00",
+                "estimated": "2026-04-05T13:40:00+00:00",
+                "actual": "2026-04-05T13:46:00+00:00",
+                "estimated_runway": "2026-04-05T13:46:00+00:00",
+                "actual_runway": "2026-04-05T13:46:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G16",
+                "baggage": null,
+                "scheduled": "2026-04-05T15:28:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T15:06:00+00:00",
+                "actual": "2026-04-05T15:06:00+00:00",
+                "estimated_runway": "2026-04-05T15:06:00+00:00",
+                "actual_runway": "2026-04-05T15:06:00+00:00"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1949",
+                "iata": "DL1949",
+                "icao": "DAL1949",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A4462E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "El Nuevo Dorado International",
+                "timezone": "America\/Bogota",
+                "iata": "BOG",
+                "icao": "SKBO",
+                "terminal": "1",
+                "gate": "B3",
+                "delay": null,
+                "scheduled": "2026-04-05T11:45:00+00:00",
+                "estimated": "2026-04-05T11:45:00+00:00",
+                "actual": "2026-04-05T12:01:00+00:00",
+                "estimated_runway": "2026-04-05T12:01:00+00:00",
+                "actual_runway": "2026-04-05T12:01:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T14:33:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T14:15:00+00:00",
+                "actual": "2026-04-05T14:19:00+00:00",
+                "estimated_runway": "2026-04-05T14:19:00+00:00",
+                "actual_runway": "2026-04-05T14:19:00+00:00"
+            },
+            "airline": {
+                "name": "Copa Airlines Colombia",
+                "iata": "P5",
+                "icao": "RPB"
+            },
+            "flight": {
+                "number": "7478",
+                "iata": "P57478",
+                "icao": "RPB7478",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "0C2050"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Midway",
+                "timezone": "America\/Chicago",
+                "iata": "MDW",
+                "icao": "KMDW",
+                "terminal": null,
+                "gate": "A19",
+                "delay": null,
+                "scheduled": "2026-04-05T11:10:00+00:00",
+                "estimated": "2026-04-05T11:10:00+00:00",
+                "actual": "2026-04-05T11:12:00+00:00",
+                "estimated_runway": "2026-04-05T11:12:00+00:00",
+                "actual_runway": "2026-04-05T11:12:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "3",
+                "baggage": null,
+                "scheduled": "2026-04-05T14:55:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T14:37:00+00:00",
+                "actual": "2026-04-05T14:38:00+00:00",
+                "estimated_runway": "2026-04-05T14:38:00+00:00",
+                "actual_runway": "2026-04-05T14:38:00+00:00"
+            },
+            "airline": {
+                "name": "Southwest Airlines",
+                "iata": "WN",
+                "icao": "SWA"
+            },
+            "flight": {
+                "number": "1042",
+                "iata": "WN1042",
+                "icao": "SWA1042",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ABE147"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "4",
+                "gate": "B43",
+                "delay": null,
+                "scheduled": "2026-04-05T08:15:00+00:00",
+                "estimated": "2026-04-05T08:15:00+00:00",
+                "actual": "2026-04-05T08:37:00+00:00",
+                "estimated_runway": "2026-04-05T08:37:00+00:00",
+                "actual_runway": "2026-04-05T08:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G19",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:21:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T10:50:00+00:00",
+                "actual": "2026-04-05T10:50:00+00:00",
+                "estimated_runway": "2026-04-05T10:50:00+00:00",
+                "actual_runway": "2026-04-05T10:50:00+00:00"
+            },
+            "airline": {
+                "name": "Virgin Atlantic",
+                "iata": "VS",
+                "icao": "VIR"
+            },
+            "flight": {
+                "number": "4853",
+                "iata": "VS4853",
+                "icao": "VIR4853",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1955",
+                    "flight_iata": "dl1955",
+                    "flight_icao": "dal1955"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A44E1C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "N",
+                "gate": "E35",
+                "delay": 21,
+                "scheduled": "2026-04-05T12:28:00+00:00",
+                "estimated": "2026-04-05T12:28:00+00:00",
+                "actual": "2026-04-05T13:21:00+00:00",
+                "estimated_runway": "2026-04-05T13:21:00+00:00",
+                "actual_runway": "2026-04-05T13:21:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "13",
+                "baggage": null,
+                "scheduled": "2026-04-05T14:23:00+00:00",
+                "delay": 21,
+                "estimated": "2026-04-05T14:42:00+00:00",
+                "actual": "2026-04-05T14:44:00+00:00",
+                "estimated_runway": "2026-04-05T14:44:00+00:00",
+                "actual_runway": "2026-04-05T14:44:00+00:00"
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "125",
+                "iata": "F9125",
+                "icao": "FFT125",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A99A52"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Jorge Chavez International",
+                "timezone": "America\/Lima",
+                "iata": "LIM",
+                "icao": "SPJC",
+                "terminal": null,
+                "gate": "B0",
+                "delay": null,
+                "scheduled": "2026-04-05T11:45:00+00:00",
+                "estimated": "2026-04-05T11:45:00+00:00",
+                "actual": "2026-04-05T11:53:00+00:00",
+                "estimated_runway": "2026-04-05T11:53:00+00:00",
+                "actual_runway": "2026-04-05T11:53:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T16:40:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T16:12:00+00:00",
+                "actual": "2026-04-05T16:12:00+00:00",
+                "estimated_runway": "2026-04-05T16:12:00+00:00",
+                "actual_runway": "2026-04-05T16:12:00+00:00"
+            },
+            "airline": {
+                "name": "LATAM Airlines",
+                "iata": "LA",
+                "icao": "LAN"
+            },
+            "flight": {
+                "number": "2446",
+                "iata": "LA2446",
+                "icao": "LAN2446",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "E8020C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Washington Dulles International",
+                "timezone": "America\/New_York",
+                "iata": "IAD",
+                "icao": "KIAD",
+                "terminal": null,
+                "gate": "D14",
+                "delay": null,
+                "scheduled": "2026-04-05T12:35:00+00:00",
+                "estimated": "2026-04-05T12:35:00+00:00",
+                "actual": "2026-04-05T12:54:00+00:00",
+                "estimated_runway": "2026-04-05T12:54:00+00:00",
+                "actual_runway": "2026-04-05T12:54:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "15",
+                "baggage": null,
+                "scheduled": "2026-04-05T15:10:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T14:55:00+00:00",
+                "actual": "2026-04-05T14:55:00+00:00",
+                "estimated_runway": "2026-04-05T14:55:00+00:00",
+                "actual_runway": "2026-04-05T14:55:00+00:00"
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1519",
+                "iata": "UA1519",
+                "icao": "UAL1519",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2B156"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Baltimore\/Washington International Thurgood Marshall",
+                "timezone": "America\/New_York",
+                "iata": "BWI",
+                "icao": "KBWI",
+                "terminal": null,
+                "gate": "A15",
+                "delay": null,
+                "scheduled": "2026-04-05T11:35:00+00:00",
+                "estimated": "2026-04-05T11:35:00+00:00",
+                "actual": "2026-04-05T11:41:00+00:00",
+                "estimated_runway": "2026-04-05T11:41:00+00:00",
+                "actual_runway": "2026-04-05T11:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "4",
+                "baggage": null,
+                "scheduled": "2026-04-05T14:00:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T13:45:00+00:00",
+                "actual": "2026-04-05T13:46:00+00:00",
+                "estimated_runway": "2026-04-05T13:46:00+00:00",
+                "actual_runway": "2026-04-05T13:46:00+00:00"
+            },
+            "airline": {
+                "name": "Southwest Airlines",
+                "iata": "WN",
+                "icao": "SWA"
+            },
+            "flight": {
+                "number": "906",
+                "iata": "WN906",
+                "icao": "SWA906",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC2F5A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D43",
+                "delay": 59,
+                "scheduled": "2026-04-05T11:35:00+00:00",
+                "estimated": "2026-04-05T11:35:00+00:00",
+                "actual": "2026-04-05T13:16:00+00:00",
+                "estimated_runway": "2026-04-05T13:16:00+00:00",
+                "actual_runway": "2026-04-05T13:16:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "18",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:27:00+00:00",
+                "delay": 59,
+                "estimated": "2026-04-05T13:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3309",
+                "iata": "AA3309",
+                "icao": "AAL3309",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACB636"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "C",
+                "gate": "C14",
+                "delay": null,
+                "scheduled": "2026-04-05T10:20:00+00:00",
+                "estimated": "2026-04-05T10:20:00+00:00",
+                "actual": "2026-04-05T10:35:00+00:00",
+                "estimated_runway": "2026-04-05T10:35:00+00:00",
+                "actual_runway": "2026-04-05T10:35:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "19",
+                "baggage": null,
+                "scheduled": "2026-04-05T14:04:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T13:44:00+00:00",
+                "actual": "2026-04-05T13:44:00+00:00",
+                "estimated_runway": "2026-04-05T13:44:00+00:00",
+                "actual_runway": "2026-04-05T13:44:00+00:00"
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2558",
+                "iata": "AA2558",
+                "icao": "AAL2558",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD4390"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "5",
+                "gate": "502",
+                "delay": null,
+                "scheduled": "2026-04-05T11:29:00+00:00",
+                "estimated": "2026-04-05T11:29:00+00:00",
+                "actual": "2026-04-05T11:55:00+00:00",
+                "estimated_runway": "2026-04-05T11:55:00+00:00",
+                "actual_runway": "2026-04-05T11:55:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "10",
+                "baggage": null,
+                "scheduled": "2026-04-05T14:24:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T14:11:00+00:00",
+                "actual": "2026-04-05T14:16:00+00:00",
+                "estimated_runway": "2026-04-05T14:16:00+00:00",
+                "actual_runway": "2026-04-05T14:16:00+00:00"
+            },
+            "airline": {
+                "name": "JetBlue Airways",
+                "iata": "B6",
+                "icao": "JBU"
+            },
+            "flight": {
+                "number": "179",
+                "iata": "B6179",
+                "icao": "JBU179",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A7BFA0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "C19",
+                "delay": 44,
+                "scheduled": "2026-04-05T11:15:00+00:00",
+                "estimated": "2026-04-05T11:15:00+00:00",
+                "actual": "2026-04-05T12:47:00+00:00",
+                "estimated_runway": "2026-04-05T12:47:00+00:00",
+                "actual_runway": "2026-04-05T12:47:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "12",
+                "baggage": null,
+                "scheduled": "2026-04-05T13:26:00+00:00",
+                "delay": 44,
+                "estimated": "2026-04-05T14:10:00+00:00",
+                "actual": "2026-04-05T14:10:00+00:00",
+                "estimated_runway": "2026-04-05T14:10:00+00:00",
+                "actual_runway": "2026-04-05T14:10:00+00:00"
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2197",
+                "iata": "AA2197",
+                "icao": "AAL2197",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A791C0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "A",
+                "gate": "122",
+                "delay": 14,
+                "scheduled": "2026-04-05T10:45:00+00:00",
+                "estimated": "2026-04-05T10:45:00+00:00",
+                "actual": "2026-04-05T11:26:00+00:00",
+                "estimated_runway": "2026-04-05T11:26:00+00:00",
+                "actual_runway": "2026-04-05T11:26:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "19",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:45:00+00:00",
+                "delay": 14,
+                "estimated": "2026-04-05T11:58:00+00:00",
+                "actual": "2026-04-05T11:59:00+00:00",
+                "estimated_runway": "2026-04-05T11:59:00+00:00",
+                "actual_runway": "2026-04-05T11:59:00+00:00"
+            },
+            "airline": {
+                "name": "Southwest Airlines",
+                "iata": "WN",
+                "icao": "SWA"
+            },
+            "flight": {
+                "number": "272",
+                "iata": "WN272",
+                "icao": "SWA272",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ABD19E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "C",
+                "gate": "241B",
+                "delay": null,
+                "scheduled": "2026-04-05T10:30:00+00:00",
+                "estimated": "2026-04-05T10:30:00+00:00",
+                "actual": "2026-04-05T10:48:00+00:00",
+                "estimated_runway": "2026-04-05T10:48:00+00:00",
+                "actual_runway": "2026-04-05T10:48:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "12",
+                "baggage": "3",
+                "scheduled": "2026-04-05T11:34:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:22:00+00:00",
+                "actual": "2026-04-05T11:25:00+00:00",
+                "estimated_runway": "2026-04-05T11:25:00+00:00",
+                "actual_runway": "2026-04-05T11:25:00+00:00"
+            },
+            "airline": {
+                "name": "JetBlue Airways",
+                "iata": "B6",
+                "icao": "JBU"
+            },
+            "flight": {
+                "number": "621",
+                "iata": "B6621",
+                "icao": "JBU621",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A85119"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Edmonton International Airport",
+                "timezone": "America\/Edmonton",
+                "iata": "YEG",
+                "icao": "CYEG",
+                "terminal": null,
+                "gate": "68",
+                "delay": 20,
+                "scheduled": "2026-04-05T09:00:00+00:00",
+                "estimated": "2026-04-05T09:00:00+00:00",
+                "actual": "2026-04-05T10:22:00+00:00",
+                "estimated_runway": "2026-04-05T10:22:00+00:00",
+                "actual_runway": "2026-04-05T10:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "19",
+                "baggage": null,
+                "scheduled": "2026-04-05T16:29:00+00:00",
+                "delay": 20,
+                "estimated": "2026-04-05T16:51:00+00:00",
+                "actual": "2026-04-05T16:49:00+00:00",
+                "estimated_runway": "2026-04-05T16:49:00+00:00",
+                "actual_runway": "2026-04-05T16:49:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2230",
+                "iata": "WS2230",
+                "icao": "WJA2230",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C004F3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E30",
+                "delay": 5,
+                "scheduled": "2026-04-05T08:10:00+00:00",
+                "estimated": "2026-04-05T08:10:00+00:00",
+                "actual": "2026-04-05T08:44:00+00:00",
+                "estimated_runway": "2026-04-05T08:44:00+00:00",
+                "actual_runway": "2026-04-05T08:44:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G10",
+                "baggage": null,
+                "scheduled": "2026-04-05T10:00:00+00:00",
+                "delay": 5,
+                "estimated": "2026-04-05T10:04:00+00:00",
+                "actual": "2026-04-05T10:05:00+00:00",
+                "estimated_runway": "2026-04-05T10:05:00+00:00",
+                "actual_runway": "2026-04-05T10:05:00+00:00"
+            },
+            "airline": {
+                "name": "Virgin Atlantic",
+                "iata": "VS",
+                "icao": "VIR"
+            },
+            "flight": {
+                "number": "3830",
+                "iata": "VS3830",
+                "icao": "VIR3830",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1801",
+                    "flight_iata": "dl1801",
+                    "flight_icao": "dal1801"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A43B85"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E30",
+                "delay": 5,
+                "scheduled": "2026-04-05T08:10:00+00:00",
+                "estimated": "2026-04-05T08:10:00+00:00",
+                "actual": "2026-04-05T08:44:00+00:00",
+                "estimated_runway": "2026-04-05T08:44:00+00:00",
+                "actual_runway": "2026-04-05T08:44:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G10",
+                "baggage": null,
+                "scheduled": "2026-04-05T10:00:00+00:00",
+                "delay": 5,
+                "estimated": "2026-04-05T10:04:00+00:00",
+                "actual": "2026-04-05T10:05:00+00:00",
+                "estimated_runway": "2026-04-05T10:05:00+00:00",
+                "actual_runway": "2026-04-05T10:05:00+00:00"
+            },
+            "airline": {
+                "name": "KLM",
+                "iata": "KL",
+                "icao": "KLM"
+            },
+            "flight": {
+                "number": "5523",
+                "iata": "KL5523",
+                "icao": "KLM5523",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1801",
+                    "flight_iata": "dl1801",
+                    "flight_icao": "dal1801"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A43B85"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E31",
+                "delay": null,
+                "scheduled": "2026-04-05T10:18:00+00:00",
+                "estimated": "2026-04-05T10:18:00+00:00",
+                "actual": "2026-04-05T10:49:00+00:00",
+                "estimated_runway": "2026-04-05T10:49:00+00:00",
+                "actual_runway": "2026-04-05T10:49:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G3",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:12:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:05:00+00:00",
+                "actual": "2026-04-05T12:07:00+00:00",
+                "estimated_runway": "2026-04-05T12:07:00+00:00",
+                "actual_runway": "2026-04-05T12:07:00+00:00"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1997",
+                "iata": "DL1997",
+                "icao": "DAL1997",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC4D1A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Tocumen International",
+                "timezone": "America\/Panama",
+                "iata": "PTY",
+                "icao": "MPTO",
+                "terminal": "2",
+                "gate": "125",
+                "delay": null,
+                "scheduled": "2026-04-05T09:14:00+00:00",
+                "estimated": "2026-04-05T09:14:00+00:00",
+                "actual": "2026-04-05T09:31:00+00:00",
+                "estimated_runway": "2026-04-05T09:31:00+00:00",
+                "actual_runway": "2026-04-05T09:31:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "9",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:11:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:02:00+00:00",
+                "actual": "2026-04-05T11:02:00+00:00",
+                "estimated_runway": "2026-04-05T11:02:00+00:00",
+                "actual_runway": "2026-04-05T11:02:00+00:00"
+            },
+            "airline": {
+                "name": "Copa Airlines",
+                "iata": "CM",
+                "icao": "CMP"
+            },
+            "flight": {
+                "number": "146",
+                "iata": "CM146",
+                "icao": "CMP146",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "0C20CE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Tocumen International",
+                "timezone": "America\/Panama",
+                "iata": "PTY",
+                "icao": "MPTO",
+                "terminal": "2",
+                "gate": "125",
+                "delay": null,
+                "scheduled": "2026-04-05T09:14:00+00:00",
+                "estimated": "2026-04-05T09:14:00+00:00",
+                "actual": "2026-04-05T09:31:00+00:00",
+                "estimated_runway": "2026-04-05T09:31:00+00:00",
+                "actual_runway": "2026-04-05T09:31:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "9",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:11:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:02:00+00:00",
+                "actual": "2026-04-05T11:02:00+00:00",
+                "estimated_runway": "2026-04-05T11:02:00+00:00",
+                "actual_runway": "2026-04-05T11:02:00+00:00"
+            },
+            "airline": {
+                "name": "KLM",
+                "iata": "KL",
+                "icao": "KLM"
+            },
+            "flight": {
+                "number": "3050",
+                "iata": "KL3050",
+                "icao": "KLM3050",
+                "codeshared": {
+                    "airline_name": "copa airlines",
+                    "airline_iata": "cm",
+                    "airline_icao": "cmp",
+                    "flight_number": "146",
+                    "flight_iata": "cm146",
+                    "flight_icao": "cmp146"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "0C20CE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Fort Lauderdale\u2013Hollywood International",
+                "timezone": "America\/New_York",
+                "iata": "FLL",
+                "icao": "KFLL",
+                "terminal": "3",
+                "gate": "F7",
+                "delay": null,
+                "scheduled": "2026-04-05T11:05:00+00:00",
+                "estimated": "2026-04-05T11:05:00+00:00",
+                "actual": "2026-04-05T11:24:00+00:00",
+                "estimated_runway": "2026-04-05T11:24:00+00:00",
+                "actual_runway": "2026-04-05T11:24:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "16",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:48:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:33:00+00:00",
+                "actual": "2026-04-05T11:41:00+00:00",
+                "estimated_runway": "2026-04-05T11:41:00+00:00",
+                "actual_runway": "2026-04-05T11:41:00+00:00"
+            },
+            "airline": {
+                "name": "JetBlue Airways",
+                "iata": "B6",
+                "icao": "JBU"
+            },
+            "flight": {
+                "number": "2427",
+                "iata": "B62427",
+                "icao": "JBU2427",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A74923"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Fort Lauderdale\u2013Hollywood International",
+                "timezone": "America\/New_York",
+                "iata": "FLL",
+                "icao": "KFLL",
+                "terminal": "4",
+                "gate": "G6",
+                "delay": null,
+                "scheduled": "2026-04-05T10:22:00+00:00",
+                "estimated": "2026-04-05T10:22:00+00:00",
+                "actual": "2026-04-05T10:37:00+00:00",
+                "estimated_runway": "2026-04-05T10:37:00+00:00",
+                "actual_runway": "2026-04-05T10:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "8",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:05:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T10:53:00+00:00",
+                "actual": "2026-04-05T10:55:00+00:00",
+                "estimated_runway": "2026-04-05T10:55:00+00:00",
+                "actual_runway": "2026-04-05T10:55:00+00:00"
+            },
+            "airline": {
+                "name": "Spirit Airlines",
+                "iata": "NK",
+                "icao": "NKS"
+            },
+            "flight": {
+                "number": "833",
+                "iata": "NK833",
+                "icao": "NKS833",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A89CCC"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G4",
+                "delay": null,
+                "scheduled": "2026-04-05T08:40:00+00:00",
+                "estimated": "2026-04-05T08:40:00+00:00",
+                "actual": "2026-04-05T08:59:00+00:00",
+                "estimated_runway": "2026-04-05T08:59:00+00:00",
+                "actual_runway": "2026-04-05T08:59:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "7",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:50:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:28:00+00:00",
+                "actual": "2026-04-05T12:29:00+00:00",
+                "estimated_runway": "2026-04-05T12:29:00+00:00",
+                "actual_runway": "2026-04-05T12:29:00+00:00"
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1146",
+                "iata": "UA1146",
+                "icao": "UAL1146",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A23A28"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D12",
+                "delay": null,
+                "scheduled": "2026-04-05T08:25:00+00:00",
+                "estimated": "2026-04-05T08:25:00+00:00",
+                "actual": "2026-04-05T08:46:00+00:00",
+                "estimated_runway": "2026-04-05T08:46:00+00:00",
+                "actual_runway": "2026-04-05T08:46:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "9",
+                "baggage": null,
+                "scheduled": "2026-04-05T09:07:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T08:56:00+00:00",
+                "actual": "2026-04-05T08:57:00+00:00",
+                "estimated_runway": "2026-04-05T08:57:00+00:00",
+                "actual_runway": "2026-04-05T08:57:00+00:00"
+            },
+            "airline": {
+                "name": "Qatar Airways",
+                "iata": "QR",
+                "icao": "QTR"
+            },
+            "flight": {
+                "number": "2566",
+                "iata": "QR2566",
+                "icao": "QTR2566",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1202",
+                    "flight_iata": "aa1202",
+                    "flight_icao": "aal1202"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB4C15"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Minneapolis - St. Paul International",
+                "timezone": "America\/Chicago",
+                "iata": "MSP",
+                "icao": "KMSP",
+                "terminal": "1",
+                "gate": "G19",
+                "delay": null,
+                "scheduled": "2026-04-05T08:55:00+00:00",
+                "estimated": "2026-04-05T08:55:00+00:00",
+                "actual": "2026-04-05T09:18:00+00:00",
+                "estimated_runway": "2026-04-05T09:18:00+00:00",
+                "actual_runway": "2026-04-05T09:18:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G16",
+                "baggage": null,
+                "scheduled": "2026-04-05T13:27:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T13:12:00+00:00",
+                "actual": "2026-04-05T13:12:00+00:00",
+                "estimated_runway": "2026-04-05T13:12:00+00:00",
+                "actual_runway": "2026-04-05T13:12:00+00:00"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1915",
+                "iata": "DL1915",
+                "icao": "DAL1915",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A4503D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "5",
+                "gate": "504",
+                "delay": null,
+                "scheduled": "2026-04-05T09:59:00+00:00",
+                "estimated": "2026-04-05T09:59:00+00:00",
+                "actual": "2026-04-05T10:34:00+00:00",
+                "estimated_runway": "2026-04-05T10:34:00+00:00",
+                "actual_runway": "2026-04-05T10:34:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "8",
+                "baggage": "6",
+                "scheduled": "2026-04-05T12:59:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:56:00+00:00",
+                "actual": "2026-04-05T12:55:00+00:00",
+                "estimated_runway": "2026-04-05T12:55:00+00:00",
+                "actual_runway": "2026-04-05T12:55:00+00:00"
+            },
+            "airline": {
+                "name": "JetBlue Airways",
+                "iata": "B6",
+                "icao": "JBU"
+            },
+            "flight": {
+                "number": "879",
+                "iata": "B6879",
+                "icao": "JBU879",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A38FA4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "A4",
+                "delay": null,
+                "scheduled": "2026-04-05T09:13:00+00:00",
+                "estimated": "2026-04-05T09:13:00+00:00",
+                "actual": "2026-04-05T09:35:00+00:00",
+                "estimated_runway": "2026-04-05T09:35:00+00:00",
+                "actual_runway": "2026-04-05T09:35:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "6",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:24:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:04:00+00:00",
+                "actual": "2026-04-05T11:04:00+00:00",
+                "estimated_runway": "2026-04-05T11:04:00+00:00",
+                "actual_runway": "2026-04-05T11:04:00+00:00"
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2943",
+                "iata": "AA2943",
+                "icao": "AAL2943",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0A7A0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "E",
+                "gate": "E13",
+                "delay": null,
+                "scheduled": "2026-04-05T09:20:00+00:00",
+                "estimated": "2026-04-05T09:20:00+00:00",
+                "actual": "2026-04-05T09:34:00+00:00",
+                "estimated_runway": "2026-04-05T09:34:00+00:00",
+                "actual_runway": "2026-04-05T09:34:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G6",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:42:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:12:00+00:00",
+                "actual": "2026-04-05T12:16:00+00:00",
+                "estimated_runway": "2026-04-05T12:16:00+00:00",
+                "actual_runway": "2026-04-05T12:16:00+00:00"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1890",
+                "iata": "DL1890",
+                "icao": "DAL1890",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB879F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "E",
+                "gate": "E13",
+                "delay": null,
+                "scheduled": "2026-04-05T09:20:00+00:00",
+                "estimated": "2026-04-05T09:20:00+00:00",
+                "actual": "2026-04-05T09:34:00+00:00",
+                "estimated_runway": "2026-04-05T09:34:00+00:00",
+                "actual_runway": "2026-04-05T09:34:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G6",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:42:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:12:00+00:00",
+                "actual": "2026-04-05T12:16:00+00:00",
+                "estimated_runway": "2026-04-05T12:16:00+00:00",
+                "actual_runway": "2026-04-05T12:16:00+00:00"
+            },
+            "airline": {
+                "name": "Virgin Atlantic",
+                "iata": "VS",
+                "icao": "VIR"
+            },
+            "flight": {
+                "number": "3813",
+                "iata": "VS3813",
+                "icao": "VIR3813",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "1890",
+                    "flight_iata": "dl1890",
+                    "flight_icao": "dal1890"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB879F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "delay": null,
+                "scheduled": "2026-04-05T08:05:00+00:00",
+                "estimated": "2026-04-05T08:05:00+00:00",
+                "actual": "2026-04-05T08:15:00+00:00",
+                "estimated_runway": "2026-04-05T08:15:00+00:00",
+                "actual_runway": "2026-04-05T08:15:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "17",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:11:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:45:00+00:00",
+                "actual": "2026-04-05T11:45:00+00:00",
+                "estimated_runway": "2026-04-05T11:45:00+00:00",
+                "actual_runway": "2026-04-05T11:45:00+00:00"
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3228",
+                "iata": "AA3228",
+                "icao": "AAL3228",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACB59C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "B22",
+                "delay": 85,
+                "scheduled": "2026-04-05T08:00:00+00:00",
+                "estimated": "2026-04-05T08:00:00+00:00",
+                "actual": "2026-04-05T10:03:00+00:00",
+                "estimated_runway": "2026-04-05T10:03:00+00:00",
+                "actual_runway": "2026-04-05T10:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "10",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:24:00+00:00",
+                "delay": 85,
+                "estimated": "2026-04-05T12:49:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "KLM",
+                "iata": "KL",
+                "icao": "KLM"
+            },
+            "flight": {
+                "number": "9586",
+                "iata": "KL9586",
+                "icao": "KLM9586",
+                "codeshared": {
+                    "airline_name": "westjet",
+                    "airline_iata": "ws",
+                    "airline_icao": "wja",
+                    "flight_number": "2566",
+                    "flight_iata": "ws2566",
+                    "flight_icao": "wja2566"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C052CA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "John F Kennedy International",
+                "timezone": "America\/New_York",
+                "iata": "JFK",
+                "icao": "KJFK",
+                "terminal": "4",
+                "gate": "B43",
+                "delay": null,
+                "scheduled": "2026-04-05T08:15:00+00:00",
+                "estimated": "2026-04-05T08:15:00+00:00",
+                "actual": "2026-04-05T08:37:00+00:00",
+                "estimated_runway": "2026-04-05T08:37:00+00:00",
+                "actual_runway": "2026-04-05T08:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G19",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:21:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T10:50:00+00:00",
+                "actual": "2026-04-05T10:50:00+00:00",
+                "estimated_runway": "2026-04-05T10:50:00+00:00",
+                "actual_runway": "2026-04-05T10:50:00+00:00"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1955",
+                "iata": "DL1955",
+                "icao": "DAL1955",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A44E1C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Philadelphia International",
+                "timezone": "America\/New_York",
+                "iata": "PHL",
+                "icao": "KPHL",
+                "terminal": "A",
+                "gate": "A18",
+                "delay": null,
+                "scheduled": "2026-04-05T08:20:00+00:00",
+                "estimated": "2026-04-05T08:20:00+00:00",
+                "actual": "2026-04-05T08:43:00+00:00",
+                "estimated_runway": "2026-04-05T08:43:00+00:00",
+                "actual_runway": "2026-04-05T08:43:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "18",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:21:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T10:52:00+00:00",
+                "actual": "2026-04-05T10:52:00+00:00",
+                "estimated_runway": "2026-04-05T10:52:00+00:00",
+                "actual_runway": "2026-04-05T10:52:00+00:00"
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2939",
+                "iata": "AA2939",
+                "icao": "AAL2939",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ABA281"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D12",
+                "delay": null,
+                "scheduled": "2026-04-05T08:25:00+00:00",
+                "estimated": "2026-04-05T08:25:00+00:00",
+                "actual": "2026-04-05T08:46:00+00:00",
+                "estimated_runway": "2026-04-05T08:46:00+00:00",
+                "actual_runway": "2026-04-05T08:46:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "9",
+                "baggage": null,
+                "scheduled": "2026-04-05T09:07:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T08:56:00+00:00",
+                "actual": "2026-04-05T08:57:00+00:00",
+                "estimated_runway": "2026-04-05T08:57:00+00:00",
+                "actual_runway": "2026-04-05T08:57:00+00:00"
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "1202",
+                "iata": "AA1202",
+                "icao": "AAL1202",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB4C15"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "E30",
+                "delay": 5,
+                "scheduled": "2026-04-05T08:10:00+00:00",
+                "estimated": "2026-04-05T08:10:00+00:00",
+                "actual": "2026-04-05T08:44:00+00:00",
+                "estimated_runway": "2026-04-05T08:44:00+00:00",
+                "actual_runway": "2026-04-05T08:44:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "G10",
+                "baggage": null,
+                "scheduled": "2026-04-05T10:00:00+00:00",
+                "delay": 5,
+                "estimated": "2026-04-05T10:04:00+00:00",
+                "actual": "2026-04-05T10:05:00+00:00",
+                "estimated_runway": "2026-04-05T10:05:00+00:00",
+                "actual_runway": "2026-04-05T10:05:00+00:00"
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "1801",
+                "iata": "DL1801",
+                "icao": "DAL1801",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A43B85"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "56B",
+                "delay": null,
+                "scheduled": "2026-04-05T09:00:00+00:00",
+                "estimated": "2026-04-05T09:00:00+00:00",
+                "actual": "2026-04-05T09:07:00+00:00",
+                "estimated_runway": "2026-04-05T09:07:00+00:00",
+                "actual_runway": "2026-04-05T09:07:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "10",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:39:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:12:00+00:00",
+                "actual": "2026-04-05T12:12:00+00:00",
+                "estimated_runway": "2026-04-05T12:12:00+00:00",
+                "actual_runway": "2026-04-05T12:12:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2914",
+                "iata": "WS2914",
+                "icao": "WJA2914",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0637C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Greater Moncton International Airport",
+                "timezone": "America\/Moncton",
+                "iata": "YQM",
+                "icao": "CYQM",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-05T09:30:00+00:00",
+                "estimated": "2026-04-05T09:30:00+00:00",
+                "actual": "2026-04-05T09:43:00+00:00",
+                "estimated_runway": "2026-04-05T09:43:00+00:00",
+                "actual_runway": "2026-04-05T09:43:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "9",
+                "baggage": null,
+                "scheduled": "2026-04-05T12:40:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T12:16:00+00:00",
+                "actual": "2026-04-05T12:18:00+00:00",
+                "estimated_runway": "2026-04-05T12:18:00+00:00",
+                "actual_runway": "2026-04-05T12:18:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2640",
+                "iata": "WS2640",
+                "icao": "WJA2640",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C03488"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Baltimore\/Washington International Thurgood Marshall",
+                "timezone": "America\/New_York",
+                "iata": "BWI",
+                "icao": "KBWI",
+                "terminal": null,
+                "gate": "C11",
+                "delay": null,
+                "scheduled": "2026-04-05T09:00:00+00:00",
+                "estimated": "2026-04-05T09:00:00+00:00",
+                "actual": "2026-04-05T09:07:00+00:00",
+                "estimated_runway": "2026-04-05T09:07:00+00:00",
+                "actual_runway": "2026-04-05T09:07:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "7",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:30:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:06:00+00:00",
+                "actual": "2026-04-05T11:09:00+00:00",
+                "estimated_runway": "2026-04-05T11:09:00+00:00",
+                "actual_runway": "2026-04-05T11:09:00+00:00"
+            },
+            "airline": {
+                "name": "Southwest Airlines",
+                "iata": "WN",
+                "icao": "SWA"
+            },
+            "flight": {
+                "number": "918",
+                "iata": "WN918",
+                "icao": "SWA918",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ABFD66"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Newark Liberty International",
+                "timezone": "America\/New_York",
+                "iata": "EWR",
+                "icao": "KEWR",
+                "terminal": "C",
+                "gate": "C109",
+                "delay": 67,
+                "scheduled": "2026-04-05T08:42:00+00:00",
+                "estimated": "2026-04-05T08:42:00+00:00",
+                "actual": "2026-04-05T10:31:00+00:00",
+                "estimated_runway": "2026-04-05T10:31:00+00:00",
+                "actual_runway": "2026-04-05T10:31:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "13",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:43:00+00:00",
+                "delay": 67,
+                "estimated": "2026-04-05T12:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1462",
+                "iata": "UA1462",
+                "icao": "UAL1462",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A12A9E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Manchester Airport",
+                "timezone": "Europe\/London",
+                "iata": "MAN",
+                "icao": "EGCC",
+                "terminal": "2",
+                "gate": "D2",
+                "delay": 16,
+                "scheduled": "2026-04-05T09:55:00+00:00",
+                "estimated": "2026-04-05T09:55:00+00:00",
+                "actual": "2026-04-05T10:26:00+00:00",
+                "estimated_runway": "2026-04-05T10:26:00+00:00",
+                "actual_runway": "2026-04-05T10:26:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T13:35:00+00:00",
+                "delay": 16,
+                "estimated": "2026-04-05T13:49:00+00:00",
+                "actual": "2026-04-05T13:51:00+00:00",
+                "estimated_runway": "2026-04-05T13:51:00+00:00",
+                "actual_runway": "2026-04-05T13:51:00+00:00"
+            },
+            "airline": {
+                "name": "TUIfly",
+                "iata": "X3",
+                "icao": "TUI"
+            },
+            "flight": {
+                "number": "114",
+                "iata": "X3114",
+                "icao": "TUI114",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "407512"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "St. John's International",
+                "timezone": "America\/St_Johns",
+                "iata": "YYT",
+                "icao": "CYYT",
+                "terminal": null,
+                "gate": "9",
+                "delay": 147,
+                "scheduled": "2026-04-05T09:20:00+00:00",
+                "estimated": "2026-04-05T09:20:00+00:00",
+                "actual": "2026-04-05T12:37:00+00:00",
+                "estimated_runway": "2026-04-05T12:37:00+00:00",
+                "actual_runway": "2026-04-05T12:37:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "19",
+                "baggage": null,
+                "scheduled": "2026-04-05T13:00:00+00:00",
+                "delay": 146,
+                "estimated": "2026-04-05T15:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2826",
+                "iata": "WS2826",
+                "icao": "WJA2826",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C03B15"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "B22",
+                "delay": 85,
+                "scheduled": "2026-04-05T08:00:00+00:00",
+                "estimated": "2026-04-05T08:00:00+00:00",
+                "actual": "2026-04-05T10:03:00+00:00",
+                "estimated_runway": "2026-04-05T10:03:00+00:00",
+                "actual_runway": "2026-04-05T10:03:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "10",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:24:00+00:00",
+                "delay": 85,
+                "estimated": "2026-04-05T12:49:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2566",
+                "iata": "WS2566",
+                "icao": "WJA2566",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C052CA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "14",
+                "delay": null,
+                "scheduled": "2026-04-05T08:00:00+00:00",
+                "estimated": "2026-04-05T08:00:00+00:00",
+                "actual": "2026-04-05T08:07:00+00:00",
+                "estimated_runway": "2026-04-05T08:07:00+00:00",
+                "actual_runway": "2026-04-05T08:07:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "15",
+                "baggage": null,
+                "scheduled": "2026-04-05T11:39:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T11:00:00+00:00",
+                "actual": "2026-04-05T10:58:00+00:00",
+                "estimated_runway": "2026-04-05T10:58:00+00:00",
+                "actual_runway": "2026-04-05T10:58:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2648",
+                "iata": "WS2648",
+                "icao": "WJA2648",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C041B9"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "B27",
+                "delay": null,
+                "scheduled": "2026-04-05T06:35:00+00:00",
+                "estimated": "2026-04-05T06:35:00+00:00",
+                "actual": "2026-04-05T06:55:00+00:00",
+                "estimated_runway": "2026-04-05T06:55:00+00:00",
+                "actual_runway": "2026-04-05T06:55:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": "15",
+                "baggage": null,
+                "scheduled": "2026-04-05T09:59:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T09:39:00+00:00",
+                "actual": "2026-04-05T09:40:00+00:00",
+                "estimated_runway": "2026-04-05T09:40:00+00:00",
+                "actual_runway": "2026-04-05T09:40:00+00:00"
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2708",
+                "iata": "WS2708",
+                "icao": "WJA2708",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06BE3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Halifax International",
+                "timezone": "America\/Halifax",
+                "iata": "YHZ",
+                "icao": "CYHZ",
+                "terminal": null,
+                "gate": null,
+                "delay": 57,
+                "scheduled": "2026-04-05T06:00:00+00:00",
+                "estimated": "2026-04-05T06:00:00+00:00",
+                "actual": "2026-04-05T07:22:00+00:00",
+                "estimated_runway": "2026-04-05T07:22:00+00:00",
+                "actual_runway": "2026-04-05T07:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T08:45:00+00:00",
+                "delay": 57,
+                "estimated": "2026-04-05T09:40:00+00:00",
+                "actual": "2026-04-05T09:42:00+00:00",
+                "estimated_runway": "2026-04-05T09:42:00+00:00",
+                "actual_runway": "2026-04-05T09:42:00+00:00"
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "366",
+                "iata": "TS366",
+                "icao": "TSC366",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C051D0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Manchester Airport",
+                "timezone": "Europe\/London",
+                "iata": "MAN",
+                "icao": "EGCC",
+                "terminal": "2",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T09:55:00+00:00",
+                "estimated": "2026-04-05T09:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T13:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "TUI Airways",
+                "iata": "BY",
+                "icao": "TOM"
+            },
+            "flight": {
+                "number": "114",
+                "iata": "BY114",
+                "icao": "TOM114",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "G-TUIM",
+                "iata": "B789",
+                "icao": "B789",
+                "icao24": "407512"
+            },
+            "live": {
+                "updated": "2026-04-05T18:56:07+00:00",
+                "latitude": 18.4999,
+                "longitude": -77.9138,
+                "altitude": 0,
+                "direction": 191,
+                "speed_horizontal": 0,
+                "speed_vertical": 0,
+                "is_ground": true
+            }
+        }
+    ]
+}

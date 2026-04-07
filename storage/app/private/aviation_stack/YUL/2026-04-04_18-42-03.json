@@ -1,0 +1,5381 @@
+{
+    "pagination": {
+        "limit": 100,
+        "offset": 0,
+        "count": 100,
+        "total": 1125
+    },
+    "data": [
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Dubai",
+                "timezone": "Asia\/Dubai",
+                "iata": "DXB",
+                "icao": "OMDB",
+                "terminal": "3",
+                "gate": "B24",
+                "delay": null,
+                "scheduled": "2026-04-05T01:25:00+00:00",
+                "estimated": "2026-04-05T01:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T08:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "243",
+                "iata": "EK243",
+                "icao": "UAE243",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "896681"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D20",
+                "delay": null,
+                "scheduled": "2026-04-04T16:30:00+00:00",
+                "estimated": "2026-04-04T16:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "7",
+                "baggage": "20",
+                "scheduled": "2026-04-04T17:51:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Brussels Airlines",
+                "iata": "SN",
+                "icao": "BEL"
+            },
+            "flight": {
+                "number": "9562",
+                "iata": "SN9562",
+                "icao": "BEL9562",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "488",
+                    "flight_iata": "ac488",
+                    "flight_icao": "aca488"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030FD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D20",
+                "delay": null,
+                "scheduled": "2026-04-04T16:30:00+00:00",
+                "estimated": "2026-04-04T16:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "7",
+                "baggage": "20",
+                "scheduled": "2026-04-04T17:51:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Austrian",
+                "iata": "OS",
+                "icao": "AUA"
+            },
+            "flight": {
+                "number": "8338",
+                "iata": "OS8338",
+                "icao": "AUA8338",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "488",
+                    "flight_iata": "ac488",
+                    "flight_icao": "aca488"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030FD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D20",
+                "delay": null,
+                "scheduled": "2026-04-04T16:30:00+00:00",
+                "estimated": "2026-04-04T16:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "7",
+                "baggage": "20",
+                "scheduled": "2026-04-04T17:51:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Etihad Airways",
+                "iata": "EY",
+                "icao": "ETD"
+            },
+            "flight": {
+                "number": "3478",
+                "iata": "EY3478",
+                "icao": "ETD3478",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "488",
+                    "flight_iata": "ac488",
+                    "flight_icao": "aca488"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030FD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Bathurst",
+                "timezone": "America\/Moncton",
+                "iata": "ZBF",
+                "icao": "CZBF",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T14:20:00+00:00",
+                "estimated": "2026-04-04T14:20:00+00:00",
+                "actual": "2026-04-04T14:26:00+00:00",
+                "estimated_runway": "2026-04-04T14:26:00+00:00",
+                "actual_runway": "2026-04-04T14:26:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T15:07:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Propair",
+                "iata": "PP",
+                "icao": "PRO"
+            },
+            "flight": {
+                "number": "4953",
+                "iata": "PP4953",
+                "icao": "PRO4953",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06B68"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "B55",
+                "delay": null,
+                "scheduled": "2026-04-04T17:35:00+00:00",
+                "estimated": "2026-04-04T17:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "77",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:12:00+00:00",
+                "delay": 24,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8187",
+                "iata": "UA8187",
+                "icao": "UAL8187",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8641",
+                    "flight_iata": "ac8641",
+                    "flight_icao": "aca8641"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B78"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "B55",
+                "delay": null,
+                "scheduled": "2026-04-04T17:35:00+00:00",
+                "estimated": "2026-04-04T17:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "77",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:12:00+00:00",
+                "delay": 24,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "6815",
+                "iata": "LH6815",
+                "icao": "DLH6815",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8641",
+                    "flight_iata": "ac8641",
+                    "flight_icao": "aca8641"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B78"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Minneapolis - St. Paul International",
+                "timezone": "America\/Chicago",
+                "iata": "MSP",
+                "icao": "KMSP",
+                "terminal": "1",
+                "gate": "A6",
+                "delay": null,
+                "scheduled": "2026-04-04T20:00:00+00:00",
+                "estimated": "2026-04-04T20:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "C88",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:40:00+00:00",
+                "delay": 29,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "5489",
+                "iata": "DL5489",
+                "icao": "DAL5489",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A7CFB7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D20",
+                "delay": null,
+                "scheduled": "2026-04-04T20:30:00+00:00",
+                "estimated": "2026-04-04T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "48",
+                "baggage": "20",
+                "scheduled": "2026-04-04T21:51:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "426",
+                "iata": "AC426",
+                "icao": "ACA426",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06709"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": null,
+                "timezone": null,
+                "iata": "TQO",
+                "icao": "MMTL",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T15:10:00+00:00",
+                "estimated": "2026-04-04T15:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T20:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2969",
+                "iata": "WS2969",
+                "icao": "WJA2969",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Toronto City Centre Airport",
+                "timezone": "America\/Toronto",
+                "iata": "YTZ",
+                "icao": "CYTZ",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-04T20:30:00+00:00",
+                "estimated": "2026-04-04T20:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "2",
+                "baggage": null,
+                "scheduled": "2026-04-04T21:45:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7976",
+                "iata": "AC7976",
+                "icao": "ACA7976",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07A7C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Philadelphia International",
+                "timezone": "America\/New_York",
+                "iata": "PHL",
+                "icao": "KPHL",
+                "terminal": "F",
+                "gate": "F31",
+                "delay": null,
+                "scheduled": "2026-04-04T21:03:00+00:00",
+                "estimated": "2026-04-04T21:03:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T22:56:00+00:00",
+                "delay": 29,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "6027",
+                "iata": "AA6027",
+                "icao": "AAL6027",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Canc\u00fan International",
+                "timezone": "America\/Cancun",
+                "iata": "CUN",
+                "icao": "MMUN",
+                "terminal": "4",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T19:30:00+00:00",
+                "estimated": "2026-04-04T19:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T00:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "939",
+                "iata": "TS939",
+                "icao": "TSC939",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T19:30:00+00:00",
+                "estimated": "2026-04-04T19:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T22:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Flightpath Charter Airways",
+                "iata": null,
+                "icao": "KNT"
+            },
+            "flight": {
+                "number": "911",
+                "iata": null,
+                "icao": "KNT911",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "E9",
+                "delay": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "estimated": "2026-04-04T20:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T22:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "5137",
+                "iata": "AA5137",
+                "icao": "AAL5137",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A73AB6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Punta Cana International",
+                "timezone": "America\/Santo_Domingo",
+                "iata": "PUJ",
+                "icao": "MDPC",
+                "terminal": "A",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "estimated": "2026-04-04T20:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T00:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "499",
+                "iata": "TS499",
+                "icao": "TSC499",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Newark Liberty International",
+                "timezone": "America\/New_York",
+                "iata": "EWR",
+                "icao": "KEWR",
+                "terminal": "C",
+                "gate": "C113",
+                "delay": null,
+                "scheduled": "2026-04-04T20:24:00+00:00",
+                "estimated": "2026-04-04T20:24:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "82",
+                "baggage": null,
+                "scheduled": "2026-04-04T22:06:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "3613",
+                "iata": "UA3613",
+                "icao": "UAL3613",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA6EFA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Heathrow",
+                "timezone": "Europe\/London",
+                "iata": "LHR",
+                "icao": "EGLL",
+                "terminal": "5",
+                "gate": "C61",
+                "delay": null,
+                "scheduled": "2026-04-04T18:05:00+00:00",
+                "estimated": "2026-04-04T18:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "3531",
+                "iata": "IB3531",
+                "icao": "IBE3531",
+                "codeshared": {
+                    "airline_name": "british airways",
+                    "airline_iata": "ba",
+                    "airline_icao": "baw",
+                    "flight_number": "95",
+                    "flight_iata": "ba95",
+                    "flight_icao": "baw95"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "406A9F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D33",
+                "delay": null,
+                "scheduled": "2026-04-04T19:45:00+00:00",
+                "estimated": "2026-04-04T19:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T23:29:00+00:00",
+                "delay": 34,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2666",
+                "iata": "AA2666",
+                "icao": "AAL2666",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9F461"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T18:25:00+00:00",
+                "estimated": "2026-04-04T18:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T23:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "487",
+                "iata": "TS487",
+                "icao": "TSC487",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Winnipeg",
+                "timezone": "America\/Winnipeg",
+                "iata": "YWG",
+                "icao": "CYWG",
+                "terminal": null,
+                "gate": "10",
+                "delay": null,
+                "scheduled": "2026-04-04T13:45:00+00:00",
+                "estimated": "2026-04-04T13:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A47",
+                "baggage": null,
+                "scheduled": "2026-04-04T17:32:00+00:00",
+                "delay": 14,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "TAP Air Portugal",
+                "iata": "TP",
+                "icao": "TAP"
+            },
+            "flight": {
+                "number": "8299",
+                "iata": "TP8299",
+                "icao": "TAP8299",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "374",
+                    "flight_iata": "ac374",
+                    "flight_icao": "aca374"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00821"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "delay": null,
+                "scheduled": "2026-04-04T13:15:00+00:00",
+                "estimated": "2026-04-04T13:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "50",
+                "baggage": null,
+                "scheduled": "2026-04-04T21:03:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Asiana Airlines",
+                "iata": "OZ",
+                "icao": "AAR"
+            },
+            "flight": {
+                "number": "6112",
+                "iata": "OZ6112",
+                "icao": "AAR6112",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "308",
+                    "flight_iata": "ac308",
+                    "flight_icao": "aca308"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C02EC1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "delay": null,
+                "scheduled": "2026-04-04T13:15:00+00:00",
+                "estimated": "2026-04-04T13:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "50",
+                "baggage": null,
+                "scheduled": "2026-04-04T21:03:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Austrian",
+                "iata": "OS",
+                "icao": "AUA"
+            },
+            "flight": {
+                "number": "8358",
+                "iata": "OS8358",
+                "icao": "AUA8358",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "308",
+                    "flight_iata": "ac308",
+                    "flight_icao": "aca308"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C02EC1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C49",
+                "delay": null,
+                "scheduled": "2026-04-04T13:15:00+00:00",
+                "estimated": "2026-04-04T13:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "50",
+                "baggage": null,
+                "scheduled": "2026-04-04T21:03:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2897",
+                "iata": "AV2897",
+                "icao": "AVA2897",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "308",
+                    "flight_iata": "ac308",
+                    "flight_icao": "aca308"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C02EC1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T13:00:00+00:00",
+                "estimated": "2026-04-04T13:00:00+00:00",
+                "actual": "2026-04-04T13:50:00+00:00",
+                "estimated_runway": "2026-04-04T13:50:00+00:00",
+                "actual_runway": "2026-04-04T13:50:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T15:45:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T14:53:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7133",
+                "iata": "AC7133",
+                "icao": "ACA7133",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "C-FXCD",
+                "iata": "A320",
+                "icao": "A320",
+                "icao24": "C03CF4"
+            },
+            "live": {
+                "updated": "2026-04-04T18:31:10+00:00",
+                "latitude": 46.6774,
+                "longitude": -76.6033,
+                "altitude": 11582.4,
+                "direction": 331,
+                "speed_horizontal": 629.68,
+                "speed_vertical": 0,
+                "is_ground": false
+            }
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Heathrow",
+                "timezone": "Europe\/London",
+                "iata": "LHR",
+                "icao": "EGLL",
+                "terminal": "5",
+                "gate": "C61",
+                "delay": null,
+                "scheduled": "2026-04-04T18:05:00+00:00",
+                "estimated": "2026-04-04T18:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aer Lingus",
+                "iata": "EI",
+                "icao": "EIN"
+            },
+            "flight": {
+                "number": "8795",
+                "iata": "EI8795",
+                "icao": "EIN8795",
+                "codeshared": {
+                    "airline_name": "british airways",
+                    "airline_iata": "ba",
+                    "airline_icao": "baw",
+                    "flight_number": "95",
+                    "flight_iata": "ba95",
+                    "flight_icao": "baw95"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "406A9F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Heathrow",
+                "timezone": "Europe\/London",
+                "iata": "LHR",
+                "icao": "EGLL",
+                "terminal": "5",
+                "gate": "C61",
+                "delay": null,
+                "scheduled": "2026-04-04T18:05:00+00:00",
+                "estimated": "2026-04-04T18:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Finnair",
+                "iata": "AY",
+                "icao": "FIN"
+            },
+            "flight": {
+                "number": "5995",
+                "iata": "AY5995",
+                "icao": "FIN5995",
+                "codeshared": {
+                    "airline_name": "british airways",
+                    "airline_iata": "ba",
+                    "airline_icao": "baw",
+                    "flight_number": "95",
+                    "flight_iata": "ba95",
+                    "flight_icao": "baw95"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "406A9F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Heathrow",
+                "timezone": "Europe\/London",
+                "iata": "LHR",
+                "icao": "EGLL",
+                "terminal": "5",
+                "gate": "C61",
+                "delay": null,
+                "scheduled": "2026-04-04T18:05:00+00:00",
+                "estimated": "2026-04-04T18:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "6920",
+                "iata": "AA6920",
+                "icao": "AAL6920",
+                "codeshared": {
+                    "airline_name": "british airways",
+                    "airline_iata": "ba",
+                    "airline_icao": "baw",
+                    "flight_number": "95",
+                    "flight_iata": "ba95",
+                    "flight_icao": "baw95"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "406A9F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nassau International",
+                "timezone": "America\/Nassau",
+                "iata": "NAS",
+                "icao": "MYNN",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T19:30:00+00:00",
+                "estimated": "2026-04-04T19:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "C86",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Porter",
+                "iata": "PD",
+                "icao": "POE"
+            },
+            "flight": {
+                "number": "774",
+                "iata": "PD774",
+                "icao": "POE774",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06189"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Nassau International",
+                "timezone": "America\/Nassau",
+                "iata": "NAS",
+                "icao": "MYNN",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T19:30:00+00:00",
+                "estimated": "2026-04-04T19:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "C86",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "7574",
+                "iata": "TS7574",
+                "icao": "TSC7574",
+                "codeshared": {
+                    "airline_name": "porter",
+                    "airline_iata": "pd",
+                    "airline_icao": "poe",
+                    "flight_number": "774",
+                    "flight_iata": "pd774",
+                    "flight_icao": "poe774"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06189"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Aeroporto Internacional Guarulhos",
+                "timezone": "America\/Sao_Paulo",
+                "iata": "GRU",
+                "icao": "SBGR",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T21:00:00+00:00",
+                "estimated": "2026-04-04T21:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T06:10:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "97",
+                "iata": "AC97",
+                "icao": "ACA97",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Canc\u00fan International",
+                "timezone": "America\/Cancun",
+                "iata": "CUN",
+                "icao": "MMUN",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T18:30:00+00:00",
+                "estimated": "2026-04-04T18:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "55",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "925",
+                "iata": "AC925",
+                "icao": "ACA925",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00E9D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "A\u00e9roport R\u00e9gional De Val-d'or",
+                "timezone": "America\/Montreal",
+                "iata": "YVO",
+                "icao": "CYVO",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T19:40:00+00:00",
+                "estimated": "2026-04-04T19:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Creebec",
+                "iata": "YN",
+                "icao": "CRQ"
+            },
+            "flight": {
+                "number": "922",
+                "iata": "YN922",
+                "icao": "CRQ922",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": null,
+                "timezone": null,
+                "iata": "TQO",
+                "icao": "MMTL",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T14:10:00+00:00",
+                "estimated": "2026-04-04T14:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "75",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "1367",
+                "iata": "AC1367",
+                "icao": "ACA1367",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00E17"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "B20",
+                "delay": null,
+                "scheduled": "2026-04-04T15:30:00+00:00",
+                "estimated": "2026-04-04T15:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A6",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:55:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "7807",
+                "iata": "TS7807",
+                "icao": "TSC7807",
+                "codeshared": {
+                    "airline_name": "porter",
+                    "airline_iata": "pd",
+                    "airline_icao": "poe",
+                    "flight_number": "125",
+                    "flight_iata": "pd125",
+                    "flight_icao": "poe125"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C060C1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Grand Bahama International",
+                "timezone": "America\/Nassau",
+                "iata": "FPO",
+                "icao": "MYGF",
+                "terminal": null,
+                "gate": "B",
+                "delay": null,
+                "scheduled": "2026-04-04T19:55:00+00:00",
+                "estimated": "2026-04-04T19:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "60",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:25:00+00:00",
+                "delay": 79,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2953",
+                "iata": "WS2953",
+                "icao": "WJA2953",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0524C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "25",
+                "delay": null,
+                "scheduled": "2026-04-04T20:05:00+00:00",
+                "estimated": "2026-04-04T20:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A4",
+                "baggage": null,
+                "scheduled": "2026-04-04T20:51:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8018",
+                "iata": "AC8018",
+                "icao": "ACA8018",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C08268"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "25",
+                "delay": null,
+                "scheduled": "2026-04-04T20:05:00+00:00",
+                "estimated": "2026-04-04T20:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "12",
+                "baggage": null,
+                "scheduled": "2026-04-04T20:51:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Austrian",
+                "iata": "OS",
+                "icao": "AUA"
+            },
+            "flight": {
+                "number": "8386",
+                "iata": "OS8386",
+                "icao": "AUA8386",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8018",
+                    "flight_iata": "ac8018",
+                    "flight_icao": "aca8018"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F01"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "25",
+                "delay": null,
+                "scheduled": "2026-04-04T20:05:00+00:00",
+                "estimated": "2026-04-04T20:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "12",
+                "baggage": null,
+                "scheduled": "2026-04-04T20:51:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2872",
+                "iata": "AV2872",
+                "icao": "AVA2872",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8018",
+                    "flight_iata": "ac8018",
+                    "flight_icao": "aca8018"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F01"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "A43",
+                "delay": null,
+                "scheduled": "2026-04-04T11:10:00+00:00",
+                "estimated": "2026-04-04T11:10:00+00:00",
+                "actual": "2026-04-04T11:22:00+00:00",
+                "estimated_runway": "2026-04-04T11:22:00+00:00",
+                "actual_runway": "2026-04-04T11:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "84",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:52:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T16:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8668",
+                "iata": "UA8668",
+                "icao": "UAL8668",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "1074",
+                    "flight_iata": "ac1074",
+                    "flight_icao": "aca1074"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C080D9"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "A43",
+                "delay": null,
+                "scheduled": "2026-04-04T11:10:00+00:00",
+                "estimated": "2026-04-04T11:10:00+00:00",
+                "actual": "2026-04-04T11:22:00+00:00",
+                "estimated_runway": "2026-04-04T11:22:00+00:00",
+                "actual_runway": "2026-04-04T11:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "84",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:52:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T16:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Brussels Airlines",
+                "iata": "SN",
+                "icao": "BEL"
+            },
+            "flight": {
+                "number": "9574",
+                "iata": "SN9574",
+                "icao": "BEL9574",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "1074",
+                    "flight_iata": "ac1074",
+                    "flight_icao": "aca1074"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C080D9"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E3",
+                "delay": null,
+                "scheduled": "2026-04-04T12:50:00+00:00",
+                "estimated": "2026-04-04T12:50:00+00:00",
+                "actual": "2026-04-04T13:13:00+00:00",
+                "estimated_runway": "2026-04-04T13:13:00+00:00",
+                "actual_runway": "2026-04-04T13:13:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "82",
+                "baggage": "1",
+                "scheduled": "2026-04-04T16:05:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T15:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8030",
+                "iata": "UA8030",
+                "icao": "UAL8030",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "522",
+                    "flight_iata": "ac522",
+                    "flight_icao": "aca522"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07B05"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Greater Moncton International Airport",
+                "timezone": "America\/Moncton",
+                "iata": "YQM",
+                "icao": "CYQM",
+                "terminal": null,
+                "gate": null,
+                "delay": 32,
+                "scheduled": "2026-04-04T11:00:00+00:00",
+                "estimated": "2026-04-04T11:00:00+00:00",
+                "actual": "2026-04-04T13:28:00+00:00",
+                "estimated_runway": "2026-04-04T13:28:00+00:00",
+                "actual_runway": "2026-04-04T13:28:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T13:45:00+00:00",
+                "delay": 32,
+                "estimated": "2026-04-04T14:16:00+00:00",
+                "actual": "2026-04-04T14:17:00+00:00",
+                "estimated_runway": "2026-04-04T14:17:00+00:00",
+                "actual_runway": "2026-04-04T14:17:00+00:00"
+            },
+            "airline": {
+                "name": "Air Saint Pierre",
+                "iata": "PJ",
+                "icao": "SPM"
+            },
+            "flight": {
+                "number": "1123",
+                "iata": "PJ1123",
+                "icao": "SPM1123",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": "F-ORLB",
+                "iata": "AT46",
+                "icao": "AT46",
+                "icao24": "3A4561"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ronald Reagan Washington National Airport",
+                "timezone": "America\/New_York",
+                "iata": "DCA",
+                "icao": "KDCA",
+                "terminal": "1",
+                "gate": "A3",
+                "delay": null,
+                "scheduled": "2026-04-04T16:10:00+00:00",
+                "estimated": "2026-04-04T16:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "85",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:02:00+00:00",
+                "delay": 18,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8351",
+                "iata": "UA8351",
+                "icao": "UAL8351",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8824",
+                    "flight_iata": "ac8824",
+                    "flight_icao": "aca8824"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C03330"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "I",
+                "gate": "F14",
+                "delay": null,
+                "scheduled": "2026-04-04T12:55:00+00:00",
+                "estimated": "2026-04-04T12:55:00+00:00",
+                "actual": "2026-04-04T13:08:00+00:00",
+                "estimated_runway": "2026-04-04T13:08:00+00:00",
+                "actual_runway": "2026-04-04T13:08:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "74",
+                "baggage": null,
+                "scheduled": "2026-04-04T15:42:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T15:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8392",
+                "iata": "UA8392",
+                "icao": "UAL8392",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8568",
+                    "flight_iata": "ac8568",
+                    "flight_icao": "aca8568"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B86"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Qu\u00e9bec",
+                "timezone": "America\/Montreal",
+                "iata": "YQB",
+                "icao": "CYQB",
+                "terminal": null,
+                "gate": "30",
+                "delay": null,
+                "scheduled": "2026-04-04T18:50:00+00:00",
+                "estimated": "2026-04-04T18:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A6",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:51:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7941",
+                "iata": "AC7941",
+                "icao": "ACA7941",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B9C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Qu\u00e9bec",
+                "timezone": "America\/Montreal",
+                "iata": "YQB",
+                "icao": "CYQB",
+                "terminal": null,
+                "gate": "30",
+                "delay": null,
+                "scheduled": "2026-04-04T18:50:00+00:00",
+                "estimated": "2026-04-04T18:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A4",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:51:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2879",
+                "iata": "AV2879",
+                "icao": "AVA2879",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "7941",
+                    "flight_iata": "ac7941",
+                    "flight_icao": "aca7941"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B9C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "cancelled",
+            "departure": {
+                "airport": "Fort Lauderdale\u2013Hollywood International",
+                "timezone": "America\/New_York",
+                "iata": "FLL",
+                "icao": "KFLL",
+                "terminal": "2",
+                "gate": "D3",
+                "delay": null,
+                "scheduled": "2026-04-04T14:15:00+00:00",
+                "estimated": "2026-04-04T14:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "64",
+                "baggage": null,
+                "scheduled": "2026-04-04T17:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "6673",
+                "iata": "LH6673",
+                "icao": "DLH6673",
+                "codeshared": {
+                    "airline_name": "air canada rouge",
+                    "airline_iata": "rv",
+                    "airline_icao": "rou",
+                    "flight_number": "1605",
+                    "flight_iata": "rv1605",
+                    "flight_icao": "rou1605"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F93"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "B55",
+                "delay": null,
+                "scheduled": "2026-04-04T16:00:00+00:00",
+                "estimated": "2026-04-04T16:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "83",
+                "baggage": null,
+                "scheduled": "2026-04-04T17:37:00+00:00",
+                "delay": 24,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8185",
+                "iata": "UA8185",
+                "icao": "UAL8185",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8639",
+                    "flight_iata": "ac8639",
+                    "flight_icao": "aca8639"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B7C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E5",
+                "delay": null,
+                "scheduled": "2026-04-04T18:01:00+00:00",
+                "estimated": "2026-04-04T18:01:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "80",
+                "baggage": null,
+                "scheduled": "2026-04-04T21:26:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "3542",
+                "iata": "UA3542",
+                "icao": "UAL3542",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA7A1F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Toronto City Centre Airport",
+                "timezone": "America\/Toronto",
+                "iata": "YTZ",
+                "icao": "CYTZ",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-04T18:30:00+00:00",
+                "estimated": "2026-04-04T18:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "30",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7974",
+                "iata": "AC7974",
+                "icao": "ACA7974",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EFA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Providenciales International Airport",
+                "timezone": "America\/Grand_Turk",
+                "iata": "PLS",
+                "icao": "MBPV",
+                "terminal": null,
+                "gate": "8",
+                "delay": null,
+                "scheduled": "2026-04-04T18:40:00+00:00",
+                "estimated": "2026-04-04T18:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "49",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:00:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "1333",
+                "iata": "AC1333",
+                "icao": "ACA1333",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C03064"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "B",
+                "gate": "B3",
+                "delay": null,
+                "scheduled": "2026-04-04T18:40:00+00:00",
+                "estimated": "2026-04-04T18:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "84",
+                "baggage": null,
+                "scheduled": "2026-04-04T20:09:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8611",
+                "iata": "AC8611",
+                "icao": "ACA8611",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C035BB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C48",
+                "delay": null,
+                "scheduled": "2026-04-04T11:15:00+00:00",
+                "estimated": "2026-04-04T11:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "52",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:12:00+00:00",
+                "delay": 26,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Virgin Australia",
+                "iata": "VA",
+                "icao": "VOZ"
+            },
+            "flight": {
+                "number": "5180",
+                "iata": "VA5180",
+                "icao": "VOZ5180",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "306",
+                    "flight_iata": "ac306",
+                    "flight_icao": "aca306"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C053F6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C48",
+                "delay": null,
+                "scheduled": "2026-04-04T11:15:00+00:00",
+                "estimated": "2026-04-04T11:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "52",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:12:00+00:00",
+                "delay": 26,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SWISS",
+                "iata": "LX",
+                "icao": "SWR"
+            },
+            "flight": {
+                "number": "4650",
+                "iata": "LX4650",
+                "icao": "SWR4650",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "306",
+                    "flight_iata": "ac306",
+                    "flight_icao": "aca306"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C053F6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Vancouver International",
+                "timezone": "America\/Vancouver",
+                "iata": "YVR",
+                "icao": "CYVR",
+                "terminal": "M",
+                "gate": "C48",
+                "delay": null,
+                "scheduled": "2026-04-04T11:15:00+00:00",
+                "estimated": "2026-04-04T11:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "52",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:12:00+00:00",
+                "delay": 26,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "6769",
+                "iata": "LH6769",
+                "icao": "DLH6769",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "306",
+                    "flight_iata": "ac306",
+                    "flight_icao": "aca306"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C053F6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "La Grande",
+                "timezone": "America\/Montreal",
+                "iata": "YGL",
+                "icao": "CYGL",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T17:00:00+00:00",
+                "estimated": "2026-04-04T17:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T18:35:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Inuit",
+                "iata": "3H",
+                "icao": "AIE"
+            },
+            "flight": {
+                "number": "705",
+                "iata": "3H705",
+                "icao": "AIE705",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0457F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Licenciado Gustavo D\u00edaz Ordaz International",
+                "timezone": "America\/Mexico_City",
+                "iata": "PVR",
+                "icao": "MMPR",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T16:50:00+00:00",
+                "estimated": "2026-04-04T16:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T23:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "107",
+                "iata": "TS107",
+                "icao": "TSC107",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Punta Cana International",
+                "timezone": "America\/Santo_Domingo",
+                "iata": "PUJ",
+                "icao": "MDPC",
+                "terminal": "A",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T18:40:00+00:00",
+                "estimated": "2026-04-04T18:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "77",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:15:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada Rouge",
+                "iata": "RV",
+                "icao": "ROU"
+            },
+            "flight": {
+                "number": "1793",
+                "iata": "RV1793",
+                "icao": "ROU1793",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C04052"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tocumen International",
+                "timezone": "America\/Panama",
+                "iata": "PTY",
+                "icao": "MPTO",
+                "terminal": "2",
+                "gate": "110",
+                "delay": null,
+                "scheduled": "2026-04-04T17:57:00+00:00",
+                "estimated": "2026-04-04T17:57:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T00:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Copa Airlines",
+                "iata": "CM",
+                "icao": "CMP"
+            },
+            "flight": {
+                "number": "422",
+                "iata": "CM422",
+                "icao": "CMP422",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "23",
+                "delay": null,
+                "scheduled": "2026-04-04T18:20:00+00:00",
+                "estimated": "2026-04-04T18:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "28",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:06:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8016",
+                "iata": "AC8016",
+                "icao": "ACA8016",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B80"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "23",
+                "delay": null,
+                "scheduled": "2026-04-04T18:20:00+00:00",
+                "estimated": "2026-04-04T18:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "28",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:06:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SWISS",
+                "iata": "LX",
+                "icao": "SWR"
+            },
+            "flight": {
+                "number": "4621",
+                "iata": "LX4621",
+                "icao": "SWR4621",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8016",
+                    "flight_iata": "ac8016",
+                    "flight_icao": "aca8016"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B80"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ottawa Macdonald-Cartier International",
+                "timezone": "America\/Toronto",
+                "iata": "YOW",
+                "icao": "CYOW",
+                "terminal": null,
+                "gate": "23",
+                "delay": null,
+                "scheduled": "2026-04-04T18:20:00+00:00",
+                "estimated": "2026-04-04T18:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "28",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:06:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "6561",
+                "iata": "LH6561",
+                "icao": "DLH6561",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8016",
+                    "flight_iata": "ac8016",
+                    "flight_icao": "aca8016"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B80"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Fort Lauderdale\u2013Hollywood International",
+                "timezone": "America\/New_York",
+                "iata": "FLL",
+                "icao": "KFLL",
+                "terminal": "2",
+                "gate": "D4",
+                "delay": null,
+                "scheduled": "2026-04-04T18:55:00+00:00",
+                "estimated": "2026-04-04T18:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "55",
+                "baggage": null,
+                "scheduled": "2026-04-04T22:26:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "1007",
+                "iata": "AC1007",
+                "icao": "ACA1007",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C051E4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "cancelled",
+            "departure": {
+                "airport": "La Union",
+                "timezone": "America\/Santo_Domingo",
+                "iata": "POP",
+                "icao": "MDPP",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T18:20:00+00:00",
+                "estimated": "2026-04-04T18:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "83",
+                "baggage": null,
+                "scheduled": "2026-04-04T22:44:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2769",
+                "iata": "WS2769",
+                "icao": "WJA2769",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C019EB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Newark Liberty International",
+                "timezone": "America\/New_York",
+                "iata": "EWR",
+                "icao": "KEWR",
+                "terminal": "A",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T18:40:00+00:00",
+                "estimated": "2026-04-04T18:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "74",
+                "baggage": null,
+                "scheduled": "2026-04-04T20:15:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8499",
+                "iata": "AC8499",
+                "icao": "ACA8499",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C02E91"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "B",
+                "gate": "B97",
+                "delay": null,
+                "scheduled": "2026-04-04T13:20:00+00:00",
+                "estimated": "2026-04-04T13:20:00+00:00",
+                "actual": "2026-04-04T13:30:00+00:00",
+                "estimated_runway": "2026-04-04T13:30:00+00:00",
+                "actual_runway": "2026-04-04T13:30:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "81",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:36:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T16:11:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Brussels Airlines",
+                "iata": "SN",
+                "icao": "BEL"
+            },
+            "flight": {
+                "number": "9614",
+                "iata": "SN9614",
+                "icao": "BEL9614",
+                "codeshared": {
+                    "airline_name": "air canada rouge",
+                    "airline_iata": "rv",
+                    "airline_icao": "rou",
+                    "flight_number": "1637",
+                    "flight_iata": "rv1637",
+                    "flight_icao": "rou1637"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01970"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1A",
+                "delay": null,
+                "scheduled": "2026-04-04T11:47:00+00:00",
+                "estimated": "2026-04-04T11:47:00+00:00",
+                "actual": "2026-04-04T12:22:00+00:00",
+                "estimated_runway": "2026-04-04T12:22:00+00:00",
+                "actual_runway": "2026-04-04T12:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "C79",
+                "baggage": null,
+                "scheduled": "2026-04-04T14:59:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T14:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qantas",
+                "iata": "QF",
+                "icao": "QFA"
+            },
+            "flight": {
+                "number": "4640",
+                "iata": "QF4640",
+                "icao": "QFA4640",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3833",
+                    "flight_iata": "aa3833",
+                    "flight_icao": "aal3833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAA342"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1A",
+                "delay": null,
+                "scheduled": "2026-04-04T11:47:00+00:00",
+                "estimated": "2026-04-04T11:47:00+00:00",
+                "actual": "2026-04-04T12:22:00+00:00",
+                "estimated_runway": "2026-04-04T12:22:00+00:00",
+                "actual_runway": "2026-04-04T12:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "C79",
+                "baggage": null,
+                "scheduled": "2026-04-04T14:59:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T14:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Porter Airlines",
+                "iata": "PD",
+                "icao": "POE"
+            },
+            "flight": {
+                "number": "6097",
+                "iata": "PD6097",
+                "icao": "POE6097",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3833",
+                    "flight_iata": "aa3833",
+                    "flight_icao": "aal3833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAA342"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1A",
+                "delay": null,
+                "scheduled": "2026-04-04T11:47:00+00:00",
+                "estimated": "2026-04-04T11:47:00+00:00",
+                "actual": "2026-04-04T12:22:00+00:00",
+                "estimated_runway": "2026-04-04T12:22:00+00:00",
+                "actual_runway": "2026-04-04T12:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "C79",
+                "baggage": null,
+                "scheduled": "2026-04-04T14:59:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T14:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Japan Airlines",
+                "iata": "JL",
+                "icao": "JTL"
+            },
+            "flight": {
+                "number": "7448",
+                "iata": "JL7448",
+                "icao": "JTL7448",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3833",
+                    "flight_iata": "aa3833",
+                    "flight_icao": "aal3833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAA342"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "landed",
+            "departure": {
+                "airport": "Bathurst",
+                "timezone": "America\/Moncton",
+                "iata": "ZBF",
+                "icao": "CZBF",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T13:15:00+00:00",
+                "estimated": "2026-04-04T13:15:00+00:00",
+                "actual": "2026-04-04T13:07:00+00:00",
+                "estimated_runway": "2026-04-04T13:07:00+00:00",
+                "actual_runway": "2026-04-04T13:07:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T14:15:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T13:59:00+00:00",
+                "actual": "2026-04-04T13:54:00+00:00",
+                "estimated_runway": "2026-04-04T13:54:00+00:00",
+                "actual_runway": "2026-04-04T13:54:00+00:00"
+            },
+            "airline": {
+                "name": "Propair",
+                "iata": "PP",
+                "icao": "PRO"
+            },
+            "flight": {
+                "number": "4827",
+                "iata": "PP4827",
+                "icao": "PRO4827",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C033DE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "George Bush Intercontinental",
+                "timezone": "America\/Chicago",
+                "iata": "IAH",
+                "icao": "KIAH",
+                "terminal": "D",
+                "gate": "D3",
+                "delay": null,
+                "scheduled": "2026-04-04T11:50:00+00:00",
+                "estimated": "2026-04-04T11:50:00+00:00",
+                "actual": "2026-04-04T12:23:00+00:00",
+                "estimated_runway": "2026-04-04T12:23:00+00:00",
+                "actual_runway": "2026-04-04T12:23:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "83",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:42:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T16:39:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8707",
+                "iata": "UA8707",
+                "icao": "UAL8707",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "580",
+                    "flight_iata": "ac580",
+                    "flight_icao": "aca580"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EE5"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Washington Dulles International",
+                "timezone": "America\/New_York",
+                "iata": "IAD",
+                "icao": "KIAD",
+                "terminal": null,
+                "gate": "C18",
+                "delay": null,
+                "scheduled": "2026-04-04T17:35:00+00:00",
+                "estimated": "2026-04-04T17:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "82",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "3602",
+                "iata": "UA3602",
+                "icao": "UAL3602",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA92C2"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1A",
+                "delay": null,
+                "scheduled": "2026-04-04T11:47:00+00:00",
+                "estimated": "2026-04-04T11:47:00+00:00",
+                "actual": "2026-04-04T12:22:00+00:00",
+                "estimated_runway": "2026-04-04T12:22:00+00:00",
+                "actual_runway": "2026-04-04T12:22:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "C79",
+                "baggage": null,
+                "scheduled": "2026-04-04T14:59:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-04T14:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6127",
+                "iata": "AS6127",
+                "icao": "JAG6127",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3833",
+                    "flight_iata": "aa3833",
+                    "flight_icao": "aal3833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAA342"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Daniel Oduber International",
+                "timezone": "America\/Costa_Rica",
+                "iata": "LIR",
+                "icao": "MRLB",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T15:30:00+00:00",
+                "estimated": "2026-04-04T15:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "50",
+                "baggage": null,
+                "scheduled": "2026-04-04T23:15:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "1330",
+                "iata": "AC1330",
+                "icao": "ACA1330",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06589"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "6",
+                "gate": "65A",
+                "delay": null,
+                "scheduled": "2026-04-04T08:30:00+00:00",
+                "estimated": "2026-04-04T08:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "85",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:56:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8466",
+                "iata": "UA8466",
+                "icao": "UAL8466",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "776",
+                    "flight_iata": "ac776",
+                    "flight_icao": "aca776"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06541"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "6",
+                "gate": "65A",
+                "delay": null,
+                "scheduled": "2026-04-04T08:30:00+00:00",
+                "estimated": "2026-04-04T08:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "85",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:56:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Brussels Airlines",
+                "iata": "SN",
+                "icao": "BEL"
+            },
+            "flight": {
+                "number": "9598",
+                "iata": "SN9598",
+                "icao": "BEL9598",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "776",
+                    "flight_iata": "ac776",
+                    "flight_icao": "aca776"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06541"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "6",
+                "gate": "65A",
+                "delay": null,
+                "scheduled": "2026-04-04T08:30:00+00:00",
+                "estimated": "2026-04-04T08:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "85",
+                "baggage": null,
+                "scheduled": "2026-04-04T16:56:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "4718",
+                "iata": "NZ4718",
+                "icao": "ANZ4718",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "776",
+                    "flight_iata": "ac776",
+                    "flight_icao": "aca776"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06541"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Orlando International",
+                "timezone": "America\/New_York",
+                "iata": "MCO",
+                "icao": "KMCO",
+                "terminal": "B",
+                "gate": "B95",
+                "delay": null,
+                "scheduled": "2026-04-04T18:05:00+00:00",
+                "estimated": "2026-04-04T18:05:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "76",
+                "baggage": null,
+                "scheduled": "2026-04-04T21:21:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada Rouge",
+                "iata": "RV",
+                "icao": "ROU"
+            },
+            "flight": {
+                "number": "1641",
+                "iata": "RV1641",
+                "icao": "ROU1641",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01945"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D22",
+                "delay": null,
+                "scheduled": "2026-04-04T18:00:00+00:00",
+                "estimated": "2026-04-04T18:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A47",
+                "baggage": "20",
+                "scheduled": "2026-04-04T19:20:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "422",
+                "iata": "AC422",
+                "icao": "ACA422",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01401"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "B55",
+                "delay": null,
+                "scheduled": "2026-04-04T17:35:00+00:00",
+                "estimated": "2026-04-04T17:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "77",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:12:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8641",
+                "iata": "AC8641",
+                "icao": "ACA8641",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C00B78"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Toronto City Centre Airport",
+                "timezone": "America\/Toronto",
+                "iata": "YTZ",
+                "icao": "CYTZ",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-04T17:30:00+00:00",
+                "estimated": "2026-04-04T17:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "2",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7972",
+                "iata": "AC7972",
+                "icao": "ACA7972",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EF7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Toronto City Centre Airport",
+                "timezone": "America\/Toronto",
+                "iata": "YTZ",
+                "icao": "CYTZ",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-04T17:30:00+00:00",
+                "estimated": "2026-04-04T17:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "2",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:45:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SWISS",
+                "iata": "LX",
+                "icao": "SWR"
+            },
+            "flight": {
+                "number": "4692",
+                "iata": "LX4692",
+                "icao": "SWR4692",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "7972",
+                    "flight_iata": "ac7972",
+                    "flight_icao": "aca7972"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05EF7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Halifax International",
+                "timezone": "America\/Halifax",
+                "iata": "YHZ",
+                "icao": "CYHZ",
+                "terminal": null,
+                "gate": "12",
+                "delay": null,
+                "scheduled": "2026-04-04T18:35:00+00:00",
+                "estimated": "2026-04-04T18:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A8",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:39:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Porter",
+                "iata": "PD",
+                "icao": "POE"
+            },
+            "flight": {
+                "number": "2328",
+                "iata": "PD2328",
+                "icao": "POE2328",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0635B"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Halifax International",
+                "timezone": "America\/Halifax",
+                "iata": "YHZ",
+                "icao": "CYHZ",
+                "terminal": null,
+                "gate": "12",
+                "delay": null,
+                "scheduled": "2026-04-04T18:35:00+00:00",
+                "estimated": "2026-04-04T18:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A8",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:39:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Transat",
+                "iata": "TS",
+                "icao": "TSC"
+            },
+            "flight": {
+                "number": "7338",
+                "iata": "TS7338",
+                "icao": "TSC7338",
+                "codeshared": {
+                    "airline_name": "porter",
+                    "airline_iata": "pd",
+                    "airline_icao": "poe",
+                    "flight_number": "2328",
+                    "flight_iata": "pd2328",
+                    "flight_icao": "poe2328"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0635B"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Franz Josef Strauss",
+                "timezone": "Europe\/Berlin",
+                "iata": "MUC",
+                "icao": "EDDM",
+                "terminal": "2",
+                "gate": "L15",
+                "delay": 31,
+                "scheduled": "2026-04-04T16:45:00+00:00",
+                "estimated": "2026-04-04T16:45:00+00:00",
+                "actual": "2026-04-04T17:17:00+00:00",
+                "estimated_runway": "2026-04-04T17:17:00+00:00",
+                "actual_runway": "2026-04-04T17:17:00+00:00"
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T18:50:00+00:00",
+                "delay": 33,
+                "estimated": "2026-04-04T19:21:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "9099",
+                "iata": "AC9099",
+                "icao": "ACA9099",
+                "codeshared": {
+                    "airline_name": "lufthansa",
+                    "airline_iata": "lh",
+                    "airline_icao": "dlh",
+                    "flight_number": "474",
+                    "flight_iata": "lh474",
+                    "flight_icao": "dlh474"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "3C66C1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Ronald Reagan Washington National Airport",
+                "timezone": "America\/New_York",
+                "iata": "DCA",
+                "icao": "KDCA",
+                "terminal": "1",
+                "gate": "A3",
+                "delay": null,
+                "scheduled": "2026-04-04T16:10:00+00:00",
+                "estimated": "2026-04-04T16:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "85",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:02:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8824",
+                "iata": "AC8824",
+                "icao": "ACA8824",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C03330"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Toronto City Centre Airport",
+                "timezone": "America\/Toronto",
+                "iata": "YTZ",
+                "icao": "CYTZ",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-04T16:30:00+00:00",
+                "estimated": "2026-04-04T16:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "12",
+                "baggage": null,
+                "scheduled": "2026-04-04T17:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7968",
+                "iata": "AC7968",
+                "icao": "ACA7968",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C05F01"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "B",
+                "gate": "B2",
+                "delay": null,
+                "scheduled": "2026-04-04T15:35:00+00:00",
+                "estimated": "2026-04-04T15:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T17:04:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8483",
+                "iata": "UA8483",
+                "icao": "UAL8483",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8607",
+                    "flight_iata": "ac8607",
+                    "flight_icao": "aca8607"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C035BF"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "B",
+                "gate": "B2",
+                "delay": null,
+                "scheduled": "2026-04-04T15:35:00+00:00",
+                "estimated": "2026-04-04T15:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T17:04:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Brussels Airlines",
+                "iata": "SN",
+                "icao": "BEL"
+            },
+            "flight": {
+                "number": "9618",
+                "iata": "SN9618",
+                "icao": "BEL9618",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8607",
+                    "flight_iata": "ac8607",
+                    "flight_icao": "aca8607"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C035BF"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "B5",
+                "delay": null,
+                "scheduled": "2026-04-04T17:00:00+00:00",
+                "estimated": "2026-04-04T17:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A6",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Porter",
+                "iata": "PD",
+                "icao": "POE"
+            },
+            "flight": {
+                "number": "131",
+                "iata": "PD131",
+                "icao": "POE131",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C060C4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D43",
+                "delay": null,
+                "scheduled": "2026-04-04T17:00:00+00:00",
+                "estimated": "2026-04-04T17:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "50",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:23:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "894",
+                "iata": "AC894",
+                "icao": "ACA894",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C06A38"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "1",
+                "gate": "D20",
+                "delay": null,
+                "scheduled": "2026-04-04T16:30:00+00:00",
+                "estimated": "2026-04-04T16:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "7",
+                "baggage": "20",
+                "scheduled": "2026-04-04T17:51:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "488",
+                "iata": "AC488",
+                "icao": "ACA488",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C030FD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Rouyn-Noranda",
+                "timezone": "America\/Montreal",
+                "iata": "YUY",
+                "icao": "CYUY",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-04T16:35:00+00:00",
+                "estimated": "2026-04-04T16:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A2",
+                "baggage": null,
+                "scheduled": "2026-04-04T17:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "7984",
+                "iata": "AC7984",
+                "icao": "ACA7984",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C07A7C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E2",
+                "delay": null,
+                "scheduled": "2026-04-04T15:45:00+00:00",
+                "estimated": "2026-04-04T15:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "81",
+                "baggage": null,
+                "scheduled": "2026-04-04T18:56:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "8484",
+                "iata": "AC8484",
+                "icao": "ACA8484",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C008F0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T14:10:00+00:00",
+                "estimated": "2026-04-04T14:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T19:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2887",
+                "iata": "WS2887",
+                "icao": "WJA2887",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Sangster International",
+                "timezone": "America\/Jamaica",
+                "iata": "MBJ",
+                "icao": "MKJS",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-04T13:55:00+00:00",
+                "estimated": "2026-04-04T13:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-04T19:25:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "2915",
+                "iata": "WS2915",
+                "icao": "WJA2915",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "St. John's International",
+                "timezone": "America\/St_Johns",
+                "iata": "YYT",
+                "icao": "CYYT",
+                "terminal": null,
+                "gate": "6",
+                "delay": null,
+                "scheduled": "2026-04-04T18:15:00+00:00",
+                "estimated": "2026-04-04T18:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": "A",
+                "gate": "A47",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:32:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "677",
+                "iata": "AC677",
+                "icao": "ACA677",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C013D0"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "St. John's International",
+                "timezone": "America\/St_Johns",
+                "iata": "YYT",
+                "icao": "CYYT",
+                "terminal": null,
+                "gate": "2",
+                "delay": null,
+                "scheduled": "2026-04-04T18:15:00+00:00",
+                "estimated": "2026-04-04T18:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A6",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:32:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "TAP Air Portugal",
+                "iata": "TP",
+                "icao": "TAP"
+            },
+            "flight": {
+                "number": "8273",
+                "iata": "TP8273",
+                "icao": "TAP8273",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "677",
+                    "flight_iata": "ac677",
+                    "flight_icao": "aca677"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0150D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-04",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "St. John's International",
+                "timezone": "America\/St_Johns",
+                "iata": "YYT",
+                "icao": "CYYT",
+                "terminal": null,
+                "gate": "2",
+                "delay": null,
+                "scheduled": "2026-04-04T18:15:00+00:00",
+                "estimated": "2026-04-04T18:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "A6",
+                "baggage": null,
+                "scheduled": "2026-04-04T19:32:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8418",
+                "iata": "UA8418",
+                "icao": "UAL8418",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "677",
+                    "flight_iata": "ac677",
+                    "flight_icao": "aca677"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C0150D"
+            },
+            "live": null
+        }
+    ]
+}

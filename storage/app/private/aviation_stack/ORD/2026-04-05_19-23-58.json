@@ -1,0 +1,5528 @@
+{
+    "pagination": {
+        "limit": 100,
+        "offset": 0,
+        "count": 100,
+        "total": 7798
+    },
+    "data": [
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "2",
+                "gate": "61",
+                "delay": null,
+                "scheduled": "2026-04-06T09:45:00+00:00",
+                "estimated": "2026-04-06T09:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:20:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Japan Airlines",
+                "iata": "JL",
+                "icao": "JTL"
+            },
+            "flight": {
+                "number": "56",
+                "iata": "JL56",
+                "icao": "JTL56",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "2",
+                "gate": "61",
+                "delay": null,
+                "scheduled": "2026-04-06T09:45:00+00:00",
+                "estimated": "2026-04-06T09:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:20:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Miat - Mongolian Airlines",
+                "iata": "OM",
+                "icao": "MGL"
+            },
+            "flight": {
+                "number": "5524",
+                "iata": "OM5524",
+                "icao": "MGL5524",
+                "codeshared": {
+                    "airline_name": "jet linx aviation",
+                    "airline_iata": "jl",
+                    "airline_icao": "jtl",
+                    "flight_number": "56",
+                    "flight_iata": "jl56",
+                    "flight_icao": "jtl56"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "2",
+                "gate": "61",
+                "delay": null,
+                "scheduled": "2026-04-06T09:45:00+00:00",
+                "estimated": "2026-04-06T09:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:20:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Malaysia Airlines",
+                "iata": "MH",
+                "icao": "MAS"
+            },
+            "flight": {
+                "number": "4826",
+                "iata": "MH4826",
+                "icao": "MAS4826",
+                "codeshared": {
+                    "airline_name": "jet linx aviation",
+                    "airline_iata": "jl",
+                    "airline_icao": "jtl",
+                    "flight_number": "56",
+                    "flight_iata": "jl56",
+                    "flight_icao": "jtl56"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": "2",
+                "gate": "61",
+                "delay": null,
+                "scheduled": "2026-04-06T09:45:00+00:00",
+                "estimated": "2026-04-06T09:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T07:20:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "8460",
+                "iata": "AA8460",
+                "icao": "AAL8460",
+                "codeshared": {
+                    "airline_name": "jet linx aviation",
+                    "airline_iata": "jl",
+                    "airline_icao": "jtl",
+                    "flight_number": "56",
+                    "flight_iata": "jl56",
+                    "flight_icao": "jtl56"
+                }
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Narita International Airport",
+                "timezone": "Asia\/Tokyo",
+                "iata": "NRT",
+                "icao": "RJAA",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-06T09:00:00+00:00",
+                "estimated": "2026-04-06T09:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T06:45:00+00:00",
+                "delay": 11,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "ANA",
+                "iata": "NH",
+                "icao": "ANA"
+            },
+            "flight": {
+                "number": "8422",
+                "iata": "NH8422",
+                "icao": "ANA8422",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-06",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Abu Dhabi International",
+                "timezone": "Asia\/Dubai",
+                "iata": "AUH",
+                "icao": "OMAA",
+                "terminal": "A",
+                "gate": "B12",
+                "delay": null,
+                "scheduled": "2026-04-06T02:35:00+00:00",
+                "estimated": "2026-04-06T02:35:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T09:15:00+00:00",
+                "delay": 29,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Etihad Airways",
+                "iata": "EY",
+                "icao": "ETD"
+            },
+            "flight": {
+                "number": "9",
+                "iata": "EY9",
+                "icao": "ETD9",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "896597"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "George Bush Intercontinental",
+                "timezone": "America\/Chicago",
+                "iata": "IAH",
+                "icao": "KIAH",
+                "terminal": "C",
+                "gate": "C40",
+                "delay": null,
+                "scheduled": "2026-04-05T20:26:00+00:00",
+                "estimated": "2026-04-05T20:26:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B8",
+                "baggage": "5",
+                "scheduled": "2026-04-05T23:15:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1752",
+                "iata": "UA1752",
+                "icao": "UAL1752",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B821"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Minneapolis - St. Paul International",
+                "timezone": "America\/Chicago",
+                "iata": "MSP",
+                "icao": "KMSP",
+                "terminal": "1",
+                "gate": "E6",
+                "delay": null,
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "estimated": "2026-04-05T20:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C31",
+                "baggage": "14",
+                "scheduled": "2026-04-05T22:04:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "732",
+                "iata": "UA732",
+                "icao": "UAL732",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AB0ED6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "San Francisco International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SFO",
+                "icao": "KSFO",
+                "terminal": "3",
+                "gate": "E13",
+                "delay": null,
+                "scheduled": "2026-04-05T19:00:00+00:00",
+                "estimated": "2026-04-05T19:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C17",
+                "baggage": "11",
+                "scheduled": "2026-04-06T01:28:00+00:00",
+                "delay": 24,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1958",
+                "iata": "UA1958",
+                "icao": "UAL1958",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA7F25"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "San Francisco International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SFO",
+                "icao": "KSFO",
+                "terminal": "2",
+                "gate": "D16",
+                "delay": null,
+                "scheduled": "2026-04-05T18:29:00+00:00",
+                "estimated": "2026-04-05T18:29:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C1",
+                "baggage": "11",
+                "scheduled": "2026-04-06T00:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "2262",
+                "iata": "UA2262",
+                "icao": "UAL2262",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B866"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Aeroporto Internacional Guarulhos",
+                "timezone": "America\/Sao_Paulo",
+                "iata": "GRU",
+                "icao": "SBGR",
+                "terminal": "3",
+                "gate": "302",
+                "delay": null,
+                "scheduled": "2026-04-05T22:20:00+00:00",
+                "estimated": "2026-04-05T22:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": "INTL",
+                "baggage": "M5",
+                "scheduled": "2026-04-06T06:45:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "844",
+                "iata": "UA844",
+                "icao": "UAL844",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A07DCD"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Gerald R. Ford International",
+                "timezone": "America\/Detroit",
+                "iata": "GRR",
+                "icao": "KGRR",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T21:45:00+00:00",
+                "estimated": "2026-04-05T21:45:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C8",
+                "baggage": "3",
+                "scheduled": "2026-04-05T21:57:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "3701",
+                "iata": "UA3701",
+                "icao": "UAL3701",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA43C4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Southwest Florida International",
+                "timezone": "America\/New_York",
+                "iata": "RSW",
+                "icao": "KRSW",
+                "terminal": null,
+                "gate": "D11",
+                "delay": null,
+                "scheduled": "2026-04-05T21:54:00+00:00",
+                "estimated": "2026-04-05T21:54:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "G12",
+                "baggage": null,
+                "scheduled": "2026-04-05T23:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Spirit Airlines",
+                "iata": "NK",
+                "icao": "NKS"
+            },
+            "flight": {
+                "number": "1603",
+                "iata": "NK1603",
+                "icao": "NKS1603",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A91AB7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Cincinnati\/Northern Kentucky",
+                "timezone": "America\/New_York",
+                "iata": "CVG",
+                "icao": "KCVG",
+                "terminal": null,
+                "gate": "A11",
+                "delay": null,
+                "scheduled": "2026-04-05T21:12:00+00:00",
+                "estimated": "2026-04-05T21:12:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F6",
+                "baggage": "2",
+                "scheduled": "2026-04-05T21:53:00+00:00",
+                "delay": 28,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "6034",
+                "iata": "UA6034",
+                "icao": "UAL6034",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0FAC3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Cincinnati\/Northern Kentucky",
+                "timezone": "America\/New_York",
+                "iata": "CVG",
+                "icao": "KCVG",
+                "terminal": null,
+                "gate": "A11",
+                "delay": null,
+                "scheduled": "2026-04-05T21:12:00+00:00",
+                "estimated": "2026-04-05T21:12:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F6",
+                "baggage": "2",
+                "scheduled": "2026-04-05T21:53:00+00:00",
+                "delay": 28,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "2242",
+                "iata": "NZ2242",
+                "icao": "ANZ2242",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "6034",
+                    "flight_iata": "ua6034",
+                    "flight_icao": "ual6034"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0FAC3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Don Miguel Hidalgo y Costilla International",
+                "timezone": "America\/Mexico_City",
+                "iata": "GDL",
+                "icao": "MMGL",
+                "terminal": "1",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T19:40:00+00:00",
+                "estimated": "2026-04-05T19:40:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-06T00:39:00+00:00",
+                "delay": 10,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Volaris",
+                "iata": "Y4",
+                "icao": "VOI"
+            },
+            "flight": {
+                "number": "5702",
+                "iata": "Y45702",
+                "icao": "VOI5702",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "0D0BBE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "A8",
+                "delay": null,
+                "scheduled": "2026-04-05T16:44:00+00:00",
+                "estimated": "2026-04-05T16:44:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G10",
+                "baggage": null,
+                "scheduled": "2026-04-05T17:44:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "5763",
+                "iata": "BA5763",
+                "icao": "BAW5763",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3608",
+                    "flight_iata": "aa3608",
+                    "flight_icao": "aal3608"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA141E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Lester B. Pearson International",
+                "timezone": "America\/Toronto",
+                "iata": "YYZ",
+                "icao": "CYYZ",
+                "terminal": "3",
+                "gate": "A8",
+                "delay": null,
+                "scheduled": "2026-04-05T16:44:00+00:00",
+                "estimated": "2026-04-05T16:44:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G10",
+                "baggage": null,
+                "scheduled": "2026-04-05T17:44:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6186",
+                "iata": "AS6186",
+                "icao": "JAG6186",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3608",
+                    "flight_iata": "aa3608",
+                    "flight_icao": "aal3608"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA141E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Austin-bergstrom International",
+                "timezone": "America\/Chicago",
+                "iata": "AUS",
+                "icao": "KAUS",
+                "terminal": null,
+                "gate": "37",
+                "delay": null,
+                "scheduled": "2026-04-05T20:57:00+00:00",
+                "estimated": "2026-04-05T20:57:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": "Intl",
+                "scheduled": "2026-04-05T23:44:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "2800",
+                "iata": "F92800",
+                "icao": "FFT2800",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9AB87"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Hartsfield-jackson Atlanta International",
+                "timezone": "America\/New_York",
+                "iata": "ATL",
+                "icao": "KATL",
+                "terminal": "N",
+                "gate": "E1",
+                "delay": null,
+                "scheduled": "2026-04-05T21:20:00+00:00",
+                "estimated": "2026-04-05T21:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": "Intl",
+                "scheduled": "2026-04-05T22:44:00+00:00",
+                "delay": 16,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "3397",
+                "iata": "F93397",
+                "icao": "FFT3397",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8A748"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "43",
+                "delay": null,
+                "scheduled": "2026-04-05T21:15:00+00:00",
+                "estimated": "2026-04-05T21:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B16",
+                "baggage": "6",
+                "scheduled": "2026-04-05T23:00:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "366",
+                "iata": "UA366",
+                "icao": "UAL366",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2B198"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "C",
+                "gate": "98",
+                "delay": null,
+                "scheduled": "2026-04-05T16:50:00+00:00",
+                "estimated": "2026-04-05T16:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": "M11",
+                "baggage": null,
+                "scheduled": "2026-04-05T18:41:00+00:00",
+                "delay": 25,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "WestJet",
+                "iata": "WS",
+                "icao": "WJA"
+            },
+            "flight": {
+                "number": "5560",
+                "iata": "WS5560",
+                "icao": "WJA5560",
+                "codeshared": {
+                    "airline_name": "delta air lines",
+                    "airline_iata": "dl",
+                    "airline_icao": "dal",
+                    "flight_number": "5590",
+                    "flight_iata": "dl5590",
+                    "flight_icao": "dal5590"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A24720"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Indianapolis International",
+                "timezone": "America\/Indiana\/Indianapolis",
+                "iata": "IND",
+                "icao": "KIND",
+                "terminal": null,
+                "gate": "A21",
+                "delay": null,
+                "scheduled": "2026-04-05T21:20:00+00:00",
+                "estimated": "2026-04-05T21:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B18",
+                "baggage": "3",
+                "scheduled": "2026-04-05T21:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "6050",
+                "iata": "UA6050",
+                "icao": "UAL6050",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0D6FB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Indianapolis International",
+                "timezone": "America\/Indiana\/Indianapolis",
+                "iata": "IND",
+                "icao": "KIND",
+                "terminal": null,
+                "gate": "A21",
+                "delay": null,
+                "scheduled": "2026-04-05T21:20:00+00:00",
+                "estimated": "2026-04-05T21:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B18",
+                "baggage": "3",
+                "scheduled": "2026-04-05T21:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "9289",
+                "iata": "LH9289",
+                "icao": "DLH9289",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "6050",
+                    "flight_iata": "ua6050",
+                    "flight_icao": "ual6050"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0D6FB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Indianapolis International",
+                "timezone": "America\/Indiana\/Indianapolis",
+                "iata": "IND",
+                "icao": "KIND",
+                "terminal": null,
+                "gate": "A21",
+                "delay": null,
+                "scheduled": "2026-04-05T21:20:00+00:00",
+                "estimated": "2026-04-05T21:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B18",
+                "baggage": "3",
+                "scheduled": "2026-04-05T21:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "4920",
+                "iata": "AC4920",
+                "icao": "ACA4920",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "6050",
+                    "flight_iata": "ua6050",
+                    "flight_icao": "ual6050"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0D6FB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Newark Liberty International",
+                "timezone": "America\/New_York",
+                "iata": "EWR",
+                "icao": "KEWR",
+                "terminal": "C",
+                "gate": "C81",
+                "delay": null,
+                "scheduled": "2026-04-05T21:50:00+00:00",
+                "estimated": "2026-04-05T21:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C21",
+                "baggage": "6",
+                "scheduled": "2026-04-05T23:37:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1206",
+                "iata": "UA1206",
+                "icao": "UAL1206",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8E24D"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Detroit Metropolitan Wayne County",
+                "timezone": "America\/Detroit",
+                "iata": "DTW",
+                "icao": "KDTW",
+                "terminal": "E",
+                "gate": "D2",
+                "delay": null,
+                "scheduled": "2026-04-05T21:30:00+00:00",
+                "estimated": "2026-04-05T21:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E5",
+                "baggage": "3",
+                "scheduled": "2026-04-05T22:05:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "3719",
+                "iata": "UA3719",
+                "icao": "UAL3719",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9B4A4"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Cherry Capital Airport",
+                "timezone": "America\/Detroit",
+                "iata": "TVC",
+                "icao": "KTVC",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-05T21:25:00+00:00",
+                "estimated": "2026-04-05T21:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F28",
+                "baggage": "6",
+                "scheduled": "2026-04-05T21:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "4532",
+                "iata": "UA4532",
+                "icao": "UAL4532",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A694B2"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Palm Beach International Airport",
+                "timezone": "America\/New_York",
+                "iata": "PBI",
+                "icao": "KPBI",
+                "terminal": null,
+                "gate": "B12",
+                "delay": null,
+                "scheduled": "2026-04-05T18:43:00+00:00",
+                "estimated": "2026-04-05T18:43:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "H10",
+                "baggage": "8",
+                "scheduled": "2026-04-05T21:12:00+00:00",
+                "delay": 25,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "4296",
+                "iata": "AS4296",
+                "icao": "JAG4296",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1831",
+                    "flight_iata": "aa1831",
+                    "flight_icao": "aal1831"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC1547"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Miami International Airport",
+                "timezone": "America\/New_York",
+                "iata": "MIA",
+                "icao": "KMIA",
+                "terminal": null,
+                "gate": "D46",
+                "delay": null,
+                "scheduled": "2026-04-05T22:01:00+00:00",
+                "estimated": "2026-04-05T22:01:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "H9",
+                "baggage": "5",
+                "scheduled": "2026-04-06T00:38:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2869",
+                "iata": "AA2869",
+                "icao": "AAL2869",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6116"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "San Diego International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SAN",
+                "icao": "KSAN",
+                "terminal": "2",
+                "gate": "45",
+                "delay": null,
+                "scheduled": "2026-04-05T14:10:00+00:00",
+                "estimated": "2026-04-05T14:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E11",
+                "baggage": "14",
+                "scheduled": "2026-04-05T20:22:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "7901",
+                "iata": "LH7901",
+                "icao": "DLH7901",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1779",
+                    "flight_iata": "ua1779",
+                    "flight_icao": "ual1779"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B7B7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "San Diego International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SAN",
+                "icao": "KSAN",
+                "terminal": "2",
+                "gate": "45",
+                "delay": null,
+                "scheduled": "2026-04-05T14:10:00+00:00",
+                "estimated": "2026-04-05T14:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E11",
+                "baggage": "14",
+                "scheduled": "2026-04-05T20:22:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "5106",
+                "iata": "AC5106",
+                "icao": "ACA5106",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1779",
+                    "flight_iata": "ua1779",
+                    "flight_icao": "ual1779"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B7B7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "8",
+                "gate": "81",
+                "delay": null,
+                "scheduled": "2026-04-05T18:50:00+00:00",
+                "estimated": "2026-04-05T18:50:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C16",
+                "baggage": "4",
+                "scheduled": "2026-04-06T00:59:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1754",
+                "iata": "UA1754",
+                "icao": "UAL1754",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A24591"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "San Francisco International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SFO",
+                "icao": "KSFO",
+                "terminal": "2",
+                "gate": "D14",
+                "delay": null,
+                "scheduled": "2026-04-05T12:15:00+00:00",
+                "estimated": "2026-04-05T12:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B10",
+                "baggage": "11",
+                "scheduled": "2026-04-05T18:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Virgin Australia",
+                "iata": "VA",
+                "icao": "VOZ"
+            },
+            "flight": {
+                "number": "8102",
+                "iata": "VA8102",
+                "icao": "VOZ8102",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1394",
+                    "flight_iata": "ua1394",
+                    "flight_icao": "ual1394"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD22E1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "San Francisco International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SFO",
+                "icao": "KSFO",
+                "terminal": "2",
+                "gate": "D14",
+                "delay": null,
+                "scheduled": "2026-04-05T12:15:00+00:00",
+                "estimated": "2026-04-05T12:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B10",
+                "baggage": "11",
+                "scheduled": "2026-04-05T18:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "9301",
+                "iata": "NZ9301",
+                "icao": "ANZ9301",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1394",
+                    "flight_iata": "ua1394",
+                    "flight_icao": "ual1394"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD22E1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "San Francisco International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SFO",
+                "icao": "KSFO",
+                "terminal": "2",
+                "gate": "D14",
+                "delay": null,
+                "scheduled": "2026-04-05T12:15:00+00:00",
+                "estimated": "2026-04-05T12:15:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B10",
+                "baggage": "11",
+                "scheduled": "2026-04-05T18:48:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "4065",
+                "iata": "AC4065",
+                "icao": "ACA4065",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1394",
+                    "flight_iata": "ua1394",
+                    "flight_icao": "ual1394"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD22E1"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "B27",
+                "delay": null,
+                "scheduled": "2026-04-05T13:25:00+00:00",
+                "estimated": "2026-04-05T13:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B12",
+                "baggage": "9",
+                "scheduled": "2026-04-05T17:04:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SWISS",
+                "iata": "LX",
+                "icao": "SWR"
+            },
+            "flight": {
+                "number": "3289",
+                "iata": "LX3289",
+                "icao": "SWR3289",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "617",
+                    "flight_iata": "ua617",
+                    "flight_icao": "ual617"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B7FE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "B27",
+                "delay": null,
+                "scheduled": "2026-04-05T13:25:00+00:00",
+                "estimated": "2026-04-05T13:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B12",
+                "baggage": "9",
+                "scheduled": "2026-04-05T17:04:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6054",
+                "iata": "EK6054",
+                "icao": "UAE6054",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "617",
+                    "flight_iata": "ua617",
+                    "flight_icao": "ual617"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B7FE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "B27",
+                "delay": null,
+                "scheduled": "2026-04-05T13:25:00+00:00",
+                "estimated": "2026-04-05T13:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B12",
+                "baggage": "9",
+                "scheduled": "2026-04-05T17:04:00+00:00",
+                "delay": 19,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "3556",
+                "iata": "AC3556",
+                "icao": "ACA3556",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "617",
+                    "flight_iata": "ua617",
+                    "flight_icao": "ual617"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B7FE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Internacional Benito Juarez",
+                "timezone": "America\/Mexico_City",
+                "iata": "MEX",
+                "icao": "MMMX",
+                "terminal": "1",
+                "gate": "36",
+                "delay": null,
+                "scheduled": "2026-04-05T14:10:00+00:00",
+                "estimated": "2026-04-05T14:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": "INTL",
+                "baggage": "M5",
+                "scheduled": "2026-04-05T19:29:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6608",
+                "iata": "EK6608",
+                "icao": "UAE6608",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "474",
+                    "flight_iata": "ua474",
+                    "flight_icao": "ual474"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A5CC11"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Canc\u00fan International",
+                "timezone": "America\/Cancun",
+                "iata": "CUN",
+                "icao": "MMUN",
+                "terminal": "3",
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T15:38:00+00:00",
+                "estimated": "2026-04-05T15:38:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": "INTL",
+                "baggage": "M5",
+                "scheduled": "2026-04-05T19:45:00+00:00",
+                "delay": 94,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6605",
+                "iata": "EK6605",
+                "icao": "UAE6605",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1667",
+                    "flight_iata": "ua1667",
+                    "flight_icao": "ual1667"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A0B7D8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Pierre Elliott Trudeau International",
+                "timezone": "America\/Montreal",
+                "iata": "YUL",
+                "icao": "CYUL",
+                "terminal": null,
+                "gate": "C87",
+                "delay": null,
+                "scheduled": "2026-04-05T18:30:00+00:00",
+                "estimated": "2026-04-05T18:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E2",
+                "baggage": null,
+                "scheduled": "2026-04-05T20:05:00+00:00",
+                "delay": 15,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "8687",
+                "iata": "UA8687",
+                "icao": "UAL8687",
+                "codeshared": {
+                    "airline_name": "air canada",
+                    "airline_iata": "ac",
+                    "airline_icao": "aca",
+                    "flight_number": "8483",
+                    "flight_iata": "ac8483",
+                    "flight_icao": "aca8483"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "C01B6C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "19",
+                "delay": null,
+                "scheduled": "2026-04-05T16:30:00+00:00",
+                "estimated": "2026-04-05T16:30:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "H12",
+                "baggage": "9",
+                "scheduled": "2026-04-05T18:24:00+00:00",
+                "delay": 20,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6650",
+                "iata": "AS6650",
+                "icao": "JAG6650",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "1510",
+                    "flight_iata": "aa1510",
+                    "flight_icao": "aal1510"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ABC649"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "42",
+                "delay": null,
+                "scheduled": "2026-04-05T16:29:00+00:00",
+                "estimated": "2026-04-05T16:29:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B14",
+                "baggage": "6",
+                "scheduled": "2026-04-05T18:14:00+00:00",
+                "delay": 76,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "2552",
+                "iata": "NZ2552",
+                "icao": "ANZ2552",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1156",
+                    "flight_iata": "ua1156",
+                    "flight_icao": "ual1156"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A43EC3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "LaGuardia",
+                "timezone": "America\/New_York",
+                "iata": "LGA",
+                "icao": "KLGA",
+                "terminal": "B",
+                "gate": "42",
+                "delay": null,
+                "scheduled": "2026-04-05T16:29:00+00:00",
+                "estimated": "2026-04-05T16:29:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B14",
+                "baggage": "6",
+                "scheduled": "2026-04-05T18:14:00+00:00",
+                "delay": 76,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6186",
+                "iata": "EK6186",
+                "icao": "UAE6186",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1156",
+                    "flight_iata": "ua1156",
+                    "flight_icao": "ual1156"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A43EC3"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "48C",
+                "delay": null,
+                "scheduled": "2026-04-05T11:33:00+00:00",
+                "estimated": "2026-04-05T11:33:00+00:00",
+                "actual": "2026-04-05T11:41:00+00:00",
+                "estimated_runway": "2026-04-05T11:41:00+00:00",
+                "actual_runway": "2026-04-05T11:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "8",
+                "scheduled": "2026-04-05T17:46:00+00:00",
+                "delay": 9,
+                "estimated": "2026-04-05T17:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Tahiti Nui",
+                "iata": "TN",
+                "icao": "THT"
+            },
+            "flight": {
+                "number": "1146",
+                "iata": "TN1146",
+                "icao": "THT1146",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2767",
+                    "flight_iata": "aa2767",
+                    "flight_icao": "aal2767"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35E9C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "48C",
+                "delay": null,
+                "scheduled": "2026-04-05T11:33:00+00:00",
+                "estimated": "2026-04-05T11:33:00+00:00",
+                "actual": "2026-04-05T11:41:00+00:00",
+                "estimated_runway": "2026-04-05T11:41:00+00:00",
+                "actual_runway": "2026-04-05T11:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "8",
+                "scheduled": "2026-04-05T17:46:00+00:00",
+                "delay": 9,
+                "estimated": "2026-04-05T17:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Royal Jordanian",
+                "iata": "RJ",
+                "icao": "RJA"
+            },
+            "flight": {
+                "number": "7177",
+                "iata": "RJ7177",
+                "icao": "RJA7177",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2767",
+                    "flight_iata": "aa2767",
+                    "flight_icao": "aal2767"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35E9C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "48C",
+                "delay": null,
+                "scheduled": "2026-04-05T11:33:00+00:00",
+                "estimated": "2026-04-05T11:33:00+00:00",
+                "actual": "2026-04-05T11:41:00+00:00",
+                "estimated_runway": "2026-04-05T11:41:00+00:00",
+                "actual_runway": "2026-04-05T11:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "8",
+                "scheduled": "2026-04-05T17:46:00+00:00",
+                "delay": 9,
+                "estimated": "2026-04-05T17:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Qantas",
+                "iata": "QF",
+                "icao": "QFA"
+            },
+            "flight": {
+                "number": "4921",
+                "iata": "QF4921",
+                "icao": "QFA4921",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2767",
+                    "flight_iata": "aa2767",
+                    "flight_icao": "aal2767"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35E9C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Los Angeles International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAX",
+                "icao": "KLAX",
+                "terminal": "4",
+                "gate": "48C",
+                "delay": null,
+                "scheduled": "2026-04-05T11:33:00+00:00",
+                "estimated": "2026-04-05T11:33:00+00:00",
+                "actual": "2026-04-05T11:41:00+00:00",
+                "estimated_runway": "2026-04-05T11:41:00+00:00",
+                "actual_runway": "2026-04-05T11:41:00+00:00"
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "8",
+                "scheduled": "2026-04-05T17:46:00+00:00",
+                "delay": 9,
+                "estimated": "2026-04-05T17:13:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Malaysia Airlines",
+                "iata": "MH",
+                "icao": "MAS"
+            },
+            "flight": {
+                "number": "9474",
+                "iata": "MH9474",
+                "icao": "MAS9474",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2767",
+                    "flight_iata": "aa2767",
+                    "flight_icao": "aal2767"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A35E9C"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Harry Reid International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAS",
+                "icao": "KLAS",
+                "terminal": "3",
+                "gate": "D55",
+                "delay": null,
+                "scheduled": "2026-04-05T12:55:00+00:00",
+                "estimated": "2026-04-05T12:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B7",
+                "baggage": "14",
+                "scheduled": "2026-04-05T18:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Turkish Airlines",
+                "iata": "TK",
+                "icao": "THY"
+            },
+            "flight": {
+                "number": "8628",
+                "iata": "TK8628",
+                "icao": "THY8628",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "314",
+                    "flight_iata": "ua314",
+                    "flight_icao": "ual314"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA8A07"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Harry Reid International Airport",
+                "timezone": "America\/Los_Angeles",
+                "iata": "LAS",
+                "icao": "KLAS",
+                "terminal": "3",
+                "gate": "D55",
+                "delay": null,
+                "scheduled": "2026-04-05T12:55:00+00:00",
+                "estimated": "2026-04-05T12:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B7",
+                "baggage": "14",
+                "scheduled": "2026-04-05T18:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2315",
+                "iata": "AV2315",
+                "icao": "AVA2315",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "314",
+                    "flight_iata": "ua314",
+                    "flight_icao": "ual314"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AA8A07"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Sky Harbor International",
+                "timezone": "America\/Phoenix",
+                "iata": "PHX",
+                "icao": "KPHX",
+                "terminal": "3",
+                "gate": "E7",
+                "delay": null,
+                "scheduled": "2026-04-05T12:48:00+00:00",
+                "estimated": "2026-04-05T12:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C9",
+                "baggage": "12",
+                "scheduled": "2026-04-05T18:27:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6322",
+                "iata": "EK6322",
+                "icao": "UAE6322",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1842",
+                    "flight_iata": "ua1842",
+                    "flight_icao": "ual1842"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A245B7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Sky Harbor International",
+                "timezone": "America\/Phoenix",
+                "iata": "PHX",
+                "icao": "KPHX",
+                "terminal": "3",
+                "gate": "E7",
+                "delay": null,
+                "scheduled": "2026-04-05T12:48:00+00:00",
+                "estimated": "2026-04-05T12:48:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C9",
+                "baggage": "12",
+                "scheduled": "2026-04-05T18:27:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "5270",
+                "iata": "AC5270",
+                "icao": "ACA5270",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "1842",
+                    "flight_iata": "ua1842",
+                    "flight_icao": "ual1842"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A245B7"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Logan International",
+                "timezone": "America\/New_York",
+                "iata": "BOS",
+                "icao": "KBOS",
+                "terminal": "A",
+                "gate": "A8",
+                "delay": null,
+                "scheduled": "2026-04-05T20:20:00+00:00",
+                "estimated": "2026-04-05T20:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": "M11",
+                "baggage": null,
+                "scheduled": "2026-04-05T22:16:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Delta Air Lines",
+                "iata": "DL",
+                "icao": "DAL"
+            },
+            "flight": {
+                "number": "5858",
+                "iata": "DL5858",
+                "icao": "DAL5858",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A1B092"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "General Mitchell International",
+                "timezone": "America\/Chicago",
+                "iata": "MKE",
+                "icao": "KMKE",
+                "terminal": null,
+                "gate": "C10",
+                "delay": null,
+                "scheduled": "2026-04-05T19:41:00+00:00",
+                "estimated": "2026-04-05T19:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E14",
+                "baggage": "2",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "5582",
+                "iata": "UA5582",
+                "icao": "UAL5582",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD705E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "General Mitchell International",
+                "timezone": "America\/Chicago",
+                "iata": "MKE",
+                "icao": "KMKE",
+                "terminal": null,
+                "gate": "C10",
+                "delay": null,
+                "scheduled": "2026-04-05T19:41:00+00:00",
+                "estimated": "2026-04-05T19:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E14",
+                "baggage": "2",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "2959",
+                "iata": "NZ2959",
+                "icao": "ANZ2959",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5582",
+                    "flight_iata": "ua5582",
+                    "flight_icao": "ual5582"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD705E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "General Mitchell International",
+                "timezone": "America\/Chicago",
+                "iata": "MKE",
+                "icao": "KMKE",
+                "terminal": null,
+                "gate": "C10",
+                "delay": null,
+                "scheduled": "2026-04-05T19:41:00+00:00",
+                "estimated": "2026-04-05T19:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E14",
+                "baggage": "2",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "8823",
+                "iata": "LH8823",
+                "icao": "DLH8823",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5582",
+                    "flight_iata": "ua5582",
+                    "flight_icao": "ual5582"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD705E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "General Mitchell International",
+                "timezone": "America\/Chicago",
+                "iata": "MKE",
+                "icao": "KMKE",
+                "terminal": null,
+                "gate": "C10",
+                "delay": null,
+                "scheduled": "2026-04-05T19:41:00+00:00",
+                "estimated": "2026-04-05T19:41:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E14",
+                "baggage": "2",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2319",
+                "iata": "AV2319",
+                "icao": "AVA2319",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5582",
+                    "flight_iata": "ua5582",
+                    "flight_icao": "ual5582"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD705E"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "South Bend Regional",
+                "timezone": "America\/Indiana\/Indianapolis",
+                "iata": "SBN",
+                "icao": "KSBN",
+                "terminal": null,
+                "gate": "5",
+                "delay": null,
+                "scheduled": "2026-04-05T20:25:00+00:00",
+                "estimated": "2026-04-05T20:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "E1",
+                "baggage": "2",
+                "scheduled": "2026-04-05T20:40:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "5885",
+                "iata": "UA5885",
+                "icao": "UAL5885",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AC85EE"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T14:20:00+00:00",
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B22",
+                "baggage": "12",
+                "scheduled": "2026-04-05T16:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Brussels Airlines",
+                "iata": "SN",
+                "icao": "BEL"
+            },
+            "flight": {
+                "number": "9002",
+                "iata": "SN9002",
+                "icao": "BEL9002",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "2160",
+                    "flight_iata": "ua2160",
+                    "flight_icao": "ual2160"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A562AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T14:20:00+00:00",
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B22",
+                "baggage": "12",
+                "scheduled": "2026-04-05T16:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "ANA",
+                "iata": "NH",
+                "icao": "ANA"
+            },
+            "flight": {
+                "number": "7603",
+                "iata": "NH7603",
+                "icao": "ANA7603",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "2160",
+                    "flight_iata": "ua2160",
+                    "flight_icao": "ual2160"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A562AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T14:20:00+00:00",
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B22",
+                "baggage": "12",
+                "scheduled": "2026-04-05T16:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SWISS",
+                "iata": "LX",
+                "icao": "SWR"
+            },
+            "flight": {
+                "number": "3327",
+                "iata": "LX3327",
+                "icao": "SWR3327",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "2160",
+                    "flight_iata": "ua2160",
+                    "flight_icao": "ual2160"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A562AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T14:20:00+00:00",
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B22",
+                "baggage": "12",
+                "scheduled": "2026-04-05T16:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6057",
+                "iata": "EK6057",
+                "icao": "UAE6057",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "2160",
+                    "flight_iata": "ua2160",
+                    "flight_icao": "ual2160"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A562AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T14:20:00+00:00",
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B22",
+                "baggage": "12",
+                "scheduled": "2026-04-05T16:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2018",
+                "iata": "AV2018",
+                "icao": "AVA2018",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "2160",
+                    "flight_iata": "ua2160",
+                    "flight_icao": "ual2160"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A562AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T14:20:00+00:00",
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "B22",
+                "baggage": "12",
+                "scheduled": "2026-04-05T16:49:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "5185",
+                "iata": "AC5185",
+                "icao": "ACA5185",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "2160",
+                    "flight_iata": "ua2160",
+                    "flight_icao": "ual2160"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A562AA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C34",
+                "delay": null,
+                "scheduled": "2026-04-05T12:19:00+00:00",
+                "estimated": "2026-04-05T12:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "9",
+                "scheduled": "2026-04-05T15:54:00+00:00",
+                "delay": 63,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Royal Jordanian",
+                "iata": "RJ",
+                "icao": "RJA"
+            },
+            "flight": {
+                "number": "7007",
+                "iata": "RJ7007",
+                "icao": "RJA7007",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2833",
+                    "flight_iata": "aa2833",
+                    "flight_icao": "aal2833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAFFAA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C34",
+                "delay": null,
+                "scheduled": "2026-04-05T12:19:00+00:00",
+                "estimated": "2026-04-05T12:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "9",
+                "scheduled": "2026-04-05T15:54:00+00:00",
+                "delay": 63,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4174",
+                "iata": "IB4174",
+                "icao": "IBE4174",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2833",
+                    "flight_iata": "aa2833",
+                    "flight_icao": "aal2833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAFFAA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C34",
+                "delay": null,
+                "scheduled": "2026-04-05T12:19:00+00:00",
+                "estimated": "2026-04-05T12:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "9",
+                "scheduled": "2026-04-05T15:54:00+00:00",
+                "delay": 63,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gulf Air",
+                "iata": "GF",
+                "icao": "GFA"
+            },
+            "flight": {
+                "number": "4370",
+                "iata": "GF4370",
+                "icao": "GFA4370",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2833",
+                    "flight_iata": "aa2833",
+                    "flight_icao": "aal2833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAFFAA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C34",
+                "delay": null,
+                "scheduled": "2026-04-05T12:19:00+00:00",
+                "estimated": "2026-04-05T12:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "9",
+                "scheduled": "2026-04-05T15:54:00+00:00",
+                "delay": 63,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Aer Lingus",
+                "iata": "EI",
+                "icao": "EIN"
+            },
+            "flight": {
+                "number": "7186",
+                "iata": "EI7186",
+                "icao": "EIN7186",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2833",
+                    "flight_iata": "aa2833",
+                    "flight_icao": "aal2833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAFFAA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Denver International",
+                "timezone": "America\/Denver",
+                "iata": "DEN",
+                "icao": "KDEN",
+                "terminal": null,
+                "gate": "C34",
+                "delay": null,
+                "scheduled": "2026-04-05T12:19:00+00:00",
+                "estimated": "2026-04-05T12:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "K9",
+                "baggage": "9",
+                "scheduled": "2026-04-05T15:54:00+00:00",
+                "delay": 63,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "4684",
+                "iata": "BA4684",
+                "icao": "BAW4684",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "2833",
+                    "flight_iata": "aa2833",
+                    "flight_icao": "aal2833"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AAFFAA"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Northwest Arkansas Regional",
+                "timezone": "America\/Chicago",
+                "iata": "XNA",
+                "icao": "KXNA",
+                "terminal": null,
+                "gate": "A7",
+                "delay": null,
+                "scheduled": "2026-04-05T12:59:00+00:00",
+                "estimated": "2026-04-05T12:59:00+00:00",
+                "actual": "2026-04-05T12:59:00+00:00",
+                "estimated_runway": "2026-04-05T12:59:00+00:00",
+                "actual_runway": "2026-04-05T12:59:00+00:00"
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1B",
+                "baggage": "9",
+                "scheduled": "2026-04-05T14:58:00+00:00",
+                "delay": null,
+                "estimated": "2026-04-05T14:20:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "8393",
+                "iata": "IB8393",
+                "icao": "IBE8393",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3695",
+                    "flight_iata": "aa3695",
+                    "flight_icao": "aal3695"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A32F1B"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Northwest Arkansas Regional",
+                "timezone": "America\/Chicago",
+                "iata": "XNA",
+                "icao": "KXNA",
+                "terminal": null,
+                "gate": "A4",
+                "delay": null,
+                "scheduled": "2026-04-05T19:32:00+00:00",
+                "estimated": "2026-04-05T19:32:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1B",
+                "baggage": "9",
+                "scheduled": "2026-04-05T21:31:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "3892",
+                "iata": "AA3892",
+                "icao": "AAL3892",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A33E08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Northwest Arkansas Regional",
+                "timezone": "America\/Chicago",
+                "iata": "XNA",
+                "icao": "KXNA",
+                "terminal": null,
+                "gate": "A4",
+                "delay": null,
+                "scheduled": "2026-04-05T19:32:00+00:00",
+                "estimated": "2026-04-05T19:32:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1B",
+                "baggage": "9",
+                "scheduled": "2026-04-05T21:31:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "8356",
+                "iata": "IB8356",
+                "icao": "IBE8356",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3892",
+                    "flight_iata": "aa3892",
+                    "flight_icao": "aal3892"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A33E08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Northwest Arkansas Regional",
+                "timezone": "America\/Chicago",
+                "iata": "XNA",
+                "icao": "KXNA",
+                "terminal": null,
+                "gate": "A4",
+                "delay": null,
+                "scheduled": "2026-04-05T19:32:00+00:00",
+                "estimated": "2026-04-05T19:32:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1B",
+                "baggage": "9",
+                "scheduled": "2026-04-05T21:31:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "5745",
+                "iata": "BA5745",
+                "icao": "BAW5745",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3892",
+                    "flight_iata": "aa3892",
+                    "flight_icao": "aal3892"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A33E08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Northwest Arkansas Regional",
+                "timezone": "America\/Chicago",
+                "iata": "XNA",
+                "icao": "KXNA",
+                "terminal": null,
+                "gate": "A4",
+                "delay": null,
+                "scheduled": "2026-04-05T19:32:00+00:00",
+                "estimated": "2026-04-05T19:32:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L1B",
+                "baggage": "9",
+                "scheduled": "2026-04-05T21:31:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6299",
+                "iata": "AS6299",
+                "icao": "JAG6299",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "3892",
+                    "flight_iata": "aa3892",
+                    "flight_icao": "aal3892"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A33E08"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Eppley Airfield",
+                "timezone": "America\/Chicago",
+                "iata": "OMA",
+                "icao": "KOMA",
+                "terminal": null,
+                "gate": null,
+                "delay": null,
+                "scheduled": "2026-04-05T19:52:00+00:00",
+                "estimated": "2026-04-05T19:52:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": null,
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T20:52:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "FedEx",
+                "iata": "FX",
+                "icao": "FDX"
+            },
+            "flight": {
+                "number": "795",
+                "iata": "FX795",
+                "icao": "FDX795",
+                "codeshared": null
+            },
+            "aircraft": null,
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Fort Lauderdale\u2013Hollywood International",
+                "timezone": "America\/New_York",
+                "iata": "FLL",
+                "icao": "KFLL",
+                "terminal": "4",
+                "gate": "F8",
+                "delay": null,
+                "scheduled": "2026-04-05T20:55:00+00:00",
+                "estimated": "2026-04-05T20:55:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": null,
+                "baggage": null,
+                "scheduled": "2026-04-05T23:17:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Spirit Airlines",
+                "iata": "NK",
+                "icao": "NKS"
+            },
+            "flight": {
+                "number": "1",
+                "iata": "NK1",
+                "icao": "NKS1",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A9C631"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Fort Lauderdale\u2013Hollywood International",
+                "timezone": "America\/New_York",
+                "iata": "FLL",
+                "icao": "KFLL",
+                "terminal": null,
+                "gate": "A3",
+                "delay": null,
+                "scheduled": "2026-04-05T20:12:00+00:00",
+                "estimated": "2026-04-05T20:12:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": "Intl",
+                "scheduled": "2026-04-05T22:50:00+00:00",
+                "delay": 16,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "2611",
+                "iata": "F92611",
+                "icao": "FFT2611",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A8584A"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C17",
+                "delay": null,
+                "scheduled": "2026-04-05T12:12:00+00:00",
+                "estimated": "2026-04-05T12:12:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G7",
+                "baggage": "23T2",
+                "scheduled": "2026-04-05T18:26:00+00:00",
+                "delay": 11,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Hawaiian Airlines",
+                "iata": "HA",
+                "icao": "HAL"
+            },
+            "flight": {
+                "number": "6817",
+                "iata": "HA6817",
+                "icao": "HAL6817",
+                "codeshared": {
+                    "airline_name": "alaska airlines",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "410",
+                    "flight_iata": "as410",
+                    "flight_icao": "asa410"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD4AFB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "active",
+            "departure": {
+                "airport": "Seattle-Tacoma International",
+                "timezone": "America\/Los_Angeles",
+                "iata": "SEA",
+                "icao": "KSEA",
+                "terminal": null,
+                "gate": "C17",
+                "delay": null,
+                "scheduled": "2026-04-05T12:12:00+00:00",
+                "estimated": "2026-04-05T12:12:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G7",
+                "baggage": "23T2",
+                "scheduled": "2026-04-05T18:26:00+00:00",
+                "delay": 11,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Finnair",
+                "iata": "AY",
+                "icao": "FIN"
+            },
+            "flight": {
+                "number": "3911",
+                "iata": "AY3911",
+                "icao": "FIN3911",
+                "codeshared": {
+                    "airline_name": "alaska airlines",
+                    "airline_iata": "as",
+                    "airline_icao": "asa",
+                    "flight_number": "410",
+                    "flight_iata": "as410",
+                    "flight_icao": "asa410"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD4AFB"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Cherry Capital Airport",
+                "timezone": "America\/Detroit",
+                "iata": "TVC",
+                "icao": "KTVC",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-05T20:10:00+00:00",
+                "estimated": "2026-04-05T20:10:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F14",
+                "baggage": "6",
+                "scheduled": "2026-04-05T20:34:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "4609",
+                "iata": "UA4609",
+                "icao": "UAL4609",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A6E767"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tulsa International",
+                "timezone": "America\/Chicago",
+                "iata": "TUL",
+                "icao": "KTUL",
+                "terminal": null,
+                "gate": "A5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:25:00+00:00",
+                "estimated": "2026-04-05T19:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L6B",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:29:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "4211",
+                "iata": "AA4211",
+                "icao": "AAL4211",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2766F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tulsa International",
+                "timezone": "America\/Chicago",
+                "iata": "TUL",
+                "icao": "KTUL",
+                "terminal": null,
+                "gate": "A5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:25:00+00:00",
+                "estimated": "2026-04-05T19:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L6B",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:29:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "8517",
+                "iata": "IB8517",
+                "icao": "IBE8517",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "4211",
+                    "flight_iata": "aa4211",
+                    "flight_icao": "aal4211"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2766F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tulsa International",
+                "timezone": "America\/Chicago",
+                "iata": "TUL",
+                "icao": "KTUL",
+                "terminal": null,
+                "gate": "A5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:25:00+00:00",
+                "estimated": "2026-04-05T19:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L6B",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:29:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Gulf Air",
+                "iata": "GF",
+                "icao": "GFA"
+            },
+            "flight": {
+                "number": "6438",
+                "iata": "GF6438",
+                "icao": "GFA6438",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "4211",
+                    "flight_iata": "aa4211",
+                    "flight_icao": "aal4211"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2766F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tulsa International",
+                "timezone": "America\/Chicago",
+                "iata": "TUL",
+                "icao": "KTUL",
+                "terminal": null,
+                "gate": "A5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:25:00+00:00",
+                "estimated": "2026-04-05T19:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L6B",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:29:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "British Airways",
+                "iata": "BA",
+                "icao": "BAW"
+            },
+            "flight": {
+                "number": "5717",
+                "iata": "BA5717",
+                "icao": "BAW5717",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "4211",
+                    "flight_iata": "aa4211",
+                    "flight_icao": "aal4211"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2766F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Tulsa International",
+                "timezone": "America\/Chicago",
+                "iata": "TUL",
+                "icao": "KTUL",
+                "terminal": null,
+                "gate": "A5",
+                "delay": null,
+                "scheduled": "2026-04-05T19:25:00+00:00",
+                "estimated": "2026-04-05T19:25:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "L6B",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:29:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6678",
+                "iata": "AS6678",
+                "icao": "JAG6678",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "4211",
+                    "flight_iata": "aa4211",
+                    "flight_icao": "aal4211"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2766F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "C7",
+                "delay": null,
+                "scheduled": "2026-04-05T19:44:00+00:00",
+                "estimated": "2026-04-05T19:44:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G5",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:19:00+00:00",
+                "delay": 22,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "4923",
+                "iata": "AA4923",
+                "icao": "AAL4923",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A99B5F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "C7",
+                "delay": null,
+                "scheduled": "2026-04-05T19:44:00+00:00",
+                "estimated": "2026-04-05T19:44:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G5",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:19:00+00:00",
+                "delay": 22,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Iberia",
+                "iata": "IB",
+                "icao": "IBE"
+            },
+            "flight": {
+                "number": "4726",
+                "iata": "IB4726",
+                "icao": "IBE4726",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "4923",
+                    "flight_iata": "aa4923",
+                    "flight_icao": "aal4923"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A99B5F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "C7",
+                "delay": null,
+                "scheduled": "2026-04-05T19:44:00+00:00",
+                "estimated": "2026-04-05T19:44:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "G5",
+                "baggage": null,
+                "scheduled": "2026-04-05T21:19:00+00:00",
+                "delay": 22,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "AlphaSky",
+                "iata": "AS",
+                "icao": "JAG"
+            },
+            "flight": {
+                "number": "6884",
+                "iata": "AS6884",
+                "icao": "JAG6884",
+                "codeshared": {
+                    "airline_name": "american airlines",
+                    "airline_iata": "aa",
+                    "airline_icao": "aal",
+                    "flight_number": "4923",
+                    "flight_iata": "aa4923",
+                    "flight_icao": "aal4923"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A99B5F"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "A4B",
+                "delay": null,
+                "scheduled": "2026-04-05T19:16:00+00:00",
+                "estimated": "2026-04-05T19:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F11",
+                "baggage": "12",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "5219",
+                "iata": "UA5219",
+                "icao": "UAL5219",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6182"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "A4B",
+                "delay": null,
+                "scheduled": "2026-04-05T19:16:00+00:00",
+                "estimated": "2026-04-05T19:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F11",
+                "baggage": "12",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air New Zealand",
+                "iata": "NZ",
+                "icao": "ANZ"
+            },
+            "flight": {
+                "number": "2310",
+                "iata": "NZ2310",
+                "icao": "ANZ2310",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5219",
+                    "flight_iata": "ua5219",
+                    "flight_icao": "ual5219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6182"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "A4B",
+                "delay": null,
+                "scheduled": "2026-04-05T19:16:00+00:00",
+                "estimated": "2026-04-05T19:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F11",
+                "baggage": "12",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Lufthansa",
+                "iata": "LH",
+                "icao": "DLH"
+            },
+            "flight": {
+                "number": "7635",
+                "iata": "LH7635",
+                "icao": "DLH7635",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5219",
+                    "flight_iata": "ua5219",
+                    "flight_icao": "ual5219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6182"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "A4B",
+                "delay": null,
+                "scheduled": "2026-04-05T19:16:00+00:00",
+                "estimated": "2026-04-05T19:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F11",
+                "baggage": "12",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "SA AVIANCA",
+                "iata": "AV",
+                "icao": "AVA"
+            },
+            "flight": {
+                "number": "2309",
+                "iata": "AV2309",
+                "icao": "AVA2309",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5219",
+                    "flight_iata": "ua5219",
+                    "flight_icao": "ual5219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6182"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Des Moines International",
+                "timezone": "America\/Chicago",
+                "iata": "DSM",
+                "icao": "KDSM",
+                "terminal": null,
+                "gate": "A4B",
+                "delay": null,
+                "scheduled": "2026-04-05T19:16:00+00:00",
+                "estimated": "2026-04-05T19:16:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F11",
+                "baggage": "12",
+                "scheduled": "2026-04-05T20:50:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Air Canada",
+                "iata": "AC",
+                "icao": "ACA"
+            },
+            "flight": {
+                "number": "4418",
+                "iata": "AC4418",
+                "icao": "ACA4418",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5219",
+                    "flight_iata": "ua5219",
+                    "flight_icao": "ual5219"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "AD6182"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "D",
+                "gate": "D33",
+                "delay": null,
+                "scheduled": "2026-04-05T20:00:00+00:00",
+                "estimated": "2026-04-05T20:00:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "3",
+                "gate": "H17",
+                "baggage": "7",
+                "scheduled": "2026-04-05T22:24:00+00:00",
+                "delay": 17,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "American Airlines",
+                "iata": "AA",
+                "icao": "AAL"
+            },
+            "flight": {
+                "number": "2951",
+                "iata": "AA2951",
+                "icao": "AAL2951",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ADCCA6"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Dallas\/Fort Worth International",
+                "timezone": "America\/Chicago",
+                "iata": "DFW",
+                "icao": "KDFW",
+                "terminal": "E",
+                "gate": "E4",
+                "delay": null,
+                "scheduled": "2026-04-05T19:27:00+00:00",
+                "estimated": "2026-04-05T19:27:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "1",
+                "gate": "C28",
+                "baggage": "12",
+                "scheduled": "2026-04-05T21:58:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "1517",
+                "iata": "UA1517",
+                "icao": "UAL1517",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A2C336"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Mason City Municipal",
+                "timezone": "America\/Chicago",
+                "iata": "MCW",
+                "icao": "KMCW",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-05T19:19:00+00:00",
+                "estimated": "2026-04-05T19:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F20",
+                "baggage": "3",
+                "scheduled": "2026-04-05T20:47:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "United Airlines",
+                "iata": "UA",
+                "icao": "UAL"
+            },
+            "flight": {
+                "number": "5135",
+                "iata": "UA5135",
+                "icao": "UAL5135",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACA248"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Mason City Municipal",
+                "timezone": "America\/Chicago",
+                "iata": "MCW",
+                "icao": "KMCW",
+                "terminal": null,
+                "gate": "1",
+                "delay": null,
+                "scheduled": "2026-04-05T19:19:00+00:00",
+                "estimated": "2026-04-05T19:19:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "2",
+                "gate": "F20",
+                "baggage": "3",
+                "scheduled": "2026-04-05T20:47:00+00:00",
+                "delay": null,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Emirates",
+                "iata": "EK",
+                "icao": "UAE"
+            },
+            "flight": {
+                "number": "6460",
+                "iata": "EK6460",
+                "icao": "UAE6460",
+                "codeshared": {
+                    "airline_name": "united airlines",
+                    "airline_iata": "ua",
+                    "airline_icao": "ual",
+                    "flight_number": "5135",
+                    "flight_iata": "ua5135",
+                    "flight_icao": "ual5135"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "ACA248"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "A33",
+                "delay": null,
+                "scheduled": "2026-04-05T20:24:00+00:00",
+                "estimated": "2026-04-05T20:24:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": "Intl",
+                "scheduled": "2026-04-05T21:47:00+00:00",
+                "delay": 13,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Frontier Airlines",
+                "iata": "F9",
+                "icao": "FFT"
+            },
+            "flight": {
+                "number": "3141",
+                "iata": "F93141",
+                "icao": "FFT3141",
+                "codeshared": null
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3ECC8"
+            },
+            "live": null
+        },
+        {
+            "flight_date": "2026-04-05",
+            "flight_status": "scheduled",
+            "departure": {
+                "airport": "Charlotte Douglas",
+                "timezone": "America\/New_York",
+                "iata": "CLT",
+                "icao": "KCLT",
+                "terminal": null,
+                "gate": "A33",
+                "delay": null,
+                "scheduled": "2026-04-05T20:24:00+00:00",
+                "estimated": "2026-04-05T20:24:00+00:00",
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "arrival": {
+                "airport": "Chicago O'hare International",
+                "timezone": "America\/Chicago",
+                "iata": "ORD",
+                "icao": "KORD",
+                "terminal": "5",
+                "gate": null,
+                "baggage": "Intl",
+                "scheduled": "2026-04-05T21:47:00+00:00",
+                "delay": 13,
+                "estimated": null,
+                "actual": null,
+                "estimated_runway": null,
+                "actual_runway": null
+            },
+            "airline": {
+                "name": "Volaris",
+                "iata": "Y4",
+                "icao": "VOI"
+            },
+            "flight": {
+                "number": "2529",
+                "iata": "Y42529",
+                "icao": "VOI2529",
+                "codeshared": {
+                    "airline_name": "frontier airlines",
+                    "airline_iata": "f9",
+                    "airline_icao": "fft",
+                    "flight_number": "3141",
+                    "flight_iata": "f93141",
+                    "flight_icao": "fft3141"
+                }
+            },
+            "aircraft": {
+                "registration": null,
+                "iata": null,
+                "icao": null,
+                "icao24": "A3ECC8"
+            },
+            "live": null
+        }
+    ]
+}

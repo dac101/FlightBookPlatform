@@ -9,6 +9,33 @@ const plansLoading = ref(false);
 const errorMessage = ref('');
 const flights = ref([]);
 const airlineOptions = ref([]);
+const airlineQuery = ref('');
+const airlineDropdownOpen = ref(false);
+const airlineSuggestions = computed(() => {
+    const q = airlineQuery.value.trim().toLowerCase();
+    if (!q) {
+        return airlineOptions.value.filter((a) => !filters.preferredAirlineIds.includes(a.id)).slice(0, 8);
+    }
+    return airlineOptions.value
+        .filter((a) => !filters.preferredAirlineIds.includes(a.id))
+        .filter((a) => a.name.toLowerCase().includes(q) || a.iata_code.toLowerCase().includes(q))
+        .slice(0, 8);
+});
+const selectedAirlines = computed(() =>
+    airlineOptions.value.filter((a) => filters.preferredAirlineIds.includes(a.id)),
+);
+function addAirline(airline) {
+    if (!filters.preferredAirlineIds.includes(airline.id)) {
+        filters.preferredAirlineIds.push(airline.id);
+    }
+    airlineQuery.value = '';
+}
+function removeAirline(id) {
+    filters.preferredAirlineIds = filters.preferredAirlineIds.filter((i) => i !== id);
+}
+function closeAirlineDropdown() {
+    setTimeout(() => { airlineDropdownOpen.value = false; }, 150);
+}
 const tripPlans = ref([]);
 const filters = reactive({
     search: '',
@@ -106,6 +133,8 @@ function resetFilters() {
     filters.arrival = '';
     filters.preferredAirlineIds = [];
     filters.sort = 'recent';
+    airlineQuery.value = '';
+    airlineDropdownOpen.value = false;
     loadFlights(1);
 }
 
@@ -383,22 +412,43 @@ onMounted(async () => {
                             </div>
                         </div>
 
-                        <div class="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-                            <div>
+                        <div class="grid gap-4 lg:grid-cols-[1fr_auto]">
+                            <div class="xl:col-span-2">
                                 <label class="mb-2 block text-sm font-medium text-slate-700">Preferred airlines</label>
-                                <select
-                                    v-model="filters.preferredAirlineIds"
-                                    multiple
-                                    class="h-40 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
-                                >
-                                    <option
-                                        v-for="airline in airlineOptions"
+                                <div v-if="selectedAirlines.length" class="mb-2 flex flex-wrap gap-1.5">
+                                    <span
+                                        v-for="airline in selectedAirlines"
                                         :key="airline.id"
-                                        :value="airline.id"
+                                        class="inline-flex items-center gap-1 rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-sky-800"
                                     >
-                                        {{ airline.name }} ({{ airline.iata_code }})
-                                    </option>
-                                </select>
+                                        {{ airline.iata_code }} · {{ airline.name }}
+                                        <button type="button" class="ml-0.5 text-sky-500 hover:text-sky-800" @click="removeAirline(airline.id)">✕</button>
+                                    </span>
+                                </div>
+                                <div class="relative">
+                                    <input
+                                        v-model="airlineQuery"
+                                        type="text"
+                                        class="w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm"
+                                        placeholder="Type an airline name or code..."
+                                        @focus="airlineDropdownOpen = true"
+                                        @input="airlineDropdownOpen = true"
+                                        @blur="closeAirlineDropdown"
+                                    />
+                                    <ul
+                                        v-if="airlineDropdownOpen && airlineSuggestions.length"
+                                        class="absolute z-20 mt-1 max-h-48 w-full overflow-auto rounded-xl border border-slate-200 bg-white shadow-lg"
+                                    >
+                                        <li
+                                            v-for="airline in airlineSuggestions"
+                                            :key="airline.id"
+                                            class="cursor-pointer px-4 py-2.5 text-sm text-slate-700 hover:bg-sky-50"
+                                            @mousedown.prevent="addAirline(airline)"
+                                        >
+                                            <span class="font-medium">{{ airline.iata_code }}</span> · {{ airline.name }}
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="flex flex-col justify-end gap-3">

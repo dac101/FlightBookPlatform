@@ -184,6 +184,19 @@ class AirportRepository implements AirportRepositoryInterface
         }
     }
 
+    public function forMap(): Collection
+    {
+        try {
+            return Airport::query()
+                ->whereNotNull('latitude')
+                ->whereNotNull('longitude')
+                ->get(['id', 'name', 'city', 'iata_code', 'city_code', 'country_code', 'latitude', 'longitude', 'timezone']);
+        } catch (Throwable $e) {
+            Log::error('AirportRepository: error fetching map data', ['message' => $e->getMessage()]);
+            throw $e;
+        }
+    }
+
     private function normalizeCodes(array $data): array
     {
         foreach (['iata_code', 'city_code', 'country_code', 'region_code'] as $field) {

@@ -4,7 +4,6 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import Modal from '@/Components/Modal.vue';
 import SecondaryButton from '@/Components/SecondaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
 import { useForm } from '@inertiajs/vue3';
 import { nextTick, ref } from 'vue';
 
@@ -54,7 +53,7 @@ const closeModal = () => {
 
         <DangerButton @click="confirmUserDeletion">Delete Account</DangerButton>
 
-        <Modal :show="confirmingUserDeletion" @close="closeModal">
+        <Modal :show="confirmingUserDeletion" maxWidth="sm" @close="closeModal">
             <div class="p-6">
                 <h2
                     class="text-lg font-medium text-slate-900"
@@ -75,12 +74,12 @@ const closeModal = () => {
                         class="sr-only"
                     />
 
-                    <TextInput
+                    <input
                         id="password"
                         ref="passwordInput"
                         v-model="form.password"
                         type="password"
-                        class="mt-1 block w-3/4"
+                        class="mt-1 block w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-[#2e67a8] focus:ring-[#2e67a8]"
                         placeholder="Password"
                         @keyup.enter="deleteUser"
                     />
