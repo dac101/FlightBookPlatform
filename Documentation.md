@@ -161,6 +161,10 @@ docker compose down
 
 # Stop and wipe ALL data (full reset)
 docker compose down -v
+ 
+docker compose up --build
+
+
 ```
 
 ---

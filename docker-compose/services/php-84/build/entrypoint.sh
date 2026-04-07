@@ -55,11 +55,16 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
-# ─── Reprocess aviation_stack files on first boot ────────────────────────────
+# ─── Seed demo data and reprocess aviation_stack files on first boot ─────────
 FIRST_BOOT_FLAG=/var/www/storage/app/.first-boot-done
 if [ ! -f "$FIRST_BOOT_FLAG" ]; then
+    echo "[entrypoint] First boot detected — seeding demo data..."
+    php artisan db:seed --force
+
     echo "[entrypoint] First boot detected — reprocessing aviation_stack files..."
-    php artisan flights:reprocess && touch "$FIRST_BOOT_FLAG"
+    php artisan flights:reprocess
+
+    touch "$FIRST_BOOT_FLAG"
 fi
 
 echo "[entrypoint] Starting PHP-FPM..."
