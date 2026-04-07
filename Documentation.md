@@ -20,6 +20,46 @@ sudo docker compose exec php php artisan flights:reprocess
 
 ---
 
+## Software Versions
+
+The application runs on a Docker-based Laravel and Vue stack with PostgreSQL, Redis, and Nginx. The versions below reflect the container images and the current locked application dependencies in this repository.
+
+### Infrastructure And Runtime Versions
+
+| Component | Version |
+|-----------|---------|
+| PHP-FPM | `8.4` |
+| Node.js | `22.x` |
+| Nginx | `alpine` image |
+| PostgreSQL | `17-alpine` |
+| Redis | `7-alpine` |
+| Mailpit | `latest` image |
+
+### Backend Package Versions
+
+| Package | Version |
+|---------|---------|
+| Laravel Framework | `13.3.0` |
+| Inertia Laravel | `3.0.1` |
+| Laravel Fortify | `1.36.2` |
+| Laravel Horizon | `5.45.5` |
+| Laravel Sanctum | `4.3.1` |
+| Laravel Telescope | `5.19.0` |
+| PHPUnit | `12.5.16` |
+
+### Frontend Package Versions
+
+| Package | Version |
+|---------|---------|
+| Vue | `3.5.32` |
+| Inertia Vue 3 | `3.0.2` |
+| Vite | `8.0.6` |
+| Tailwind CSS | `4.2.2` |
+| Laravel Vite Plugin | `3.0.1` |
+| `@vitejs/plugin-vue` | `6.0.5` |
+
+---
+
 ## Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running
@@ -59,10 +99,15 @@ On first boot the `php` container will automatically:
 - Install Node dependencies and build frontend assets
 - Wait for PostgreSQL to be ready
 - Run database migrations
+- Seed demo users and sample flight data
+- Reprocess bundled `aviation_stack` JSON files
 - Start PHP-FPM
+
+If you want live flight imports from AviationStack to work, set a valid `AVIATIONSTACK_API_KEY` in `.env` before the first `docker compose up --build`.
 
 **The app will be available at: http://localhost**
 
+** in the .env file replace AVIATIONSTACK_API_KEY=api_key with necessary key 
 ---
 
 ## Service URLs

@@ -81,7 +81,8 @@ The entrypoint script automatically:
 - Installs npm dependencies and builds frontend assets
 - Waits for PostgreSQL to be ready
 - Runs database migrations
-- Seeds sample data
+- Seeds demo users, airlines, airports, and sample flights on first boot
+- Reprocesses bundled AviationStack JSON files on first boot
 
 ### 4. Open the application
 
@@ -90,6 +91,8 @@ The entrypoint script automatically:
 | Application | http://localhost |
 | Mailpit (test mail) | http://localhost:8025 |
 | Horizon dashboard | http://localhost/horizon |
+
+If you want live AviationStack imports to work, set a valid `AVIATIONSTACK_API_KEY` in `.env` before starting the containers.
 
 ---
 
