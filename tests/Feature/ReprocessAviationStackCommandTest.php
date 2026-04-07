@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
-class ReprocessAviationStackCommandTest extends TestCase
+class                ReprocessAviationStackCommandTest extends TestCase
 {
     protected function setUp(): void
     {
