@@ -10,7 +10,7 @@ class PasswordConfirmationTest extends TestCase
 {
     use RefreshDatabase;
 
-    const CONFIRM_PASSWORD = '/confirm-password';
+    const CONFIRM_PASSWORD = '/user/confirm-password';
 
     public function test_confirm_password_screen_can_be_rendered(): void
     {
